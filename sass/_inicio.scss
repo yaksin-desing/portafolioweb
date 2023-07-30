@@ -3175,9 +3175,6 @@
             }
         }
     }
-
-
-
     .inicio__cont__misservicios {
         margin-top: 2em;
         margin-left: 1em;
@@ -3519,9 +3516,6 @@
             }
         }
     }
-
-
-
     .hacer1 {
         gap: 20px;
         padding-bottom: 5em;
@@ -3665,7 +3659,6 @@
             }
         }
     }
-
     .asi_trabajo {
         margin-left: 1em;
         margin-right: 1em;
@@ -3803,7 +3796,6 @@
 
         }
     }
-
     .bannerinicio {
         position: relative;
         overflow: hidden;
@@ -3904,12 +3896,12 @@
         }
 
     }
-
     .section_testimonios {
         margin: 1em 1em;
         display: flex;
         flex-direction: column;
         padding-bottom: 2em;
+
 
         .cont1_testimonio {
 
@@ -3940,6 +3932,7 @@
                 font-weight: 400;
                 line-height: normal;
                 padding: 1em 0em 1em 0em;
+                height: 15vh;
             }
 
             .cont_contac_testimonio {
@@ -3982,31 +3975,36 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                padding-bottom: 1em;
+                padding-bottom: 0em;
+                height: 15vh;
             }
 
             .cont_avatar_testimonio {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-row: 100%;
                 align-items: center;
-                padding-top: 1em;
+                padding-top: 0em;
                 border-top: 0.5px solid #8F8F8F;
-                gap: 1em;
+                gap: none;
+                justify-content: space-between;
+                
 
                 .avatar {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 1em;
+                    gap: 0em;
 
-                    img {}
+                    img {
+                        transform: scale(0.8);
+                    }
 
                     .cont_data_avatar {
                         h2 {
                             color: #000;
                             font-family: Plus Jakarta Sans;
-                            font-size: 20px;
+                            font-size: 15px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: normal;
@@ -4015,7 +4013,7 @@
                         p {
                             color: #7E7E7E;
                             font-family: Plus Jakarta Sans;
-                            font-size: 16px;
+                            font-size: 13px;
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
@@ -4027,8 +4025,8 @@
                     padding-top: 1em;
                     width: 100%;
                     display: flex;
-                    gap: auto;
-                    justify-content: space-between;
+                    gap: 30px;
+                    justify-content: end;
 
                     .boton_testimonio_izquierda {}
 
