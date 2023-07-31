@@ -157,12 +157,14 @@ body{
     align-items: flex-start;
 
     h2{
-        color: #000;
+       color: #000;
        font-family: Plus Jakarta Sans;
        font-size: 40px;
        font-style: normal;
        font-weight: 700;
        line-height: 136%; 
+       margin-bottom: 5vh;
+
     }
     form{
         display: flex;
@@ -272,7 +274,6 @@ body{
         }
     }
 }
-
 @media (max-width: 1200px) {
     .banner_contact{
         overflow: hidden;
@@ -520,8 +521,6 @@ body{
         }
     }
 }
-
-
 @media (max-width: 450px) {
     .botonvolver{
         display: flex;

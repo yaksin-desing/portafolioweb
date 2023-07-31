@@ -629,6 +629,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 136%;
+  margin-bottom: 5vh;
 }
 .formulario_contact form {
   display: flex;
