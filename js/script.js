@@ -3,7 +3,7 @@ var cursor = document.querySelector('.cursor'),
     mouseX = 0,
     mouseY = 0
 
-    
+
 gsap.to({}, 0.050, {
     repeat: -1,
     onRepeat: function () {
@@ -43,7 +43,6 @@ LottieInteractivity.create({
             state: 'autoplay',
             transition: 'onComplete',
             frames: [1, 148],
-
         },
         {
             type: 'hover',
@@ -52,6 +51,22 @@ LottieInteractivity.create({
     ]
 });
 
+LottieInteractivity.create({
+    player: '#animacionhomepersona',
+    mode: 'chain',
+    actions: [
+        {
+            state: 'autoplay',
+            frames: [0, 397],
+            transition: 'onComplete',
+        },
+        {   
+            visibility: [0, 200],
+            state: "loop",
+            frames: [287, 365]
+        }
+    ]
+});
 
 const iconoMenu = document.querySelector('.icono-menu'),
     menu = document.querySelector('.cont-menu');
@@ -156,74 +171,76 @@ delay = (n) => {
 // despues de transicion
 barba.hooks.afterLeave((data) => {
     let triggers = ScrollTrigger.getAll();
-    triggers.forEach( trigger => { 
+    triggers.forEach(trigger => {
         trigger.kill();
     });
 });
 // restablecer despues de transicion
 barba.hooks.enter((data) => {
-window.scrollTo(0, 0);
-ScrollTrigger.refresh(true);
+    window.scrollTo(0, 0);
+    ScrollTrigger.refresh(true);
 });
 // reiniciar funciones despues de transicion
 barba.hooks.afterEnter((data) => {
-// console.log(data.next.namespace);
-// var x = data.next.namespace;
-reInitialized();
+    // console.log(data.next.namespace);
+    // var x = data.next.namespace;
+    reInitialized();
 });
 
 
-let valor = 0 ;
-const nombre = ['doris', 'gato con botas','shrek', 'burro',"fiona","pinocho"];
-const cargo = ['Product manager', 'Mantenimiento','CEO.META.INC', 'Portero',"Secretaria","Frontend"];
-const testimonio = ['“Es un papucho, su cara parece tallada por los mismo ángeles”', 'Odio los lunes','CEO.META.INC', '¡Apuesto a que nunca habías visto a un burro volar!',"Secretaria","¡Soy un niño de verdad!"];
+let valor = 0;
+const nombre = ['doris', 'gato con botas', 'shrek', 'burro', "fiona", "pinocho"];
+const cargo = ['Product manager', 'Mantenimiento', 'CEO.META.INC', 'Portero', "Secretaria", "Frontend"];
+const testimonio = ['“Es un papucho, su cara parece tallada por los mismo ángeles”', 'Odio los lunes', 'CEO.META.INC', '¡Apuesto a que nunca habías visto a un burro volar!', "Secretaria", "¡Soy un niño de verdad!"];
 const resumen = ['Desarrolladora fullstack senior desde hace 9 años, trabaja actualmente para Meta.inc, como directora de proyectos avanzados.',
- 'valor2','valor3', 'valor4',"valor4","valor5"];
- const foto = ['../assets/img/avatartestimonio.png',
-  '../assets/img/gato.png',
-  '../assets/img/shrek.png',
-  '../assets/img/burro.png', 
-  '../assets/img/burro.png',
-  '../assets/img/burro.png'];
-document.querySelector("#adelante").addEventListener("click",()=>{
-    
-    if(valor < 5){
+    'valor2', 'valor3', 'valor4', "valor4", "valor5"
+];
+const foto = ['../assets/img/avatartestimonio.png',
+    '../assets/img/gato.png',
+    '../assets/img/shrek.png',
+    '../assets/img/burro.png',
+    '../assets/img/burro.png',
+    '../assets/img/burro.png'
+];
+document.querySelector("#adelante").addEventListener("click", () => {
+
+    if (valor < 5) {
         valor++
-        document.querySelector("#nombre").textContent=nombre[valor]
-        document.querySelector("#cargo").textContent=cargo[valor]
-        document.querySelector("#testimonio").textContent=testimonio[valor]
-        document.querySelector("#resumen").textContent=resumen[valor]
-        document.querySelector("#foto").src=foto[valor]
-        
-        
+        document.querySelector("#nombre").textContent = nombre[valor]
+        document.querySelector("#cargo").textContent = cargo[valor]
+        document.querySelector("#testimonio").textContent = testimonio[valor]
+        document.querySelector("#resumen").textContent = resumen[valor]
+        document.querySelector("#foto").src = foto[valor]
+
+
     }
-    if(valor == 5){
+    if (valor == 5) {
         document.querySelector("#adelante").style.filter = "invert(70%)";
         document.querySelector("#atras").style.filter = "invert(0%)";
-        
-        
-    }else{
+
+
+    } else {
         document.querySelector("#adelante").style.filter = "invert(0%)";
         document.querySelector("#atras").style.filter = "invert(0%)";
-        
+
     }
-    
-    
+
+
 })
 
-document.querySelector("#atras").addEventListener("click",()=>{
-    if(valor > 0){
+document.querySelector("#atras").addEventListener("click", () => {
+    if (valor > 0) {
         valor--
-        document.querySelector("#nombre").textContent=nombre[valor]
-        document.querySelector("#cargo").textContent=cargo[valor]
-        document.querySelector("#testimonio").textContent=testimonio[valor]
-        document.querySelector("#resumen").textContent=resumen[valor]
-        document.querySelector("#foto").src=foto[valor]
+        document.querySelector("#nombre").textContent = nombre[valor]
+        document.querySelector("#cargo").textContent = cargo[valor]
+        document.querySelector("#testimonio").textContent = testimonio[valor]
+        document.querySelector("#resumen").textContent = resumen[valor]
+        document.querySelector("#foto").src = foto[valor]
     }
-    if(valor == 0){
+    if (valor == 0) {
         document.querySelector("#adelante").style.filter = "invert(0%)";
         document.querySelector("#atras").style.filter = "invert(70%)";
-    }else{
+    } else {
         document.querySelector("#adelante").style.filter = "invert(0%)";
         document.querySelector("#atras").style.filter = "invert(0%)";
     }
@@ -232,12 +249,12 @@ document.querySelector("#atras").addEventListener("click",()=>{
 
 let valorenviar = 0;
 
-document.querySelector("#botonenviar").addEventListener("click",()=>{
-    
-    if(valorenviar == 0){
+document.querySelector("#botonenviar").addEventListener("click", () => {
+
+    if (valorenviar == 0) {
         valor++
         document.querySelector("#popup").style.displey = "block";
     }
-    
-    
+
+
 })
