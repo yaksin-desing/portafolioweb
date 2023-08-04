@@ -3239,16 +3239,17 @@ body {
 .cont-cabezera_home .home__inicio {
   display: flex;
   flex-direction: row;
-  height: 100vh;
   margin-left: 5em;
   margin-right: 5em;
-  gap: 8em;
+  gap: 10em;
+  align-items: center;
 }
 .cont-cabezera_home .home__inicio .home__inicio__conten1 {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  margin-top: 3em;
 }
 .cont-cabezera_home .home__inicio .home__inicio__conten1 .inicio__titulo {
   font-family: "Sora";
@@ -3365,9 +3366,7 @@ body {
   text-align: center;
 }
 .cont-cabezera_home .home__inicio .inicio__img {
-  align-items: start;
-  justify-content: start;
-  width: 100%;
+  width: 70%;
 }
 .cont-cabezera_home .inicio__contenedorcintas {
   margin-top: 2em;
@@ -4016,7 +4015,7 @@ body {
   overflow: hidden;
   background: #111111;
   width: 100%;
-  margin-bottom: 5em;
+  margin-bottom: 0em;
   display: flex;
   flex-direction: column;
   padding: 4em 0em 4em 0em;
@@ -4219,6 +4218,7 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    margin-top: 3em;
   }
   .cont-cabezera_home .home__inicio .home__inicio__conten1 .inicio__titulo {
     margin-top: 0.5em;
@@ -4342,6 +4342,7 @@ body {
     order: 1;
   }
   .cont-cabezera_home .home__inicio .inicio__img {
+    margin-top: 2em;
     display: flex;
     margin-left: 1em;
     margin-right: 1em;
@@ -4935,12 +4936,14 @@ body {
     margin-right: 3em;
     gap: 0em;
     height: auto;
+    margin-top: 0em;
   }
   .cont-cabezera_home .home__inicio .home__inicio__conten1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0em;
   }
   .cont-cabezera_home .home__inicio .home__inicio__conten1 .inicio__titulo {
     margin-top: 0.5em;
@@ -5758,8 +5761,8 @@ body {
     display: flex;
     height: auto;
     flex-direction: column;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
     gap: 0em;
   }
   .cont-cabezera_home .home__inicio .home__inicio__conten1 {
@@ -5767,6 +5770,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0em;
   }
   .cont-cabezera_home .home__inicio .home__inicio__conten1 .inicio__titulo {
     margin-top: 0.5em;
