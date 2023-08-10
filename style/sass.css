@@ -3232,6 +3232,14 @@ body {
     }
   }
 }
+.logoindex {
+  display: flex;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+
 .cont-cabezera_home {
   display: flex;
   flex-direction: column;
