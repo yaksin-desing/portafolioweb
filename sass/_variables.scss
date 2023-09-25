@@ -564,10 +564,10 @@ body::-webkit-scrollbar-thumb {
 
 .cursor {
     position: fixed;
-    width: 40px;
-    height: 40px;
-    margin-left: -20px;
-    margin-top: -20px;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
     border-radius: 50%;
     border: 0.5px solid #9b9b9b;
     transition: transform .3s ease;
