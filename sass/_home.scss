@@ -341,7 +341,7 @@
 }
 
 
-@media (max-width: 724px){
+@media (max-width: 1100px){
 
     .body__home {
         background-color: #F2F9FF;
@@ -379,7 +379,7 @@
         .cont__sect__inicio {
             display: flex;
             width: 100%;
-            padding: 3rem 2.75rem;
+            padding: 1rem 1.75rem;
             flex-direction: column;
             justify-content: center;
             gap: 60px;
@@ -389,7 +389,7 @@
             div {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 gap: 30px;
     
                 h1 {
@@ -406,7 +406,7 @@
                 p {
                     color: #000;
                     font-family: Sora;
-                    font-size: 18px;
+                    font-size: 15px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
@@ -460,18 +460,21 @@
             }
     
             .cont__contadores__inicio {
+                
                 display: grid;
-                column-gap: 1px;
+                column-gap: 30px;
+                grid-auto-flow: dense;
                 grid-auto-rows: 2rem;
-                grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(15rem), 1fr);
                 align-items: center;
-                justify-items: center;
+                justify-items: start;
+                justify-content: center;
     
                 .contador__uno {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 10px;
+                    gap: 5px;
                     width: auto;
     
                     .titulo {
@@ -501,7 +504,7 @@
         .cont__sect__animacion {
             display: flex;
             width: 100%;
-            padding: 3rem 2.75rem;
+            padding: 1rem 2.75rem;
             flex-direction: column;
             justify-content: center;
             border-right: 1px solid #19232D;
@@ -511,12 +514,14 @@
     }
     
     .inicio__contenedorcintas {
+
         display: flex;
         height: 200x;
         overflow: hidden;
         border-bottom: 1px solid #19232D;
     
         .cintainicio1 {
+            
             height: 200px;
             width: 9000px;
             background-image: url("../assets/img/cintainicio.png");
@@ -534,6 +539,7 @@
     }
     
     .inicio__cont__misservicios {
+        border-top: 1px solid #19232D;
         border-left: 1px solid #19232D;
         border-right: 1px solid #19232D;
         margin-left: 5em;

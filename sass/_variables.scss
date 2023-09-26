@@ -89,8 +89,10 @@ body::-webkit-scrollbar-thumb {
     margin-right: 5em;
     align-items: center;
 
+
     .cont__logo__nav {
         transform: scale(1);
+
     }
 
     .icono-menu {
@@ -107,6 +109,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: start;
     width: 100%;
+    border-bottom: 1px solid #19232D;
     
 
     .logo__menu {
@@ -127,7 +130,7 @@ body::-webkit-scrollbar-thumb {
 
 .cont-menu {
     z-index: 99;
-    background: rgba(230, 230, 230, 0.575);
+    background: rgba(255, 255, 255, 0.575);
     backdrop-filter: blur(14.5px);
     box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
     width: 60vw;
@@ -136,6 +139,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     right: 0;
     transition: all .5s ease-in-out;
+    border-left: 1px solid #19232D;
 }
 
 .active {
@@ -151,6 +155,8 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     padding: 2em 0px 20px 0px;
     list-style: none;
+    border-bottom: 1px solid #19232D;
+
 }
 
 .cont-menu ul li a {
@@ -167,6 +173,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     line-height: 136%;
     color: #020202;
+
 }
 
 .cont-menu ul p {
@@ -182,6 +189,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
     font-size: 15px;
     line-height: 136%;
+
 }
 .cont-menu p {
     justify-content: start;

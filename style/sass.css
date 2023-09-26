@@ -98,6 +98,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: start;
   width: 100%;
+  border-bottom: 1px solid #19232D;
 }
 .cont__logo__menu .logo__menu {
   align-items: end;
@@ -115,7 +116,7 @@ body::-webkit-scrollbar-thumb {
 
 .cont-menu {
   z-index: 99;
-  background: rgba(230, 230, 230, 0.575);
+  background: rgba(255, 255, 255, 0.575);
   -webkit-backdrop-filter: blur(14.5px);
           backdrop-filter: blur(14.5px);
   box-shadow: -395px 0px 66px rgba(103, 103, 103, 0.25);
@@ -125,6 +126,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   right: 0;
   transition: all 0.5s ease-in-out;
+  border-left: 1px solid #19232D;
 }
 
 .active {
@@ -140,6 +142,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   padding: 2em 0px 20px 0px;
   list-style: none;
+  border-bottom: 1px solid #19232D;
 }
 
 .cont-menu ul li a {
@@ -773,7 +776,7 @@ p {
   visibility: hidden;
 }
 
-@media (max-width: 724px) {
+@media (max-width: 1100px) {
   .body__home {
     background-color: #F2F9FF;
     flex-direction: column;
@@ -804,7 +807,7 @@ p {
   .contenedor__seccion__inicio .cont__sect__inicio {
     display: flex;
     width: 100%;
-    padding: 3rem 2.75rem;
+    padding: 1rem 1.75rem;
     flex-direction: column;
     justify-content: center;
     gap: 60px;
@@ -814,7 +817,7 @@ p {
   .contenedor__seccion__inicio .cont__sect__inicio div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
   }
   .contenedor__seccion__inicio .cont__sect__inicio div h1 {
@@ -830,7 +833,7 @@ p {
   .contenedor__seccion__inicio .cont__sect__inicio div p {
     color: #000;
     font-family: Sora;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -879,18 +882,20 @@ p {
   }
   .contenedor__seccion__inicio .cont__sect__inicio .cont__contadores__inicio {
     display: grid;
-    -moz-column-gap: 1px;
-         column-gap: 1px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    grid-auto-flow: dense;
     grid-auto-rows: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem), 1fr);
     align-items: center;
-    justify-items: center;
+    justify-items: start;
+    justify-content: center;
   }
   .contenedor__seccion__inicio .cont__sect__inicio .cont__contadores__inicio .contador__uno {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     width: auto;
   }
   .contenedor__seccion__inicio .cont__sect__inicio .cont__contadores__inicio .contador__uno .titulo {
@@ -912,7 +917,7 @@ p {
   .contenedor__seccion__inicio .cont__sect__animacion {
     display: flex;
     width: 100%;
-    padding: 3rem 2.75rem;
+    padding: 1rem 2.75rem;
     flex-direction: column;
     justify-content: center;
     border-right: 1px solid #19232D;
@@ -940,6 +945,7 @@ p {
     }
   }
   .inicio__cont__misservicios {
+    border-top: 1px solid #19232D;
     border-left: 1px solid #19232D;
     border-right: 1px solid #19232D;
     margin-left: 5em;
