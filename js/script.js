@@ -77,8 +77,10 @@ iconoMenu.addEventListener('click', (e) => {
     const rutaActual = e.target.getAttribute('src');
     if (rutaActual == '../assets/img/menu1.svg' || rutaActual == '../assets/img/menu1.svg') {
         e.target.setAttribute('src', '../assets/img/menu2.svg');
+        document.getElementsByTagName("html")[0].style.overflow = "hidden";
     } else {
         e.target.setAttribute('src', '../assets/img/menu1.svg');
+        document.getElementsByTagName("html")[0].style.overflow = "auto";
     }
 });
 
@@ -90,8 +92,11 @@ iconoMenua.addEventListener('click', (i) => {
     const rutaActual = i.target.getAttribute('src');
     if (rutaActual == '../assets/img/menu1.svg' || rutaActual == '../assets/img/menu1.svg') {
         i.target.setAttribute('src', '../assets/img/menu2.svg');
-    } else {
+        document.getElementsByTagName("html")[0].style.overflow = "hidden";
+    } 
+    else {
         i.target.setAttribute('src', '../assets/img/menu1.svg');
+        document.getElementsByTagName("html")[0].style.overflow = "auto";
     }
 });
 
