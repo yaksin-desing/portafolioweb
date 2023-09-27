@@ -53,13 +53,12 @@ LottieInteractivity.create({
 LottieInteractivity.create({
     player: '#animacionhomepersona',
     mode: 'chain',
-    actions: [
-        {
+    actions: [{
             state: 'autoplay',
             frames: [0, 397],
             transition: 'onComplete',
         },
-        {   
+        {
             visibility: [0, 200],
             state: "loop",
             frames: [233, 397]
@@ -80,6 +79,19 @@ iconoMenu.addEventListener('click', (e) => {
         e.target.setAttribute('src', '../assets/img/menu2.svg');
     } else {
         e.target.setAttribute('src', '../assets/img/menu1.svg');
+    }
+});
+
+const iconoMenua = document.querySelector('.icono-menua'),
+    menua = document.querySelector('.cont-menua');
+iconoMenua.addEventListener('click', (i) => {
+    menua.classList.toggle('active');
+    document.body.classList.toggle('opacity');
+    const rutaActual = i.target.getAttribute('src');
+    if (rutaActual == '../assets/img/menu1.svg' || rutaActual == '../assets/img/menu1.svg') {
+        i.target.setAttribute('src', '../assets/img/menu2.svg');
+    } else {
+        i.target.setAttribute('src', '../assets/img/menu1.svg');
     }
 });
 

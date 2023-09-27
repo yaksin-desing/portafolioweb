@@ -22,7 +22,8 @@
                 <img class="backfloat__wapp" src="../assets\img\backfloat.svg" alt=""></a>
         </div>
         <!-- MENU -->
-        <header class="header__home">
+
+        <header class="header__home" id="barranav">
             <div class="cont__logo__nav">
                 <a href="./index.html">
                     <lottie-player id="logo" src="../assets/img/logoanimado.json" speed="1" style="width:100px;"
@@ -34,7 +35,52 @@
                 <img src="../assets/img/menu1.svg" id="icono-menu">
             </div>
         </header>
+
+        <!-- MENU fixed -->
+        <header class="header__home_a" id="barranava">
+            <div class="cont__logo__nav">
+                <a href="./index.html">
+                    <lottie-player id="logo" src="../assets/img/logoanimado.json" speed="1" style="width:100px;"
+                        autoplay>
+                    </lottie-player>
+                </a>
+            </div>
+            <div class="icono-menua">
+                <img src="../assets/img/menu1.svg" id="icono-menua">
+            </div>
+        </header>
+        <!-- MENU ACTIVE -->
         <div class="cont-menu active" id="menu">
+            <div class="cont__logo__menu"><img class="logo__menu" src="../assets/img/logo2.png" alt="logo_menu">
+            </div>
+            <ul>
+                <div>
+                    <p>Menu</p>
+                    <li style="margin-top: 1em;"><a href="./index.html"> Inicio </a></li>
+                    <li><a style="color: rgb(0, 0, 0);pointer-events: none;text-decoration-line: underline;text-decoration-thickness: 1px;font-weight: 500;"
+                            href="inicio.html"> Acerca de mi </a></li>
+                </div>
+                <div>
+                    <p>Mis servicios</p>
+                    <li style="margin-top: 1em;"><a href="p_ux_ui.html"> Diseñador ux-ui </a> </li>
+                    <li><a href="p_ux_research.html"> Ux Research </a> </li>
+                    <li><a href="p_ux_writing.html"> Ux Writing </a> </li>
+                    <li><a href="p_ux_developer.html"> Desarrollador Web-Movil </a> </li>
+                </div>
+            </ul>
+            <p> Mis redes sociales</p>
+            <div class="redes__menu">
+                <a href="https://www.facebook.com/yaksin.vasques.5/" target="_blank"><img
+                        src="../assets/img/redfacebook.png" alt="logofacebook"></a>
+                <a href="https://www.linkedin.com/in/jakhsin-sains-vasquez-pacheco-40a25211a/" target="_blank"><img
+                        src="../assets/img/redlinkedin.png" alt="logolinkedin"></a>
+                <a href="https://www.instagram.com/yakhsin/" target="_blank"><img src="../assets/img/redinstagram.png"
+                        alt="logoinstagram"></a>
+            </div>
+        </div>
+        <!-- MENU ACTIVE A -->
+        <div class="cont-menua active" id="menua">
+            <div id="seguro"></div>
             <div class="cont__logo__menu"><img class="logo__menu" src="../assets/img/logo2.png" alt="logo_menu">
             </div>
             <ul>
@@ -126,7 +172,7 @@
 
             <div class="misservicios__items">
                 <div data-aos="fade-right" class="item">
-                    <img  src="../assets\img\imgenmiservicios-uxui.svg" alt="imgenmiservicios-uxui">
+                    <img src="../assets\img\imgenmiservicios-uxui.svg" alt="imgenmiservicios-uxui">
                     <div class="conten__text">
                         <h5>
                             Diseñador UX-UI
@@ -204,6 +250,8 @@
         </script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </main>
+
+    <script src="../js/activadores.js"></script>
     <script src="../js/script.js"></script>
 </body>
 
