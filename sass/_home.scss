@@ -3,6 +3,120 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+
+    dialog {
+        position: fixed;
+        top: 20%;
+        left: 25%;
+        border: 1px solid #263238;
+
+        .popup_cv {
+            display: flex;
+            flex-direction: row;
+            padding: 42px 45px;
+            gap: 40px;
+            background: #FFF;
+
+            .conten_uno_popup {
+                display: flex;
+                flex-direction: column;
+                gap: 37px;
+
+                .conten_titulo_popupcv {
+                    display: flex;
+                    flex-direction: column;
+                    width: 286px;
+                    height: 100%;
+                    gap: 0.5em;
+
+                    h2 {
+                        color: #263238;
+                        font-family: Sora;
+                        font-size: 35px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 107.5%;
+                        letter-spacing: 0.35px;
+                    }
+
+                    p {
+                        color: #263238;
+                        font-family: Sora;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 107.5%;
+                        letter-spacing: 0.13px;
+                    }
+
+                }
+
+                .conten_boton_input_popupcv {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    input {
+                        display: flex;
+                        padding: 12px;
+                        align-items: center;
+                        gap: 10px;
+                        color: #263238;
+                        font-family: Sora;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 107.5%;
+                        letter-spacing: 0.15px;
+                    }
+
+                    .botoncv {
+                        top: 0px;
+                        right: 0px;
+                        position: relative;
+                        color: #FFF;
+                        font-family: Sora;
+                        width: 100%;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 107.5%;
+                        padding: 10px 0em;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border: 1px solid #19232D;
+                        background: #00C187;
+                        box-shadow: 2px 2px 0px 0px #000;
+                        cursor: url("../assets/img/flecha1.svg") 12 12, auto;
+                    }
+                }
+            }
+
+            .conten_dos_popup {
+                border-bottom: 1px solid #263238;
+            }
+
+        }
+
+        button {
+            z-index: 9;
+            border: 0px solid #263238;
+            background: #FFFFFF;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+    }
+
+}
+
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(9.5px);
 }
 
 
@@ -30,8 +144,9 @@
         transform: scale(0.9);
     }
 }
-.header__home_a.ctive{
-    visibility:visible;
+
+.header__home_a.ctive {
+    visibility: visible;
 
 }
 
@@ -52,7 +167,8 @@
         transform: scale(0.9);
     }
 }
-.header__home.ctive{
+
+.header__home.ctive {
     visibility: hidden;
 }
 
@@ -107,6 +223,7 @@
                 gap: 30px;
 
                 .boton {
+                    position: relative;
                     color: #FFF;
                     font-family: Sora;
                     font-size: 15px;
@@ -121,10 +238,33 @@
                     gap: 10px;
                     border: 1px solid #19232D;
                     background: #00C187;
-                    box-shadow: 2px 2px 0px 0px #000;
+                    cursor: url("../assets/img/flecha1.svg") 12 12, auto;
                 }
 
-                .boton__cv {
+                .boton::before {
+                    content: "";
+                    position: absolute;
+                    background: #161616;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transform: translateX(3px) translatey(3px);
+                }
+
+                .boton:active {
+                    transform: translateX(3px) translatey(3px);
+
+                }
+
+                .boton:active::before {
+                    transform: translateX(0px) translatey(0px);
+                    background: #1a9c75;
+                }
+
+                .botoncv {
+                    position: relative;
                     color: #FFF;
                     font-family: Sora;
                     font-size: 15px;
@@ -139,8 +279,31 @@
                     gap: 10px;
                     border: 1px solid #19232D;
                     background: #FF725E;
-                    box-shadow: 2px 2px 0px 0px #000;
+                    cursor: url("../assets/img/flecha1.svg") 12 12, auto;
                 }
+
+                .botoncv::before {
+                    content: "";
+                    position: absolute;
+                    background: #161616;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -2;
+                    transform: translateX(3px) translatey(3px);
+                }
+
+                .botoncv:active {
+                    transform: translateX(3px) translatey(3px);
+
+                }
+
+                .botoncv:active::before {
+                    transform: translateX(0px) translatey(0px);
+                    background: #da432f;
+                }
+
 
             }
         }
@@ -383,7 +546,113 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        
+
+        dialog {
+            position: fixed;
+            top: 10vh;
+            left: 10vw;
+            border: 1px solid #263238;
+            .popup_cv {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 42px 45px;
+                gap: 40px;
+                background: #FFF;
+    
+                .conten_uno_popup {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 37px;
+    
+                    .conten_titulo_popupcv {
+                        display: flex;
+                        flex-direction: column;
+                        width: 286px;
+                        height: 100%;
+                        gap: 0.5em;
+    
+                        h2 {
+                            color: #263238;
+                            font-family: Sora;
+                            font-size: 35px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 107.5%;
+                            letter-spacing: 0.35px;
+                        }
+    
+                        p {
+                            color: #263238;
+                            font-family: Sora;
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 107.5%;
+                            letter-spacing: 0.13px;
+                        }
+    
+                    }
+    
+                    .conten_boton_input_popupcv {
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        gap: 15px;
+    
+                        input {
+                            display: flex;
+                            padding: 12px;
+                            align-items: center;
+                            gap: 10px;
+                            color: #263238;
+                            font-family: Sora;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 107.5%;
+                            letter-spacing: 0.15px;
+                        }
+    
+                        .botoncv {
+                            top: 0px;
+                            right: 0px;
+                            position: relative;
+                            color: #FFF;
+                            font-family: Sora;
+                            width: 100%;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 107.5%;
+                            padding: 10px 0em;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            border: 1px solid #19232D;
+                            background: #00C187;
+                            box-shadow: 2px 2px 0px 0px #000;
+                            cursor: url("../assets/img/flecha1.svg") 12 12, auto;
+                        }
+                    }
+                }
+    
+                .conten_dos_popup {
+                    border-bottom: 1px solid #263238;
+                }
+    
+            }
+    
+            button {
+                z-index: 9;
+                border: 0px solid #263238;
+                background: #FFFFFF;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+    
+        }
+
     }
 
 
@@ -400,18 +669,19 @@
         border-bottom: 1px solid #19232D;
         background: #F2F9FF;
         width: 100%;
-    
+
         .icono-menu {
             right: 1em;
             transform: scale(0.9);
             z-index: 60;
         }
-    
+
         .cont__logo__nav {
             padding-bottom: 5px;
             transform: scale(0.8);
         }
     }
+
     .header__home {
         display: flex;
         margin: 1rem 1rem 0rem 1rem;

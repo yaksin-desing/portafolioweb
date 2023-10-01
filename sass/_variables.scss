@@ -8,6 +8,7 @@ $coloron:#000000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url("../assets/img/cursor.svg") 12 12, auto;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 
 body {
     background: #ffffff;
-    cursor: url("../assets/img/cursor.svg") 12 12, auto;
+    
 }
 
 body::-webkit-scrollbar {
@@ -347,11 +348,15 @@ body::-webkit-scrollbar-thumb {
     z-index: 1;
 
     .botonfloat__wapp {
-        margin-top: 12px;
-        margin-left: 12px;
+        margin-top: 11px;
+        margin-left: 11px;
         position: absolute;
         z-index: 1;
     }
+    .botonfloat__wapp:hover{
+        transform: scale(1.1);
+    }
+
 
     .backfloat__wapp {
         position: absolute;
@@ -361,6 +366,7 @@ body::-webkit-scrollbar-thumb {
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
+
 }
 
 //########### pie de pagina ###########//
