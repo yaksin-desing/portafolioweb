@@ -1306,7 +1306,7 @@ dialog::backdrop {
   .contenedor__seccion__inicio .cont__sect__animacion {
     display: flex;
     width: 100%;
-    padding: 1rem 2.75rem;
+    padding: 1rem 1rem;
     flex-direction: column;
     justify-content: center;
     border-right: 1px solid #19232D;
