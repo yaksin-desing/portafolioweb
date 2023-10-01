@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   cursor: url("../assets/img/cursor.svg") 12 12, auto;
 }
@@ -588,16 +588,8 @@ p {
   margin-bottom: 0px;
 }
 
-.body__home {
-  background-color: #F2F9FF;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
 .body__home dialog {
-  position: fixed;
-  top: 20%;
-  left: 25%;
+  margin: auto;
   border: 1px solid #263238;
 }
 .body__home dialog .popup_cv {
@@ -605,7 +597,7 @@ p {
   flex-direction: row;
   padding: 42px 45px;
   gap: 40px;
-  background: #FFF;
+  background: #ffffff;
 }
 .body__home dialog .popup_cv .conten_uno_popup {
   display: flex;
@@ -689,6 +681,7 @@ p {
 }
 
 dialog::backdrop {
+  margin: 0px;
   background: rgba(0, 0, 0, 0.39);
   -webkit-backdrop-filter: blur(9.5px);
           backdrop-filter: blur(9.5px);
@@ -1055,16 +1048,8 @@ dialog::backdrop {
 }
 
 @media (max-width: 1100px) {
-  .body__home {
-    background-color: #F2F9FF;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
   .body__home dialog {
-    position: fixed;
-    top: 10vh;
-    left: 10vw;
+    margin: auto;
     border: 1px solid #263238;
   }
   .body__home dialog .popup_cv {
@@ -1072,7 +1057,7 @@ dialog::backdrop {
     flex-direction: column-reverse;
     padding: 42px 45px;
     gap: 40px;
-    background: #FFF;
+    background: #ffffff;
   }
   .body__home dialog .popup_cv .conten_uno_popup {
     display: flex;
