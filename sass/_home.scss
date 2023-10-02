@@ -1,111 +1,127 @@
 .body__home {
-    background: #ffffff ;
-        dialog {
-            margin: auto;
-            border: 1px solid #263238;
-            .popup_cv {
-                display: flex;
-                flex-direction: row;
-                padding: 42px 45px;
-                gap: 40px;
-                background: #ffffff;
+    background: #ffffff;
 
-                .conten_uno_popup {
+    dialog {
+        margin: auto;
+        border: 1px solid #263238;
+        animation: wobble 0.4s linear both;
+        @keyframes wobble {
+            0% {
+                transform: scale(0);
+                filter: blur(0px);
+                opacity: 0
+            }
+            100% {
+                transformar: escala(1);
+                filtro: desenfoque(0);
+                opacidad: 1
+            }
+        }
+
+        .popup_cv {
+            display: flex;
+            flex-direction: row;
+            padding: 42px 45px;
+            gap: 40px;
+            background: #ffffff;
+
+            .conten_uno_popup {
+                display: flex;
+                flex-direction: column;
+                gap: 37px;
+
+                .conten_titulo_popupcv {
                     display: flex;
                     flex-direction: column;
-                    gap: 37px;
+                    width: 286px;
+                    height: 100%;
+                    gap: 0.5em;
 
-                    .conten_titulo_popupcv {
-                        display: flex;
-                        flex-direction: column;
-                        width: 286px;
-                        height: 100%;
-                        gap: 0.5em;
-
-                        h2 {
-                            color: #263238;
-                            font-family: Sora;
-                            font-size: 35px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 107.5%;
-                            letter-spacing: 0.35px;
-                        }
-
-                        p {
-                            color: #263238;
-                            font-family: Sora;
-                            font-size: 13px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: 107.5%;
-                            letter-spacing: 0.13px;
-                        }
-
+                    h2 {
+                        color: #263238;
+                        font-family: Sora;
+                        font-size: 35px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 107.5%;
+                        letter-spacing: 0.35px;
                     }
 
-                    .conten_boton_input_popupcv {
+                    p {
+                        color: #263238;
+                        font-family: Sora;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 107.5%;
+                        letter-spacing: 0.13px;
+                    }
+
+                }
+
+                .conten_boton_input_popupcv {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    input {
                         display: flex;
+                        padding: 12px;
+                        align-items: center;
+                        gap: 10px;
+                        color: #263238;
+                        font-family: Sora;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 107.5%;
+                        letter-spacing: 0.15px;
+                    }
+
+                    .botoncv {
+                        top: 0px;
+                        right: 0px;
+                        position: relative;
+                        color: #FFF;
+                        font-family: Sora;
                         width: 100%;
-                        flex-direction: column;
-                        gap: 15px;
-
-                        input {
-                            display: flex;
-                            padding: 12px;
-                            align-items: center;
-                            gap: 10px;
-                            color: #263238;
-                            font-family: Sora;
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: 107.5%;
-                            letter-spacing: 0.15px;
-                        }
-
-                        .botoncv {
-                            top: 0px;
-                            right: 0px;
-                            position: relative;
-                            color: #FFF;
-                            font-family: Sora;
-                            width: 100%;
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: 107.5%;
-                            padding: 10px 0em;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 10px;
-                            border: 1px solid #19232D;
-                            background: #00C187;
-                            box-shadow: 2px 2px 0px 0px #000;
-                            cursor: url("../assets/img/flecha1.svg") 12 12, auto;
-                        }
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 107.5%;
+                        padding: 10px 0em;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border: 1px solid #19232D;
+                        background: #00C187;
+                        box-shadow: 2px 2px 0px 0px #000;
+                        cursor: url("../assets/img/flecha1.svg") 12 12, auto;
                     }
                 }
-
-                .conten_dos_popup {
-                    .lottie-player{
-                        border-bottom: 1px solid #263238;
-                    }
-                }
-
             }
 
-            button {
-                z-index: 9;
-                border: 0px solid #263238;
-                background: #FFFFFF;
-                position: absolute;
-                right: 10px;
-                top: 10px;
+            .conten_dos_popup {
+                .lottie-player {
+                    border-bottom: 1px solid #263238;
+                }
             }
 
         }
+
+        button {
+            z-index: 9;
+            border: 0px solid #263238;
+            background: #FFFFFF;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+    }
 }
+
 dialog::backdrop {
     margin: 0px;
     background: rgba(0, 0, 0, 0.39);
@@ -192,7 +208,7 @@ dialog::backdrop {
             h1 {
                 color: #19232D;
                 font-family: Sora;
-                font-size: 65px;
+                font-size: 70px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 107.5%;
@@ -538,6 +554,7 @@ dialog::backdrop {
         dialog {
             margin: auto;
             border: 1px solid #263238;
+
             .popup_cv {
                 display: flex;
                 flex-direction: column-reverse;
@@ -560,7 +577,7 @@ dialog::backdrop {
                         h2 {
                             color: #263238;
                             font-family: Sora;
-                            font-size:40px;
+                            font-size: 40px;
                             font-style: normal;
                             font-weight: 700;
                             line-height: 107.5%;
@@ -624,8 +641,7 @@ dialog::backdrop {
                     }
                 }
 
-                .conten_dos_popup {
-                }
+                .conten_dos_popup {}
 
             }
 
@@ -639,7 +655,7 @@ dialog::backdrop {
             }
 
         }
-}
+    }
 
 
     .header__home_a {

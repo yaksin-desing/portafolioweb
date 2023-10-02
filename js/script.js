@@ -70,7 +70,7 @@ LottieInteractivity.create({
 //MENU// 
 
 const iconoMenu = document.querySelector('.icono-menu'),
-    menu = document.querySelector('.cont-menu');
+    menu = document.querySelector('.cont-menu-nuevo');
 iconoMenu.addEventListener('click', (e) => {
     menu.classList.toggle('active');
     document.body.classList.toggle('opacity');
@@ -85,7 +85,7 @@ iconoMenu.addEventListener('click', (e) => {
 });
 
 const iconoMenua = document.querySelector('.icono-menua'),
-    menua = document.querySelector('.cont-menua');
+    menua = document.querySelector('.cont-menu-nuevoa');
 iconoMenua.addEventListener('click', (i) => {
     menua.classList.toggle('active');
     document.body.classList.toggle('opacity');

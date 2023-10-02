@@ -1,3 +1,18 @@
+
+const abrirpopup=document.querySelector("#abrirpopup");
+
+const cerrarpopup=document.querySelector("#cerrarpopup");
+
+const popup=document.querySelector("#popup");
+
+abrirpopup.addEventListener("click",()=>{
+    popup.showModal();
+})
+cerrarpopup.addEventListener("click",()=>{
+    popup.close();
+})
+
+
 let observer = new IntersectionObserver(menuactivo, {});
 
 let observersegu = new IntersectionObserver(seguactivo, {});
@@ -50,16 +65,3 @@ function seguactivo(entries) {
     }
 };
 
-
-const abrirpopup=document.querySelector("#abrirpopup");
-
-const cerrarpopup=document.querySelector("#cerrarpopup");
-
-const popup=document.querySelector("#popup");
-
-abrirpopup.addEventListener("click",()=>{
-    popup.showModal();
-})
-cerrarpopup.addEventListener("click",()=>{
-    popup.close();
-})

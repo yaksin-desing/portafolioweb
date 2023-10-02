@@ -12,36 +12,40 @@
 
 <body class="body__home">
     <div class="cursor"></div>
- 
-    <main>
-        <!-- POP-UP CV -->
-            <dialog id="popup">
-                <div class="popup_cv">
-                    <div class="conten_uno_popup">
-                        <div class="conten_titulo_popupcv">
-                            <h2>
-                                Envíame tu correo electrónico
-                            </h2>
-                            <p>Por seguridad solo envió mis datos personales a correos con dominio corporativos, envíame
-                                tu
-                                correo apenas chequee tu correo te estaré respondiendo.</p>
-                        </div>
-                        <form class="conten_boton_input_popupcv" method="dialog">
-                            <input type="email" placeholder="Correo@empresa.com" title="Por favor ingresa un correo con cominio corporativo">
-                            <button class="botoncv" type="submit">Contáctame</button>
-                        </form>
-
-                    </div>
-                    <div class="conten_dos_popup">
-                        <lottie-player class="lottie-player" src="../assets/img/animacioncv.json" speed="1" style="width:284px;" loop
-                            autoplay>
-                        </lottie-player>
-                    </div>
+    <!-- POP-UP CV -->
+    <dialog id="popup">
+        <div class="popup_cv">
+            <div class="conten_uno_popup">
+                <div class="conten_titulo_popupcv">
+                    <h2>
+                        Envíame tu correo electrónico
+                    </h2>
+                    <p>Por seguridad solo envió mis datos personales a correos con dominio corporativos, envíame
+                        tu
+                        correo apenas chequee tu correo te estaré respondiendo.</p>
                 </div>
-                <button id="cerrarpopup">
-                    <img src="../assets\img\menu2.svg" alt="cerrarpopup">
-                </button>
-            </dialog>
+                <form class="conten_boton_input_popupcv" method="dialog">
+                    <input type="email" placeholder="Correo@empresa.com"
+                        title="Por favor ingresa un correo con cominio corporativo">
+                    <button class="botoncv" type="submit">Enviar</button>
+                </form>
+
+            </div>
+            <div class="conten_dos_popup">
+                <lottie-player class="lottie-player" src="../assets/img/animacioncv.json" speed="1" style="width:284px;"
+                    loop autoplay>
+                </lottie-player>
+            </div>
+        </div>
+        <button id="cerrarpopup">
+            <img src="../assets\img\menu2.svg" alt="cerrarpopup">
+        </button>
+    </dialog>
+
+    <main>
+
+
+
         <!-- BOTON FLOTANTE -->
         <div class="float__wapp">
             <a href="https://wa.me/573215841003?text=Hola%20%F0%9F%91%8B%20jaksin,%20estuve%20viendo%20%F0%9F%91%80%20tu%20portafolio%20%F0%9F%92%BC%20,%20me%20gustaria%20platicar%20contigo"
@@ -50,6 +54,7 @@
                 <img class="botonfloat__wapp" src="../assets\img\float.svg" alt="">
                 <img class="backfloat__wapp" src="../assets\img\backfloat.svg" alt=""></a>
         </div>
+
         <!-- MENU -->
         <header class="header__home" id="barranav">
             <div class="cont__logo__nav">
@@ -63,7 +68,36 @@
                 <img src="../assets/img/menu1.svg" id="icono-menu">
             </div>
         </header>
+        <!-- MENU ACTIVE -->
+        <div class="cont-menu-nuevo active" id="menu">
+            <div class="cont__logo__menu">
+            </div>
+            <ul>
+                <div class="lista_social">
+                    <p>Social</p>
+                    <li><a href=""> Gmail </a></li>
+                    <li><a href=""> Behance </a></li>
+                    <li><a href=""> LinkedIn </a></li>
+                    <li><a href=""> Facebook </a></li>
+                    <li><a href=""> Instagram </a></li>
+                </div>
+                <div class="lista_menu">
+                    <p>Menu</p>
+                    <li><a href="p_ux_ui.html"> Acerca de mi </a> </li>
+                    <li><a style="font-weight: 600;" href="p_ux_ui.html"> Home </a> </li>
+                    <li><a href="p_ux_ui.html"> UX - UI </a> </li>
+                    <li><a href="p_ux_research.html"> UX - Research </a> </li>
+                    <li><a href="p_ux_writing.html"> UX - Writing </a> </li>
+                    <li><a href="p_ux_developer.html"> Desarrollador </a> </li>
+                </div>
+            </ul>
 
+            <div class="poner_contacto">
+                <p> Ponerse en contacto</p>
+                <p class="correo_contacto">Yaksinvasquez@gmail.com</p>
+
+            </div>
+        </div>
         <!-- MENU fixed -->
         <header class="header__home_a" id="barranava">
             <div class="cont__logo__nav">
@@ -77,63 +111,34 @@
                 <img src="../assets/img/menu1.svg" id="icono-menua">
             </div>
         </header>
-        <!-- MENU ACTIVE -->
-        <div class="cont-menu active" id="menu">
-            <div class="cont__logo__menu"><img class="logo__menu" src="../assets/img/logo2.png" alt="logo_menu">
-            </div>
-            <ul>
-                <div>
-                    <p>Menu</p>
-                    <li style="margin-top: 1em;"><a href="./index.html"> Inicio </a></li>
-                    <li><a style="color: rgb(0, 0, 0);pointer-events: none;text-decoration-line: underline;text-decoration-thickness: 1px;font-weight: 500;"
-                            href="inicio.html"> Acerca de mi </a></li>
-                </div>
-                <div>
-                    <p>Mis servicios</p>
-                    <li style="margin-top: 1em;"><a href="p_ux_ui.html"> Diseñador ux-ui </a> </li>
-                    <li><a href="p_ux_research.html"> Ux Research </a> </li>
-                    <li><a href="p_ux_writing.html"> Ux Writing </a> </li>
-                    <li><a href="p_ux_developer.html"> Desarrollador Web-Movil </a> </li>
-                </div>
-            </ul>
-            <p> Mis redes sociales</p>
-            <div class="redes__menu">
-                <a href="https://www.facebook.com/yaksin.vasques.5/" target="_blank"><img
-                        src="../assets/img/redfacebook.png" alt="logofacebook"></a>
-                <a href="https://www.linkedin.com/in/jakhsin-sains-vasquez-pacheco-40a25211a/" target="_blank"><img
-                        src="../assets/img/redlinkedin.png" alt="logolinkedin"></a>
-                <a href="https://www.instagram.com/yakhsin/" target="_blank"><img src="../assets/img/redinstagram.png"
-                        alt="logoinstagram"></a>
-            </div>
-        </div>
         <!-- MENU ACTIVE A -->
-        <div class="cont-menua active" id="menua">
-            <div id="seguro"></div>
-            <div class="cont__logo__menu"><img class="logo__menu" src="../assets/img/logo2.png" alt="logo_menu">
+        <div class="cont-menu-nuevoa active" id="menu">
+            <div class="cont__logo__menu">
             </div>
             <ul>
-                <div>
-                    <p>Menu</p>
-                    <li style="margin-top: 1em;"><a href="./index.html"> Inicio </a></li>
-                    <li><a style="color: rgb(0, 0, 0);pointer-events: none;text-decoration-line: underline;text-decoration-thickness: 1px;font-weight: 500;"
-                            href="inicio.html"> Acerca de mi </a></li>
+                <div class="lista_social">
+                    <p>Social</p>
+                    <li><a href=""> Gmail </a></li>
+                    <li><a href=""> Behance </a></li>
+                    <li><a href=""> LinkedIn </a></li>
+                    <li><a href=""> Facebook </a></li>
+                    <li><a href=""> Instagram </a></li>
                 </div>
-                <div>
-                    <p>Mis servicios</p>
-                    <li style="margin-top: 1em;"><a href="p_ux_ui.html"> Diseñador ux-ui </a> </li>
-                    <li><a href="p_ux_research.html"> Ux Research </a> </li>
-                    <li><a href="p_ux_writing.html"> Ux Writing </a> </li>
-                    <li><a href="p_ux_developer.html"> Desarrollador Web-Movil </a> </li>
+                <div class="lista_menu">
+                    <p>Menu</p>
+                    <li><a href="p_ux_ui.html"> Acerca de mi </a> </li>
+                    <li><a style="font-weight: 600;" href="p_ux_ui.html"> Home </a> </li>
+                    <li><a href="p_ux_ui.html"> UX - UI </a> </li>
+                    <li><a href="p_ux_research.html"> UX - Research </a> </li>
+                    <li><a href="p_ux_writing.html"> UX - Writing </a> </li>
+                    <li><a href="p_ux_developer.html"> Desarrollador </a> </li>
                 </div>
             </ul>
-            <p> Mis redes sociales</p>
-            <div class="redes__menu">
-                <a href="https://www.facebook.com/yaksin.vasques.5/" target="_blank"><img
-                        src="../assets/img/redfacebook.png" alt="logofacebook"></a>
-                <a href="https://www.linkedin.com/in/jakhsin-sains-vasquez-pacheco-40a25211a/" target="_blank"><img
-                        src="../assets/img/redlinkedin.png" alt="logolinkedin"></a>
-                <a href="https://www.instagram.com/yakhsin/" target="_blank"><img src="../assets/img/redinstagram.png"
-                        alt="logoinstagram"></a>
+
+            <div class="poner_contacto">
+                <p>Ponerse en contacto</p>
+                <p class="correo_contacto">Yaksinvasquez@gmail.com</p>
+
             </div>
         </div>
 
