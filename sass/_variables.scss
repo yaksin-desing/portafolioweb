@@ -4,6 +4,10 @@ $coloroff:#222222;
 $coloron:#000000;
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+$total-lines: 10;
+$left-offset: 0px;
+$clip-height: 50px;
+$line-height: $clip-height - 5px;
 
 * {
     margin: 0px;
@@ -471,6 +475,7 @@ p {
                 font-weight: 250;
                 line-height: 107.5%;
                 padding-bottom: 0.5em;
+
             }
 
             li {
@@ -483,7 +488,6 @@ p {
                     font-style: normal;
                     font-weight: 200;
                     line-height: 107.5%;
-                    /* 48.375px */
                 }
             }
         }
@@ -610,7 +614,7 @@ p {
                     font-style: normal;
                     font-weight: 200;
                     line-height: 107.5%;
-                    /* 48.375px */
+
                 }
             }
         }
@@ -675,7 +679,7 @@ p {
         top: 0;
         right: 0;
         transition: all .5s ease-in-out;
-        border-left:none;
+        border-left: none;
 
         .cont__logo__menu {
             display: flex;
@@ -796,6 +800,7 @@ p {
 
 
     }
+
     .cont-menu-nuevoa {
         z-index: 20;
         background: #ffffff;
@@ -926,5 +931,68 @@ p {
 
 
 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Words {
+    margin: 0 auto;
+    font-family: Sora;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: start;
+    letter-spacing: 1px;
+    
+    transform: translate3d(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+.Words-line {
+    height: $clip-height;
+    overflow: hidden;
+    position: relative;
+
+
+    &:nth-child(odd) {
+
+        transform: skew(0deg, 0deg) scaleY(1);
+    }
+
+    &:nth-child(even) {
+
+        transform: skew(0deg, 0deg) scaleY(1.0);
+    }
+
+    @for $i from 1 through $total-lines+1 {
+        &:nth-child(#{$i}) {
+            left: $left-offset * $i;
+        }
+    }
+}
+
+.tex_animado {
+    height: $clip-height;
+    line-height: $line-height;
+    padding: 0 15px;
+    transition: all .4s ease-in-out;
+    transform: translate3d(0, 0, 0);
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.Words:hover {
+    .tex_animado {
+        transform: translate3d(0, -($clip-height), 0);
     }
 }

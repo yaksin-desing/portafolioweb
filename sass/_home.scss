@@ -5,12 +5,14 @@
         margin: auto;
         border: 1px solid #263238;
         animation: wobble 0.4s linear both;
+
         @keyframes wobble {
             0% {
                 transform: scale(0);
                 filter: blur(0px);
                 opacity: 0
             }
+
             100% {
                 transformar: escala(1);
                 filtro: desenfoque(0);
@@ -213,6 +215,7 @@ dialog::backdrop {
                 font-weight: 700;
                 line-height: 107.5%;
                 letter-spacing: 0.7px;
+
             }
 
             p {
@@ -392,9 +395,12 @@ dialog::backdrop {
     border-right: 1px solid #19232D;
     margin-left: 5em;
     margin-right: 5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #19232D;
+
 
     .misservicios__titulo {
-        padding-top: 1.5em;
+        padding-top: 2.5em;
         padding-right: 0.5em;
         padding-left: 0.5em;
         display: flex;
@@ -543,6 +549,272 @@ dialog::backdrop {
 
 
 
+        }
+    }
+}
+
+.banner_uno {
+    padding: 1rem;
+    margin: 1rem 5rem;
+    border: 1px solid #19232D;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    .banner__titulo {
+        padding-top: 1.5em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+
+        .misservicios__cont__1 {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            height: 20%;
+
+            img {
+                transform: scale();
+            }
+
+            p {
+                font-style: normal;
+                width: 230px;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 136%;
+                display: flex;
+                align-items: center;
+                color: #000000;
+                font-family: 'Sora';
+            }
+        }
+
+        .misservicios__cont__2 {
+            display: flex;
+
+            .h33 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 136%;
+                color: #19232D;
+                font-family: 'Sora';
+            }
+        }
+    }
+
+    .cotenido_banner {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0.5em;
+        .Words {
+            padding-top: 1em;
+            border: 1px solid #19232D;
+            width: min-content;
+            background: #270fff;
+            width: 70%;
+            overflow: hidden;
+            position:relative;
+    
+            ul {
+                li {
+                    p {
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        text-shadow: 3px 3px 0px #000;
+                    }
+
+                    div {
+                        .boton {
+                            position: relative;
+                            color: #FFF;
+                            font-family: Sora;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 107.5%;
+                            display: flex;
+                            width: 100%;
+                            padding: 10px 3em;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            border: 1px solid #19232D;
+                            background: #00C187;
+                            cursor: url("../assets/img/flecha1.svg") 12 12, auto;
+
+                        }
+
+                        .boton::before {
+                            content: "";
+                            position: absolute;
+                            background: #161616;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                            transform: translateX(3px) translatey(3px);
+                        }
+
+                        .boton:active {
+                            transform: translateX(3px) translatey(3px);
+
+                        }
+
+                        .boton:active::before {
+                            transform: translateX(0px) translatey(0px);
+                            background: #1a9c75;
+                        }
+                    }
+                }
+            }
+
+            .parrafo_banner {
+                margin: 1em 1em 0px 1em;
+                color: #FFF;
+                font-family: Sora;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 136%;
+                text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.46);
+
+            }
+            .contenedor_animacion{
+                top: 0;
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                .estrella_animacion{
+                    display: flex; 
+                    width: 100%;
+                    height: 100%;
+                    span{
+                        animation: estrellas 15s linear infinite;
+                        animation-duration: calc(120s/ var(--i));             
+                        &:nth-child(even){
+                            width: 49px;
+                            height: 49px;
+                        }
+                    }
+                    @keyframes estrellas {
+                        0%{
+                            transform: translateY(100vh) rotate(190deg);
+                        }
+                        100%{
+                            transform: translateY(-10vh) rotate(0deg);
+                        }
+                    }  
+        
+                }
+            } 
+        }
+
+        .cont_videos {
+            width: 30%;
+            box-shadow: 2px 2px 0px 0px #000;
+
+            .video_uno {
+                border: 1px solid #263238;
+                display: inline-flex;
+                height: 100%;
+                padding: 20px;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .cont_titulo_video {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+
+                    h2 {
+                        color: #000000;
+                        font-family: Sora;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 136%;
+                        margin-bottom: 0em;
+                    }
+
+                    p {
+                        color: #000000;
+                        font-family: Sora;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 136%;
+                    }
+
+                    img {
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+
+                .cont_herramientas_video {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h2 {
+                        color: #000000;
+                        font-family: Sora;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 136%;
+                        margin-bottom: 10px;
+                    }
+
+                    ul {
+                        li {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            img {
+                                transform: scale(0.8);
+                            }
+
+                            h2 {
+                                width: 100px;
+                                color: #000000;
+                                font-family: Sora;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 136%;
+                                /* 20.4px */
+                            }
+
+                            p {
+                                width: 50px;
+                                color: #000000;
+                                font-family: Sora;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 136%;
+                                /* 20.4px */
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
         }
     }
 }
@@ -1036,6 +1308,272 @@ dialog::backdrop {
 
 
 
+            }
+        }
+    }
+    .banner_uno {
+        padding: 1rem;
+        margin: 1rem 1rem;
+        border: 1px solid #19232D;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    
+        .banner__titulo {
+            padding-top: 1.5em;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+            padding-bottom: 2em;
+            display: flex;
+            flex-direction: column;
+    
+            .misservicios__cont__1 {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                height: 20%;
+    
+                img {
+                    transform: scale();
+                }
+    
+                p {
+                    font-style: normal;
+                    width: 230px;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 136%;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                    font-family: 'Sora';
+                }
+            }
+    
+            .misservicios__cont__2 {
+                display: flex;
+    
+                .h33 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 136%;
+                    color: #19232D;
+                    font-family: 'Sora';
+                }
+            }
+        }
+    
+        .cotenido_banner {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            .Words {
+                padding-top: 1em;
+                border: 1px solid #19232D;
+                width: min-content;
+                background: #270fff;
+                width: 100%;
+                overflow: hidden;
+                position:relative;
+        
+                ul {
+                    margin: 1em 1em 0em 0.5em;
+                    li {
+                        p {
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            text-shadow: 3px 3px 0px #000;
+                        }
+    
+                        div {
+                            .boton {
+                                position: relative;
+                                color: #FFF;
+                                font-family: Sora;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 107.5%;
+                                display: flex;
+                                width: 100%;
+                                padding: 10px 3em;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                border: 1px solid #19232D;
+                                background: #00C187;
+                                cursor: url("../assets/img/flecha1.svg") 12 12, auto;
+    
+                            }
+    
+                            .boton::before {
+                                content: "";
+                                position: absolute;
+                                background: #161616;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                transform: translateX(3px) translatey(3px);
+                            }
+    
+                            .boton:active {
+                                transform: translateX(3px) translatey(3px);
+    
+                            }
+    
+                            .boton:active::before {
+                                transform: translateX(0px) translatey(0px);
+                                background: #1a9c75;
+                            }
+                        }
+                    }
+                }
+    
+                .parrafo_banner {
+                    margin: 2em 2em 2em 2em;
+                    color: #FFF;
+                    font-family: Sora;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 136%;
+                    text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.46);
+    
+                }
+                .contenedor_animacion{
+                    top: 0;
+                    z-index: -1;
+                    position: absolute;
+                    width: 100%;
+                    .estrella_animacion{
+                        display: flex; 
+                        width: 100%;
+                        height: 100%;
+                        span{
+                            animation: estrellas 15s linear infinite;
+                            animation-duration: calc(120s/ var(--i));             
+                            &:nth-child(even){
+                                width: 49px;
+                                height: 49px;
+                            }
+                        }
+                        @keyframes estrellas {
+                            0%{
+                                transform: translateY(100vh) rotate(190deg);
+                            }
+                            100%{
+                                transform: translateY(-10vh) rotate(0deg);
+                            }
+                        }  
+            
+                    }
+                } 
+            }
+    
+            .cont_videos {
+                width: 100%;
+                box-shadow: 2px 2px 0px 0px #000;
+    
+                .video_uno {
+                    border: 1px solid #263238;
+                    display: inline-flex;
+                    height: 100%;
+                    padding: 2em;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: flex-start;
+    
+                    .cont_titulo_video {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+    
+                        h2 {
+                            color: #000000;
+                            font-family: Sora;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 136%;
+                            margin-bottom: 0em;
+                        }
+    
+                        p {
+                            color: #000000;
+                            font-family: Sora;
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 136%;
+                        }
+    
+                        img {
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                        }
+                    }
+    
+                    .cont_herramientas_video {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+    
+                        h2 {
+                            color: #000000;
+                            font-family: Sora;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 136%;
+                            margin-bottom: 10px;
+                        }
+    
+                        ul {
+                            li {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-between;
+    
+                                img {
+                                    transform: scale(0.8);
+                                }
+    
+                                h2 {
+                                    width: 100px;
+                                    color: #000000;
+                                    font-family: Sora;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 136%;
+                                    /* 20.4px */
+                                }
+    
+                                p {
+                                    width: 50px;
+                                    color: #000000;
+                                    font-family: Sora;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 136%;
+                                    /* 20.4px */
+                                }
+                            }
+                        }
+    
+    
+                    }
+    
+                }
             }
         }
     }
