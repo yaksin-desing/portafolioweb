@@ -611,6 +611,7 @@ dialog::backdrop {
         display: flex;
         flex-direction: row-reverse;
         gap: 0.5em;
+
         .Words {
             padding-top: 1em;
             border: 1px solid #19232D;
@@ -618,8 +619,8 @@ dialog::backdrop {
             background: #270fff;
             width: 70%;
             overflow: hidden;
-            position:relative;
-    
+            position: relative;
+
             ul {
                 li {
                     p {
@@ -685,37 +686,44 @@ dialog::backdrop {
                 text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.46);
 
             }
-            .contenedor_animacion{
+
+            .contenedor_animacion {
                 top: 0;
                 z-index: -1;
                 position: absolute;
                 width: 100%;
-                .estrella_animacion{
-                    display: flex; 
+
+                .estrella_animacion {
+                    display: flex;
                     width: 100%;
                     height: 100%;
-                    span{
+
+                    span {
                         animation: estrellas 15s linear infinite;
-                        animation-duration: calc(120s/ var(--i));             
-                        &:nth-child(even){
+                        animation-duration: calc(120s/ var(--i));
+
+                        &:nth-child(even) {
                             width: 49px;
                             height: 49px;
                         }
                     }
+
                     @keyframes estrellas {
-                        0%{
+                        0% {
                             transform: translateY(100vh) rotate(190deg);
                         }
-                        100%{
+
+                        100% {
                             transform: translateY(-10vh) rotate(0deg);
                         }
-                    }  
-        
+                    }
+
                 }
-            } 
+            }
         }
 
         .cont_videos {
+            background: #fbfeff;
             width: 30%;
             box-shadow: 2px 2px 0px 0px #000;
 
@@ -820,7 +828,7 @@ dialog::backdrop {
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1260px) {
 
     .body__home {
         dialog {
@@ -925,8 +933,7 @@ dialog::backdrop {
                 right: 15px;
                 top: 15px;
             }
-
-        }
+}
     }
 
 
@@ -1194,7 +1201,7 @@ dialog::backdrop {
                 .h33 {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 30px;
+                    font-size: calc(0.1em + 6vw);
                     line-height: 136%;
                     color: #19232D;
                     font-family: 'Sora';
@@ -1311,6 +1318,7 @@ dialog::backdrop {
             }
         }
     }
+
     .banner_uno {
         padding: 1rem;
         margin: 1rem 1rem;
@@ -1319,7 +1327,7 @@ dialog::backdrop {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
-    
+
         .banner__titulo {
             padding-top: 1.5em;
             padding-right: 0.5em;
@@ -1327,17 +1335,17 @@ dialog::backdrop {
             padding-bottom: 2em;
             display: flex;
             flex-direction: column;
-    
+
             .misservicios__cont__1 {
                 display: flex;
                 align-items: center;
                 flex-direction: row;
                 height: 20%;
-    
+
                 img {
                     transform: scale();
                 }
-    
+
                 p {
                     font-style: normal;
                     width: 230px;
@@ -1350,25 +1358,26 @@ dialog::backdrop {
                     font-family: 'Sora';
                 }
             }
-    
+
             .misservicios__cont__2 {
                 display: flex;
-    
+
                 .h33 {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 30px;
+                    font-size: calc(0.1em + 6vw);
                     line-height: 136%;
                     color: #19232D;
                     font-family: 'Sora';
                 }
             }
         }
-    
+
         .cotenido_banner {
             display: flex;
             flex-direction: column;
             gap: 0.5em;
+
             .Words {
                 padding-top: 1em;
                 border: 1px solid #19232D;
@@ -1376,17 +1385,21 @@ dialog::backdrop {
                 background: #270fff;
                 width: 100%;
                 overflow: hidden;
-                position:relative;
-        
+                position: relative;
+
+
                 ul {
+                    font-size: calc(0.1em + 6vw);
+                    font-weight: 900;
                     margin: 1em 1em 0em 0.5em;
+
                     li {
                         p {
                             color: #ffffff;
                             text-transform: uppercase;
                             text-shadow: 3px 3px 0px #000;
                         }
-    
+
                         div {
                             .boton {
                                 position: relative;
@@ -1405,9 +1418,9 @@ dialog::backdrop {
                                 border: 1px solid #19232D;
                                 background: #00C187;
                                 cursor: url("../assets/img/flecha1.svg") 12 12, auto;
-    
+
                             }
-    
+
                             .boton::before {
                                 content: "";
                                 position: absolute;
@@ -1419,12 +1432,12 @@ dialog::backdrop {
                                 z-index: -1;
                                 transform: translateX(3px) translatey(3px);
                             }
-    
+
                             .boton:active {
                                 transform: translateX(3px) translatey(3px);
-    
+
                             }
-    
+
                             .boton:active::before {
                                 transform: translateX(0px) translatey(0px);
                                 background: #1a9c75;
@@ -1432,7 +1445,7 @@ dialog::backdrop {
                         }
                     }
                 }
-    
+
                 .parrafo_banner {
                     margin: 2em 2em 2em 2em;
                     color: #FFF;
@@ -1442,57 +1455,64 @@ dialog::backdrop {
                     font-weight: 300;
                     line-height: 136%;
                     text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.46);
-    
+
                 }
-                .contenedor_animacion{
+
+                .contenedor_animacion {
                     top: 0;
                     z-index: -1;
                     position: absolute;
                     width: 100%;
-                    .estrella_animacion{
-                        display: flex; 
+
+                    .estrella_animacion {
+                        display: flex;
                         width: 100%;
                         height: 100%;
-                        span{
+
+                        span {
                             animation: estrellas 15s linear infinite;
-                            animation-duration: calc(120s/ var(--i));             
-                            &:nth-child(even){
+                            animation-duration: calc(120s/ var(--i));
+
+                            &:nth-child(even) {
                                 width: 49px;
                                 height: 49px;
                             }
                         }
+
                         @keyframes estrellas {
-                            0%{
+                            0% {
                                 transform: translateY(100vh) rotate(190deg);
                             }
-                            100%{
+
+                            100% {
                                 transform: translateY(-10vh) rotate(0deg);
                             }
-                        }  
-            
+                        }
+
                     }
-                } 
+                }
             }
-    
+
             .cont_videos {
                 width: 100%;
                 box-shadow: 2px 2px 0px 0px #000;
-    
+
                 .video_uno {
                     border: 1px solid #263238;
                     display: inline-flex;
+                    width: 100%;
                     height: 100%;
                     padding: 2em;
                     justify-content: space-between;
                     flex-direction: column;
-                    align-items: flex-start;
-    
+                    align-items:start;
+
                     .cont_titulo_video {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                         height: 100%;
-    
+
                         h2 {
                             color: #000000;
                             font-family: Sora;
@@ -1502,7 +1522,7 @@ dialog::backdrop {
                             line-height: 136%;
                             margin-bottom: 0em;
                         }
-    
+
                         p {
                             color: #000000;
                             font-family: Sora;
@@ -1511,20 +1531,21 @@ dialog::backdrop {
                             font-weight: 400;
                             line-height: 136%;
                         }
-    
+
                         img {
+                            width: 100%;
                             margin-top: 1em;
                             margin-bottom: 1em;
                         }
                     }
-    
+
                     .cont_herramientas_video {
                         width: 100%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-    
+
                         h2 {
                             color: #000000;
                             font-family: Sora;
@@ -1534,18 +1555,18 @@ dialog::backdrop {
                             line-height: 136%;
                             margin-bottom: 10px;
                         }
-    
+
                         ul {
                             li {
                                 display: flex;
                                 flex-direction: row;
                                 align-items: center;
                                 justify-content: space-between;
-    
+
                                 img {
                                     transform: scale(0.8);
                                 }
-    
+
                                 h2 {
                                     width: 100px;
                                     color: #000000;
@@ -1556,7 +1577,7 @@ dialog::backdrop {
                                     line-height: 136%;
                                     /* 20.4px */
                                 }
-    
+
                                 p {
                                     width: 50px;
                                     color: #000000;
@@ -1569,10 +1590,10 @@ dialog::backdrop {
                                 }
                             }
                         }
-    
-    
+
+
                     }
-    
+
                 }
             }
         }
