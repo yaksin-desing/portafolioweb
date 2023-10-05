@@ -773,6 +773,7 @@ dialog::backdrop {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    
 
                     h2 {
                         color: #000000;
@@ -785,6 +786,7 @@ dialog::backdrop {
                     }
 
                     ul {
+                        
                         li {
                             display: flex;
                             flex-direction: row;
@@ -795,7 +797,7 @@ dialog::backdrop {
                                 transform: scale(0.8);
                             }
 
-                            h2 {
+                            h5 {
                                 width: 100px;
                                 color: #000000;
                                 font-family: Sora;
@@ -803,7 +805,6 @@ dialog::backdrop {
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: 136%;
-                                /* 20.4px */
                             }
 
                             p {
@@ -826,6 +827,32 @@ dialog::backdrop {
         }
     }
 }
+
+
+.fin__contenedorcintas {
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+    border-top: 1px solid #19232D;
+    border-bottom: 1px solid #19232D;
+
+    .cintainicio1 {
+        height: 200px;
+        width: 9000px;
+        background-image: url("../assets/img/cintainfin.png");
+        background-size: 8162px 216px;
+        animation: 100s infinite linear;
+        background-repeat: repeat;
+        animation-name: cintainicio;
+
+        @keyframes cintainicio {
+            to {
+                background-position: -8162px;
+            }
+        }
+    }
+}
+
 
 
 @media (max-width: 1260px) {
@@ -933,7 +960,7 @@ dialog::backdrop {
                 right: 15px;
                 top: 15px;
             }
-}
+        }
     }
 
 
@@ -1505,7 +1532,7 @@ dialog::backdrop {
                     padding: 2em;
                     justify-content: space-between;
                     flex-direction: column;
-                    align-items:start;
+                    align-items: start;
 
                     .cont_titulo_video {
                         display: flex;
@@ -1567,7 +1594,7 @@ dialog::backdrop {
                                     transform: scale(0.8);
                                 }
 
-                                h2 {
+                                h5 {
                                     width: 100px;
                                     color: #000000;
                                     font-family: Sora;

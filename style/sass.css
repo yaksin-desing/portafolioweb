@@ -1537,7 +1537,7 @@ dialog::backdrop {
 .banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li img {
   transform: scale(0.8);
 }
-.banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li h2 {
+.banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li h5 {
   width: 100px;
   color: #000000;
   font-family: Sora;
@@ -1545,7 +1545,6 @@ dialog::backdrop {
   font-style: normal;
   font-weight: 700;
   line-height: 136%;
-  /* 20.4px */
 }
 .banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li p {
   width: 50px;
@@ -1556,6 +1555,28 @@ dialog::backdrop {
   font-weight: 300;
   line-height: 136%;
   /* 20.4px */
+}
+
+.fin__contenedorcintas {
+  display: flex;
+  height: 200px;
+  overflow: hidden;
+  border-top: 1px solid #19232D;
+  border-bottom: 1px solid #19232D;
+}
+.fin__contenedorcintas .cintainicio1 {
+  height: 200px;
+  width: 9000px;
+  background-image: url("../assets/img/cintainfin.png");
+  background-size: 8162px 216px;
+  animation: 100s infinite linear;
+  background-repeat: repeat;
+  animation-name: cintainicio;
+}
+@keyframes cintainicio {
+  to {
+    background-position: -8162px;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -2189,7 +2210,7 @@ dialog::backdrop {
   .banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li img {
     transform: scale(0.8);
   }
-  .banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li h2 {
+  .banner_uno .cotenido_banner .cont_videos .video_uno .cont_herramientas_video ul li h5 {
     width: 100px;
     color: #000000;
     font-family: Sora;
@@ -4037,944 +4058,188 @@ body {
 }
 .body__index {
   height: 100vh;
+  margin: 3em;
 }
-
-/* ################ */
-/* INICIO Transiciones */
-/* ################ */
-.loader {
+.body__index main {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.body__index main .conte__menu .header__index {
+  display: flex;
+  margin: 1rem 5rem 1rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.body__index main .conte__menu .header__index .icono-menu {
+  transform: scale(0.9);
+  z-index: 1000;
+}
+.body__index main .conte__menu .header__index .cont__logo__nav {
+  transform: scale(0.9);
+  z-index: 1000;
+  filter: invert(100%);
+}
+.body__index main .conte__menu .cont-menu-nuevo {
+  z-index: 20;
+  background: #ffffff;
+  box-shadow: -40vw 0vh rgba(0, 0, 0, 0.377);
+  width: 60vw;
+  height: 100%;
   position: fixed;
-  justify-content: center;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  border-left: 1px solid #19232D;
+}
+.body__index main .conte__menu .cont-menu-nuevo .cont__logo__menu {
+  height: 5.2em;
+  border-bottom: 1px solid #19232D;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul {
+  display: flex;
+  flex-direction: row;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_social {
+  padding: 2em 5em 0px 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_social p {
+  color: #979797;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 107.5%;
+  padding-bottom: 0.5em;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_social li {
+  list-style: none;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_social li a {
+  color: #000000;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 107.5%;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_menu {
+  padding: 2em 4em 2em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-left: 1px solid #19232D;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_menu p {
+  color: #979797;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 107.5%;
+  padding-bottom: 0.5em;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_menu li {
+  list-style: none;
+}
+.body__index main .conte__menu .cont-menu-nuevo ul .lista_menu li a {
+  color: #000;
+  font-family: Sora;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 107.5%;
+}
+.body__index main .conte__menu .cont-menu-nuevo .poner_contacto {
+  padding: 1em 5em 0px 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border-top: 1px solid #19232D;
+}
+.body__index main .conte__menu .cont-menu-nuevo .poner_contacto p {
+  color: #979797;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 107.5%;
+  padding-bottom: 1em;
+}
+.body__index main .conte__menu .cont-menu-nuevo .poner_contacto .correo_contacto {
+  color: #000;
+  font-family: Sora;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  padding: 0px 0px 6px 0px;
+  align-items: center;
+}
+.body__index main .conte__menu .active {
+  border-radius: 1000px 0px 0px 1000px;
+  transform: translate(90vw);
+  visibility: hidden;
+  position: fixed;
+  background: #ffffff;
+}
+.body__index main video {
+  position: absolute;
   top: 0;
   left: 0;
-  pointer-events: none;
-  z-index: 10;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
 }
-.loader .page-transition {
-  position: absolute;
-  bottom: 0;
-  background-image: url(../assets/img/fondo.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-.loader .pages-transition {
-  position: absolute;
-  bottom: 0;
-  background-image: url(../assets/img/fondos.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-
-/* ################ */
-/*  FIN Transiciones */
-/* ################ */
-/* #####################   HOME ############################# */
-.index__home {
+.body__index main .titulo__index {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 1rem 5rem 1rem 5rem;
   flex-direction: column;
-  margin-top: 4em;
-  margin-left: 5em;
-  margin-right: 5em;
-  justify-content: center;
 }
-.index__home .estrellasderecha {
-  position: absolute;
-  top: 5em;
-  right: 5em;
-  z-index: 0;
-  transform: scale(0.8);
+.body__index main .titulo__index div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-.index__home .estrellasisquierda {
-  position: absolute;
-  bottom: 8em;
-  left: 8em;
-  z-index: 0;
-  transform: scale(0.9);
+.body__index main .titulo__index div img {
+  width: 19px;
+  height: 19px;
 }
-.index__home .home__titulo {
-  margin-left: 1em;
-  margin-right: 1em;
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 136%;
-  text-align: center;
-  color: #111111;
-}
-.index__home .home__titulo .imgh1 {
-  border-radius: 100px;
-  animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-name: imgtex;
-}
-@keyframes imgtex {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 24.5%;
-  }
-}
-.index__home .home__subtitulo {
-  margin-right: 10em;
-  margin-left: 10em;
-  font-family: "Sora";
+.body__index main .titulo__index div p {
+  color: #FFF;
+  font-family: Sora;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
   line-height: 138.5%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #111111;
+  /* 18.005px */
+  letter-spacing: 0.65px;
+  text-transform: capitalize;
+}
+.body__index main .titulo__index h1 {
+  color: #FFF;
+  font-family: Sora;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136%;
+}
+.body__index main .titulo__index h1 img {
+  width: 69px;
+  height: 69px;
+  flex-shrink: 0;
 }
 
-.float {
-  margin-top: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-color: #000000;
-}
-.float .botonfloat {
-  position: absolute;
-  z-index: -1;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-.float .backfloat {
-  margin-top: 2.2px;
-  margin-left: 2px;
-  border-radius: 100%;
-  animation-name: backfloat;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes backfloat {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.float:hover {
-  transition: transform 1s;
-  transition-timing-function: cubic-bezier(1, -0.37, 0, 1.63);
-  transform: rotate(45deg) scale(1.2);
-}
-
-.home__contenedorcintas {
-  display: none;
-  position: absolute;
-  width: 100%;
-  z-index: -5;
-  bottom: 1px;
-}
-.home__contenedorcintas .contcinta1 {
-  position: absolute;
-  bottom: 5em;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  transform: rotate(4deg);
-  z-index: -2;
-  background: #F24E1E;
-}
-.home__contenedorcintas .contcinta1 .cintahome1 {
-  width: 1600px;
-  height: 30px;
-  background-image: url("../assets/img/cintahome1.png");
-  background-size: 100% 100%;
-  animation: slider 30s infinite linear;
-  background-repeat: repeat;
-}
-@keyframes slider {
-  to {
-    background-position: 1600px;
-  }
-}
-.home__contenedorcintas .contcinta2 {
-  position: absolute;
-  bottom: 4em;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  transform: rotate(-5deg);
-  z-index: -2;
-  background: #FDBD39;
-}
-.home__contenedorcintas .contcinta2 .cintahome2 {
-  width: 1600px;
-  height: 30px;
-  background-image: url("../assets/img/cintahome2.png");
-  background-size: 100% 100%;
-  animation: 30s infinite linear;
-  background-repeat: repeat;
-  animation-name: slider2;
-}
-@keyframes slider2 {
-  to {
-    background-position: 1600px;
-  }
-}
-
-/* ################# RESPONSIVE ############## */
-@media (max-width: 772px) {
-  .cursor {
-    display: none;
-  }
-  .main_index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main_index nav {
-    display: flex;
-    margin-top: 2em;
-    margin-bottom: 0em;
-    justify-content: space-between;
-    margin-left: 4em;
-    margin-right: 4em;
-  }
-  .main_index nav #logo {
-    transform: scale(0.9);
-  }
-  .main_index nav .menu {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    transform: scale(0.9);
-  }
-  .main_index .index__home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 15em;
-    margin-left: 4em;
-    margin-right: 4em;
-    gap: 2em;
-  }
-  .main_index .index__home .estrellasderecha {
-    position: absolute;
-    top: 8em;
-    right: 0px;
-    z-index: 0;
-    transform: scale(0.5);
-  }
-  .main_index .index__home .estrellasisquierda {
-    display: block;
-    position: absolute;
-    top: 5em;
-    left: 2em;
-    height: auto;
-    z-index: 0;
-    bottom: 0em;
-    transform: scale(0.6);
-  }
-  .main_index .index__home .home__titulo {
-    margin-left: 2em;
-    margin-right: 2em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    text-align: center;
-    color: #000000;
-  }
-  .main_index .index__home .home__titulo .imgflecha {
-    display: none;
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .miniperfil {
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .imgh1 {
-    display: none;
-    border-radius: 100px;
-    animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(0.5);
-  }
-  @keyframes imgtex {
-    from {
-      width: 10%;
-    }
-    to {
-      width: 24.5%;
-    }
-  }
-  .main_index .index__home .home__subtitulo {
-    margin-right: 4em;
-    margin-left: 4em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 138.5%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-  .float {
-    margin-top: 0em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-color: #000000;
-  }
-  .float .botonfloat {
-    position: absolute;
-    z-index: -1;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .float .backfloat {
-    margin-top: 2.2px;
-    margin-left: 2px;
-    border-radius: 100%;
-    animation-name: backfloat;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes backfloat {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .float:hover {
-    transition: transform 1s;
-    transition-timing-function: cubic-bezier(1, -0.37, 0, 1.63);
-    transform: rotate(45deg) scale(1.2);
-  }
-  .home__contenedorcintas {
-    display: block;
-    position: absolute;
-    width: 100%;
-    z-index: -5;
-    bottom: -1em;
-  }
-  .home__contenedorcintas .contcinta1 {
-    position: absolute;
-    bottom: 8em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(-7deg);
-    z-index: -2;
-    background: #F24E1E;
-  }
-  .home__contenedorcintas .contcinta1 .cintahome1 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome1.png");
-    background-size: 100% 100%;
-    animation: slider 30s infinite linear;
-    background-repeat: repeat;
-  }
-  @keyframes slider {
-    to {
-      background-position: 1600px;
-    }
-  }
-  .home__contenedorcintas .contcinta2 {
-    position: absolute;
-    bottom: 4em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(5deg);
-    z-index: -2;
-    background: #FDBD39;
-  }
-  .home__contenedorcintas .contcinta2 .cintahome2 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome2.png");
-    background-size: 100% 100%;
-    animation: 30s infinite linear;
-    background-repeat: repeat;
-    animation-name: slider2;
-  }
-  @keyframes slider2 {
-    to {
-      background-position: 1600px;
-    }
-  }
-}
-@media (max-width: 770px) {
-  .cursor {
-    display: none;
-  }
-  .main_index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main_index nav {
-    display: flex;
-    margin-top: 2em;
-    margin-bottom: 0em;
-    justify-content: space-between;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  .main_index nav #logo {
-    transform: scale(0.9);
-  }
-  .main_index nav .menu {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    transform: scale(0.9);
-  }
-  .main_index .index__home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 10em;
-    margin-left: 1em;
-    margin-right: 1em;
-    gap: 2em;
-  }
-  .main_index .index__home .estrellasderecha {
-    position: absolute;
-    top: 5em;
-    right: -10px;
-    z-index: 0;
-    transform: scale(0.5);
-  }
-  .main_index .index__home .estrellasisquierda {
-    display: block;
-    position: absolute;
-    top: 5em;
-    left: 2em;
-    height: auto;
-    z-index: 0;
-    bottom: 0em;
-    transform: scale(0.6);
-  }
-  .main_index .index__home .home__titulo {
-    margin-left: 0em;
-    margin-right: 0em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    text-align: center;
-    color: #000000;
-  }
-  .main_index .index__home .home__titulo .imgflecha {
-    display: none;
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .miniperfil {
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .imgh1 {
-    display: none;
-    border-radius: 100px;
-    animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(0.5);
-  }
-  @keyframes imgtex {
-    from {
-      width: 10%;
-    }
-    to {
-      width: 24.5%;
-    }
-  }
-  .main_index .index__home .home__subtitulo {
-    margin-right: 2em;
-    margin-left: 2em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 138.5%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-  .float {
-    margin-top: 0em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-color: #000000;
-  }
-  .float .botonfloat {
-    position: absolute;
-    z-index: -1;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .float .backfloat {
-    margin-top: 2.2px;
-    margin-left: 2px;
-    border-radius: 100%;
-    animation-name: backfloat;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes backfloat {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .float:hover {
-    transition: transform 1s;
-    transition-timing-function: cubic-bezier(1, -0.37, 0, 1.63);
-    transform: rotate(45deg) scale(1.2);
-  }
-  .home__contenedorcintas {
-    position: none;
-    width: 100%;
-    z-index: -5;
-    bottom: -1em;
-  }
-  .home__contenedorcintas .contcinta1 {
-    position: absolute;
-    bottom: 8em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(7deg);
-    z-index: -2;
-    background: #F24E1E;
-  }
-  .home__contenedorcintas .contcinta1 .cintahome1 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome1.png");
-    background-size: 100% 100%;
-    animation: slider 30s infinite linear;
-    background-repeat: repeat;
-  }
-  @keyframes slider {
-    to {
-      background-position: 1600px;
-    }
-  }
-  .home__contenedorcintas .contcinta2 {
-    position: absolute;
-    bottom: 4em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(-5deg);
-    z-index: -2;
-    background: #FDBD39;
-  }
-  .home__contenedorcintas .contcinta2 .cintahome2 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome2.png");
-    background-size: 100% 100%;
-    animation: 30s infinite linear;
-    background-repeat: repeat;
-    animation-name: slider2;
-  }
-  @keyframes slider2 {
-    to {
-      background-position: 1600px;
-    }
-  }
-}
-@media (max-width: 450px) {
-  .cursor {
-    display: none;
-  }
-  .main_index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main_index nav {
-    display: flex;
-    margin-top: 2em;
-    margin-bottom: 0em;
-    justify-content: space-between;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  .main_index nav #logo {
-    transform: scale(0.9);
-  }
-  .main_index nav .menu {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    transform: scale(0.9);
-  }
-  .main_index .index__home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 5em;
-    margin-left: 1em;
-    margin-right: 1em;
-    gap: 1em;
-  }
-  .main_index .index__home .estrellasderecha {
-    position: absolute;
-    top: 2em;
-    right: -10px;
-    z-index: 0;
-    transform: scale(0.5);
-  }
-  .main_index .index__home .estrellasisquierda {
-    display: none;
-    position: absolute;
-    top: 10em;
-    left: 2em;
-    z-index: 0;
-    transform: scale(0.6);
-  }
-  .main_index .index__home .home__titulo {
-    margin-left: 0em;
-    margin-right: 0em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    text-align: center;
-    color: #000000;
-  }
-  .main_index .index__home .home__titulo .imgflecha {
-    display: none;
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .miniperfil {
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .imgh1 {
-    display: none;
-    border-radius: 100px;
-    animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(0.5);
-  }
-  @keyframes imgtex {
-    from {
-      width: 10%;
-    }
-    to {
-      width: 24.5%;
-    }
-  }
-  .main_index .index__home .home__subtitulo {
-    margin-right: 2em;
-    margin-left: 2em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 138.5%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-  .float {
-    margin-top: 0em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-color: #000000;
-  }
-  .float .botonfloat {
-    position: absolute;
-    z-index: -1;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .float .backfloat {
-    margin-top: 2.2px;
-    margin-left: 2px;
-    border-radius: 100%;
-    animation-name: backfloat;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes backfloat {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .float:hover {
-    transition: transform 1s;
-    transition-timing-function: cubic-bezier(1, -0.37, 0, 1.63);
-    transform: rotate(45deg) scale(1.2);
-  }
-  .home__contenedorcintas {
-    position: relative;
-    width: 100%;
-    z-index: -5;
-    bottom: -5em;
-  }
-  .home__contenedorcintas .contcinta1 {
-    position: absolute;
-    bottom: 8em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(7deg);
-    z-index: -2;
-    background: #F24E1E;
-  }
-  .home__contenedorcintas .contcinta1 .cintahome1 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome1.png");
-    background-size: 100% 100%;
-    animation: slider 30s infinite linear;
-    background-repeat: repeat;
-  }
-  @keyframes slider {
-    to {
-      background-position: 1600px;
-    }
-  }
-  .home__contenedorcintas .contcinta2 {
-    position: absolute;
-    bottom: 4em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(-5deg);
-    z-index: -2;
-    background: #FDBD39;
-  }
-  .home__contenedorcintas .contcinta2 .cintahome2 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome2.png");
-    background-size: 100% 100%;
-    animation: 30s infinite linear;
-    background-repeat: repeat;
-    animation-name: slider2;
-  }
-  @keyframes slider2 {
-    to {
-      background-position: 1600px;
-    }
-  }
-}
-@media (max-width: 320px) {
-  .cursor {
-    display: none;
-  }
-  .main_index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main_index nav {
-    display: flex;
-    margin-top: 2em;
-    margin-bottom: 0em;
-    justify-content: space-between;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  .main_index nav #logo {
-    transform: scale(0.9);
-  }
-  .main_index nav .menu {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    transform: scale(0.9);
-  }
-  .main_index .index__home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 5em;
-    margin-left: 1em;
-    margin-right: 1em;
-    gap: 1em;
-  }
-  .main_index .index__home .estrellasderecha {
-    position: absolute;
-    top: 2em;
-    right: -10px;
-    z-index: 0;
-    transform: scale(0.5);
-  }
-  .main_index .index__home .estrellasisquierda {
-    display: none;
-    position: absolute;
-    top: 10em;
-    left: 2em;
-    z-index: 0;
-    transform: scale(0.6);
-  }
-  .main_index .index__home .home__titulo {
-    margin-left: 0em;
-    margin-right: 0em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    color: #000000;
-  }
-  .main_index .index__home .home__titulo .imgflecha {
-    display: none;
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .miniperfil {
-    transform: scale(0.9);
-  }
-  .main_index .index__home .home__titulo .imgh1 {
-    display: none;
-    border-radius: 100px;
-    animation: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(0.5);
-  }
-  @keyframes imgtex {
-    from {
-      width: 10%;
-    }
-    to {
-      width: 24.5%;
-    }
-  }
-  .main_index .index__home .home__subtitulo {
-    margin-right: 2em;
-    margin-left: 2em;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 138.5%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-  .float {
-    margin-top: 0em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-color: #000000;
-    transform: scale(0.8);
-  }
-  .float .botonfloat {
-    position: absolute;
-    z-index: -1;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .float .backfloat {
-    margin-top: 2.2px;
-    margin-left: 2px;
-    border-radius: 100%;
-    animation-name: backfloat;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes backfloat {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .float:hover {
-    transition: transform 1s;
-    transition-timing-function: cubic-bezier(1, -0.37, 0, 1.63);
-    transform: rotate(45deg) scale(1.2);
-  }
-  .home__contenedorcintas {
-    display: none;
-    position: none;
-    width: 100%;
-    z-index: -5;
-    bottom: 0em;
-  }
-  .home__contenedorcintas .contcinta1 {
-    position: absolute;
-    bottom: 8em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(7deg);
-    z-index: -2;
-    background: #F24E1E;
-  }
-  .home__contenedorcintas .contcinta1 .cintahome1 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome1.png");
-    background-size: 100% 100%;
-    animation: slider 30s infinite linear;
-    background-repeat: repeat;
-  }
-  @keyframes slider {
-    to {
-      background-position: 1600px;
-    }
-  }
-  .home__contenedorcintas .contcinta2 {
-    position: absolute;
-    bottom: 4em;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    transform: rotate(-5deg);
-    z-index: -2;
-    background: #FDBD39;
-  }
-  .home__contenedorcintas .contcinta2 .cintahome2 {
-    width: 1600px;
-    height: 30px;
-    background-image: url("../assets/img/cintahome2.png");
-    background-size: 100% 100%;
-    animation: 30s infinite linear;
-    background-repeat: repeat;
-    animation-name: slider2;
-  }
-  @keyframes slider2 {
-    to {
-      background-position: 1600px;
-    }
-  }
-}
-.logoindex {
-  display: flex;
-  height: 100vh;
-  background: rgb(255, 255, 255);
-  align-items: center;
-  justify-content: center;
-}
-
+/* #####################   HOME ############################# */
 .cont-cabezera_home {
   display: flex;
   flex-direction: column;

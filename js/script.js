@@ -1,3 +1,23 @@
+function menuactivo(entries) {
+    let entrada = entries[0];
+    if (entrada.isIntersecting) {
+        console.log("es visible")
+        barramenu.classList.remove("ctive")
+        barramenua.classList.remove("ctive")
+        verbar = true;
+
+    }
+
+    else {
+        console.log("no visible")
+        barramenu.classList.add("ctive")
+        barramenua.classList.add("ctive")
+        verbar = false;
+
+    }
+};
+
+
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
