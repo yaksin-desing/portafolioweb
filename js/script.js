@@ -18,6 +18,43 @@ function menuactivo(entries) {
 };
 
 
+let condicion = true;
+
+document.querySelector(".bars__menu").addEventListener('click',()=> {
+    animateBars();
+    console.log(condicion);
+
+    if(condicion){
+        document.querySelector(".cont__logo__nav").style.filter = "invert(0%)";
+        document.querySelector(".bars__menu").style.filter = "invert(0%)";
+
+    }else{
+        document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
+        document.querySelector(".bars__menu").style.filter = "invert(100%)";
+    }
+    
+
+    
+});
+
+
+var line1__bars = document.querySelector(".line1__bars-menu");
+var line2__bars = document.querySelector(".line2__bars-menu");
+var line3__bars = document.querySelector(".line3__bars-menu");
+
+
+
+function animateBars(){
+    line1__bars.classList.toggle("activeline1__bars-menu");
+    line2__bars.classList.toggle("activeline2__bars-menu");
+    line3__bars.classList.toggle("activeline3__bars-menu");
+    condicion = !condicion;
+}
+
+
+
+
+
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
@@ -87,38 +124,20 @@ LottieInteractivity.create({
 });
 
 
-//MENU// 
 
-const iconoMenu = document.querySelector('.icono-menu'),
-    menu = document.querySelector('.cont-menu-nuevo');
-iconoMenu.addEventListener('click', (e) => {
-    menu.classList.toggle('active');
-    document.body.classList.toggle('opacity');
-    const rutaActual = e.target.getAttribute('src');
-    if (rutaActual == '../assets/img/menu1.svg' || rutaActual == '../assets/img/menu1.svg') {
-        e.target.setAttribute('src', '../assets/img/menu2.svg');
-        document.getElementsByTagName("html")[0].style.overflow = "hidden";
-    } else {
-        e.target.setAttribute('src', '../assets/img/menu1.svg');
-        document.getElementsByTagName("html")[0].style.overflow = "auto";
-    }
-});
 
-const iconoMenua = document.querySelector('.icono-menua'),
-    menua = document.querySelector('.cont-menu-nuevoa');
-iconoMenua.addEventListener('click', (i) => {
-    menua.classList.toggle('active');
-    document.body.classList.toggle('opacity');
-    const rutaActual = i.target.getAttribute('src');
-    if (rutaActual == '../assets/img/menu1.svg' || rutaActual == '../assets/img/menu1.svg') {
-        i.target.setAttribute('src', '../assets/img/menu2.svg');
-        document.getElementsByTagName("html")[0].style.overflow = "hidden";
-    } 
-    else {
-        i.target.setAttribute('src', '../assets/img/menu1.svg');
-        document.getElementsByTagName("html")[0].style.overflow = "auto";
-    }
-});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
