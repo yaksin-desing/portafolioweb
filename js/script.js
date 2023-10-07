@@ -6,9 +6,7 @@ function menuactivo(entries) {
         barramenua.classList.remove("ctive")
         verbar = true;
 
-    }
-
-    else {
+    } else {
         console.log("no visible")
         barramenu.classList.add("ctive")
         barramenua.classList.add("ctive")
@@ -20,21 +18,26 @@ function menuactivo(entries) {
 
 let condicion = true;
 
-document.querySelector(".bars__menu").addEventListener('click',()=> {
+document.querySelector(".bars__menu").addEventListener('click', () => {
     animateBars();
     console.log(condicion);
 
-    if(condicion){
+    if (condicion) {
         document.querySelector(".cont__logo__nav").style.filter = "invert(0%)";
         document.querySelector(".bars__menu").style.filter = "invert(0%)";
+        document.querySelector(".contendor_activo_de_menu").style.visibility = "hidden";
+        document.querySelector(".contendor_activo_de_menu").style.width = "0vw";
 
-    }else{
+    } else {
         document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
         document.querySelector(".bars__menu").style.filter = "invert(100%)";
-    }
-    
+        document.querySelector(".contendor_activo_de_menu").style.visibility = "visible";
+        document.querySelector(".contendor_activo_de_menu").style.width = "100vw";
 
-    
+    }
+
+
+
 });
 
 
@@ -44,7 +47,7 @@ var line3__bars = document.querySelector(".line3__bars-menu");
 
 
 
-function animateBars(){
+function animateBars() {
     line1__bars.classList.toggle("activeline1__bars-menu");
     line2__bars.classList.toggle("activeline2__bars-menu");
     line3__bars.classList.toggle("activeline3__bars-menu");
