@@ -13,7 +13,8 @@ $line-height: $clip-height - 5px;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    cursor: url("../assets/img/cursor.svg") 12 12, auto;
+    cursor: url("../assets/img/cursor.svg") 10 10, auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -394,7 +395,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: -40px;
     border-radius: 50%;
     border: 0.5px solid #ffffff;
-    transition: transform .3s ease;
+    transition: transform .10s ease;
     transform-origin: center center;
     pointer-events: none;
     z-index:9999;

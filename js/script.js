@@ -25,14 +25,10 @@ document.querySelector(".bars__menu").addEventListener('click', () => {
     if (condicion) {
         document.querySelector(".cont__logo__nav").style.filter = "invert(0%)";
         document.querySelector(".bars__menu").style.filter = "invert(0%)";
-        document.querySelector(".contendor_activo_de_menu").style.visibility = "hidden";
-        document.querySelector(".contendor_activo_de_menu").style.width = "0vw";
 
     } else {
         document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
         document.querySelector(".bars__menu").style.filter = "invert(100%)";
-        document.querySelector(".contendor_activo_de_menu").style.visibility = "visible";
-        document.querySelector(".contendor_activo_de_menu").style.width = "100vw";
 
     }
 
@@ -40,7 +36,7 @@ document.querySelector(".bars__menu").addEventListener('click', () => {
 
 });
 
-
+var conter_menu = document.querySelector(".contendor_activo_de_menu");
 var line1__bars = document.querySelector(".line1__bars-menu");
 var line2__bars = document.querySelector(".line2__bars-menu");
 var line3__bars = document.querySelector(".line3__bars-menu");
@@ -51,6 +47,7 @@ function animateBars() {
     line1__bars.classList.toggle("activeline1__bars-menu");
     line2__bars.classList.toggle("activeline2__bars-menu");
     line3__bars.classList.toggle("activeline3__bars-menu");
+    conter_menu.classList.toggle("contendor_activo_de_menu_op");
     condicion = !condicion;
 }
 
