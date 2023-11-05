@@ -23,12 +23,12 @@ document.querySelector(".bars__menu").addEventListener('click', () => {
     console.log(condicion);
 
     if (condicion) {
-        document.querySelector(".cont__logo__nav").style.filter = "invert(0%)";
+        document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
         document.querySelector(".bars__menu").style.filter = "invert(0%)";
 
     } else {
         document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
-        document.querySelector(".bars__menu").style.filter = "invert(100%)";
+        document.querySelector(".bars__menu").style.filter = "invert(0%)";
 
     }
 
