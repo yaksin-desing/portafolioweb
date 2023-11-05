@@ -4657,7 +4657,7 @@ body {
   z-index: 0;
   top: 0;
   left: 0;
-  height: 150px;
+  height: 155px;
   margin: auto;
   width: 100%;
   display: flex;
@@ -4665,11 +4665,10 @@ body {
   transform: rotate(-4deg);
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   flex-shrink: 0;
 }
 .body__index main .cont_cinta_inicio .slider_inicio .slide-track {
-  animation: 60s linear infinite;
+  animation: 70s linear infinite;
   animation-name: scroll10;
   display: flex;
   width: 8500px;
@@ -4690,11 +4689,18 @@ body {
   font-size: 128px;
   font-style: normal;
   font-weight: 300;
-  line-height: 136%;
+  line-height: 106%;
   white-space: nowrap;
 }
-.body__index main .cont_cinta_inicio .slider_inicio .slide-track video {
-  width: 400px;
+.body__index main .cont_cinta_inicio .slider_inicio .slide-track .video_uno {
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  border-radius: 172px;
+}
+.body__index main .cont_cinta_inicio .slider_inicio .slide-track .video_dos {
+  display: inline-block;
+  width: 300px;
   height: 150px;
   border-radius: 172px;
 }
