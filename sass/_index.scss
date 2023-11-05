@@ -177,6 +177,7 @@
             margin-top: 3em;
             position: relative;
 
+
             .slider_inicio {
                 position: absolute;
                 z-index: 0;
@@ -186,18 +187,18 @@
                 margin: auto;
                 width: 100%;
                 display: flex;
-                align-items: center;
+                align-items: start;
                 transform: rotate(-4deg);
                 flex-direction: column;
                 justify-content: space-between;
                 flex-shrink: 0;
 
                 .slide-track {
-                    -webkit-animation: 70s linear infinite;
-                    animation: 70s linear infinite;
+                    -webkit-animation: 60s linear infinite;
+                    animation: 60s linear infinite;
                     animation-name: scroll10;
                     display: flex;
-                    width: 8500px;
+                    width: 11000px;
                     gap: 20px;
                     background: #ffffff;
                     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.322);
@@ -251,8 +252,8 @@
     }
 
     100% {
-        -webkit-transform: translateX(calc(-720px * 10));
-        transform: translateX(calc(-720px * 10));
+        -webkit-transform: translateX(calc(-1100px * 8));
+        transform: translateX(calc(-1100px * 8));
     }
 }
 
