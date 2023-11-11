@@ -48,13 +48,13 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     width: 50px;
     height: 50px;
-    bottom: 25px;
-    right: 25px;
+    bottom: 60px;
+    right: 60px;
     z-index: 1;
 
     .botonfloat__wapp {
-        margin-top: 11px;
-        margin-left: 11px;
+        margin-top: 23px;
+        margin-left: 23px;
         position: absolute;
         z-index: 1;
     }
@@ -349,7 +349,8 @@ body::-webkit-scrollbar-thumb {
     margin-left: -42px;
     margin-top: -42px;
     border-radius: 50%;
-    border: 0.5px solid #c0c0c0;
+    border: 0.5px solid rgba(119, 119, 119, 0.459);
+    filter: invert(0.5);
     transition: transform .10s ease;
     transform-origin: center center;
     pointer-events: none;
@@ -417,11 +418,11 @@ p {
 
     .contendor_activo_de_menu {
         padding: 8rem 4rem 3rem 5rem;
-        right: -50em;
+        right: -10em;
         top: 0px;
-        width: 0vw;
+        width: 0px;
         height: 100vh;
-        position: absolute;
+        position:fixed;
         z-index: 9;
         background: #FFF;
         transform-origin: 0px 0%;
@@ -446,12 +447,12 @@ p {
             }
 
             .lista_uno {
-                width: 100%;
+                width: 0%;
                 margin-bottom: 20px;
 
 
                 .cont_opcion_lista {
-                    width: 100%;
+                    width: 0%;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -523,7 +524,7 @@ p {
             }
 
             .list_social {
-                width: 100%;
+                width: 0%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
