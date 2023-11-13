@@ -1,5 +1,4 @@
 .body__index {
-    width: 100vw;
     overflow-x: hidden;
 
     main {
@@ -197,28 +196,34 @@
 
             .bold_uno {
                 position: absolute;
-                top: -500px;
-                left: -400px;
+                top: -400px;
+                left: -300px;
+                animation: 5s infinite linear gradienanimate;
             }
 
             .bold_dos {
                 position: absolute;
                 top: 10px;
-                left: -400px;
+                left: -200px;
+                animation: 5s infinite linear gradienanimate;
             }
 
             .bold_tres {
                 position: absolute;
                 bottom: -600px;
                 right: -400px;
+                animation: 5s infinite linear gradienanimate;
             }
 
             .fondo_blur {
                 z-index: 0;
                 width: 100vw;
                 height: 100%;
-                background: rgba(255, 255, 255, 0.02);
-                backdrop-filter: blur(80px);
+                background:
+                    repeating-radial-gradient(rgba(255, 255, 255, 0.02)0 0.0001%, #ffffff46 0 0.0002%) 60% 60%/3000px 3000px,
+                    repeating-conic-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, #ffffff46 0 0.0002%) 40% 40%/3000px 3000px;
+                background-blend-mode: difference;
+                backdrop-filter: blur(30px);
             }
 
 
@@ -228,13 +233,12 @@
         .cont_cinta_inicio {
             margin-top: 3em;
             position: relative;
-
+            width: 100%;
 
             .slider_inicio {
                 position: absolute;
                 z-index: 0;
                 top: 0;
-                left: -1px;
                 height: 150px;
                 margin: 0px;
                 width: 100%;
@@ -244,6 +248,7 @@
                 flex-shrink: 0;
                 box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.322);
                 overflow: hidden;
+                background: #ffffff;
 
                 .slide-track {
                     -webkit-animation: 60s linear infinite;
@@ -252,14 +257,12 @@
                     display: flex;
                     width: 11100px;
                     gap: 20px;
-                    background: #ffffff;
                     align-items: center;
 
 
 
                     .slide {
                         height: 50px;
-                        
                         width: 100%;
                         display: flex;
                         align-items: center;
@@ -303,7 +306,7 @@
 
         }
 
-        /* #####################   SECTION DOS ############################# */
+        /* #####################   SECTION TRES ############################# */
 
         .cont_aboutme {
             display: flex;
@@ -405,7 +408,7 @@
                             letter-spacing: 0.7px;
                             text-transform: capitalize;
                             white-space: nowrap;
-                        
+
                         }
 
                         .titulo_contenido {
@@ -444,11 +447,13 @@
 
         }
 
-        /* #####################   SECTION TRES ############################# */
-        .mis_servicios{
+        /* #####################   SECTION CUATRO ############################# */
+        .mis_servicios {
             display: flex;
             flex-direction: column;
             margin: 10em 5em 5em 5em;
+            gap: 5em;
+
             .cont_titulo_mis_servicios {
                 display: inline-flex;
                 flex-direction: column;
@@ -506,6 +511,236 @@
                     }
                 }
             }
+
+            .cont_lista_mis_servicios {
+                display: flex;
+                flex-direction: column;
+
+                .cont_item_mis_servicios {
+                    display: flex;
+                    padding: 15px 0px;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    align-self: stretch;
+                    border-bottom: 0.5px solid #b1b1b1;
+
+                    h4 {
+                        color: #818181;
+                        font-family: Sora;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 136%;
+                        /* 68px */
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        color: #000;
+                        font-family: Sora;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 107.5%;
+                        /* 15.05px */
+                    }
+                }
+
+                .cont_item_mis_servicios:hover {
+                    border-bottom: 1px solid #000000;
+
+                    h4 {
+                        color: #252525;
+                        font-weight: 900;
+                    }
+
+                    p {
+                        font-weight: 500;
+                    }
+                }
+
+            }
+
+        }
+
+        /* #####################   SECTION CINCO ############################# */
+        .cont_section_plus {
+            display: flex;
+            height: 100%;
+            margin: 5em 5em 5em 5em;
+            padding-bottom: 3em;
+            padding-top: 5em;
+
+            position: relative;
+            overflow: hidden;
+            flex-direction: column;
+
+            .cont_titulo_plus {
+                padding: 2em 2em 2em 2em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 100%;
+
+                .subtitulo_plus {
+                    color: #000;
+                    font-family: Sorts Mill Goudy;
+                    font-size: 90px;
+                    font-style: italic;
+                    font-weight: 400;
+                    line-height: 81.5%;
+                    /* 73.35px */
+                    letter-spacing: 4.5px;
+                    text-transform: capitalize;
+
+                    strong {
+                        color: #000;
+                        font-family: Sora;
+                        font-size: 90px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 81.5%;
+                        letter-spacing: 4.5px;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .context_subtitulo {
+                    color: #000;
+                    font-family: Sora;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 250;
+                    line-height: 138.5%;
+                    /* 20.775px */
+                    letter-spacing: 0.75px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .slider_plus {
+                position: relative;
+                z-index: 0;
+
+                height: 40px;
+                margin: 0px;
+                width: 100%;
+                display: flex;
+                align-items: start;
+                transform: rotate(0deg);
+                flex-shrink: 0;
+                background: #ffffff;
+
+                .slide-track {
+                    -webkit-animation: 70s linear infinite;
+                    animation: 70s linear infinite;
+                    animation-name: scrollplus;
+                    display: flex;
+                    width: 2000px;
+                    gap: 200px;
+
+                    .slide {
+                        height: 50px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+
+                        p {
+                            padding-top: 0px;
+                            padding-bottom: 10px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Sora;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: 106%;
+                            white-space: nowrap;
+                        }
+
+                    }
+                }
+            }
+
+            .cont_lista_plus {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 2em 2em 2em 2em;
+
+                .cont_item_lista_plus {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 0.5px solid rgb(54, 54, 54);
+                    padding-bottom: 5px;
+                    gap: 20em;
+
+                    img {
+                        margin: 10px;
+                    }
+
+                    .parrafo_lista_plus {
+                        color: #000;
+                        text-align: justify;
+                        font-family: Sora;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 136%;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+
+            .fondo_plus {
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                z-index: -10;
+                background: rgb(255, 255, 255);
+                overflow: hidden;
+
+                .bold_uno {
+                    position: absolute;
+                    top: -300px;
+                    left: -200px;
+                    animation: 10s infinite linear gradienanimate;
+                }
+
+                .bold_dos {
+                    position: absolute;
+                    top: 10px;
+                    left: -400px;
+                    animation: 10s infinite linear gradienanimate;
+                }
+
+                .bold_tres {
+                    position: absolute;
+                    bottom: -600px;
+                    right: -400px;
+                    animation: 10s infinite linear gradienanimate;
+                }
+
+                .fondo_blur {
+                    width: 100vw;
+                    height: 100%;
+                    background:
+                        repeating-radial-gradient(rgba(255, 255, 255, 0.02)0 0.0001%, #ffffff3f 0 0.0005%) 60% 60%/3000px 3000px,
+                        repeating-conic-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, #ffffff3f 0 0.0005%) 40% 40%/3000px 3000px;
+                    background-blend-mode: difference;
+                    animation: b .50s infinite alternate;
+                    backdrop-filter: blur(30px);
+
+                }
+
+            }
+
+
         }
 
     }
@@ -521,6 +756,38 @@
     100% {
         -webkit-transform: translateX(-9000px);
         transform: translateX(-9000px);
+    }
+}
+
+@keyframes scrollplus {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1900px);
+        transform: translateX(-1900px);
+    }
+}
+
+@keyframes gradienanimate {
+    0% {
+
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes b {
+    100% {
+        background-position: 10% 0, 30% 10%
     }
 }
 
