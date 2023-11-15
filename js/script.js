@@ -1,3 +1,4 @@
+
 function menuactivo(entries) {
     let entrada = entries[0];
     if (entrada.isIntersecting) {

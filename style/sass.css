@@ -3,10 +3,12 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
   cursor: url("../assets/img/cursor.svg") 10 10, auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   list-style: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -4401,6 +4403,7 @@ body {
   /* #####################   SECTION TRES ############################# */
   /* #####################   SECTION CUATRO ############################# */
   /* #####################   SECTION CINCO ############################# */
+  /* #####################   SECTION SEIS ############################# */
 }
 .body__index main .boton_portafolio {
   position: absolute;
@@ -5025,6 +5028,11 @@ body {
   animation: b 0.5s infinite alternate;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+}
+.body__index main .bandera {
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }
 
 @keyframes scroll10 {
