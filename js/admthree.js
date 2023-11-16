@@ -1,3 +1,5 @@
+
+
 const section = document.querySelector("section.bandera")
 
 const scene = new THREE.Scene();
@@ -8,18 +10,28 @@ const renderer = new THREE.WebGLRenderer({
     antialias: true
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.shadowMap=true
 section.appendChild(renderer.domElement);
 
 const texture = new THREE.TextureLoader().load('../assets/img/bandera.png');
 
-const geometry = new THREE.PlaneGeometry(7, 4, 50, 30);
+const geometry = new THREE.PlaneGeometry(6, 3, 50, 50);
 const material = new THREE.MeshBasicMaterial({
     map: texture
 });
+
+
+
+//bandera
+
 const cube = new THREE.Mesh(geometry, material);
+cube.receiveShadow = true;
 scene.add(cube);
 
-cube.rotation.set(-0.1, -0.2, 0.2)
+
+
+cube.rotation.set(-0.2, -0.2, 0.0)
+cube.position.set(1, 0)
 
 camera.position.z = 3;
 
