@@ -36,9 +36,11 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 60px;
-  right: 60px;
+  top: 20vh;
+  left: 70vw;
   z-index: 1;
+  transform: scale(1.7);
+  rotate: 20deg;
 }
 .float__wapp .botonfloat__wapp {
   margin-top: 23px;
@@ -4397,6 +4399,13 @@ body {
 }
 .body__index {
   overflow-x: hidden;
+}
+.body__index .conta_scroll_boton {
+  width: 100vw;
+  height: 80vh;
+  z-index: 10;
+  margin-top: 8em;
+  position: absolute;
 }
 .body__index main {
   /* #####################   SECTION UNO ############################# */

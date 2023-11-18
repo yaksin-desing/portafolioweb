@@ -1,7 +1,15 @@
 .body__index {
     overflow-x: hidden;
+    .conta_scroll_boton{
+        width: 100vw;
+        height: 80vh;
+        z-index: 10;
+        margin-top: 8em;
+        position: absolute;
+    }
 
     main {
+        
         .boton_portafolio {
             position: absolute;
             bottom: -4px;
@@ -174,6 +182,7 @@
 
         }
 
+
         .grilla {
             position: absolute;
             top: 0;
@@ -305,6 +314,7 @@
             }
 
         }
+        
 
         /* #####################   SECTION TRES ############################# */
 
@@ -444,6 +454,7 @@
                     }
                 }
             }
+            
 
         }
 

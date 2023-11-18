@@ -1,3 +1,29 @@
+gsap.registerPlugin(ScrollTrigger)
+const boton = document.querySelector(".float__wapp")
+
+var tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".conta_scroll_boton",
+        pin: true,
+        star: "top top",
+        end: "100% 100%",
+        scrub: 5,
+    },
+})
+
+tl.to(
+    boton, {
+        scale: 0.8,
+        rotate: "0deg",
+        x: "22vw",
+        y: "60vh",
+        duration: 1,
+    },
+)
+
+
+
+
 
 function menuactivo(entries) {
     let entrada = entries[0];
@@ -123,94 +149,3 @@ LottieInteractivity.create({
         }
     ]
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let valor = 0;
-const nombre = ['doris', 'gato con botas', 'shrek', 'burro', "fiona", "pinocho"];
-const cargo = ['Product manager', 'Mantenimiento', 'CEO.META.INC', 'Portero', "Secretaria", "Frontend"];
-const testimonio = ['“Es un papucho, su cara parece tallada por los mismo ángeles”', 'Odio los lunes', 'CEO.META.INC', '¡Apuesto a que nunca habías visto a un burro volar!', "Secretaria", "¡Soy un niño de verdad!"];
-const resumen = ['Desarrolladora fullstack senior desde hace 9 años, trabaja actualmente para Meta.inc, como directora de proyectos avanzados.',
-    'valor2', 'valor3', 'valor4', "valor4", "valor5"
-];
-const foto = ['../assets/img/avatartestimonio.png',
-    '../assets/img/gato.png',
-    '../assets/img/shrek.png',
-    '../assets/img/burro.png',
-    '../assets/img/burro.png',
-    '../assets/img/burro.png'
-];
-document.querySelector("#adelante").addEventListener("click", () => {
-
-    if (valor < 5) {
-        valor++
-        document.querySelector("#nombre").textContent = nombre[valor]
-        document.querySelector("#cargo").textContent = cargo[valor]
-        document.querySelector("#testimonio").textContent = testimonio[valor]
-        document.querySelector("#resumen").textContent = resumen[valor]
-        document.querySelector("#foto").src = foto[valor]
-
-
-    }
-    if (valor == 5) {
-        document.querySelector("#adelante").style.filter = "invert(70%)";
-        document.querySelector("#atras").style.filter = "invert(0%)";
-
-
-    } else {
-        document.querySelector("#adelante").style.filter = "invert(0%)";
-        document.querySelector("#atras").style.filter = "invert(0%)";
-
-    }
-
-
-})
-
-document.querySelector("#atras").addEventListener("click", () => {
-    if (valor > 0) {
-        valor--
-        document.querySelector("#nombre").textContent = nombre[valor]
-        document.querySelector("#cargo").textContent = cargo[valor]
-        document.querySelector("#testimonio").textContent = testimonio[valor]
-        document.querySelector("#resumen").textContent = resumen[valor]
-        document.querySelector("#foto").src = foto[valor]
-    }
-    if (valor == 0) {
-        document.querySelector("#adelante").style.filter = "invert(0%)";
-        document.querySelector("#atras").style.filter = "invert(70%)";
-    } else {
-        document.querySelector("#adelante").style.filter = "invert(0%)";
-        document.querySelector("#atras").style.filter = "invert(0%)";
-    }
-})
-
-
-let valorenviar = 0;
-
-document.querySelector("#botonenviar").addEventListener("click", () => {
-
-    if (valorenviar == 0) {
-        valor++
-        document.querySelector("#popup").style.displey = "block";
-    }
-
-
-})
