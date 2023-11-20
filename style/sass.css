@@ -4403,7 +4403,7 @@ body {
 .body__index .conta_scroll_boton {
   width: 100vw;
   height: 80vh;
-  z-index: 10;
+  z-index: -1;
   margin-top: 8em;
   position: absolute;
 }
