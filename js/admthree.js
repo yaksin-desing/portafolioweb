@@ -116,43 +116,6 @@ figuratres.position.y = 0.5;
 figuratres.position.set = (0, 0, 1);
 cameratres.position.z = 5;
 
-//########################### figura cuatro ###########################
-const contdcuatro = document.querySelector("div.cont_figure_geometric_uno")
-const scenecuatro = new THREE.Scene();
-const cameratres = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-const renderercuatro = new THREE.WebGLRenderer({
-    alpha: true,
-    antialias: true
-});
-renderertres.setSize(window.innerWidth, window.innerHeight);
-renderertres.shadowMap = true
-contdos.appendChild(renderertres.domElement);
-
-const geometrycuatro = new THREE.OctahedronGeometry(0.2, 0);
-const materialcuatro = new THREE.MeshPhysicalMaterial({
-    roughness: 0.2,
-    transmission: 1,
-    thickness: 1,
-});
-
-const lightcuatro = new THREE.DirectionalLight(0xfff0dd, 1);
-lightcuatro.position.set(0, 5, 10);
-sceneuno.add(lightcuatro);
-
-const figuratres = new THREE.Mesh(geometrytres, materialtres);
-figurados.receiveShadow = true;
-sceneuno.add(figuratres);
-
-figuratres.position.x = -1;
-figuratres.position.y = 0.5;
-figuratres.position.set = (0, 0, 1);
-cameratres.position.z = 5;
-
-
-
-
-
 
 
 
