@@ -1,6 +1,7 @@
 .body__index {
     overflow-x: hidden;
-    .conta_scroll_boton{
+
+    .conta_scroll_boton {
         width: 100vw;
         height: 80vh;
         z-index: -1;
@@ -9,7 +10,7 @@
     }
 
     main {
-        
+
         .boton_portafolio {
             position: absolute;
             bottom: -4px;
@@ -79,18 +80,17 @@
                 h1 {
                     color: #000;
                     text-align: center;
-                    font-family: Sora;
-                    font-size: 75px;
+                    font-family: MargoBeuys;
+                    font-size: 70px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 136%;
-                    /* 102px */
                     text-transform: uppercase;
 
                     strong {
                         color: #000;
                         font-family: Sorts Mill Goudy;
-                        font-size: 75px;
+                        font-size: 70px;
                         font-style: italic;
                         font-weight: 400;
                         line-height: 136%;
@@ -101,11 +101,12 @@
                 p {
                     color: #252525;
                     text-align: center;
-                    font-family: Sora;
+                    font-family: poppins;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
+                    padding-bottom: 10px;
                 }
 
                 .boton_setion_uno {
@@ -124,7 +125,7 @@
                         border-radius: 10px;
                         background: #FFF503;
                         color: #000;
-                        font-family: Sora;
+                        font-family: MargoBeuys;
                         font-size: 15px;
                         font-style: normal;
                         font-weight: 600;
@@ -154,7 +155,7 @@
 
                         h4 {
                             color: #252525;
-                            font-family: Sora;
+                            font-family: MargoBeuys;
                             font-size: 35px;
                             font-style: normal;
                             font-weight: 500;
@@ -165,7 +166,7 @@
 
                         p {
                             color: #252525;
-                            font-family: Sora;
+                            font-family: MargoBeuys;
                             font-size: 15px;
                             font-style: normal;
                             font-weight: 400;
@@ -264,15 +265,13 @@
                     animation: 60s linear infinite;
                     animation-name: scroll10;
                     display: flex;
-                    width: 11100px;
-                    gap: 20px;
+                    width: 8000px;
+                    gap: 75px;
                     align-items: center;
-
-
 
                     .slide {
                         height: 50px;
-                        width: 100%;
+                        width: auto;
                         display: flex;
                         align-items: center;
                         justify-content: end;
@@ -282,12 +281,13 @@
                             padding-bottom: 10px;
                             color: #000;
                             text-align: center;
-                            font-family: Sora;
-                            font-size: 128px;
+                            font-family: MargoBeuys;
+                            font-size: 95px;
                             font-style: normal;
                             font-weight: 300;
                             line-height: 106%;
                             white-space: nowrap;
+
                         }
 
                     }
@@ -296,7 +296,7 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
                         display: inline-block;
-                        width: 250px;
+                        width: 100%;
                         height: 150px;
                         border-radius: 172px;
                     }
@@ -305,7 +305,7 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
                         display: inline-block;
-                        width: 300px;
+                        width: 100%;
                         height: 150px;
                         border-radius: 172px;
                     }
@@ -314,7 +314,7 @@
             }
 
         }
-        
+
 
         /* #####################   SECTION TRES ############################# */
 
@@ -347,7 +347,7 @@
 
                     .subtitulo_aboutme {
                         color: #000;
-                        font-family: Sora;
+                        font-family: MargoBeuys;
                         font-size: 80px;
                         font-style: normal;
                         font-weight: 800;
@@ -358,7 +358,7 @@
 
                     .context_subtitulo {
                         color: #000;
-                        font-family: Sora;
+                        font-family: MargoBeuys;
                         font-size: 15px;
                         font-style: normal;
                         font-weight: 300;
@@ -369,7 +369,7 @@
 
                     .etiqueta {
                         color: #000;
-                        font-family: Sora;
+                        font-family: MargoBeuys;
                         font-size: 15px;
                         font-style: normal;
                         font-weight: 600;
@@ -441,7 +441,7 @@
 
                             .contenido_contenido {
                                 color: #000;
-                                font-family: Sora;
+                                font-family: poppins;
                                 font-size: 15px;
                                 font-style: normal;
                                 font-weight: 300;
@@ -454,7 +454,7 @@
                     }
                 }
             }
-            
+
 
         }
 
@@ -546,6 +546,36 @@
                         text-transform: uppercase;
                     }
 
+                    .subtitulo_experiencia {
+                        height: 5em;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+
+                        .titulo {
+                            color: #818181;
+                            font-family: Sora;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 136%;
+                            /* 27.2px */
+                            text-transform: capitalize;
+                        }
+
+                        .fecha {
+                            color: #818181;
+                            font-family: Sora;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 100;
+                            line-height: 136%;
+                            /* 19.04px */
+                            text-transform: uppercase;
+                        }
+                    }
+
                     p {
                         color: #000;
                         font-family: Sora;
@@ -563,6 +593,35 @@
                     h4 {
                         color: #252525;
                         font-weight: 900;
+                    }
+                    .subtitulo_experiencia {
+                        height: 5em;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+
+                        .titulo {
+                            color: #000;
+                            font-family: Sora;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 136%;
+                            /* 27.2px */
+                            text-transform: capitalize;
+                        }
+
+                        .fecha {
+                            color: #000;
+                            font-family: Sora;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 100;
+                            line-height: 136%;
+                            /* 19.04px */
+                            text-transform: uppercase;
+                        }
                     }
 
                     p {
@@ -697,10 +756,10 @@
                     .parrafo_lista_plus {
                         color: #000;
                         text-align: justify;
-                        font-family: Sora;
+                        font-family: poppins;
                         font-size: 15px;
                         font-style: normal;
-                        font-weight: 300;
+                        font-weight: 400;
                         line-height: 136%;
                         text-transform: capitalize;
                     }
@@ -756,10 +815,41 @@
 
         /* #####################   SECTION SEIS ############################# */
 
-        .bandera{
-            display: block;
-            width: 100vw;
-            height: 100vh;
+        .conten_anima_3d{
+            position:relative;
+            .bandera {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+    
+    
+                .titulo_bandera {
+                    width: 50%;
+    
+                    position: absolute;
+                    margin-left: 1.5em;
+                    text-align: start;
+                    color: #000;
+                    font-family: Sora;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 115.5%;
+                    /* 103.95px */
+                    text-transform: capitalize;
+                    z-index: 2;
+                }
+    
+            }
+            .cont_figure_geometric_uno{
+                position:absolute;
+                z-index: 100;
+                width: 250px;
+                height: 250px;
+                left: 5em;
+                top: 5em;
+            }
 
         }
 
@@ -774,8 +864,8 @@
     }
 
     100% {
-        -webkit-transform: translateX(-9000px);
-        transform: translateX(-9000px);
+        -webkit-transform: translateX(-7300px);
+        transform: translateX(-7300px);
     }
 }
 

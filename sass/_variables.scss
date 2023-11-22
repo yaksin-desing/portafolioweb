@@ -1,9 +1,16 @@
-$colorn:#F24E1E;
-$colora:#FDBD39;
-$coloroff:#222222;
-$coloron:#000000;
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: "MargoBeuys";
+    src: url(../assets/font/MargoBeuys.otf);
+}
+@font-face {
+    font-family: "sora";
+    src: url(../assets/font/MargoBeuys.otf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
 $total-lines: 10;
 $left-offset: 0px;
 $clip-height: 50px;
