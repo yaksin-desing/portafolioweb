@@ -1,0 +1,40 @@
+<svg width="1374" height="842" viewBox="0 0 1374 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_793_498)" filter="url(#filter0_d_793_498)">
+<rect width="1324" height="792" transform="translate(25 21)" fill="#F1F1F1"/>
+<path d="M55 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M182.059 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M55 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M306.922 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M433.978 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M561.041 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M688.096 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M812.959 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M940.022 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M1067.08 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M1191.94 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M1319 -116V949.303" stroke="black" stroke-width="0.5"/>
+<path d="M55 738.003L1319 738.003" stroke="black" stroke-width="0.5"/>
+<path d="M55 630.152L1319 630.152" stroke="black" stroke-width="0.5"/>
+<path d="M55 524.503L1319 524.503" stroke="black" stroke-width="0.5"/>
+<path d="M55 416.652L1319 416.652" stroke="black" stroke-width="0.5"/>
+<path d="M55 311.002L1319 311.002" stroke="black" stroke-width="0.5"/>
+<path d="M55 205.352L1319 205.352" stroke="black" stroke-width="0.5"/>
+<path d="M55 97.5009L1319 97.5009" stroke="black" stroke-width="0.5"/>
+</g>
+<defs>
+<filter id="filter0_d_793_498" x="0.1" y="0.1" width="1373.8" height="841.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="14" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_793_498"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5.45"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.960784 0 0 0 0 0.0117647 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_793_498"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_793_498" result="shape"/>
+</filter>
+<clipPath id="clip0_793_498">
+<rect width="1324" height="792" fill="white" transform="translate(25 21)"/>
+</clipPath>
+</defs>
+</svg>

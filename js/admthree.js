@@ -12,27 +12,27 @@ rendereruno.shadowMap = true
 contuno.appendChild(rendereruno.domElement);
 
 
-const textureuno = new THREE.TextureLoader().load('../assets/img/bandera.png');
-const geometryuno = new THREE.PlaneGeometry(8, 4, 50, 50);
+const textureuno = new THREE.TextureLoader().load('../assets/img/bandera.svg');
+const geometryuno = new THREE.PlaneGeometry(15, 5, 100, 100);
 const materialuno = new THREE.MeshBasicMaterial({
     map: textureuno
 });
-
 
 
 //bandera
 
 const bandera = new THREE.Mesh(geometryuno, materialuno);
 bandera.receiveShadow = true;
+bandera.castShadow = true;
 sceneuno.add(bandera);
 
 
 
 
-bandera.rotation.set(-0.2, -0.2, 0.0)
-bandera.position.set(1, 0, -1)
+bandera.rotation.set(-0.0, -0.0, 0.0)
+bandera.position.set(0, 0, -0.5)
 
-camerauno.position.z = 3;
+camerauno.position.z = 3.2;
 
 const clock = new THREE.Clock()
 let v = new THREE.Vector3();
@@ -69,15 +69,16 @@ const materialdos = new THREE.MeshPhysicalMaterial({
 });
 
 const light = new THREE.DirectionalLight(0xfff0dd, 1);
-light.position.set(0, 5, 10);
+light.position.set(0, 5, 5);
 sceneuno.add(light);
 
 const figurados = new THREE.Mesh(geometrydos, materialdos);
 figurados.receiveShadow = true;
 sceneuno.add(figurados);
 
-figurados.position.x = 2.8;
-figurados.position.set = (0, 0, 2);
+figurados.position.x = 3;
+figurados.position.y = 0;
+figurados.position.set = (0, 0, 5);
 camerados.position.z = 5;
 
 
@@ -96,25 +97,25 @@ renderertres.setSize(window.innerWidth, window.innerHeight);
 renderertres.shadowMap = true
 contdos.appendChild(renderertres.domElement);
 
-const geometrytres = new THREE.OctahedronGeometry(0.2, 0);
+const geometrytres = new THREE.OctahedronGeometry(0.7, 0);
 const materialtres = new THREE.MeshPhysicalMaterial({
-    roughness: 0.2,
+    roughness: 0.1,
     transmission: 1,
     thickness: 1,
 });
 
 const lighttres = new THREE.DirectionalLight(0xfff0dd, 1);
 lighttres.position.set(0, 5, 10);
-sceneuno.add(lighttres);
+scenetres.add(lighttres);
 
 const figuratres = new THREE.Mesh(geometrytres, materialtres);
 figurados.receiveShadow = true;
 sceneuno.add(figuratres);
 
-figuratres.position.x = 2.5;
-figuratres.position.y = 0.5;
-figuratres.position.set = (0, 0, 1);
-cameratres.position.z = 5;
+figuratres.position.x = -3;
+figuratres.position.y = 1;
+figuratres.position.set = (0, 0, 0);
+cameratres.position.z = 1;
 
 
 
@@ -135,17 +136,20 @@ function animate() {
 
     for (let i = 0; i < pos.count; i++) {
         v.fromBufferAttribute(pos, i);
-        const wavex1 = 0.1 * Math.sin(0.5 * v.x + t * 1)
-        const wavex2 = 0.1 * Math.sin(2 * v.x + t * 1)
-        const wavex3 = 0.1 * Math.sin(4 * v.y + t * 1)
+        const wavex1 = 0.2 * Math.sin(1 * v.x + t * 1)
+        const wavex2 = 0.1 * Math.sin(5* v.x + t * 1)
+        const wavex3 = 0.1 * Math.sin(10 * v.y + t * 1)
+        const wavex4 = 0.1 * Math.sin(4 * v.z + t * 1)
 
-        pos.setZ(i, wavex1 + wavex2 + wavex3)
+        pos.setZ(i, wavex1 + wavex2 + wavex3 + wavex4)
 
     }
     pos.needsUpdate = true;
 
-    (figurados, figuratres).rotation.x += 0.01;
+    figurados.rotation.x += 0.01;
     figurados.rotation.y += 0.01;
+    figuratres.rotation.x += 0.01;
+    figuratres.rotation.y += 0.01;
 
     requestAnimationFrame(animate);
     rendereruno.render(sceneuno, camerauno);
