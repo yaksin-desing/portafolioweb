@@ -588,10 +588,11 @@
                 }
 
                 .cont_item_mis_servicios:hover {
-                    border-bottom: 1px solid #000000;
+                    border-bottom: 2px solid #000000;
+                    cursor:url("../assets/img/ir.svg") 20 20, auto; 
 
                     h4 {
-                        color: #252525;
+                        color: #000000;
                         font-weight: 900;
                     }
 
@@ -1096,9 +1097,11 @@
             overflow-x: hidden;
             display: flex;
             padding-bottom: 5em;
+
             .cont_horizontal_ocho {
-                display:flex;
-                width: 200vw;
+                display: flex;
+                width: 500vw;
+
                 .cont_horizontal_uno {
                     overflow: hidden;
                     display: flex;
@@ -1148,7 +1151,109 @@
                 .cont_horizontal_dos {
                     width: 100vw;
                     height: 100vh;
-                    background: #FFF503;
+                    background: #fcfcfc;
+                    padding: 2em 5em 5em 5em;
+
+                    .titulo {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        h3 {
+                            color: #000;
+                            font-family: Margo + Beuys;
+                            font-size: 90px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: 115.5%;
+                            text-transform: capitalize;
+                        }
+
+                        p {
+                            display: flex;
+                            width: 138px;
+                            height: 104px;
+                            padding: 0px 21px;
+                            justify-content: center;
+                            align-items: center;
+                            flex-shrink: 0;
+                            color: #000;
+                            font-family: Margo + Beuys;
+                            font-size: 90px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: 115.5%;
+                            text-transform: capitalize;
+                            border-radius: 89px;
+                            background: #F9F9F9;
+                        }
+                    }
+
+                    .cont_lista_horizontal_dos {
+                        display: flex;
+                        flex-direction: column;
+
+                        .cont_item_horizontal_dos {
+                            display: flex;
+                            padding: 1em 0px;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-self: stretch;
+                            border-bottom: 1px solid #818181;
+
+                            .titulo {
+                                width: 40vw;
+                                h4 {
+                                    color: #000;
+                                    font-family: Sora;
+                                    font-size: 40px;
+                                    font-style: normal;
+                                    font-weight: 900;
+                                    line-height: 136%;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .titulo:hover{
+                                cursor:url("../assets/img/ir.svg") 20 20, auto; 
+                            }
+
+
+                            .subtitulo {
+                                display: flex;
+                                flex-direction: column;
+
+                                .titulo_subtitulo {
+                                    color: #000;
+                                    font-family: Margo + Beuys;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 900;
+                                    line-height: 136%;
+                                    text-transform: capitalize;
+                                }
+
+                                img {
+                                    width: 5vw;
+                                    height: 2vw;
+                                }
+
+                            }
+
+                            p {
+                                color: #000;
+                                font-family: Margo + Beuys;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 900;
+                                line-height: 107.5%;
+                                align-items: end;
+                            }
+                        }
+                        .cont_item_horizontal_dos:hover {
+                            border-bottom: 2px solid #000000;
+                            cursor:url("../assets/img/ir.svg") 20 20, auto; 
+                        }
+                    }
 
                 }
 

@@ -31,26 +31,30 @@ console.log(races.offsetWidth)
 
 function getScrollAmount() {
 	let racesWidth = races.scrollWidth;
-	return -(racesWidth - window.innerWidth);
+	return -(racesWidth - window.innerWidth+50);
 }
 
 const tween = gsap.to(races, {
 	x: getScrollAmount,
-	duration: 3,
+	duration:5,
 	ease: "none",
-});
+},
+
+);
 
 
 ScrollTrigger.create({
 	trigger:".capa_contenedora",
 	start:"top top",
-	end: () => `+=${getScrollAmount() * -1}`,
+	end: () => `+=${getScrollAmount() * -3}`,
 	pin:true,
 	animation:tween,
-	scrub:1,
+	scrub:2,
 	invalidateOnRefresh:true,
-	markers:true
-})
+	markers:false,
+    
+}
+)
 
 
 function menuactivo(entries) {
