@@ -7,7 +7,7 @@ var tl = gsap.timeline({
         pin: true,
         star: "top top",
         end: "100% 100%",
-        scrub: 5,
+        scrub: 2,
     },
 })
 
@@ -23,6 +23,34 @@ tl.to(
 
 
 
+
+
+
+const races = document.querySelector(".cont_horizontal_ocho");
+console.log(races.offsetWidth)
+
+function getScrollAmount() {
+	let racesWidth = races.scrollWidth;
+	return -(racesWidth - window.innerWidth);
+}
+
+const tween = gsap.to(races, {
+	x: getScrollAmount,
+	duration: 3,
+	ease: "none",
+});
+
+
+ScrollTrigger.create({
+	trigger:".capa_contenedora",
+	start:"top top",
+	end: () => `+=${getScrollAmount() * -1}`,
+	pin:true,
+	animation:tween,
+	scrub:1,
+	invalidateOnRefresh:true,
+	markers:true
+})
 
 
 function menuactivo(entries) {

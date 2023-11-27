@@ -828,18 +828,19 @@
                 left: 5em;
                 top: 5em;
             }
-            
+
             .bandera {
                 display: flex;
                 width: 100vw;
                 height: 100vh;
                 justify-content: center;
                 align-items: center;
+
                 .titulo_bandera {
                     margin-left: 2em;
                     margin-right: 2em;
                     position: absolute;
-                    color:#000000;
+                    color: #000000;
                     text-align: center;
                     font-family: Sora;
                     font-size: 80px;
@@ -850,18 +851,19 @@
                 }
 
             }
+
             .mis_servicios {
                 display: flex;
                 flex-direction: column;
                 margin: 10em 5em 5em 5em;
                 gap: 5em;
-    
+
                 .cont_titulo_mis_servicios {
                     display: inline-flex;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 5px;
-    
+
                     .titulo {
                         color: #000;
                         font-family: Sora;
@@ -872,12 +874,12 @@
                         letter-spacing: 0.75px;
                         text-transform: capitalize;
                     }
-    
+
                     .cont_subtitulo_mis_servicios {
                         display: flex;
                         gap: 60px;
                         align-items: flex-end;
-    
+
                         .subtitulo_aboutme {
                             color: #000;
                             font-family: Sora;
@@ -888,7 +890,7 @@
                             /* 103.95px */
                             text-transform: capitalize;
                         }
-    
+
                         .context_subtitulo {
                             color: #000;
                             font-family: Sora;
@@ -899,7 +901,7 @@
                             /* 20.775px */
                             text-transform: capitalize;
                         }
-    
+
                         .etiqueta {
                             color: #000;
                             font-family: Sora;
@@ -913,11 +915,11 @@
                         }
                     }
                 }
-    
+
                 .cont_lista_mis_servicios {
                     display: flex;
                     flex-direction: column;
-    
+
                     .cont_item_mis_servicios {
                         display: flex;
                         padding: 15px 0px;
@@ -925,7 +927,7 @@
                         align-items: flex-start;
                         align-self: stretch;
                         border-bottom: 0.5px solid #b1b1b1;
-    
+
                         h4 {
                             color: #818181;
                             font-family: Sora;
@@ -936,14 +938,14 @@
                             /* 68px */
                             text-transform: uppercase;
                         }
-    
+
                         .subtitulo_experiencia {
                             height: 5em;
                             display: flex;
                             flex-direction: column;
                             align-items: start;
                             justify-content: center;
-    
+
                             .titulo {
                                 color: #818181;
                                 font-family: Sora;
@@ -954,7 +956,7 @@
                                 /* 27.2px */
                                 text-transform: capitalize;
                             }
-    
+
                             .fecha {
                                 color: #818181;
                                 font-family: Sora;
@@ -966,7 +968,7 @@
                                 text-transform: uppercase;
                             }
                         }
-    
+
                         p {
                             color: #000;
                             font-family: Sora;
@@ -977,22 +979,22 @@
                             /* 15.05px */
                         }
                     }
-    
+
                     .cont_item_mis_servicios:hover {
                         border-bottom: 1px solid #000000;
-    
+
                         h4 {
                             color: #252525;
                             font-weight: 900;
                         }
-    
+
                         .subtitulo_experiencia {
                             height: 5em;
                             display: flex;
                             flex-direction: column;
                             align-items: start;
                             justify-content: center;
-    
+
                             .titulo {
                                 color: #000;
                                 font-family: Sora;
@@ -1003,7 +1005,7 @@
                                 /* 27.2px */
                                 text-transform: capitalize;
                             }
-    
+
                             .fecha {
                                 color: #000;
                                 font-family: Sora;
@@ -1015,23 +1017,173 @@
                                 text-transform: uppercase;
                             }
                         }
-    
+
                         p {
                             font-weight: 500;
                         }
                     }
-    
+
                 }
-    
+
             }
 
-            
 
+
+        }
+
+        /* #####################   SECTION OCHO ############################# */
+
+        .cont_titulo_mis_horizontal {
+            margin: 5em 5em 3em 5em;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+
+            .titulo {
+                color: #000;
+                font-family: Sora;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 122%;
+                letter-spacing: 0.75px;
+                text-transform: capitalize;
+            }
+
+            .cont_subtitulo_mis_horizontal {
+                display: flex;
+                gap: 60px;
+                align-items: flex-end;
+
+                .subtitulo_aboutme {
+                    color: #000;
+                    font-family: Sora;
+                    font-size: 80px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 115.5%;
+                    /* 103.95px */
+                    text-transform: capitalize;
+                }
+
+                .context_subtitulo {
+                    color: #000;
+                    font-family: Sora;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 138.5%;
+                    /* 20.775px */
+                    text-transform: capitalize;
+                }
+
+                .etiqueta {
+                    color: #000;
+                    font-family: Sora;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 138.5%;
+                    /* 20.775px */
+                    text-transform: capitalize;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .capa_contenedora {
+            overflow-x: hidden;
+            display: flex;
+            padding-bottom: 5em;
+            .cont_horizontal_ocho {
+                display:flex;
+                width: 200vw;
+                .cont_horizontal_uno {
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: row;
+                    width: 100vw;
+                    height: 100vh;
+                    gap: 3em;
+                    justify-content: center;
+                    align-items: center;
+
+                    .cont_sslider_uno {
+                        display: flex;
+                        transform: rotate(35deg);
+
+                        .sslider_uno {
+                            display: flex;
+                            flex-direction: column;
+                            -webkit-animation: scrollarriba 10s linear infinite;
+                            animation: scrollarriba 10s linear infinite;
+                            gap: 0.5em;
+
+                            img {
+                                height: 20vw;
+                            }
+                        }
+                    }
+
+                    .cont_sslider_dos {
+                        display: flex;
+                        transform: rotate(35deg);
+
+                        .sslider_dos {
+                            display: flex;
+                            flex-direction: column;
+                            -webkit-animation: scrollabajo 10s linear infinite;
+                            animation: scrollabajo 10s linear infinite;
+                            gap: 0.5em;
+
+                            img {
+                                transform: rotate(180deg);
+                                height: 20vw;
+                            }
+                        }
+                    }
+                }
+
+                .cont_horizontal_dos {
+                    width: 100vw;
+                    height: 100vh;
+                    background: #FFF503;
+
+                }
+
+            }
         }
 
     }
 
 }
+
+@keyframes scrollabajo {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(calc(20vw * 1));
+        transform: translateY(calc(20vw * 1));
+    }
+}
+
+@keyframes scrollarriba {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(calc(-20vw * 1));
+        transform: translateY(calc(-20vw * 1));
+    }
+}
+
+
 
 @keyframes scroll10 {
     0% {

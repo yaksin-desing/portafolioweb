@@ -3348,6 +3348,7 @@ body {
   /* #####################   SECTION CUATRO ############################# */
   /* #####################   SECTION CINCO ############################# */
   /* #####################   SECTION SEIS ############################# */
+  /* #####################   SECTION OCHO ############################# */
 }
 .body__index main .boton_portafolio {
   position: absolute;
@@ -4211,7 +4212,127 @@ body {
 .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover p {
   font-weight: 500;
 }
+.body__index main .cont_titulo_mis_horizontal {
+  margin: 5em 5em 3em 5em;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.body__index main .cont_titulo_mis_horizontal .titulo {
+  color: #000;
+  font-family: Sora;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 122%;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+.body__index main .cont_titulo_mis_horizontal .cont_subtitulo_mis_horizontal {
+  display: flex;
+  gap: 60px;
+  align-items: flex-end;
+}
+.body__index main .cont_titulo_mis_horizontal .cont_subtitulo_mis_horizontal .subtitulo_aboutme {
+  color: #000;
+  font-family: Sora;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 115.5%;
+  /* 103.95px */
+  text-transform: capitalize;
+}
+.body__index main .cont_titulo_mis_horizontal .cont_subtitulo_mis_horizontal .context_subtitulo {
+  color: #000;
+  font-family: Sora;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 138.5%;
+  /* 20.775px */
+  text-transform: capitalize;
+}
+.body__index main .cont_titulo_mis_horizontal .cont_subtitulo_mis_horizontal .etiqueta {
+  color: #000;
+  font-family: Sora;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138.5%;
+  /* 20.775px */
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.body__index main .capa_contenedora {
+  overflow-x: hidden;
+  display: flex;
+  padding-bottom: 5em;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho {
+  display: flex;
+  width: 200vw;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno .cont_sslider_uno {
+  display: flex;
+  transform: rotate(35deg);
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno .cont_sslider_uno .sslider_uno {
+  display: flex;
+  flex-direction: column;
+  animation: scrollarriba 10s linear infinite;
+  gap: 0.5em;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno .cont_sslider_uno .sslider_uno img {
+  height: 20vw;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno .cont_sslider_dos {
+  display: flex;
+  transform: rotate(35deg);
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno .cont_sslider_dos .sslider_dos {
+  display: flex;
+  flex-direction: column;
+  animation: scrollabajo 10s linear infinite;
+  gap: 0.5em;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_uno .cont_sslider_dos .sslider_dos img {
+  transform: rotate(180deg);
+  height: 20vw;
+}
+.body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_dos {
+  width: 100vw;
+  height: 100vh;
+  background: #FFF503;
+}
 
+@keyframes scrollabajo {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20vw);
+  }
+}
+@keyframes scrollarriba {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20vw);
+  }
+}
 @keyframes scroll10 {
   0% {
     transform: translateX(0px);
