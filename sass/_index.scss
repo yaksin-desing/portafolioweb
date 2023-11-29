@@ -462,14 +462,13 @@
         .mis_servicios {
             display: flex;
             flex-direction: column;
-            margin: 10em 5em 5em 5em;
-            gap: 5em;
 
             .cont_titulo_mis_servicios {
                 display: inline-flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 5px;
+                margin: 5em 5em 5em 5em;
 
                 .titulo {
                     color: #000;
@@ -477,8 +476,7 @@
                     font-size: 15px;
                     font-style: normal;
                     font-weight: 300;
-                    line-height: 122%;
-                    letter-spacing: 0.75px;
+                    line-height: 100%;
                     text-transform: capitalize;
                 }
 
@@ -526,6 +524,7 @@
             .cont_lista_mis_servicios {
                 display: flex;
                 flex-direction: column;
+                margin: 0em 5em 5em 5em;
 
                 .cont_item_mis_servicios {
                     display: flex;
@@ -534,16 +533,15 @@
                     align-items: flex-start;
                     align-self: stretch;
                     border-bottom: 0.5px solid #b1b1b1;
-
                     h4 {
-                        color: #818181;
+                        color: #000000;
                         font-family: Sora;
                         font-size: 50px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: 136%;
-                        /* 68px */
                         text-transform: uppercase;
+                        visibility: visible;
                     }
 
                     .subtitulo_experiencia {
@@ -584,16 +582,56 @@
                         font-weight: 300;
                         line-height: 107.5%;
                         /* 15.05px */
+
+                    }
+
+                    .cont_slider_banderas {
+                        display: flex;
+                        visibility: hidden;
+                        position: absolute;
+                        align-items: center;
+                        justify-content: center;
+                        
+
+                        .sslider_uno {
+                            
+                            overflow-y: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row;
+                            position: relative;
+                            gap: 10px;
+                            -webkit-animation: scrollderecha 5s linear infinite;
+                            animation: scrollderecha 5s linear infinite;
+                            bottom: -10vh;
+                            height: 0%;
+                            opacity: 0;
+                            transform-origin: 0px 0%;
+                            transition: all 300ms;
+                            transition-delay: 0.1s;
+                            transition-timing-function: cubic-bezier(0.51, 1.02, 1, 1.0);
+                            img {
+                                cursor: url("../assets/img/ir.svg") 15 10, auto;
+                                width: 30vw;
+                            }
+                        }
+
                     }
                 }
 
+
+
+
                 .cont_item_mis_servicios:hover {
                     border-bottom: 2px solid #000000;
-                    cursor:url("../assets/img/ir.svg") 20 20, auto; 
+                    
+
 
                     h4 {
                         color: #000000;
                         font-weight: 900;
+                        visibility: hidden;
                     }
 
                     .subtitulo_experiencia {
@@ -628,8 +666,24 @@
 
                     p {
                         font-weight: 500;
+                        visibility: hidden;
+
+                    }
+
+                    .cont_slider_banderas {
+                        
+                        visibility: visible;
+                        .sslider_uno {
+                            
+                            overflow-y: hidden;
+                            opacity: 1;
+                            bottom: 0vh;
+                            height: 100%;
+                            background: #FFF503;
+                        }
                     }
                 }
+
 
             }
 
@@ -856,8 +910,7 @@
             .mis_servicios {
                 display: flex;
                 flex-direction: column;
-                margin: 10em 5em 5em 5em;
-                gap: 5em;
+                margin: 5em 0em 5em 0em;
 
                 .cont_titulo_mis_servicios {
                     display: inline-flex;
@@ -1203,6 +1256,7 @@
 
                             .titulo {
                                 width: 40vw;
+
                                 h4 {
                                     color: #000;
                                     font-family: Sora;
@@ -1213,8 +1267,9 @@
                                     text-transform: uppercase;
                                 }
                             }
-                            .titulo:hover{
-                                cursor:url("../assets/img/ir.svg") 20 20, auto; 
+
+                            .titulo:hover {
+                                cursor: url("../assets/img/ir.svg") 20 20, auto;
                             }
 
 
@@ -1249,9 +1304,10 @@
                                 align-items: end;
                             }
                         }
+
                         .cont_item_horizontal_dos:hover {
                             border-bottom: 2px solid #000000;
-                            cursor:url("../assets/img/ir.svg") 20 20, auto; 
+                            cursor: url("../assets/img/ir.svg") 15 10, auto;
                         }
                     }
 
@@ -1262,6 +1318,18 @@
 
     }
 
+}
+
+@keyframes scrollderecha {
+    0% {
+        -webkit-transform: translatex(-5vw);
+        transform: translatex(-5vw);
+    }
+
+    100% {
+        -webkit-transform: translatex(calc(-35vw * 1));
+        transform: translatex(calc(-35vw * 1));
+    }
 }
 
 @keyframes scrollabajo {

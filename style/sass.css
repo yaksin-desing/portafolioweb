@@ -70,25 +70,26 @@ body::-webkit-scrollbar-thumb {
 /* ################# CURSOR ############## */
 .grow,
 .grow-small {
-  transform: scale(5);
-  background: #ffffff;
-  mix-blend-mode: difference;
-  border: none;
+  transform: scale(2);
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 0.2px solid rgb(203, 206, 10);
 }
 
 .grow-small {
-  transform: scale(2);
-  border: none;
+  transform: scale(1.5);
+  border: 0.2px solid rgb(203, 206, 10);
 }
 
 .cursor {
   position: fixed;
-  width: 80px;
-  height: 80px;
-  margin-left: -42px;
-  margin-top: -42px;
+  width: 70px;
+  height: 70px;
+  margin-left: -37px;
+  margin-top: -37px;
   border-radius: 50%;
-  border: 0.5px solid rgba(119, 119, 119, 0.459);
+  border: 0.1px solid rgba(206, 206, 206, 0.459);
   transition: transform 0.1s ease;
   transform-origin: center center;
   pointer-events: none;
@@ -475,8 +476,8 @@ p {
   text-transform: uppercase;
 }
 .cont_pie_de_pagina .cont_titulo_pie img {
-  Clip-path: inset(50px 50px 50px 50px);
-  width: 800px;
+  width: 40vw;
+  z-index: 2;
   overflow: hidden;
 }
 .cont_pie_de_pagina .list_social {
@@ -3726,14 +3727,13 @@ body {
 .body__index main .mis_servicios {
   display: flex;
   flex-direction: column;
-  margin: 10em 5em 5em 5em;
-  gap: 5em;
 }
 .body__index main .mis_servicios .cont_titulo_mis_servicios {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
+  margin: 5em 5em 5em 5em;
 }
 .body__index main .mis_servicios .cont_titulo_mis_servicios .titulo {
   color: #000;
@@ -3741,8 +3741,7 @@ body {
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
-  line-height: 122%;
-  letter-spacing: 0.75px;
+  line-height: 100%;
   text-transform: capitalize;
 }
 .body__index main .mis_servicios .cont_titulo_mis_servicios .cont_subtitulo_mis_servicios {
@@ -3784,6 +3783,7 @@ body {
 .body__index main .mis_servicios .cont_lista_mis_servicios {
   display: flex;
   flex-direction: column;
+  margin: 0em 5em 5em 5em;
 }
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios {
   display: flex;
@@ -3794,14 +3794,14 @@ body {
   border-bottom: 0.5px solid #b1b1b1;
 }
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios h4 {
-  color: #818181;
+  color: #000000;
   font-family: Sora;
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: 136%;
-  /* 68px */
   text-transform: uppercase;
+  visibility: visible;
 }
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .subtitulo_experiencia {
   height: 5em;
@@ -3839,13 +3839,41 @@ body {
   line-height: 107.5%;
   /* 15.05px */
 }
+.body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .cont_slider_banderas {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .cont_slider_banderas .sslider_uno {
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  gap: 10px;
+  animation: scrollderecha 5s linear infinite;
+  bottom: -10vh;
+  height: 0%;
+  opacity: 0;
+  transform-origin: 0px 0%;
+  transition: all 300ms;
+  transition-delay: 0.1s;
+  transition-timing-function: cubic-bezier(0.51, 1.02, 1, 1);
+}
+.body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .cont_slider_banderas .sslider_uno img {
+  cursor: url("../assets/img/ir.svg") 15 10, auto;
+  width: 30vw;
+}
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover {
   border-bottom: 2px solid #000000;
-  cursor: url("../assets/img/ir.svg") 20 20, auto;
 }
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover h4 {
   color: #000000;
   font-weight: 900;
+  visibility: hidden;
 }
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover .subtitulo_experiencia {
   height: 5em;
@@ -3876,6 +3904,17 @@ body {
 }
 .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover p {
   font-weight: 500;
+  visibility: hidden;
+}
+.body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover .cont_slider_banderas {
+  visibility: visible;
+}
+.body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover .cont_slider_banderas .sslider_uno {
+  overflow-y: hidden;
+  opacity: 1;
+  bottom: 0vh;
+  height: 100%;
+  background: #FFF503;
 }
 .body__index main .cont_section_plus {
   display: flex;
@@ -4062,8 +4101,7 @@ body {
 .body__index main .conten_anima_3d .mis_servicios {
   display: flex;
   flex-direction: column;
-  margin: 10em 5em 5em 5em;
-  gap: 5em;
+  margin: 5em 0em 5em 0em;
 }
 .body__index main .conten_anima_3d .mis_servicios .cont_titulo_mis_servicios {
   display: inline-flex;
@@ -4404,9 +4442,17 @@ body {
 }
 .body__index main .capa_contenedora .cont_horizontal_ocho .cont_horizontal_dos .cont_lista_horizontal_dos .cont_item_horizontal_dos:hover {
   border-bottom: 2px solid #000000;
-  cursor: url("../assets/img/ir.svg") 20 20, auto;
+  cursor: url("../assets/img/ir.svg") 15 10, auto;
 }
 
+@keyframes scrollderecha {
+  0% {
+    transform: translatex(-5vw);
+  }
+  100% {
+    transform: translatex(-35vw);
+  }
+}
 @keyframes scrollabajo {
   0% {
     transform: translateY(0);
