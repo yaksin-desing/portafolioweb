@@ -533,6 +533,7 @@
                     align-items: flex-start;
                     align-self: stretch;
                     border-bottom: 0.5px solid #b1b1b1;
+
                     h4 {
                         color: #000000;
                         font-family: Sora;
@@ -591,10 +592,10 @@
                         position: absolute;
                         align-items: center;
                         justify-content: center;
-                        
+
 
                         .sslider_uno {
-                            
+
                             overflow-y: hidden;
                             display: flex;
                             align-items: center;
@@ -611,6 +612,7 @@
                             transition: all 300ms;
                             transition-delay: 0.1s;
                             transition-timing-function: cubic-bezier(0.51, 1.02, 1, 1.0);
+
                             img {
                                 cursor: url("../assets/img/ir.svg") 15 10, auto;
                                 width: 30vw;
@@ -625,7 +627,7 @@
 
                 .cont_item_mis_servicios:hover {
                     border-bottom: 2px solid #000000;
-                    
+
 
 
                     h4 {
@@ -671,10 +673,11 @@
                     }
 
                     .cont_slider_banderas {
-                        
+
                         visibility: visible;
+
                         .sslider_uno {
-                            
+
                             overflow-y: hidden;
                             opacity: 1;
                             bottom: 0vh;
@@ -1316,9 +1319,98 @@
             }
         }
 
-    }
 
+        /* #####################   SECTION OCHO ############################# */
+        .cont_pilar {
+            width: 100vw;
+            height: 110vh;
+            background: #171717;
+
+            .cont_contenido_pilar {
+                background: rgba(80, 80, 80, 0.01);
+                backdrop-filter: blur(2.5px);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3em 2em 3em 2em;
+
+                .contador_pilar {
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+
+                    .contador {
+                        color: #FFF;
+                        font-family: Margo + Beuys;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 136%;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .titulo {
+                    h2 {
+                        color: #FFF;
+                        text-shadow: 0px 0px 38px #000;
+                        font-family: Margo + Beuys;
+                        font-size: 90px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 138.5%;
+                        /* 124.65px */
+                        letter-spacing: 4.5px;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .contenido_pilar {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: end;
+                    
+                    .parrafo_uno {
+                        width: 20vw;
+                        color: #FFF;
+                        font-family: Gotham;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 138.5%;
+                        letter-spacing: 0.75px;
+                        text-transform: capitalize;
+                    }
+                    .parrafo_dos {
+                        color: #FFF;
+                        font-family: Gotham;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 138.5%;
+                        letter-spacing: 0.75px;
+                        text-transform: capitalize;
+                        white-space: nowrap
+                    }
+                }
+                .cont_animacion_uno{
+                    top: -5em;
+                    position:absolute;
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
 
 @keyframes scrollderecha {
     0% {
