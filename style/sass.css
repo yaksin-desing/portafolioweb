@@ -4520,6 +4520,98 @@ body {
 .body__index main .cont_pilar .cont_contenido_pilar .cont_animacion_uno {
   top: -5em;
   position: absolute;
+  z-index: 1;
+  width: 50vw;
+}
+.body__index main .cont_pilar .cont_contenido_pilar .cont_animacion_dos {
+  top: -10em;
+  position: absolute;
+  z-index: -1;
+  width: 0vw;
+}
+.body__index main .cont_pilar .cont_contenido_pilar .cont_animacion_tres {
+  top: -10em;
+  position: absolute;
+  z-index: -1;
+  width: 50vw;
+}
+.body__index main .cont_pilar_wite {
+  width: 100vw;
+  height: 110vh;
+  background: #ffffff;
+  display: flex;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar {
+  background: rgba(255, 255, 255, 0.01);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 2em 3em 2em;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .contador_pilar {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .contador_pilar .contador {
+  color: #000000;
+  font-family: MargoBeuys;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 136%;
+  text-transform: uppercase;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .titulo h2 {
+  color: #000000;
+  font-family: MargoBeuys;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 138.5%;
+  /* 124.65px */
+  letter-spacing: 4.5px;
+  text-transform: capitalize;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .contenido_pilar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .contenido_pilar .parrafo_uno {
+  width: 20vw;
+  color: #000000;
+  font-family: Gotham;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 138.5%;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .contenido_pilar .parrafo_dos {
+  color: #000000;
+  font-family: Gotham;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 138.5%;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.body__index main .cont_pilar_wite .cont_contenido_pilar .cont_animacion_dos {
+  top: -10em;
+  position: absolute;
+  z-index: -1;
+  width: 70vw;
 }
 
 @keyframes scrollderecha {
