@@ -21,6 +21,22 @@ tl.to(
     },
 )
 
+let mm= gsap.matchMedia();
+
+mm.add("(max-width:400px)",()=>{
+    
+tl.to(
+    boton, {
+        scale: 0.8,
+        rotate: "0deg",
+        x: "5vw",
+        y: "80vh",
+        duration: 1,
+    },
+)
+}
+)
+
 
 
 
