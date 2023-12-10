@@ -972,7 +972,6 @@
                         }
                     }
                 }
-
                 .cont_lista_mis_servicios {
                     display: flex;
                     flex-direction: column;
@@ -1080,6 +1079,9 @@
                         }
                     }
 
+                }
+                .cont_lista_mi_experiencia_movil{
+                    display: none;
                 }
 
             }
@@ -1521,7 +1523,7 @@
 
 @media (max-width: 720px) {
     .body__index {
-    
+        overflow-x: hidden;    
         .conta_scroll_boton {
             width: 100vw;
             height: 80vh;
@@ -1714,14 +1716,13 @@
     
     
             .grilla {
-                visibility: hidden;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: -1;
-                width: 88vw;
-                margin-top: 5em;
-                margin-left: 5em;
+                width: 100%;
+                margin-top: 2em;
+                margin-left: 2em;
             }
     
             .fondo_inicio {
@@ -1760,8 +1761,8 @@
                     width: 100vw;
                     height: 100%;
                     background:
-                        repeating-radial-gradient(rgba(255, 255, 255, 0.02)0 0.0001%, #ffffff46 0 0.0002%) 60% 60%/3000px 3000px,
-                        repeating-conic-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, #ffffff46 0 0.0002%) 40% 40%/3000px 3000px;
+                        repeating-radial-gradient(rgba(255, 255, 255, 0)0 0.0001%, #ffffff00 0 0.0002%) 60% 60%/3000px 3000px,
+                        repeating-conic-gradient(rgba(255, 255, 255, 0) 0 0.0001%, #ffffff00 0 0.0002%) 40% 40%/3000px 3000px;
                     background-blend-mode: difference;
                     backdrop-filter: blur(30px);
                 }
@@ -1849,10 +1850,9 @@
             /* #####################   SECTION TRES ############################# */
     
             .cont_aboutme {
-                visibility: hidden;
                 display: flex;
                 flex-direction: column;
-                margin: 20em 5em 5em 5em;
+                margin: 20em 1em 1em 1em;
     
                 .cont_titulo_aboutme {
                     display: inline-flex;
@@ -1863,7 +1863,7 @@
                     .titulo {
                         color: #000;
                         font-family: Sora;
-                        font-size: 15px;
+                        font-size: calc(1px + 2vh);;
                         font-style: normal;
                         font-weight: 300;
                         line-height: 122%;
@@ -1873,13 +1873,14 @@
     
                     .cont_subtitulo_aboutme {
                         display: flex;
-                        gap: 65px;
+                        flex-direction: column;
+                        gap: 10px;
                         align-items: flex-end;
     
                         .subtitulo_aboutme {
                             color: #000;
                             font-family: MargoBeuys;
-                            font-size: 80px;
+                            font-size: calc(1px + 5vh);
                             font-style: normal;
                             font-weight: 800;
                             line-height: 115.5%;
@@ -1914,14 +1915,14 @@
     
                 .cont_contenido_aboutme {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     margin: 5em 0em 5em 0em;
                     justify-content: space-between;
-                    gap: 100px;
+                    gap: 50px;
     
                     .animacion_aboutme {
                         background: #FFF503;
-                        width: 50%;
+                        width: 100%;
                         border-radius: 20px;
                         overflow: hidden;
                     }
@@ -1931,7 +1932,8 @@
                         flex-direction: column;
                         justify-content: space-between;
                         align-items: flex-start;
-                        width: 50%;
+                        width: 100%;
+                        gap: 20px;
     
                         .contenido {
                             display: flex;
@@ -1973,7 +1975,7 @@
                                 .contenido_contenido {
                                     color: #000;
                                     font-family: poppins;
-                                    font-size: 15px;
+                                    font-size: calc(1px + 2vh);;
                                     font-style: normal;
                                     font-weight: 300;
                                     line-height: 138.5%;
@@ -1991,7 +1993,6 @@
     
             /* #####################   SECTION CUATRO ############################# */
             .mis_servicios {
-                visibility: hidden;
                 display: flex;
                 flex-direction: column;
     
@@ -2000,12 +2001,13 @@
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 5px;
-                    margin: 5em 5em 5em 5em;
+                    margin: 3em 1em 1em 1em;
+                    
     
                     .titulo {
                         color: #000;
                         font-family: Sora;
-                        font-size: 15px;
+                        font-size: calc(1px + 2vh);
                         font-style: normal;
                         font-weight: 300;
                         line-height: 100%;
@@ -2014,13 +2016,15 @@
     
                     .cont_subtitulo_mis_servicios {
                         display: flex;
-                        gap: 60px;
-                        align-items: flex-end;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: flex-start;
+                        width: 100%;
     
                         .subtitulo_aboutme {
                             color: #000;
                             font-family: Sora;
-                            font-size: 80px;
+                            font-size: calc(1px + 5vh);
                             font-style: normal;
                             font-weight: 800;
                             line-height: 115.5%;
@@ -2032,6 +2036,7 @@
                             color: #000;
                             font-family: Sora;
                             font-size: 15px;
+                            text-align: start;
                             font-style: normal;
                             font-weight: 300;
                             line-height: 138.5%;
@@ -2040,6 +2045,8 @@
                         }
     
                         .etiqueta {
+                            width: 100%;
+                            text-align: end;
                             color: #000;
                             font-family: Sora;
                             font-size: 15px;
@@ -2056,7 +2063,7 @@
                 .cont_lista_mis_servicios {
                     display: flex;
                     flex-direction: column;
-                    margin: 0em 5em 5em 5em;
+                    margin: 0em 1em 5em 1em;
     
                     .cont_item_mis_servicios {
                         display: flex;
@@ -2069,7 +2076,7 @@
                         h4 {
                             color: #000000;
                             font-family: Sora;
-                            font-size: 50px;
+                            font-size: calc(1px + 4vh);
                             font-style: normal;
                             font-weight: 600;
                             line-height: 136%;
@@ -2226,29 +2233,27 @@
     
             /* #####################   SECTION CINCO ############################# */
             .cont_section_plus {
-                visibility: hidden;
                 display: flex;
                 height: 100%;
-                margin: 5em 5em 5em 5em;
+                margin: 1em 0em 1em 0em;
                 padding-bottom: 3em;
-                padding-top: 5em;
-    
+                padding-top: 1em;
                 position: relative;
                 overflow: hidden;
                 flex-direction: column;
     
                 .cont_titulo_plus {
-                    padding: 2em 2em 2em 2em;
+                    padding: 2em 1em 2em 1em;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
-                    align-items: flex-end;
+                    align-items: flex-start;
                     width: 100%;
     
                     .subtitulo_plus {
                         color: #000;
                         font-family: Sorts Mill Goudy;
-                        font-size: 90px;
+                        font-size: calc(1px + 5vh);
                         font-style: italic;
                         font-weight: 400;
                         line-height: 81.5%;
@@ -2259,7 +2264,7 @@
                         strong {
                             color: #000;
                             font-family: Sora;
-                            font-size: 90px;
+                            font-size: calc(1px + 4vh);
                             font-style: normal;
                             font-weight: 800;
                             line-height: 81.5%;
@@ -2271,7 +2276,7 @@
                     .context_subtitulo {
                         color: #000;
                         font-family: Sora;
-                        font-size: 15px;
+                        font-size: calc(1px + 2vh);
                         font-style: normal;
                         font-weight: 250;
                         line-height: 138.5%;
@@ -2330,7 +2335,8 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    margin: 2em 2em 2em 2em;
+                    margin: 1em 1em 1em 1em;
+                    gap: calc(1px + 2vh);
     
                     .cont_item_lista_plus {
                         display: flex;
@@ -2339,7 +2345,7 @@
                         align-items: center;
                         border-bottom: 0.5px solid rgb(54, 54, 54);
                         padding-bottom: 5px;
-                        gap: 20em;
+                        gap: 10px;
     
                         img {
                             margin: 10px;
@@ -2349,7 +2355,7 @@
                             color: #000;
                             text-align: justify;
                             font-family: poppins;
-                            font-size: 15px;
+                            font-size: calc(1px + 2vh);
                             font-style: normal;
                             font-weight: 400;
                             line-height: 136%;
@@ -2361,7 +2367,7 @@
     
                 .fondo_plus {
                     width: 100%;
-                    height: 100vh;
+                    height: 100%;
                     position: absolute;
                     z-index: -10;
                     background: rgb(255, 255, 255);
@@ -2408,7 +2414,6 @@
             /* #####################   SECTION SEIS ############################# */
     
             .conten_anima_3d {
-                visibility: hidden;
     
                 position: relative;
     
@@ -2419,6 +2424,7 @@
                     height: 250px;
                     left: 5em;
                     top: 5em;
+
                 }
     
                 .bandera {
@@ -2427,6 +2433,7 @@
                     height: 100vh;
                     justify-content: center;
                     align-items: center;
+
     
                     .titulo_bandera {
                         margin-left: 2em;
@@ -2435,7 +2442,7 @@
                         color: #000000;
                         text-align: center;
                         font-family: Sora;
-                        font-size: 80px;
+                        font-size: calc(1px + 5vh);
                         font-style: normal;
                         font-weight: 900;
                         line-height: 115.5%;
@@ -2447,7 +2454,7 @@
                 .mis_servicios {
                     display: flex;
                     flex-direction: column;
-                    margin: 5em 0em 5em 0em;
+                    margin: 1em 0em 1em 0em;
     
                     .cont_titulo_mis_servicios {
                         display: inline-flex;
@@ -2458,7 +2465,7 @@
                         .titulo {
                             color: #000;
                             font-family: Sora;
-                            font-size: 15px;
+                            font-size: calc(1px + 2vh);
                             font-style: normal;
                             font-weight: 300;
                             line-height: 122%;
@@ -2469,12 +2476,12 @@
                         .cont_subtitulo_mis_servicios {
                             display: flex;
                             gap: 60px;
-                            align-items: flex-end;
+                            align-items: flex-start;
     
                             .subtitulo_aboutme {
                                 color: #000;
                                 font-family: Sora;
-                                font-size: 80px;
+                                font-size: calc(1px + 5vh);
                                 font-style: normal;
                                 font-weight: 800;
                                 line-height: 115.5%;
@@ -2508,30 +2515,33 @@
                     }
     
                     .cont_lista_mis_servicios {
-                        display: flex;
+                        display: none;
                         flex-direction: column;
     
                         .cont_item_mis_servicios {
                             display: flex;
-                            padding: 15px 0px;
+                            flex-direction: column;
+                            padding: 10px 0px;
                             justify-content: space-between;
                             align-items: flex-start;
-                            align-self: stretch;
+                            align-self:center;
+                            width: 100%;
                             border-bottom: 0.5px solid #b1b1b1;
     
                             h4 {
                                 color: #818181;
                                 font-family: Sora;
-                                font-size: 50px;
+                                font-size: calc(1px + 3vh);
                                 font-style: normal;
                                 font-weight: 600;
-                                line-height: 136%;
+                                line-height: 130%;
                                 /* 68px */
                                 text-transform: uppercase;
+                                white-space: nowrap;
                             }
     
                             .subtitulo_experiencia {
-                                height: 5em;
+                                height: 2em;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: start;
@@ -2540,7 +2550,7 @@
                                 .titulo {
                                     color: #818181;
                                     font-family: Sora;
-                                    font-size: 20px;
+                                    font-size: calc(1px + 2vh);
                                     font-style: normal;
                                     font-weight: 400;
                                     line-height: 136%;
@@ -2551,7 +2561,7 @@
                                 .fecha {
                                     color: #818181;
                                     font-family: Sora;
-                                    font-size: 14px;
+                                    font-size: calc(1px + 1vh);
                                     font-style: normal;
                                     font-weight: 100;
                                     line-height: 136%;
@@ -2561,13 +2571,15 @@
                             }
     
                             p {
+                                width: 100%;
+                                text-align: end;
                                 color: #000;
                                 font-family: Sora;
                                 font-size: 14px;
                                 font-style: normal;
                                 font-weight: 300;
                                 line-height: 107.5%;
-                                /* 15.05px */
+                                white-space: nowrap;
                             }
                         }
     
@@ -2615,8 +2627,80 @@
                         }
     
                     }
+
+
+                    .cont_lista_mi_experiencia_movil {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 1em 1em 1em 1em;
+                        gap: 20px;
+    
+                        .cont_item_mis_servicios {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            gap: 10px;
+                            
+                            border-bottom: 0.5px solid #b1b1b1;
+                            .cont_uno{
+                                display: flex;
+                                flex-direction: row;
+                                width: 100%;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                                h4 {
+                                    color: #000000;
+                                    font-family: Sora;
+                                    font-size: calc(1px + 4vh);
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 130%;
+                                    /* 68px */
+                                    text-transform: uppercase;
+                                    white-space: nowrap;
+                                }
+                                .subtitulo_experiencia {
+                                    display: flex;
+                                    flex-direction: column;
+        
+                                    .titulo {
+                                        color: #000000;
+                                        font-family: Sora;
+                                        font-size: calc(1px + 2vh);
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 136%;
+                                        /* 27.2px */
+                                        text-transform: capitalize;
+                                    }
+        
+                                    .fecha {
+                                        color: #000000;
+                                        font-family: Sora;
+                                        font-size: calc(1px + 1vh);
+                                        font-style: normal;
+                                        font-weight: 100;
+                                        line-height: 136%;
+                                        /* 19.04px */
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                            p {
+                                text-align: end;
+                                color: #000;
+                                font-family: Sora;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 107.5%;
+                                white-space: nowrap;
+                            }
+                        }
+    
+                    }
     
                 }
+                
     
     
     
@@ -2625,12 +2709,12 @@
             /* #####################   SECTION OCHO ############################# */
     
             .cont_titulo_mis_horizontal {
-                visibility: hidden;
                 margin: 5em 5em 3em 5em;
                 display: inline-flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 5px;
+                display: none;
     
                 .titulo {
                     color: #000;
@@ -2685,10 +2769,11 @@
             }
     
             .capa_contenedora {
-                visibility: hidden;
+                
                 overflow-x: hidden;
                 display: flex;
                 padding-bottom: 5em;
+                display: none;
     
                 .cont_horizontal_ocho {
                     display: flex;
@@ -2858,7 +2943,7 @@
     
             /* #####################   SECTION OCHO ############################# */
             .cont_pilar {
-                visibility: hidden;
+                display: none;
                 width: 100vw;
                 height: 110vh;
                 background: #171717;
@@ -2960,11 +3045,11 @@
             }
     
             .cont_pilar_wite {
-                visibility: hidden;
                 width: 100vw;
                 height: 110vh;
                 background: #ffffff;
                 display: flex;
+                display: none;
     
                 .cont_contenido_pilar {
                     background: rgba(255, 255, 255, 0.01);

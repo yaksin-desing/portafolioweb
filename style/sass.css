@@ -4620,6 +4620,9 @@ body {
 .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover p {
   font-weight: 500;
 }
+.body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil {
+  display: none;
+}
 .body__index main .cont_titulo_mis_horizontal {
   margin: 5em 5em 3em 5em;
   display: inline-flex;
@@ -4984,6 +4987,9 @@ body {
 }
 
 @media (max-width: 720px) {
+  .body__index {
+    overflow-x: hidden;
+  }
   .body__index .conta_scroll_boton {
     width: 100vw;
     height: 80vh;
@@ -5153,14 +5159,13 @@ body {
     letter-spacing: 0.15px;
   }
   .body__index main .grilla {
-    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    width: 88vw;
-    margin-top: 5em;
-    margin-left: 5em;
+    width: 100%;
+    margin-top: 2em;
+    margin-left: 2em;
   }
   .body__index main .fondo_inicio {
     position: absolute;
@@ -5194,7 +5199,7 @@ body {
     z-index: 0;
     width: 100vw;
     height: 100%;
-    background: repeating-radial-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, rgba(255, 255, 255, 0.2745098039) 0 0.0002%) 60% 60%/3000px 3000px, repeating-conic-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, rgba(255, 255, 255, 0.2745098039) 0 0.0002%) 40% 40%/3000px 3000px;
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0) 0 0.0001%, rgba(255, 255, 255, 0) 0 0.0002%) 60% 60%/3000px 3000px, repeating-conic-gradient(rgba(255, 255, 255, 0) 0 0.0001%, rgba(255, 255, 255, 0) 0 0.0002%) 40% 40%/3000px 3000px;
     background-blend-mode: difference;
     -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px);
@@ -5263,10 +5268,9 @@ body {
     border-radius: 172px;
   }
   .body__index main .cont_aboutme {
-    visibility: hidden;
     display: flex;
     flex-direction: column;
-    margin: 20em 5em 5em 5em;
+    margin: 20em 1em 1em 1em;
   }
   .body__index main .cont_aboutme .cont_titulo_aboutme {
     display: inline-flex;
@@ -5277,7 +5281,7 @@ body {
   .body__index main .cont_aboutme .cont_titulo_aboutme .titulo {
     color: #000;
     font-family: Sora;
-    font-size: 15px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 300;
     line-height: 122%;
@@ -5286,13 +5290,14 @@ body {
   }
   .body__index main .cont_aboutme .cont_titulo_aboutme .cont_subtitulo_aboutme {
     display: flex;
-    gap: 65px;
+    flex-direction: column;
+    gap: 10px;
     align-items: flex-end;
   }
   .body__index main .cont_aboutme .cont_titulo_aboutme .cont_subtitulo_aboutme .subtitulo_aboutme {
     color: #000;
     font-family: MargoBeuys;
-    font-size: 80px;
+    font-size: calc(1px + 5vh);
     font-style: normal;
     font-weight: 800;
     line-height: 115.5%;
@@ -5322,14 +5327,14 @@ body {
   }
   .body__index main .cont_aboutme .cont_contenido_aboutme {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 5em 0em 5em 0em;
     justify-content: space-between;
-    gap: 100px;
+    gap: 50px;
   }
   .body__index main .cont_aboutme .cont_contenido_aboutme .animacion_aboutme {
     background: #FFF503;
-    width: 50%;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
   }
@@ -5338,7 +5343,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
+    gap: 20px;
   }
   .body__index main .cont_aboutme .cont_contenido_aboutme .lista_contenido_aboutme .contenido {
     display: flex;
@@ -5377,7 +5383,7 @@ body {
   .body__index main .cont_aboutme .cont_contenido_aboutme .lista_contenido_aboutme .contenido .titulo_contenido .contenido_contenido {
     color: #000;
     font-family: poppins;
-    font-size: 15px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 300;
     line-height: 138.5%;
@@ -5386,7 +5392,6 @@ body {
     text-transform: capitalize;
   }
   .body__index main .mis_servicios {
-    visibility: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -5395,12 +5400,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    margin: 5em 5em 5em 5em;
+    margin: 3em 1em 1em 1em;
   }
   .body__index main .mis_servicios .cont_titulo_mis_servicios .titulo {
     color: #000;
     font-family: Sora;
-    font-size: 15px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
@@ -5408,13 +5413,15 @@ body {
   }
   .body__index main .mis_servicios .cont_titulo_mis_servicios .cont_subtitulo_mis_servicios {
     display: flex;
-    gap: 60px;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
   }
   .body__index main .mis_servicios .cont_titulo_mis_servicios .cont_subtitulo_mis_servicios .subtitulo_aboutme {
     color: #000;
     font-family: Sora;
-    font-size: 80px;
+    font-size: calc(1px + 5vh);
     font-style: normal;
     font-weight: 800;
     line-height: 115.5%;
@@ -5425,6 +5432,7 @@ body {
     color: #000;
     font-family: Sora;
     font-size: 15px;
+    text-align: start;
     font-style: normal;
     font-weight: 300;
     line-height: 138.5%;
@@ -5432,6 +5440,8 @@ body {
     text-transform: capitalize;
   }
   .body__index main .mis_servicios .cont_titulo_mis_servicios .cont_subtitulo_mis_servicios .etiqueta {
+    width: 100%;
+    text-align: end;
     color: #000;
     font-family: Sora;
     font-size: 15px;
@@ -5445,7 +5455,7 @@ body {
   .body__index main .mis_servicios .cont_lista_mis_servicios {
     display: flex;
     flex-direction: column;
-    margin: 0em 5em 5em 5em;
+    margin: 0em 1em 5em 1em;
   }
   .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios {
     display: flex;
@@ -5458,7 +5468,7 @@ body {
   .body__index main .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios h4 {
     color: #000000;
     font-family: Sora;
-    font-size: 50px;
+    font-size: calc(1px + 4vh);
     font-style: normal;
     font-weight: 600;
     line-height: 136%;
@@ -5579,28 +5589,27 @@ body {
     background: #FFF503;
   }
   .body__index main .cont_section_plus {
-    visibility: hidden;
     display: flex;
     height: 100%;
-    margin: 5em 5em 5em 5em;
+    margin: 1em 0em 1em 0em;
     padding-bottom: 3em;
-    padding-top: 5em;
+    padding-top: 1em;
     position: relative;
     overflow: hidden;
     flex-direction: column;
   }
   .body__index main .cont_section_plus .cont_titulo_plus {
-    padding: 2em 2em 2em 2em;
+    padding: 2em 1em 2em 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
   }
   .body__index main .cont_section_plus .cont_titulo_plus .subtitulo_plus {
     color: #000;
     font-family: Sorts Mill Goudy;
-    font-size: 90px;
+    font-size: calc(1px + 5vh);
     font-style: italic;
     font-weight: 400;
     line-height: 81.5%;
@@ -5611,7 +5620,7 @@ body {
   .body__index main .cont_section_plus .cont_titulo_plus .subtitulo_plus strong {
     color: #000;
     font-family: Sora;
-    font-size: 90px;
+    font-size: calc(1px + 4vh);
     font-style: normal;
     font-weight: 800;
     line-height: 81.5%;
@@ -5621,7 +5630,7 @@ body {
   .body__index main .cont_section_plus .cont_titulo_plus .context_subtitulo {
     color: #000;
     font-family: Sora;
-    font-size: 15px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 250;
     line-height: 138.5%;
@@ -5671,7 +5680,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 2em 2em 2em 2em;
+    margin: 1em 1em 1em 1em;
+    gap: calc(1px + 2vh);
   }
   .body__index main .cont_section_plus .cont_lista_plus .cont_item_lista_plus {
     display: flex;
@@ -5680,7 +5690,7 @@ body {
     align-items: center;
     border-bottom: 0.5px solid rgb(54, 54, 54);
     padding-bottom: 5px;
-    gap: 20em;
+    gap: 10px;
   }
   .body__index main .cont_section_plus .cont_lista_plus .cont_item_lista_plus img {
     margin: 10px;
@@ -5689,7 +5699,7 @@ body {
     color: #000;
     text-align: justify;
     font-family: poppins;
-    font-size: 15px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 400;
     line-height: 136%;
@@ -5697,7 +5707,7 @@ body {
   }
   .body__index main .cont_section_plus .fondo_plus {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     z-index: -10;
     background: rgb(255, 255, 255);
@@ -5731,7 +5741,6 @@ body {
             backdrop-filter: blur(30px);
   }
   .body__index main .conten_anima_3d {
-    visibility: hidden;
     position: relative;
   }
   .body__index main .conten_anima_3d .cont_figure_geometric_uno {
@@ -5756,7 +5765,7 @@ body {
     color: #000000;
     text-align: center;
     font-family: Sora;
-    font-size: 80px;
+    font-size: calc(1px + 5vh);
     font-style: normal;
     font-weight: 900;
     line-height: 115.5%;
@@ -5765,7 +5774,7 @@ body {
   .body__index main .conten_anima_3d .mis_servicios {
     display: flex;
     flex-direction: column;
-    margin: 5em 0em 5em 0em;
+    margin: 1em 0em 1em 0em;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_titulo_mis_servicios {
     display: inline-flex;
@@ -5776,7 +5785,7 @@ body {
   .body__index main .conten_anima_3d .mis_servicios .cont_titulo_mis_servicios .titulo {
     color: #000;
     font-family: Sora;
-    font-size: 15px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 300;
     line-height: 122%;
@@ -5786,12 +5795,12 @@ body {
   .body__index main .conten_anima_3d .mis_servicios .cont_titulo_mis_servicios .cont_subtitulo_mis_servicios {
     display: flex;
     gap: 60px;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_titulo_mis_servicios .cont_subtitulo_mis_servicios .subtitulo_aboutme {
     color: #000;
     font-family: Sora;
-    font-size: 80px;
+    font-size: calc(1px + 5vh);
     font-style: normal;
     font-weight: 800;
     line-height: 115.5%;
@@ -5820,29 +5829,32 @@ body {
     white-space: nowrap;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios {
     display: flex;
-    padding: 15px 0px;
+    flex-direction: column;
+    padding: 10px 0px;
     justify-content: space-between;
     align-items: flex-start;
-    align-self: stretch;
+    align-self: center;
+    width: 100%;
     border-bottom: 0.5px solid #b1b1b1;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios h4 {
     color: #818181;
     font-family: Sora;
-    font-size: 50px;
+    font-size: calc(1px + 3vh);
     font-style: normal;
     font-weight: 600;
-    line-height: 136%;
+    line-height: 130%;
     /* 68px */
     text-transform: uppercase;
+    white-space: nowrap;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .subtitulo_experiencia {
-    height: 5em;
+    height: 2em;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -5851,7 +5863,7 @@ body {
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .subtitulo_experiencia .titulo {
     color: #818181;
     font-family: Sora;
-    font-size: 20px;
+    font-size: calc(1px + 2vh);
     font-style: normal;
     font-weight: 400;
     line-height: 136%;
@@ -5861,7 +5873,7 @@ body {
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios .subtitulo_experiencia .fecha {
     color: #818181;
     font-family: Sora;
-    font-size: 14px;
+    font-size: calc(1px + 1vh);
     font-style: normal;
     font-weight: 100;
     line-height: 136%;
@@ -5869,13 +5881,15 @@ body {
     text-transform: uppercase;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios p {
+    width: 100%;
+    text-align: end;
     color: #000;
     font-family: Sora;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 107.5%;
-    /* 15.05px */
+    white-space: nowrap;
   }
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover {
     border-bottom: 1px solid #000000;
@@ -5914,13 +5928,77 @@ body {
   .body__index main .conten_anima_3d .mis_servicios .cont_lista_mis_servicios .cont_item_mis_servicios:hover p {
     font-weight: 500;
   }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 1em 1em;
+    gap: 20px;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    border-bottom: 0.5px solid #b1b1b1;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios .cont_uno {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios .cont_uno h4 {
+    color: #000000;
+    font-family: Sora;
+    font-size: calc(1px + 4vh);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 68px */
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios .cont_uno .subtitulo_experiencia {
+    display: flex;
+    flex-direction: column;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios .cont_uno .subtitulo_experiencia .titulo {
+    color: #000000;
+    font-family: Sora;
+    font-size: calc(1px + 2vh);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136%;
+    /* 27.2px */
+    text-transform: capitalize;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios .cont_uno .subtitulo_experiencia .fecha {
+    color: #000000;
+    font-family: Sora;
+    font-size: calc(1px + 1vh);
+    font-style: normal;
+    font-weight: 100;
+    line-height: 136%;
+    /* 19.04px */
+    text-transform: uppercase;
+  }
+  .body__index main .conten_anima_3d .mis_servicios .cont_lista_mi_experiencia_movil .cont_item_mis_servicios p {
+    text-align: end;
+    color: #000;
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 107.5%;
+    white-space: nowrap;
+  }
   .body__index main .cont_titulo_mis_horizontal {
-    visibility: hidden;
     margin: 5em 5em 3em 5em;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
+    display: none;
   }
   .body__index main .cont_titulo_mis_horizontal .titulo {
     color: #000;
@@ -5969,10 +6047,10 @@ body {
     white-space: nowrap;
   }
   .body__index main .capa_contenedora {
-    visibility: hidden;
     overflow-x: hidden;
     display: flex;
     padding-bottom: 5em;
+    display: none;
   }
   .body__index main .capa_contenedora .cont_horizontal_ocho {
     display: flex;
@@ -6111,7 +6189,7 @@ body {
     cursor: url("../assets/img/ir.svg") 15 10, auto;
   }
   .body__index main .cont_pilar {
-    visibility: hidden;
+    display: none;
     width: 100vw;
     height: 110vh;
     background: #171717;
@@ -6202,11 +6280,11 @@ body {
     width: 50vw;
   }
   .body__index main .cont_pilar_wite {
-    visibility: hidden;
     width: 100vw;
     height: 110vh;
     background: #ffffff;
     display: flex;
+    display: none;
   }
   .body__index main .cont_pilar_wite .cont_contenido_pilar {
     background: rgba(255, 255, 255, 0.01);
