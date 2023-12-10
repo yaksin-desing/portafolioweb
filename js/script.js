@@ -23,7 +23,7 @@ tl.to(
 
 let mm= gsap.matchMedia();
 
-mm.add("(max-width:400px)",()=>{
+mm.add("(max-width:720px)",()=>{
     
 tl.to(
     boton, {
