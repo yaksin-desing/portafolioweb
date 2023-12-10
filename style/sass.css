@@ -441,7 +441,7 @@ p {
   border-bottom: 0.5px solid #000;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .conte__menu {
     margin: 2rem 1rem 2rem 1rem;
   }
@@ -4983,7 +4983,7 @@ body {
   width: 70vw;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .body__index .conta_scroll_boton {
     width: 100vw;
     height: 80vh;
