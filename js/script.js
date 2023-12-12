@@ -47,7 +47,7 @@ console.log(races.offsetWidth)
 
 function getScrollAmount() {
 	let racesWidth = races.scrollWidth;
-	return -(racesWidth - window.innerWidth+50);
+	return -(racesWidth - window.innerWidth+0);
 }
 
 const tween = gsap.to(races, {
@@ -62,7 +62,7 @@ const tween = gsap.to(races, {
 ScrollTrigger.create({
 	trigger:".capa_contenedora",
 	start:"top top",
-	end: () => `+=${getScrollAmount() * -3}`,
+	end: () => `+=${getScrollAmount() * -1}`,
 	pin:true,
 	animation:tween,
 	scrub:2,
