@@ -73,20 +73,23 @@ ScrollTrigger.create({
 )
 
 
+
+
+
 function menuactivo(entries) {
     let entrada = entries[0];
     if (entrada.isIntersecting) {
-        console.log("es visible")
+
         barramenu.classList.remove("ctive")
         barramenua.classList.remove("ctive")
         verbar = true;
-
+        
     } else {
-        console.log("no visible")
+
         barramenu.classList.add("ctive")
         barramenua.classList.add("ctive")
         verbar = false;
-
+        
     }
 };
 
@@ -98,13 +101,13 @@ document.querySelector(".bars__menu").addEventListener('click', () => {
     console.log(condicion);
 
     if (condicion) {
-        document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
-        document.querySelector(".bars__menu").style.filter = "invert(0%)";
 
+        document.getElementsByTagName("html")[0].style.overflowY = "auto";
+        document.getElementsByTagName("html")[0].style.overflowX = "hidden";
     } else {
-        document.querySelector(".cont__logo__nav").style.filter = "invert(100%)";
-        document.querySelector(".bars__menu").style.filter = "invert(0%)";
 
+        document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+        document.getElementsByTagName("html")[0].style.overflowX = "hidden";
     }
 
 
@@ -167,33 +170,17 @@ cursorScale.forEach(link => {
     });
 });
 
-LottieInteractivity.create({
-    mode: "chain",
-    player: "#logo",
-    actions: [{
-            state: 'autoplay',
-            transition: 'onComplete',
-            frames: [1, 148],
-        },
-        {
-            type: 'hover',
-            frames: [147],
-        }
-    ]
-});
+
+const aboutme = document.querySelector(".animacion_aboutme");
 
 LottieInteractivity.create({
-    player: '#animacionhomepersona',
-    mode: 'chain',
-    actions: [{
-            state: 'autoplay',
-            frames: [0, 397],
-            transition: 'onComplete',
-        },
-        {
-            visibility: [0, 200],
-            state: "loop",
-            frames: [233, 397]
-        }
+    player: aboutme,
+    mode: 'scroll',
+    actions: [
+    {
+        visibility: [0,1],
+        type: 'seek',
+        frames: [0, 740],
+    },
     ]
 });
