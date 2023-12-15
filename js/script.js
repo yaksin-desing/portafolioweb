@@ -38,10 +38,6 @@ tl.to(
 )
 
 
-
-
-
-
 const races = document.querySelector(".cont_horizontal_ocho");
 console.log(races.offsetWidth)
 
@@ -71,9 +67,6 @@ ScrollTrigger.create({
     
 }
 )
-
-
-
 
 
 function menuactivo(entries) {
@@ -120,7 +113,6 @@ var line2__bars = document.querySelector(".line2__bars-menu");
 var line3__bars = document.querySelector(".line3__bars-menu");
 
 
-
 function animateBars() {
     line1__bars.classList.toggle("activeline1__bars-menu");
     line2__bars.classList.toggle("activeline2__bars-menu");
@@ -128,9 +120,6 @@ function animateBars() {
     conter_menu.classList.toggle("contendor_activo_de_menu_op");
     condicion = !condicion;
 }
-
-
-
 
 
 var cursor = document.querySelector('.cursor'),
@@ -151,10 +140,14 @@ gsap.to({}, 0.050, {
     }
 });
 
+
+
 window.addEventListener("mousemove", function (e) {
     mouseX = e.clientX;
     mouseY = e.clientY
 });
+
+
 
 cursorScale.forEach(link => {
     link.addEventListener('mouseleave', () => {
@@ -171,16 +164,13 @@ cursorScale.forEach(link => {
 });
 
 
-const aboutme = document.querySelector(".animacion_aboutme");
-
 LottieInteractivity.create({
-    player: aboutme,
-    mode: 'scroll',
-    actions: [
-    {
-        visibility: [0,1],
-        type: 'seek',
-        frames: [0, 740],
-    },
-    ]
-});
+    player:'#mydesign1',
+    mode:"scroll",
+        actions: [
+            {
+            visibility:[0.2, 1.0],
+            type: "play"
+            }
+        ]
+    });
