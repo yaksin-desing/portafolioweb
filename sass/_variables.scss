@@ -89,6 +89,40 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.float__wapp_dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 120px;
+  z-index: 1;
+  a {
+    width: 400%;
+    height: 100px;
+
+    .botonfloat__wapp {
+      margin-top: 23px;
+      margin-left: 23px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .botonfloat__wapp:hover {
+      transform: scale(1.1);
+    }
+
+    .backfloat__wapp {
+      position: absolute;
+      z-index: 0;
+      animation-name: backfloat;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
 /* ################# CURSOR ############## */
 .grow,
 .grow-small {
