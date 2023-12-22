@@ -21,52 +21,50 @@ tl.to(
     },
 )
 
-let mm= gsap.matchMedia();
+let mm = gsap.matchMedia();
 
-mm.add("(max-width:720px)",()=>{
-    
-tl.to(
-    boton, {
-        scale: 0.8,
-        rotate: "0deg",
-        x: "5vw",
-        y: "80vh",
-        duration: 1,
-    },
-)
-}
-)
+mm.add("(max-width:720px)", () => {
+
+    tl.to(
+        boton, {
+            scale: 0.8,
+            rotate: "0deg",
+            x: "5vw",
+            y: "80vh",
+            duration: 1,
+        },
+    )
+})
 
 
 const races = document.querySelector(".cont_horizontal_ocho");
 console.log(races.offsetWidth)
 
 function getScrollAmount() {
-	let racesWidth = races.scrollWidth;
-	return -(racesWidth - window.innerWidth+0);
+    let racesWidth = races.scrollWidth;
+    return -(racesWidth - window.innerWidth + 0);
 }
 
 const tween = gsap.to(races, {
-	x: getScrollAmount,
-	duration:5,
-	ease: "none",
-},
+        x: getScrollAmount,
+        duration: 5,
+        ease: "none",
+    },
 
 );
 
 
 ScrollTrigger.create({
-	trigger:".capa_contenedora",
-	start:"top top",
-	end: () => `+=${getScrollAmount() * -1}`,
-	pin:true,
-	animation:tween,
-	scrub:2,
-	invalidateOnRefresh:true,
-	markers:false,
-    
-}
-)
+    trigger: ".capa_contenedora",
+    start: "top top",
+    end: () => `+=${getScrollAmount() * -1}`,
+    pin: true,
+    animation: tween,
+    scrub: 2,
+    invalidateOnRefresh: true,
+    markers: false,
+
+})
 
 
 function menuactivo(entries) {
@@ -76,13 +74,13 @@ function menuactivo(entries) {
         barramenu.classList.remove("ctive")
         barramenua.classList.remove("ctive")
         verbar = true;
-        
+
     } else {
 
         barramenu.classList.add("ctive")
         barramenua.classList.add("ctive")
         verbar = false;
-        
+
     }
 };
 
@@ -165,12 +163,10 @@ cursorScale.forEach(link => {
 
 
 LottieInteractivity.create({
-    player:'#mydesign1',
-    mode:"scroll",
-        actions: [
-            {
-            visibility:[0.2, 1.0],
-            type: "play"
-            }
-        ]
-    });
+    player: '#mydesign1',
+    mode: "scroll",
+    actions: [{
+        visibility: [0.2, 1.0],
+        type: "play"
+    }]
+});
