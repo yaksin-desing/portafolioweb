@@ -262,6 +262,11 @@ rebo.to(figuratres.position, {
     ease: "power1.in",
 });
 
+rebo.to(figuratres.geometry.parameters, {
+    details:100,
+    duration: 8,
+});
+
 rebo.to(figuracuatro.position, {
     x:13,
     duration: 8,

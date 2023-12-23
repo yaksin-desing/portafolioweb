@@ -4104,7 +4104,9 @@ body {
     height: 100vh;
     flex-direction: column-reverse;
     margin: 2em 5vw 2em 5vw;
-    gap: 2em;
+    gap: 0em;
+    align-items: center;
+    justify-content: start;
   }
   .body_plantilla .cont_inicio .colum_uno {
     width: 100%;
@@ -4134,9 +4136,8 @@ body {
     padding-bottom: 2em;
     border-bottom: 1px solid #414141;
   }
-  .body_plantilla .cont_inicio .colum_dos {
-    background: #D9D9D9;
-    width: 100%;
+  .body_plantilla .cont_inicio .columdos {
+    width: 60%;
     height: 50%;
   }
   .body_plantilla .cont_cinta_plantilla {
