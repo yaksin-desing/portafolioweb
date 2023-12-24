@@ -272,7 +272,7 @@ p {
   transform: scale(1);
   padding: 0.5em 2em;
   border-radius: 200px;
-  background: #b2d9ff;
+  background: #fbff00;
   margin-right: 20px;
 }
 .conte__menu .contendor_activo_de_menu .list_menu .lista_uno .cont_opcion_lista:hover a {
@@ -416,7 +416,7 @@ p {
   transform: scale(1);
   padding: 0.5em 2em;
   border-radius: 200px;
-  background: #b2d9ff;
+  background: #fbff00;
   margin-right: 20px;
 }
 .conte__menu .contendor_activo_de_menu_op .list_menu .lista_uno .cont_opcion_lista:hover a {
@@ -622,6 +622,36 @@ p {
     transform: scale(1.1);
   }
   .float__wapp a .backfloat__wapp {
+    position: absolute;
+    z-index: 0;
+    animation-name: backfloat;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .float__wapp_dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 110px;
+    z-index: 1;
+  }
+  .float__wapp_dos a {
+    width: 200%;
+    height: 100px;
+  }
+  .float__wapp_dos a .botonfloat__wapp {
+    margin-top: 23px;
+    margin-left: 25px;
+    position: absolute;
+    z-index: 1;
+  }
+  .float__wapp_dos a .botonfloat__wapp:hover {
+    transform: scale(1.1);
+  }
+  .float__wapp_dos a .backfloat__wapp {
     position: absolute;
     z-index: 0;
     animation-name: backfloat;
@@ -1080,6 +1110,7 @@ p {
     z-index: 4;
   }
   .cont_pie_de_pagina .list_social {
+    z-index: 500;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -3986,6 +4017,12 @@ body {
   top: 10px;
   right: 20px;
 }
+.body_plantilla .cont_inicio .colum_uno .stikerlvl img {
+  animation-name: backfloat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 .body_plantilla .cont_inicio .colum_uno .stikerlvl p {
   text-align: center;
   position: absolute;
@@ -4142,10 +4179,11 @@ body {
     border-bottom: 1px solid #414141;
   }
   .body_plantilla .cont_inicio .colum_uno .stikerlvl {
+    transform: scale(0.8);
     rotate: 20deg;
     position: absolute;
     top: -1em;
-    right: 0px;
+    right: 1em;
   }
   .body_plantilla .cont_inicio .colum_uno .stikerlvl p {
     text-align: center;

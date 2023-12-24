@@ -8,7 +8,6 @@
         margin: 2em 5vw 2em 5vw;
         gap: 2em;
 
-
         .colum_uno {
             position:relative;
             width: 50%;
@@ -49,7 +48,13 @@
                 top: 10px;
                 right: 20px;
 
-                img {}
+                img {
+                    
+                    animation-name: backfloat;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
 
                 p { 
                     text-align: center;
@@ -232,10 +237,11 @@
                 .contadores {}
 
                 .stikerlvl {
+                    transform: scale(0.8);
                     rotate: 20deg;
                     position:absolute;
                     top: -1em;
-                    right: 0px;
+                    right: 1em;
     
                     img {}
     
@@ -316,11 +322,6 @@
         .cont_grilla_proyectos{
             margin: 1em 1em 5em 1em;
         }
-
-    
-
-
-
     }
 
 }
