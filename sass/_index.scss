@@ -1680,6 +1680,7 @@
     }
 
     .grilla {
+      display: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -3275,8 +3276,7 @@
       }
     }
 
-    .grilla {
-      position: absolute;
+    .grilla {      position: absolute;
       top: 0;
       left: 0;
       z-index: -1;

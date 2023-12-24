@@ -4050,16 +4050,20 @@ body {
   white-space: nowrap;
 }
 .body_plantilla .cont_grilla_proyectos {
-  margin: 2em 5em 10em 5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 2em 4em 10em 4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 2em;
 }
 .body_plantilla .cont_grilla_proyectos .cont_proyectos {
-  width: -moz-min-content;
-  width: min-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.body_plantilla .cont_grilla_proyectos .cont_proyectos img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto {
   display: flex;
@@ -4095,29 +4099,30 @@ body {
   white-space: nowrap;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .body_plantilla {
     width: 100%;
   }
   .body_plantilla .cont_inicio {
     display: flex;
-    height: 100vh;
+    height: 88vh;
     flex-direction: column-reverse;
-    margin: 2em 5vw 2em 5vw;
+    margin: 1em 1em 1em 1em;
     gap: 0em;
     align-items: center;
     justify-content: start;
   }
   .body_plantilla .cont_inicio .colum_uno {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .body_plantilla .cont_inicio .colum_uno .titulo {
     color: #000;
     font-family: MargoBeuys;
-    font-size: calc(1px + 6vw);
+    font-size: calc(1px + 8vw);
     font-style: normal;
     font-weight: 900;
     line-height: 136%;
@@ -4136,8 +4141,28 @@ body {
     padding-bottom: 2em;
     border-bottom: 1px solid #414141;
   }
+  .body_plantilla .cont_inicio .colum_uno .stikerlvl {
+    rotate: 20deg;
+    position: absolute;
+    top: -1em;
+    right: 0px;
+  }
+  .body_plantilla .cont_inicio .colum_uno .stikerlvl p {
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 21px;
+    color: #ffffff;
+    font-family: MargoBeuys;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 136%;
+    /* 20.4px */
+    text-transform: capitalize;
+  }
   .body_plantilla .cont_inicio .columdos {
-    width: 60%;
+    width: 100%;
     height: 50%;
   }
   .body_plantilla .cont_cinta_plantilla {
@@ -4185,49 +4210,7 @@ body {
     white-space: nowrap;
   }
   .body_plantilla .cont_grilla_proyectos {
-    margin: 2em 5em 10em 5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .body_plantilla .cont_grilla_proyectos .cont_proyectos {
-    width: -moz-min-content;
-    width: min-content;
-    display: flex;
-    flex-direction: column;
-  }
-  .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto p {
-    color: #000;
-    font-family: MargoBeuys;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 136%;
-    /* 20.4px */
-    text-transform: capitalize;
-  }
-  .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto .cont_fecha {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-  }
-  .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto .cont_fecha p {
-    color: #000;
-    font-family: MargoBeuys;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 136%;
-    /* 13.6px */
-    text-transform: capitalize;
-    white-space: nowrap;
+    margin: 1em 1em 5em 1em;
   }
 }
 @keyframes scroll101 {
@@ -5710,6 +5693,7 @@ body {
     letter-spacing: 0.15px;
   }
   .body__index .grilla {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;

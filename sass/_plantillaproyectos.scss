@@ -127,18 +127,19 @@
     }
 
     .cont_grilla_proyectos {
-        margin: 2em 5em 10em 5em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        margin: 2em 4em 10em 4em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(min(300px,100%),1fr));
+        gap: 2em;
 
         .cont_proyectos {
-            width: min-content;
+            width: 100%;
             display: flex;
             flex-direction: column;
-
-            img {}
-
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
             .cont_pie_proyecto {
                 display: flex;
                 flex-direction: row;
@@ -183,29 +184,31 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     .body_plantilla {
         width: 100%;
 
         .cont_inicio {
             display: flex;
-            height: 100vh;
+            height: 88vh;
             flex-direction: column-reverse;
-            margin: 2em 5vw 2em 5vw;
+            margin: 1em 1em 1em 1em;
             gap: 0em;
             align-items: center;
             justify-content: start;
 
             .colum_uno {
                 width: 100%;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content:space-evenly;
+
 
                 .titulo {
                     color: #000;
                     font-family: Margo + Beuys;
-                    font-size: calc(1px + 6vw);
+                    font-size: calc(1px + 8vw);
                     font-style: normal;
                     font-weight: 900;
                     line-height: 136%;
@@ -227,10 +230,35 @@
                 }
 
                 .contadores {}
+
+                .stikerlvl {
+                    rotate: 20deg;
+                    position:absolute;
+                    top: -1em;
+                    right: 0px;
+    
+                    img {}
+    
+                    p { 
+                        text-align: center;
+                        position:absolute;
+                        top: 40px;
+                        left: 21px;
+                        color: #ffffff;
+                        font-family: Margo + Beuys;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 136%;
+                        /* 20.4px */
+                        text-transform: capitalize;
+    
+                    }
+                }
             }
 
             .columdos {
-                width: 60%;
+                width: 100%;
                 height: 50%;
             }
         }
@@ -285,59 +313,13 @@
             }
         }
 
-        .cont_grilla_proyectos {
-            margin: 2em 5em 10em 5em;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .cont_proyectos {
-                width: min-content;
-                display: flex;
-                flex-direction: column;
-
-                img {}
-
-                .cont_pie_proyecto {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    margin-top: 10px;
-
-                    p {
-                        color: #000;
-                        font-family: Margo + Beuys;
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 900;
-                        line-height: 136%;
-                        /* 20.4px */
-                        text-transform: capitalize;
-                    }
-
-                    .cont_fecha {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        gap: 5px;
-
-                        img {}
-
-                        p {
-                            color: #000;
-                            font-family: Margo + Beuys;
-                            font-size: 10px;
-                            font-style: normal;
-                            font-weight: 900;
-                            line-height: 136%;
-                            /* 13.6px */
-                            text-transform: capitalize;
-                            white-space: nowrap;
-                        }
-                    }
-                }
-            }
+        .cont_grilla_proyectos{
+            margin: 1em 1em 5em 1em;
         }
+
+    
+
+
 
     }
 
