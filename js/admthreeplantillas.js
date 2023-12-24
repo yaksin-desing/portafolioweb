@@ -30,11 +30,11 @@ function myFunction(x) {
 
         });
 
-        calculoanchoinicio=figurauxui.clientWidth/-25;
-        calculoanchofin=figurauxui.clientWidth/25;
-        const zoomvidrio=3;
-        const inicio=calculoanchoinicio;
-        const fin=calculoanchofin;
+        calculoanchoinicio = figurauxui.clientWidth / -25;
+        calculoanchofin = figurauxui.clientWidth / 25;
+        const zoomvidrio = 3;
+        const inicio = calculoanchoinicio;
+        const fin = calculoanchofin;
 
         const vidriouxui = new THREE.Mesh(geometryuxui, materialuxui);
         vidriouxui.receiveShadow = true;
@@ -231,6 +231,23 @@ function myFunction(x) {
         figuratres.position.z = -4;
 
 
+
+        // ###############figurauno-2#############
+
+        const geometrydos2 = new THREE.SphereGeometry(3, 100, 20);
+        const materialdos2 = new THREE.MeshNormalMaterial({
+            wireframe: false,
+            color: 0xfffb08
+        });
+
+        const figurados2 = new THREE.Mesh(geometrydos2, materialdos2);
+        figurados2.receiveShadow = true;
+        sceneuxui.add(figurados2);
+
+        figurados2.position.x = inicio;
+        figurados2.position.z = -4;
+
+
         // ###############figuracuatro#############
 
         const geometrycuatro = new THREE.IcosahedronGeometry(3, 0);
@@ -243,13 +260,28 @@ function myFunction(x) {
         figuracuatro.position.x = inicio;
         figuracuatro.position.z = -3;
 
+
+        // ###############figuratres-2#############
+
+        const geometrytres2 = new THREE.DodecahedronGeometry(3, 0);
+        const figuratres2 = new THREE.Mesh(geometrytres2, materialdos);
+        figuratres2.receiveShadow = true;
+        sceneuxui.add(figuratres2);
+
+        figuratres2.position.x = inicio;
+        figuratres2.position.z = -4;
+
         function animate() {
             figurados.rotation.x += -0.005;
             figurados.rotation.y += 0.005;
+            figurados2.rotation.x += -0.01;
+            figurados2.rotation.y += 0.01;
             figuratres.rotation.x += -0.01;
             figuratres.rotation.y += 0.01;
             figuracuatro.rotation.x += -0.01;
             figuracuatro.rotation.y += 0.01;
+            figuratres2.rotation.x += -0.01;
+            figuratres2.rotation.y += 0.01;
 
             requestAnimationFrame(animate);
             rendereruxui.render(sceneuxui, camerauxui);
@@ -264,24 +296,36 @@ function myFunction(x) {
         });
         rebo.to(figurados.position, {
             x: fin,
-            duration: 8,
+            duration: 5,
             ease: "power1.in",
         });
 
         rebo.to(figuratres.position, {
             x: fin,
-            duration: 8,
+            duration: 5,
+            ease: "power1.in",
+        });
+
+        rebo.to(figurados2.position, {
+            x: fin,
+            duration: 5,
             ease: "power1.in",
         });
 
 
         rebo.to(figuracuatro.position, {
             x: fin,
-            duration: 8,
+            duration: 5,
             ease: "power1.in",
         });
 
-        
+        rebo.to(figuratres2.position, {
+            x: fin,
+            duration: 5,
+            ease: "power1.in",
+        });
+
+
     } else {
         const figurauxui = document.querySelector("div.columdos")
         const sceneuxui = new THREE.Scene();
@@ -310,11 +354,11 @@ function myFunction(x) {
             thickness: 1,
 
         });
-        calculoanchoinicio=figurauxui.clientWidth/-25;
-        calculoanchofin=figurauxui.clientWidth/25;
-        const zoomvidrio=6;
-        const inicio=calculoanchoinicio;
-        const fin=calculoanchofin;
+        calculoanchoinicio = figurauxui.clientWidth / -25;
+        calculoanchofin = figurauxui.clientWidth / 25;
+        const zoomvidrio = 6;
+        const inicio = calculoanchoinicio;
+        const fin = calculoanchofin;
 
         const vidriouxui = new THREE.Mesh(geometryuxui, materialuxui);
         vidriouxui.receiveShadow = true;
@@ -510,6 +554,21 @@ function myFunction(x) {
         figuratres.position.x = inicio;
         figuratres.position.z = -4;
 
+        // ###############figurauno-2#############
+
+        const geometrydos2 = new THREE.SphereGeometry(3, 100, 20);
+        const materialdos2 = new THREE.MeshNormalMaterial({
+            wireframe: false,
+            color: 0xfffb08
+        });
+
+        const figurados2 = new THREE.Mesh(geometrydos2, materialdos2);
+        figurados2.receiveShadow = true;
+        sceneuxui.add(figurados2);
+
+        figurados2.position.x = inicio;
+        figurados2.position.z = -4;
+
 
         // ###############figuracuatro#############
 
@@ -523,13 +582,27 @@ function myFunction(x) {
         figuracuatro.position.x = inicio;
         figuracuatro.position.z = -3;
 
+        // ###############figuratres-2#############
+
+        const geometrytres2 = new THREE.DodecahedronGeometry(3, 0);
+        const figuratres2 = new THREE.Mesh(geometrytres2, materialdos);
+        figuratres2.receiveShadow = true;
+        sceneuxui.add(figuratres2);
+
+        figuratres2.position.x = inicio;
+        figuratres2.position.z = -4;
+
         function animate() {
             figurados.rotation.x += -0.005;
             figurados.rotation.y += 0.005;
+            figurados2.rotation.x += -0.01;
+            figurados2.rotation.y += 0.01;
             figuratres.rotation.x += -0.01;
             figuratres.rotation.y += 0.01;
             figuracuatro.rotation.x += -0.01;
             figuracuatro.rotation.y += 0.01;
+            figuratres2.rotation.x += -0.01;
+            figuratres2.rotation.y += 0.01;
 
             requestAnimationFrame(animate);
             rendereruxui.render(sceneuxui, camerauxui);
@@ -554,8 +627,20 @@ function myFunction(x) {
             ease: "power1.in",
         });
 
+        rebo.to(figurados2.position, {
+            x: fin,
+            duration: 8,
+            ease: "power1.in",
+        });
+
 
         rebo.to(figuracuatro.position, {
+            x: fin,
+            duration: 8,
+            ease: "power1.in",
+        });
+
+        rebo.to(figuratres2.position, {
             x: fin,
             duration: 8,
             ease: "power1.in",
