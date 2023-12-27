@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(ScrollTrigger)
 const boton = document.querySelector(".float__wapp")
 
@@ -170,3 +171,8 @@ LottieInteractivity.create({
         type: "play"
     }]
 });
+
+
+
+
+
