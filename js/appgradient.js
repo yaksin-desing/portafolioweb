@@ -1,30 +1,37 @@
 import { GlowParticle } from "./gradientlogic.js";
 
 const Colors = [{
-    r: 45,
-    g: 74,
-    b: 227
-}, //blue
+    r: 255,
+    g: 184,
+    b: 3
+}, //amarillo1
 {
     r: 250,
-    g: 255,
-    b: 89
-}, //amarillo
+    g: 235,
+    b: 74
+}, //Blanco
 {
     r: 255,
-    g: 104,
-    b: 248
-}, //purpura
+    g: 163,
+    b: 58
+}, //naranja
+
 {
-    r: 44,
+    r: 0,
     g: 209,
-    b: 252
-}, //Azul claro
+    b: 205
+}, //azul
+
 {
-    r: 54,
-    g: 233,
-    b: 84
-}, //verde
+    r: 255,
+    g: 92,
+    b: 0
+}, //azul
+
+
+
+
+
 ]
 const contcanvas = document.querySelector("canvas#canvasindex")
 class App {

@@ -14,7 +14,7 @@ export class GlowParticle {
     }
 
     animate(ctx, stageWidth,stageHeight){
-        this.sinValue += 0.01;
+        this.sinValue += 0.5;
 
         this.radius += Math.sin(this.sinValue);
 
