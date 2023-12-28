@@ -4372,7 +4372,7 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  border: 1px solid #24252B;
+  border: 1px solid #24252b;
   background: #ffffff;
   color: #000;
   font-family: Gotham;
@@ -4388,7 +4388,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #FFF;
+  color: #fff;
   font-family: poppins;
   font-size: 15px;
   font-style: normal;
@@ -4452,24 +4452,26 @@ body {
   width: 100vw;
   height: 120vh;
   overflow: hidden;
+  background: #ededed;
 }
 .body__index .fondo_inicio .bold_uno {
   position: absolute;
   top: -400px;
   left: -300px;
-  animation: 5s infinite linear gradienanimate;
+  animation: 60s infinite linear gradienanimate;
 }
 .body__index .fondo_inicio .bold_dos {
   position: absolute;
   top: 10px;
   left: -200px;
-  animation: 5s infinite linear gradienanimate;
+  animation: 60s infinite linear gradienanimate;
 }
 .body__index .fondo_inicio .bold_tres {
+  transform: scale(1.5);
   position: absolute;
-  bottom: -600px;
+  bottom: -400px;
   right: -400px;
-  animation: 5s infinite linear gradienanimate;
+  animation: 60s infinite linear alternate-reverse gradienanimate;
 }
 .body__index .fondo_inicio .fondo_blur {
   z-index: 5;
@@ -5004,21 +5006,21 @@ body {
 }
 .body__index .cont_section_plus .fondo_plus .bold_uno {
   position: absolute;
-  top: -300px;
+  top: -100px;
   left: -200px;
-  animation: 10s infinite linear gradienanimate;
+  animation: 60s infinite linear gradienanimate;
 }
 .body__index .cont_section_plus .fondo_plus .bold_dos {
   position: absolute;
   top: 10px;
-  left: -400px;
-  animation: 10s infinite linear gradienanimate;
+  left: -500px;
+  animation: 60s infinite linear reverse gradienanimate;
 }
 .body__index .cont_section_plus .fondo_plus .bold_tres {
   position: absolute;
   bottom: -600px;
   right: -400px;
-  animation: 10s infinite linear gradienanimate;
+  animation: 60s infinite linear gradienanimate;
 }
 .body__index .cont_section_plus .fondo_plus .fondo_blur {
   width: 100vw;
@@ -5701,7 +5703,7 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    border: 1px solid #24252B;
+    border: 1px solid #24252b;
     background: #ffffff;
     color: #000;
     font-family: Gotham;
@@ -5717,7 +5719,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: #FFF;
+    color: #fff;
     font-family: poppins;
     font-size: 15px;
     font-style: normal;
@@ -5792,19 +5794,19 @@ body {
     position: absolute;
     top: -400px;
     left: -300px;
-    animation: 5s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .fondo_inicio .bold_dos {
     position: absolute;
     top: 10px;
     left: -200px;
-    animation: 5s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .fondo_inicio .bold_tres {
     position: absolute;
     bottom: -600px;
     right: -400px;
-    animation: 5s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .fondo_inicio .fondo_blur_movil {
     display: none;
@@ -6337,19 +6339,19 @@ body {
     position: absolute;
     top: -300px;
     left: -200px;
-    animation: 10s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .cont_section_plus .fondo_plus .bold_dos {
     position: absolute;
     top: 10px;
     left: -400px;
-    animation: 10s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .cont_section_plus .fondo_plus .bold_tres {
     position: absolute;
     bottom: -600px;
     right: -400px;
-    animation: 10s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .cont_section_plus .fondo_plus .fondo_blur {
     width: 100vw;
@@ -7063,7 +7065,7 @@ body {
   }
   .body__index .conten_setion_uno .titulo_setion_uno h1 {
     margin-top: 1em;
-    color: #000;
+    color: #1d1d1d;
     text-align: center;
     font-family: MargoBeuys;
     font-size: calc(1px + 10vw);
@@ -7071,18 +7073,20 @@ body {
     font-weight: 600;
     line-height: 136%;
     text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
   }
   .body__index .conten_setion_uno .titulo_setion_uno h1 strong {
-    color: #000000;
+    color: #1d1d1d;
     font-family: "Bodoni Moda", serif;
     font-size: calc(1px + 10vw);
     font-style: italic;
     font-weight: 700;
     line-height: 136%;
     text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
   }
   .body__index .conten_setion_uno .titulo_setion_uno p {
-    color: #252525;
+    color: #1d1d1d;
     text-align: center;
     font-family: poppins;
     font-size: calc(1px + 4vw);
@@ -7090,6 +7094,7 @@ body {
     font-weight: 400;
     line-height: normal;
     padding-bottom: 10px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
   }
   .body__index .conten_setion_uno .titulo_setion_uno .boton_setion_uno {
     display: flex;
@@ -7104,7 +7109,7 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    border: 1px solid #24252B;
+    border: 1px solid #24252b;
     background: #ffffff;
     color: #000;
     font-family: Gotham;
@@ -7120,7 +7125,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: #FFF;
+    color: #fff;
     font-family: poppins;
     font-size: 15px;
     font-style: normal;
@@ -7145,14 +7150,14 @@ body {
   }
   .body__index .conten_setion_uno .titulo_setion_uno .cont_barra_contadores div {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 10px;
   }
   .body__index .conten_setion_uno .titulo_setion_uno .cont_barra_contadores div img {
     width: calc(1px + 11vw);
   }
   .body__index .conten_setion_uno .titulo_setion_uno .cont_barra_contadores div h4 {
-    color: #252525;
+    color: #1d1d1d;
     font-family: MargoBeuys;
     font-size: calc(1px + 7vw);
     font-style: normal;
@@ -7162,7 +7167,7 @@ body {
     letter-spacing: 0.35px;
   }
   .body__index .conten_setion_uno .titulo_setion_uno .cont_barra_contadores div p {
-    color: #252525;
+    color: #1d1d1d;
     font-family: MargoBeuys;
     font-size: calc(1px + 5vw);
     font-style: normal;
@@ -7196,7 +7201,7 @@ body {
     position: absolute;
     top: -300px;
     left: -500px;
-    animation: 20s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .fondo_inicio .bold_dos {
     display: flex;
@@ -7204,7 +7209,7 @@ body {
     position: absolute;
     top: 100px;
     left: -200px;
-    animation: 20s infinite linear gradienanimate;
+    animation: 60s infinite linear reverse gradienanimate;
   }
   .body__index .fondo_inicio .bold_tres {
     display: flex;
@@ -7212,7 +7217,7 @@ body {
     position: absolute;
     bottom: -500px;
     right: -400px;
-    animation: 20s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .fondo_inicio .fondo_blur {
     display: none;
@@ -7760,26 +7765,36 @@ body {
     position: absolute;
     top: -300px;
     left: -200px;
-    animation: 10s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .cont_section_plus .fondo_plus .bold_dos {
     position: absolute;
     top: 10px;
     left: -400px;
-    animation: 10s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .cont_section_plus .fondo_plus .bold_tres {
     position: absolute;
     bottom: -600px;
     right: -400px;
-    animation: 10s infinite linear gradienanimate;
+    animation: 60s infinite linear gradienanimate;
   }
   .body__index .cont_section_plus .fondo_plus .fondo_blur {
+    display: none;
     width: 100vw;
     height: 100%;
     background: repeating-radial-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, rgba(238, 255, 0, 0.247) 0 0.0005%) 60% 60%/3000px 3000px, repeating-conic-gradient(rgba(255, 255, 255, 0.02) 0 0.0001%, rgba(255, 189, 7, 0.247) 0 0.0005%) 40% 40%/3000px 3000px;
     background-blend-mode: difference;
     animation: b 0.5s infinite alternate;
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+  }
+  .body__index .cont_section_plus .fondo_plus .fondo_blur_movil {
+    display: flex;
+    z-index: 0;
+    width: 100vw;
+    height: 100%;
+    background-blend-mode: difference;
     -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px);
   }
@@ -8454,10 +8469,10 @@ body {
 }
 @keyframes gradienanimate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(-10em);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translateY(0em);
   }
 }
 @keyframes b {
