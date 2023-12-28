@@ -106,26 +106,43 @@
       .boton_setion_uno {
         display: flex;
         flex-direction: row;
-        gap: 0px;
+        gap: 1em;
 
-        .boton_setion_uno_contactame {
+        .boton_setion_uno_see {
           display: flex;
-          width: 201px;
-          padding: 15px;
+          width: 10em;
+          padding: 10px;
           justify-content: center;
           align-items: center;
           gap: 10px;
-          align-self: stretch;
           border-radius: 10px;
+          border: 1px solid #24252B;
           background: #ffffff;
           color: #000;
-          font-family: MargoBeuys;
+          font-family: Gotham;
           font-size: 15px;
           font-style: normal;
-          font-weight: 600;
-          line-height: 107.5%;
-          /* 16.125px */
+          font-weight: 300;
+          line-height: normal;
         }
+
+        .boton_setion_uno_contac {
+          display: flex;
+          width: 10em;
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          color: #FFF;
+          font-family: poppins;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          border-radius: 10px;
+          background: #141414;
+        }
+
       }
 
       .cont_barra_contadores {
@@ -193,7 +210,6 @@
     overflow: hidden;
 
     .bold_uno {
-      display: none;
       position: absolute;
       top: -400px;
       left: -300px;
@@ -201,7 +217,6 @@
     }
 
     .bold_dos {
-      display: none;
       position: absolute;
       top: 10px;
       left: -200px;
@@ -209,7 +224,6 @@
     }
 
     .bold_tres {
-      display: none;
       position: absolute;
       bottom: -600px;
       right: -400px;
@@ -220,14 +234,12 @@
       z-index: 5;
       width: 100vw;
       height: 100%;
-      background: repeating-radial-gradient(
-          rgba(255, 255, 255, 0.1) 0 0.0001%,
-          #e7e7e746 0 0.0002%) 60% 60%/3000px 3000px,
-        repeating-conic-gradient(
-          rgba(255, 255, 255, 0.1) 0 0.0001%,
-          #e7e7e746 0 0.0002%) 40% 40%/3000px 3000px;
+      background: repeating-radial-gradient(rgba(255, 230, 6, 0.2) 0 0.0001%,
+          #d1d1d146 0 0.0002%) 60% 60%/3000px 3000px,
+        repeating-conic-gradient(rgba(255, 230, 6, 0.2) 0 0.0001%,
+          #d1d1d146 0 0.0002%) 40% 40%/3000px 3000px;
       background-blend-mode: difference;
-      backdrop-filter: blur(0px);
+      backdrop-filter: blur(30px);
     }
 
     .fondo_blur_movil {
@@ -1610,31 +1622,43 @@
         .boton_setion_uno {
           display: flex;
           flex-direction: row;
-          gap: 0px;
-          width: 100%;
-
-          .boton_setion_uno_contactame {
+          gap: 1em;
+  
+          .boton_setion_uno_see {
             display: flex;
-            width: 100%;
-            padding: 15px;
+            width: 10em;
+            padding: 10px;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            align-self: stretch;
             border-radius: 10px;
+            border: 1px solid #24252B;
             background: #ffffff;
             color: #000;
-            font-family: MargoBeuys;
-            font-size: calc(1px + 3vw);
+            font-family: Gotham;
+            font-size: 15px;
             font-style: normal;
-            font-weight: 600;
-            line-height: 107.5%;
-            /* 16.125px */
+            font-weight: 300;
+            line-height: normal;
           }
-
-          img {
-            display: none;
+  
+          .boton_setion_uno_contac {
+            display: flex;
+            width: 10em;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border-radius: 10px;
+            background: #141414;
           }
+  
         }
 
         .cont_barra_contadores {
@@ -1707,7 +1731,6 @@
       overflow: hidden;
 
       .bold_uno {
-        display: none;
         position: absolute;
         top: -400px;
         left: -300px;
@@ -1715,7 +1738,6 @@
       }
 
       .bold_dos {
-        display: none;
         position: absolute;
         top: 10px;
         left: -200px;
@@ -1723,12 +1745,12 @@
       }
 
       .bold_tres {
-        display: none;
         position: absolute;
         bottom: -600px;
         right: -400px;
         animation: 5s infinite linear gradienanimate;
       }
+
       .fondo_blur_movil {
         display: none;
         z-index: 5;
@@ -1736,7 +1758,7 @@
         height: 100%;
       }
 
-      
+
     }
 
     .cont_cinta_inicio {
@@ -1811,7 +1833,6 @@
     }
 
     /* #####################   SECTION TRES ############################# */
-
     .cont_aboutme {
       display: flex;
       flex-direction: column;
@@ -3085,7 +3106,6 @@
 }
 
 
-
 @media (max-width: 720px) {
   .body__index {
     .conta_scroll_boton {
@@ -3195,31 +3215,43 @@
         .boton_setion_uno {
           display: flex;
           flex-direction: row;
-          gap: 0px;
-          width: 100%;
-
-          .boton_setion_uno_contactame {
+          gap: 1em;
+  
+          .boton_setion_uno_see {
             display: flex;
-            width: 100%;
-            padding: 15px;
+            width: 10em;
+            padding: 10px;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            align-self: stretch;
             border-radius: 10px;
+            border: 1px solid #24252B;
             background: #ffffff;
             color: #000;
-            font-family: MargoBeuys;
-            font-size: calc(1px + 5vw);
+            font-family: Gotham;
+            font-size: 15px;
             font-style: normal;
-            font-weight: 600;
-            line-height: 107.5%;
-            /* 16.125px */
+            font-weight: 300;
+            line-height: normal;
           }
-
-          img {
-            display: none;
+  
+          .boton_setion_uno_contac {
+            display: flex;
+            width: 10em;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border-radius: 10px;
+            background: #141414;
           }
+  
         }
 
         .cont_barra_contadores {
@@ -3329,17 +3361,20 @@
         background-blend-mode: difference;
         backdrop-filter: blur(30px);
       }
+
       .fondo_blur_movil {
-        display:flex;
+        display: flex;
         z-index: 0;
         width: 100vw;
         height: 100%;
         background-blend-mode: difference;
         backdrop-filter: blur(30px);
       }
-      #canvasindex{
+
+      #canvasindex {
         z-index: -500;
-      display: none;}
+        display: none;
+      }
     }
 
     .cont_cinta_inicio {
@@ -4684,8 +4719,6 @@
     }
   }
 }
-
-
 
 
 @keyframes scrollderecha {
