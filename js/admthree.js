@@ -1,7 +1,4 @@
-
-
 const contuno = document.querySelector("section.bandera")
-
 const sceneuno = new THREE.Scene();
 const camerauno = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
@@ -159,9 +156,4 @@ function animate() {
     renderertres.render(scenetres, cameratres);
 }
 animate();
-
-
-
-
-
 
