@@ -228,7 +228,7 @@ p {
 .conte__menu .contendor_activo_de_menu .list_menu .lista_uno .cont_opcion_lista .flachamenu {
   width: 0%;
   border-radius: 0px;
-  background: #b2d9ff;
+  background: #fbff00;
   transform-origin: 0px 100%;
   transition: all 900ms;
   transition-delay: 0.1s;
@@ -375,7 +375,7 @@ p {
 .conte__menu .contendor_activo_de_menu_op .list_menu .lista_uno .cont_opcion_lista .flachamenu {
   width: 0%;
   border-radius: 0px;
-  background: #b2d9ff;
+  background: #fbff00;
   transform-origin: 0px 100%;
   transition: all 900ms;
   transition-delay: 0.1s;
@@ -764,7 +764,7 @@ p {
   .conte__menu .contendor_activo_de_menu .list_menu .lista_uno .cont_opcion_lista .flachamenu {
     width: 0%;
     border-radius: 0px;
-    background: #b2d9ff;
+    background: #fbff00;
     transform-origin: 0px 100%;
     transition: all 900ms;
     transition-delay: 0.1s;
@@ -808,7 +808,7 @@ p {
     transform: scale(1);
     padding: 0.5em 2em;
     border-radius: 200px;
-    background: #b2d9ff;
+    background: #fbff00;
     margin-right: 20px;
   }
   .conte__menu .contendor_activo_de_menu .list_menu .lista_uno .cont_opcion_lista:hover a {
@@ -914,7 +914,7 @@ p {
   .conte__menu .contendor_activo_de_menu_op .list_menu .lista_uno .cont_opcion_lista .flachamenu {
     width: 0%;
     border-radius: 0px;
-    background: #b2d9ff;
+    background: #fbff00;
     transform-origin: 0px 100%;
     transition: all 900ms;
     transition-delay: 0.1s;
@@ -955,7 +955,7 @@ p {
     transform: scale(1);
     padding: 0.5em 2em;
     border-radius: 200px;
-    background: #b2d9ff;
+    background: #fbff00;
     margin-right: 20px;
   }
   .conte__menu .contendor_activo_de_menu_op .list_menu .lista_uno .cont_opcion_lista:hover a {
@@ -4187,7 +4187,7 @@ body {
     transform: scale(0.8);
     rotate: 20deg;
     position: absolute;
-    top: -1em;
+    top: -4em;
     right: 1em;
   }
   .body_plantilla .cont_inicio .colum_uno .stikerlvl p {
@@ -4205,6 +4205,10 @@ body {
     text-transform: capitalize;
   }
   .body_plantilla .cont_inicio .columdos {
+    width: 100%;
+    height: 50%;
+  }
+  .body_plantilla .cont_inicio .columdosuxw {
     width: 100%;
     height: 50%;
   }
@@ -4820,7 +4824,6 @@ body {
   bottom: -10vh;
   height: 0%;
   opacity: 0;
-  width: 150vw;
   transform-origin: 0px 0%;
   transition: all 300ms;
   transition-delay: 0.1s;
@@ -8434,10 +8437,10 @@ body {
 }
 @keyframes scrollderecha {
   0% {
-    transform: translatex(-15vw);
+    transform: translatex(-5vw);
   }
   100% {
-    transform: translatex(-30vw);
+    transform: translatex(-35vw);
   }
 }
 @keyframes scrollabajo {

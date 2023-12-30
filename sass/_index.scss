@@ -624,7 +624,6 @@
             bottom: -10vh;
             height: 0%;
             opacity: 0;
-            width: 150vw;
             transform-origin: 0px 0%;
             transition: all 300ms;
             transition-delay: 0.1s;
@@ -4760,13 +4759,13 @@
 
 @keyframes scrollderecha {
   0% {
-    -webkit-transform: translatex(-15vw);
-    transform: translatex(-15vw);
+    -webkit-transform: translatex(-5vw);
+    transform: translatex(-5vw);
   }
 
   100% {
-    -webkit-transform: translatex(calc(-30vw * 1));
-    transform: translatex(calc(-30vw * 1));
+    -webkit-transform: translatex(calc(-35vw * 1));
+    transform: translatex(calc(-35vw * 1));
   }
 }
 
