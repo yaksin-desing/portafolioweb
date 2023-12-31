@@ -82,13 +82,13 @@ ScrollTrigger.create({
 let sections = gsap.utils.toArray(".cont_reels");
 let reel = gsap.utils.toArray(".reel_uno");
 
-const finalreel = reel[0].clientWidth * 4;
+const finalreel = reel[0].clientWidth * 3;
 let finalstring = finalreel.toString();
 var arr = [ "+="+finalstring ].toString();
 
 gsap.to(sections, {
     x: - finalstring,
-    y:"-60vh",
+    y:"-40vh",
     ease: "none",
 
     scrollTrigger: {
