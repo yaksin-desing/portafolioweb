@@ -69,11 +69,77 @@ ScrollTrigger.create({
 
 
 
+let contfondo = gsap.utils.toArray(".cont_pilar");
+let figfondo = gsap.utils.toArray(".fondo_pilares_negro");
+
+
+const finalfondo = contfondo[0].clientWidth;
+let fondostring = finalfondo.toString();
+var ar = [ "+="+fondostring ].toString();
+
+
+const tll = gsap.timeline({
+    repeat: 0,
+    repeatDelay: 1,
+    scrollTrigger: {
+        trigger: ".cont_ani_pilares",
+        pin: true,
+        scrub: 1,
+        end: ar,
+        markers:false,
+    }
+    });
+tll.to(figfondo,{
+    scale:"+=2000",
+    duration: 1
+})
+tll.to("#titulo_pilar_uno",{
+    y: "-0",
+    duration: 1
+})
+tll.to("#parrafo_pilar_uno",{
+    y: "-0",
+    duration: 1
+})
+tll.to("#subparrafo_pilar_uno",{
+    y: "-0",
+    duration: 1
+})
 
 
 
+let figfondoblanco = gsap.utils.toArray(".cont_ani_pilares");
+
+const finalfondoblanco = figfondoblanco[0].clientWidth/2;
+let fondostringblanco = finalfondoblanco.toString();
+var ars = [ "+="+fondostringblanco ].toString();
+
+const finalfondoblancos = figfondoblanco[0].clientWidth/2;
+let fondostringblancos = finalfondoblancos.toString();
+var arss = [ "+="+fondostringblancos ].toString();
 
 
+const tlls = gsap.timeline({
+    repeat: 0,
+    repeatDelay: 5,
+    scrollTrigger: {
+        trigger: ".cont_pilar_wite",
+        pin: true,
+        scrub: 1,
+        start:ars,
+        end:arss,
+        markers:true,
+    }
+    });
+tlls.to(".fondo_pilares_blanco",{
+    scale:"+=2000",
+    duration: 1
+})
+
+tlls.to("#titulo_white_pilar",{
+    y: "-0",
+    duration: 5
+})
 
 
 
@@ -88,7 +154,7 @@ var arr = [ "+="+finalstring ].toString();
 
 gsap.to(sections, {
     x: - finalstring,
-    y:"-40vh",
+    y:"-30vh",
     ease: "none",
 
     scrollTrigger: {
@@ -96,12 +162,10 @@ gsap.to(sections, {
         pin: true,
         scrub: 1,
         end: arr,
-        markers:true,
+        markers:false,
         invalidateOnRefresh: true,
     }
 });
-
-
 
 
 

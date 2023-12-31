@@ -1428,195 +1428,225 @@
   }
 
   /* #####################   SECTION OCHO ############################# */
-  .cont_pilar {
-    width: 100%;
-    height: 110vh;
-    background: #171717;
-
-    .cont_contenido_pilar {
-      background: rgba(80, 80, 80, 0.01);
-      backdrop-filter: blur(2.5px);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3em 2em 3em 2em;
-
-      .contador_pilar {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-
-        .contador {
-          color: #fff;
-          font-family: Margo + Beuys;
-          font-size: 50px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 136%;
-          text-transform: uppercase;
-        }
-      }
-
-      .titulo {
-        h2 {
-          color: #fff;
-          text-shadow: 0px 0px 38px #000;
-          font-family: Margo + Beuys;
-          font-size: 90px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 138.5%;
-          /* 124.65px */
-          letter-spacing: 4.5px;
-          text-transform: capitalize;
-        }
-      }
-
-      .contenido_pilar {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: end;
-
-        .parrafo_uno {
-          width: 20vw;
-          color: #fff;
-          font-family: poppins;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 138.5%;
-          letter-spacing: 0.75px;
-          text-transform: capitalize;
-        }
-
-        .parrafo_dos {
-          color: #fff;
-          font-family: poppins;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 138.5%;
-          letter-spacing: 0.75px;
-          text-transform: capitalize;
-          white-space: nowrap;
-        }
-      }
-
-      .cont_animacion_uno {
-        top: -5em;
-        position: absolute;
-        z-index: 1;
-        width: 50vw;
-      }
-
-      .cont_animacion_dos {
-        top: -10em;
-        position: absolute;
-        z-index: -1;
-        width: 0vw;
-      }
-
-      .cont_animacion_tres {
-        top: -10em;
-        position: absolute;
-        z-index: -1;
-        width: 50vw;
-      }
-    }
-  }
-
-  .cont_pilar_wite {
-    width: 100vw;
-    height: 110vh;
-    background: #ffffff;
+  .cont_ani_pilares{
     display: flex;
+    flex-direction: column;
 
-    .cont_contenido_pilar {
-      background: rgba(255, 255, 255, 0.01);
-      backdrop-filter: blur(2.5px);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3em 2em 3em 2em;
 
-      .contador_pilar {
+    .cont_pilar {
+      width: 100vw;
+      height: 100vh;
+
+      .cont_contenido_pilar {
+        backdrop-filter: blur(0px);
         width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: end;
-
-        .contador {
-          color: #000000;
-          font-family: Margo + Beuys;
-          font-size: 50px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 136%;
-          text-transform: uppercase;
-        }
-      }
-
-      .titulo {
-        h2 {
-          color: #000000;
-          font-family: Margo + Beuys;
-          font-size: 90px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 138.5%;
-          /* 124.65px */
-          letter-spacing: 4.5px;
-          text-transform: capitalize;
-        }
-      }
-
-      .contenido_pilar {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: end;
+        align-items: center;
+        padding: 3em 2em 3em 2em;
 
-        .parrafo_uno {
-          width: 20vw;
-          color: #000000;
-          font-family: poppins;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 138.5%;
-          letter-spacing: 0.75px;
-          text-transform: capitalize;
+        .fondo_pilares_negro{
+          position: fixed;
+          background: #000000;
+          top: 50vh;
+          left: 50vw;
+          width: 1px;
+          height: 1px;
+          z-index: 0;
+          border-radius: 100%;
         }
+  
+        .contador_pilar {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+  
+          .contador {
+            color: #fff;
+            font-family: Margo + Beuys;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 136%;
+            text-transform: uppercase;
+          }
+        }
+  
+        .titulo {
+          overflow: hidden;
+          h2 {
+            transform: translateY(120px);
+            color: #fff;
+            font-family: Margo + Beuys;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 138.5%;
+            /* 124.65px */
+            letter-spacing: 4.5px;
+            text-transform: capitalize;
+          }
+        }
+  
+        .contenido_pilar {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: end;
+          overflow: hidden;
 
-        .parrafo_dos {
-          color: #000000;
-          font-family: poppins;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 138.5%;
-          letter-spacing: 0.75px;
-          text-transform: capitalize;
-          white-space: nowrap;
+  
+          .parrafo_uno {
+            transform: translateY(120px);
+            width: 20vw;
+            color: #fff;
+            font-family: poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 138.5%;
+            letter-spacing: 0.75px;
+            text-transform: capitalize;
+          }
+  
+          .parrafo_dos {
+            transform: translateY(120px);
+            color: #fff;
+            font-family: poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 138.5%;
+            letter-spacing: 0.75px;
+            text-transform: capitalize;
+            white-space: nowrap;
+          }
+        }
+  
+        .cont_animacion_uno {
+          top: -5em;
+          position: absolute;
+          z-index: 1;
+          width: 50vw;
+        }
+  
+        .cont_animacion_dos {
+          top: -10em;
+          position: absolute;
+          z-index: -1;
+          width: 0vw;
+        }
+  
+        .cont_animacion_tres {
+          top: -10em;
+          position: absolute;
+          z-index: -1;
+          width: 50vw;
         }
       }
+    }
+    .cont_pilar_wite {
+      width: 100vw;
+      height: 100vh;
 
-      .cont_animacion_dos {
-        top: -10em;
-        position: absolute;
-        z-index: -1;
-        width: 70vw;
+      .cont_contenido_pilar {
+        backdrop-filter: blur(0px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em 2em 3em 2em;
+
+        .fondo_pilares_blanco{
+          left: 50vw;
+          top: 0vh;
+          position: fixed;
+          background: #ffffff;
+          width: 1px;
+          height: 1px;
+          z-index: -1;
+          border-radius: 100%;
+        }
+  
+        .contador_pilar {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+  
+          .contador {
+            color: #000000;
+            font-family: Margo + Beuys;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 136%;
+            text-transform: uppercase;
+          }
+        }
+  
+        .titulo {
+          overflow: hidden;
+          h2 {
+            transform: translateY(100%);
+            color: #000000;
+            font-family: Margo + Beuys;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 138.5%;
+            /* 124.65px */
+            letter-spacing: 4.5px;
+            text-transform: capitalize;
+          }
+        }
+  
+        .contenido_pilar {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: end;
+  
+          .parrafo_uno {
+            width: 20vw;
+            color: #000000;
+            font-family: poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 138.5%;
+            letter-spacing: 0.75px;
+            text-transform: capitalize;
+          }
+  
+          .parrafo_dos {
+            color: #000000;
+            font-family: poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 138.5%;
+            letter-spacing: 0.75px;
+            text-transform: capitalize;
+            white-space: nowrap;
+          }
+        }
+  
+        .cont_animacion_dos {
+          top: -10em;
+          position: absolute;
+          z-index: -1;
+          width: 70vw;
+        }
       }
     }
   }
+  
 }
 
 @media (max-width: 1000px) {
