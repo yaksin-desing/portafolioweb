@@ -690,6 +690,7 @@
             opacity: 1;
             bottom: 0vh;
             height: 100%;
+            width: 100%;
             background: #fff503;
           }
         }
@@ -884,6 +885,98 @@
         backdrop-filter: blur(30px);
       }
     }
+  }
+  /* #####################   *************   ############################# */
+  .cont_reel_diagonal{
+    width: 100vw;
+    height: 100vh;
+    background: #171717;
+    display: flex;
+    overflow: hidden;
+    .cont_fixed_reel {
+      width: 50%;
+      margin: 2em 5em 2em 5em;
+      display: flex;
+      flex-direction: column;
+      z-index: 5;
+      justify-content: space-between;
+
+      .titulo_reel {
+
+        color: #FFF;
+        font-family: Margo + Beuys;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 136%; /* 68px */
+        text-transform: uppercase;
+
+      }
+      .contenido_reel {
+        color: #ffffff;
+        font-family: Gotham;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 138.5%; /* 20.775px */
+        letter-spacing: 0.75px;
+        text-transform: capitalize;
+        
+      }
+    }
+    .cont_reels{
+      position:absolute;
+      display: flex;
+      flex-direction: row;
+      z-index: 0;
+      height: 100%;
+      transform:rotate(5deg);
+      gap: 5em;
+      align-items: end;
+      justify-content: center;
+      .reel_uno {
+        margin-left: 55vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 60vh;
+        transform: skew(15deg);
+        background: rgb(251, 255, 0);
+        img{
+          height: 100%;
+        }
+      }
+
+      .reel_dos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 60vh;
+        transform: skew(15deg);
+        background: rgb(251, 255, 0);  
+        img{
+          height: 100%;  
+        }
+      }
+
+      
+      .reel_tres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 60vh;
+        transform: skew(15deg);
+        background: rgb(251, 255, 0);  
+        img{
+          height: 100%;  
+        }
+      }
+
+    }
+    
   }
 
   /* #####################   SECTION SEIS ############################# */
@@ -1336,7 +1429,7 @@
 
   /* #####################   SECTION OCHO ############################# */
   .cont_pilar {
-    width: 100vw;
+    width: 100%;
     height: 110vh;
     background: #171717;
 

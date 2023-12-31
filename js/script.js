@@ -1,4 +1,3 @@
-
 gsap.registerPlugin(ScrollTrigger)
 const boton = document.querySelector(".float__wapp")
 
@@ -66,6 +65,50 @@ ScrollTrigger.create({
     markers: false,
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let sections = gsap.utils.toArray(".cont_reels");
+let reel = gsap.utils.toArray(".reel_uno");
+
+const finalreel = reel[0].clientWidth * 4;
+let finalstring = finalreel.toString();
+var arr = [ "+="+finalstring ].toString();
+
+gsap.to(sections, {
+    x: - finalstring,
+    y:"-60vh",
+    ease: "none",
+
+    scrollTrigger: {
+        trigger: ".cont_reel_diagonal",
+        pin: true,
+        scrub: 1,
+        end: arr,
+        markers:true,
+        invalidateOnRefresh: true,
+    }
+});
+
+
+
+
+
+
+
+
+
 
 
 function menuactivo(entries) {
@@ -171,8 +214,3 @@ LottieInteractivity.create({
         type: "play"
     }]
 });
-
-
-
-
-
