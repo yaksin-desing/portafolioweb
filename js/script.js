@@ -68,7 +68,6 @@ ScrollTrigger.create({
 
 
 
-
 const tll = gsap.timeline({
     scrollTrigger: {
         trigger: ".contenedor_de_animaciones",
