@@ -72,17 +72,65 @@ const tll = gsap.timeline({
     scrollTrigger: {
         trigger: ".contenedor_de_animaciones",
         start:"top top",
-        end:"100% 100%",
-        markers:false,
+        end:"100% 0%",
+        markers:true,
         pin: true,
-        scrub: 1,
+        scrub: 2,
     }
     });
-tll.to(".fondo_pilares_negro",{
-    scale:"+=2000",
-    duration: 1
+
+
+
+tll.to(".fondo_negro",{
+    scale:2000,
+    duration: 500,
 });
 
+
+tll.to(".cont_animacion_uno",{
+    opacity: "100%",
+    duration: 500,
+});
+
+tll.to("#contador_uno",{
+    y:0,
+    duration: 500,
+});
+
+tll.to("#titulo_uno",{
+    y: 0,
+    duration: 500,
+});
+
+tll.to("#contenido_uno",{
+    y: 0,
+    duration: 500,
+});
+
+tll.to(".fondo_blanco",{
+    scale:2000,
+    duration: 500,
+});
+
+tll.to("#contador_uno",{
+    y:150,
+    duration: 500,
+});
+
+tll.to("#titulo_uno",{
+    y: 150,
+    duration: 500,
+});
+
+tll.to("#contenido_uno",{
+    y: 150,
+    duration: 500,
+});
+
+tll.to(".cont_animacion_dos",{
+    opacity: "100%",
+    duration: 500,
+});
 
 
 
