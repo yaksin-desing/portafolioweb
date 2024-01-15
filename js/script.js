@@ -69,13 +69,14 @@ ScrollTrigger.create({
 
 
 const tll = gsap.timeline({
+    duration:5,
     scrollTrigger: {
         trigger: ".contenedor_de_animaciones",
         start:"top top",
-        end:"100% 0%",
+        end:"4000% 0%",
         markers:true,
         pin: true,
-        scrub: 2,
+        scrub: 3,
     }
     });
 
@@ -83,53 +84,111 @@ const tll = gsap.timeline({
 
 tll.to(".fondo_negro",{
     scale:2000,
-    duration: 500,
+    duration: 5,
 });
 
 
 tll.to(".cont_animacion_uno",{
     opacity: "100%",
-    duration: 500,
+    duration: 5,
 });
 
 tll.to("#contador_uno",{
     y:0,
-    duration: 500,
+    duration: 5,
 });
 
 tll.to("#titulo_uno",{
     y: 0,
-    duration: 500,
+    duration: 5,
 });
 
 tll.to("#contenido_uno",{
     y: 0,
-    duration: 500,
+    duration: 5,
+});
+
+
+tll.to("#contador_uno",{
+    y:150,
+    duration: 5,
+});
+
+tll.to("#titulo_uno",{
+    y: 150,
+    duration: 5,
+});
+
+tll.to("#contenido_uno",{
+    y: 150,
+    duration: 5,
 });
 
 tll.to(".fondo_blanco",{
     scale:2000,
-    duration: 500,
-});
-
-tll.to("#contador_uno",{
-    y:150,
-    duration: 500,
-});
-
-tll.to("#titulo_uno",{
-    y: 150,
-    duration: 500,
-});
-
-tll.to("#contenido_uno",{
-    y: 150,
-    duration: 500,
+    duration: 5,
 });
 
 tll.to(".cont_animacion_dos",{
+    delay: 2,
     opacity: "100%",
-    duration: 500,
+    duration: 5,
+});
+
+tll.to("#contador_dos",{
+    y:0,
+    duration: 5,
+});
+
+tll.to("#titulo_dos",{
+    y: 0,
+    duration: 5,
+});
+
+tll.to("#contenido_dos",{
+    y: 0,
+    duration: 5,
+});
+
+tll.to("#contador_dos",{
+    y:150,
+    duration: 5,
+});
+
+tll.to("#titulo_dos",{
+    y: 150,
+    duration: 5,
+});
+
+tll.to("#contenido_dos",{
+    y: 150,
+    duration: 5,
+});
+
+tll.to(".fondo_negro_dos",{
+    scale:2000,
+    duration: 5,
+});
+
+tll.to(".cont_animacion_tres",{
+    delay: 2,
+    opacity: "100%",
+    duration: 5,
+});
+
+tll.to("#contador_tres",{
+    y:0,
+    duration: 5,
+});
+
+tll.to("#titulo_tres",{
+    y: 0,
+    duration: 5,
+});
+
+tll.to("#contenido_tres",{
+    y: 0,
+    duration: 5,
 });
 
 
