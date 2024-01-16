@@ -69,14 +69,13 @@ ScrollTrigger.create({
 
 
 const tll = gsap.timeline({
-    duration:5,
     scrollTrigger: {
         trigger: ".contenedor_de_animaciones",
         start:"top top",
-        end:"4000% 0%",
-        markers:true,
+        end:"2000% 0%",
+        markers:false,
         pin: true,
-        scrub: 3,
+        scrub: 2,
     }
     });
 
@@ -130,7 +129,6 @@ tll.to(".fondo_blanco",{
 });
 
 tll.to(".cont_animacion_dos",{
-    delay: 2,
     opacity: "100%",
     duration: 5,
 });
@@ -214,7 +212,6 @@ gsap.to(sections, {
         scrub: 1,
         end: arr,
         markers:false,
-        invalidateOnRefresh: true,
     }
 });
 
@@ -225,9 +222,8 @@ meel.add("(max-width:720px)", () => {
 
     gsap.to(
         sections, {
-            x: "-10vw",
-            y: "-10vh",
-            ease: "none",
+            x: "150vw",
+            y: "50vh",
         },
     )
 })
