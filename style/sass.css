@@ -2205,26 +2205,26 @@ p {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-evenly;
   flex-direction: column;
-  height: 90vh;
+  height: 85vh;
+  gap: 0.5em;
 }
 .body__index .conten_setion_uno .titulo_setion_uno h1 {
   color: #000;
   text-align: center;
   font-family: MargoBeuys;
-  font-size: calc(1px + 4.5vw);
+  font-size: calc(1px + 4vw);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 136%;
   text-transform: uppercase;
 }
 .body__index .conten_setion_uno .titulo_setion_uno h1 strong {
   color: #000000;
   font-family: "Bodoni Moda", serif;
-  font-size: calc(1px + 4.5vw);
+  font-size: calc(1px + 4vw);
   font-style: italic;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 136%;
   text-transform: uppercase;
 }
@@ -2232,7 +2232,7 @@ p {
   color: #252525;
   text-align: center;
   font-family: poppins;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -2277,6 +2277,7 @@ p {
   background: #141414;
 }
 .body__index .conten_setion_uno .titulo_setion_uno .cont_barra_contadores {
+  margin-top: 1em;
   display: flex;
   padding: 22px 20px;
   flex-direction: row;
@@ -2331,7 +2332,7 @@ p {
   width: 100vw;
   height: 120vh;
   overflow: hidden;
-  background: #ededed;
+  background: #ffffff;
 }
 .body__index .fondo_inicio .bold_uno {
   position: absolute;
@@ -2355,7 +2356,7 @@ p {
   z-index: 5;
   width: 100vw;
   height: 100%;
-  background: repeating-radial-gradient(rgba(255, 230, 6, 0.2) 0 0.0001%, rgba(209, 209, 209, 0.2745098039) 0 0.0002%) 60% 60%/3000px 3000px, repeating-conic-gradient(rgba(255, 230, 6, 0.2) 0 0.0001%, rgba(209, 209, 209, 0.2745098039) 0 0.0002%) 40% 40%/3000px 3000px;
+  background: repeating-radial-gradient(rgba(255, 255, 255, 0.192) 0 0.0001%, rgba(241, 241, 241, 0.2745098039) 0 0.0002%) 60% 60%/3000px 3000px, repeating-conic-gradient(rgba(255, 255, 255, 0.2) 0 0.0001%, rgba(241, 241, 241, 0.2745098039) 0 0.0002%) 40% 40%/3000px 3000px;
   background-blend-mode: difference;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
@@ -3619,7 +3620,7 @@ p {
   width: 50vw;
   height: 60vh;
   transform: skew(15deg);
-  background: rgb(251, 255, 0);
+  background: rgb(255, 255, 255);
 }
 .body__index .cont_reel_diagonal .cont_reels .reel_dos img {
   height: 100%;
@@ -6563,7 +6564,7 @@ p {
     width: 100vw;
     height: 100vh;
     background: #171717;
-    display: flex;
+    display: none;
     overflow: hidden;
   }
   .body__index .cont_reel_diagonal .cont_fixed_reel {
