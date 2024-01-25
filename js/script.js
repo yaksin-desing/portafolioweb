@@ -66,128 +66,248 @@ ScrollTrigger.create({
 
 })
 
-
+const contenedoranimate = document.querySelector(".contenedor_de_animaciones");
+const altodecontenedor = window.innerWidth;
+let string = altodecontenedor.toString();
+var altoanimate = [string * 10, "0"].toString();
 
 const tll = gsap.timeline({
     scrollTrigger: {
         trigger: ".contenedor_de_animaciones",
-        start:"top top",
-        end:"2000% 0%",
-        markers:false,
+        start: "top top",
+        end: altoanimate,
+        markers: false,
         pin: true,
-        scrub: 2,
+        scrub: 1,
     }
+});
+
+let mtll = gsap.matchMedia();
+
+mtll.add("(max-width:800px)", () => {
+
+    tll.to(".fondo_negro", {
+        scale: 1500,
+        duration: 10,
     });
 
 
+    tll.to(".cont_animacion_uno", {
+        opacity: "100%",
+        duration: 5,
+    });
 
-tll.to(".fondo_negro",{
-    scale:2000,
-    duration: 5,
-});
+    tll.to("#contador_uno", {
+        y: 0,
+        duration: 20,
+    });
 
+    tll.to("#titulo_uno", {
+        y: 0,
+        duration: 20,
+    });
 
-tll.to(".cont_animacion_uno",{
-    opacity: "100%",
-    duration: 5,
-});
-
-tll.to("#contador_uno",{
-    y:0,
-    duration: 5,
-});
-
-tll.to("#titulo_uno",{
-    y: 0,
-    duration: 5,
-});
-
-tll.to("#contenido_uno",{
-    y: 0,
-    duration: 5,
-});
+    tll.to("#contenido_uno", {
+        y: 0,
+        duration: 20,
+    });
 
 
-tll.to("#contador_uno",{
-    y:150,
-    duration: 5,
-});
+    tll.to("#contador_uno", {
+        y: 150,
+        duration: 20,
+    });
 
-tll.to("#titulo_uno",{
-    y: 150,
-    duration: 5,
-});
+    tll.to("#titulo_uno", {
+        y: 150,
+        duration: 20,
+    });
 
-tll.to("#contenido_uno",{
-    y: 150,
-    duration: 5,
-});
+    tll.to("#contenido_uno", {
+        y: 150,
+        duration: 20,
+    });
 
-tll.to(".fondo_blanco",{
-    scale:2000,
-    duration: 5,
-});
+    tll.to(".fondo_blanco", {
+        scale: 2000,
+        duration: 20,
+    });
 
-tll.to(".cont_animacion_dos",{
-    opacity: "100%",
-    duration: 5,
-});
+    tll.to(".cont_animacion_dos", {
+        opacity: "100%",
+        duration: 20,
+    });
 
-tll.to("#contador_dos",{
-    y:0,
-    duration: 5,
-});
+    tll.to("#contador_dos", {
+        y: 0,
+        duration: 20,
+    });
 
-tll.to("#titulo_dos",{
-    y: 0,
-    duration: 5,
-});
+    tll.to("#titulo_dos", {
+        y: 0,
+        duration: 20,
+    });
 
-tll.to("#contenido_dos",{
-    y: 0,
-    duration: 5,
-});
+    tll.to("#contenido_dos", {
+        y: 0,
+        duration: 20,
+    });
 
-tll.to("#contador_dos",{
-    y:150,
-    duration: 5,
-});
+    tll.to("#contador_dos", {
+        y: 150,
+        duration: 20,
+    });
 
-tll.to("#titulo_dos",{
-    y: 150,
-    duration: 5,
-});
+    tll.to("#titulo_dos", {
+        y: 150,
+        duration: 20,
+    });
 
-tll.to("#contenido_dos",{
-    y: 150,
-    duration: 5,
-});
+    tll.to("#contenido_dos", {
+        y: 150,
+        duration: 20,
+    });
 
-tll.to(".fondo_negro_dos",{
-    scale:2000,
-    duration: 5,
-});
+    tll.to(".fondo_negro_dos", {
+        scale: 2000,
+        duration: 20,
+    });
 
-tll.to(".cont_animacion_tres",{
-    delay: 2,
-    opacity: "100%",
-    duration: 5,
-});
+    tll.to(".cont_animacion_tres", {
+        delay: 2,
+        opacity: "100%",
+        duration: 20,
+    });
 
-tll.to("#contador_tres",{
-    y:0,
-    duration: 5,
-});
+    tll.to("#contador_tres", {
+        y: 0,
+        duration: 20,
+    });
 
-tll.to("#titulo_tres",{
-    y: 0,
-    duration: 5,
-});
+    tll.to("#titulo_tres", {
+        y: 0,
+        duration: 20,
+    });
 
-tll.to("#contenido_tres",{
-    y: 0,
-    duration: 5,
-});
+    tll.to("#contenido_tres", {
+        y: 0,
+        duration: 20,
+    });
+})
+
+
+mtll.add("(min-width:800px)", () =>{
+    tll.to(".fondo_negro",{
+        scale:2000,
+        duration: 5,
+    });
+    
+    
+    tll.to(".cont_animacion_uno",{
+        opacity: "100%",
+        duration: 5,
+    });
+    
+    tll.to("#contador_uno",{
+        y:0,
+        duration: 5,
+    });
+    
+    tll.to("#titulo_uno",{
+        y: 0,
+        duration: 5,
+    });
+    
+    tll.to("#contenido_uno",{
+        y: 0,
+        duration: 5,
+    });
+    
+    
+    tll.to("#contador_uno",{
+        y:150,
+        duration: 5,
+    });
+    
+    tll.to("#titulo_uno",{
+        y: 150,
+        duration: 5,
+    });
+    
+    tll.to("#contenido_uno",{
+        y: 150,
+        duration: 5,
+    });
+    
+    tll.to(".fondo_blanco",{
+        scale:2000,
+        duration: 5,
+    });
+    
+    tll.to(".cont_animacion_dos",{
+        opacity: "100%",
+        duration: 5,
+    });
+    
+    tll.to("#contador_dos",{
+        y:0,
+        duration: 5,
+    });
+    
+    tll.to("#titulo_dos",{
+        y: 0,
+        duration: 5,
+    });
+    
+    tll.to("#contenido_dos",{
+        y: 0,
+        duration: 5,
+    });
+    
+    tll.to("#contador_dos",{
+        y:150,
+        duration: 5,
+    });
+    
+    tll.to("#titulo_dos",{
+        y: 150,
+        duration: 5,
+    });
+    
+    tll.to("#contenido_dos",{
+        y: 150,
+        duration: 5,
+    });
+    
+    tll.to(".fondo_negro_dos",{
+        scale:2000,
+        duration: 5,
+    });
+    
+    tll.to(".cont_animacion_tres",{
+        delay: 2,
+        opacity: "100%",
+        duration: 5,
+    });
+    
+    tll.to("#contador_tres",{
+        y:0,
+        duration: 5,
+    });
+    
+    tll.to("#titulo_tres",{
+        y: 0,
+        duration: 5,
+    });
+    
+    tll.to("#contenido_tres",{
+        y: 0,
+        duration: 5,
+    });
+})
+
+
+
 
 
 
@@ -199,11 +319,11 @@ let reel = gsap.utils.toArray(".reel_uno");
 
 const finalreel = reel[0].clientWidth * 3;
 let finalstring = finalreel.toString();
-var arr = [ "+="+finalstring ].toString();
+var arr = ["+=" + finalstring].toString();
 
 gsap.to(sections, {
-    x: - finalstring,
-    y:"-30vh",
+    x: -finalstring,
+    y: "-30vh",
     ease: "none",
 
     scrollTrigger: {
@@ -211,7 +331,7 @@ gsap.to(sections, {
         pin: true,
         scrub: 1,
         end: arr,
-        markers:false,
+        markers: false,
     }
 });
 

@@ -41,12 +41,13 @@ body {
 }
 
 body::-webkit-scrollbar {
+  position: relative;
   width: 5px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.945);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: #ffffff;
   width: 5px;
   border-radius: 19px;
 }

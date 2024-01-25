@@ -29,12 +29,13 @@ body {
 }
 
 body::-webkit-scrollbar {
+  position: relative;
   width: 5px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.945);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: #ffffff;
   width: 5px;
   border-radius: 19px;
 }
@@ -2438,6 +2439,7 @@ p {
   border-radius: 172px;
 }
 .body__index .cont_aboutme {
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   margin: 20em 5em 5em 5em;
