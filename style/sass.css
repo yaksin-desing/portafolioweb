@@ -523,7 +523,7 @@ p {
   position: relative;
 }
 .cont_pie_de_pagina .cont_titulo_pie .animacionpie .caritapie {
-  width: 90%;
+  width: 80%;
   position: absolute;
   z-index: 5;
 }

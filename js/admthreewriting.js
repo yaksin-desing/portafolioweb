@@ -17,7 +17,7 @@ contuw.appendChild(rendereruw.domElement);
 
 
 const textureuw = new THREE.TextureLoader().load('../assets/img/banderaw.png');
-const geometryuw = new THREE.PlaneGeometry(15, 15, 100, 100);
+const geometryuw = new THREE.PlaneGeometry(15, 15, 80, 80);
 const materialuw = new THREE.MeshBasicMaterial({
     wireframe:false,
     map: textureuw
