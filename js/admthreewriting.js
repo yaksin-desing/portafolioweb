@@ -38,7 +38,7 @@ banderaw.rotation.set(-0.0, -0.0, 0.0)
 banderaw.position.set(0, 0, 0)
 
 
-camerauw.position.z = 15;
+camerauw.position.z = 17;
 
 const clock = new THREE.Clock()
 let v = new THREE.Vector3();
