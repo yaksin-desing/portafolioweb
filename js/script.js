@@ -15,8 +15,8 @@ tl.to(
     boton, {
         scale: 0.8,
         rotate: "0deg",
-        x: "22vw",
-        y: "60vh",
+        x: "15vw",
+        y: "55vh",
         duration: 1,
     },
 )

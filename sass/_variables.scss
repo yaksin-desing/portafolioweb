@@ -28,6 +28,7 @@ $line-height: $clip-height - 5px;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
   //border: 1px solid red;
 }
 
@@ -58,8 +59,8 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 50px;
   height: 50px;
-  top: 20vh;
-  left: 70vw;
+  top: 25vh;
+  left: 75vw;
   z-index: 1;
   transform: scale(1.7);
   rotate: 20deg;
@@ -1245,7 +1246,7 @@ p {
         flex-direction: column-reverse;
 
         .caritapie {
-          width: 90%;
+          width: 87%;
           position: absolute;
           z-index: 5;
         }
