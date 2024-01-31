@@ -2245,21 +2245,21 @@ p {
 }
 .body__index .conten_setion_uno {
   position: relative;
-  margin: 0px calc(1px + 5vw) 0px calc(1px + 5vw);
+  margin: 0px 0em 0px 0em;
 }
 .body__index .conten_setion_uno .titulo_setion_uno {
   display: flex;
   width: 100%;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
+  height: 90vh;
   gap: 0.5em;
 }
 .body__index .conten_setion_uno .titulo_setion_uno h1 {
   color: #000;
   text-align: center;
   font-family: MargoBeuys;
-  font-size: calc(1px + 6vw);
+  font-size: calc(1px + 7vw);
   font-style: normal;
   font-weight: 400;
   line-height: 136%;
@@ -2267,14 +2267,15 @@ p {
 }
 .body__index .conten_setion_uno .titulo_setion_uno h1 strong {
   color: #000000;
-  font-family: "Bodoni Moda", serif;
-  font-size: calc(1px + 6vw);
-  font-style: italic;
+  font-family: MargoBeuys;
+  font-size: calc(1px + 7vw);
+  font-style: normal;
   font-weight: 100;
   line-height: 136%;
   text-transform: uppercase;
 }
 .body__index .conten_setion_uno .titulo_setion_uno p {
+  display: flex;
   color: #252525;
   text-align: center;
   font-family: poppins;
@@ -2366,6 +2367,7 @@ p {
   letter-spacing: 0.35px;
 }
 .body__index .conten_setion_uno .titulo_setion_uno .cont_barra_contadores div p {
+  display: flex;
   padding: 0px;
   color: #252525;
   font-family: MargoBeuys;
@@ -2453,7 +2455,7 @@ p {
   flex-shrink: 0;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.322);
   overflow: hidden;
-  background: #ffffff;
+  background: #FFE900;
 }
 .body__index .cont_cinta_inicio .slider_inicio .slide-track {
   animation: 60s linear infinite;
@@ -2473,7 +2475,7 @@ p {
 .body__index .cont_cinta_inicio .slider_inicio .slide-track .slide p {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #000;
+  color: #ffffff;
   text-align: center;
   font-family: MargoBeuys;
   font-size: 95px;

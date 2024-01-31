@@ -61,21 +61,21 @@
   /* #####################   SECTION UNO ############################# */
   .conten_setion_uno {
     position: relative;
-    margin: 0px calc(1px + 5vw) 0px calc(1px + 5vw);
+    margin: 0px 0em 0px 0em;
 
     .titulo_setion_uno {
       display: flex;
       width: 100%;
       align-items: center;
       flex-direction: column;
-      height: 85vh;
+      height: 90vh;
       gap: 0.5em;
 
       h1 {
         color: #000;
         text-align: center;
         font-family: MargoBeuys;
-        font-size: calc(1px + 6vw);
+        font-size: calc(1px + 7vw);
         font-style: normal;
         font-weight: 400;
         line-height: 136%;
@@ -83,9 +83,9 @@
 
         strong {
           color: #000000;
-          font-family: "Bodoni Moda", serif;
-          font-size: calc(1px + 6vw);
-          font-style: italic;
+          font-family: MargoBeuys;
+          font-size: calc(1px + 7vw);
+          font-style: normal;
           font-weight: 100;
           line-height: 136%;
           text-transform: uppercase;
@@ -93,7 +93,7 @@
       }
 
       p {
-        
+        display: flex;
         color: #252525;
         text-align: center;
         font-family: poppins;
@@ -192,6 +192,7 @@
           }
 
           p {
+            display: flex;
             padding: 0px;
             color: #252525;
             font-family: MargoBeuys;
@@ -300,7 +301,7 @@
       flex-shrink: 0;
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.322);
       overflow: hidden;
-      background: #ffffff;
+      background: #FFE900;
 
       .slide-track {
         -webkit-animation: 60s linear infinite;
@@ -321,7 +322,7 @@
           p {
             padding-top: 10px;
             padding-bottom: 10px;
-            color: #000;
+            color: #ffffff;
             text-align: center;
             font-family: MargoBeuys;
             font-size: 95px;
