@@ -37,39 +37,83 @@ mm.add("(max-width:720px)", () => {
 })
 
 
-const races = document.querySelector(".cont_horizontal_ocho");
-console.log(races.offsetWidth)
-
-function getScrollAmount() {
-    let racesWidth = races.scrollWidth;
-    return -(racesWidth - window.innerWidth + 0);
-}
-
-const tween = gsap.to(races, {
-        x: getScrollAmount,
-        duration: 5,
-        ease: "none",
-    },
-
-);
 
 
-ScrollTrigger.create({
-    trigger: ".capa_contenedora",
-    start: "top top",
-    end: () => `+=${getScrollAmount() * -1}`,
-    pin: true,
-    animation: tween,
-    scrub: 2,
-    invalidateOnRefresh: true,
-    markers: false,
-
-})
 
 const contenedoranimate = document.querySelector(".contenedor_de_animaciones");
 const altodecontenedor = window.innerWidth;
 let string = altodecontenedor.toString();
 var altoanimate = [string * 10, "0"].toString();
+
+
+
+
+const races = document.querySelector("#uno_skill");
+
+
+
+const timeskill = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".capa_contenedora",
+        start: "top top",
+        end: altoanimate,
+        markers: false,
+        pin: true,
+        scrub: 1,
+    }
+});
+
+timeskill.to(".titulouno", {
+    y:"0",
+    duration: 10,
+});
+
+timeskill.to(".subtitulo_aboutme", {
+    y:"0",
+    duration: 10,
+});
+
+
+timeskill.to(".cont_horizontal_dos", {
+    y:"-100vh",
+    duration: 10,
+});
+
+timeskill.to(".cont_horizontal_tres", {
+    y:"-100vh",
+    duration: 10,
+});
+
+timeskill.to(".cont_horizontal_cuatro", {
+    y:"-100vh",
+    duration: 10,
+});
+
+timeskill.to(".cont_horizontal_cinco", {
+    y:"-100vh",
+    duration: 10,
+});
+
+
+
+let timedia = gsap.matchMedia();
+
+timedia.add("(max-width:800px)", () => {
+    
+    
+
+})
+
+
+
+
+
+
+
+
+
+
+
 
 const tll = gsap.timeline({
     scrollTrigger: {
