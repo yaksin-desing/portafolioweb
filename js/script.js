@@ -1,93 +1,186 @@
- var ini = gsap.timeline({
+let mini = gsap.matchMedia();
+
+var ini = gsap.timeline({
     repeat: 0,
     repeatDelay: 0
 })
 
-ini.to("html", {
-    overflowY:"hidden",
-    overflowX:"hidden",
-    duration: 0
-});
+mini.add("(min-width:721px)", () => {
+    ini.to("html", {
+        overflowY:"hidden",
+        overflowX:"hidden",
+        duration: 0
+    });
+    
+    ini.to(".rectangulo", {
+        top:"50%",
+        duration: 8
+    });
+    
+    ini.to(".rectangulo", {
+        top:"0%",
+        duration: 5
+    });
+    
+    ini.to("html", {
+        overflowY:"auto",
+        overflowX:"hidden",
+        duration: 0
+    });
+    
+    ini.to(".float__wapp", {
+        rotate: "20deg",
+        position:"fixed",
+        x: "24vw",
+        y: "-10vh",
+        duration: 1
+    });
+    
+    ini.to(".backfloat__wapp", {
+        opacity: 100,
+        duration: 0.5
+    });
+    
+    ini.to(".cont__logo__nav", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".icono-menu", {
+        y: 0,
+        duration: 1
+    });
+    
+    ini.to(".h_uno", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".h_dos", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".titulo", {
+        overflow: "visible",
+        duration: 0
+    });
+    
+    ini.to(".h_tres", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".item_img", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".cont_parrafo_contadores", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".contador_cont", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".grilla", {
+        opacity: 100,
+        duration: 2
+    });
 
-ini.to(".rectangulo", {
-    top:"50%",
-    duration: 8
-});
 
-ini.to(".rectangulo", {
-    top:"0%",
-    duration: 5
-});
+})
 
-ini.to("html", {
-    overflowY:"auto",
-    overflowX:"hidden",
-    duration: 0
-});
+mini.add("(max-width:720px)", () => {
 
-ini.to(".float__wapp", {
-    rotate: "20deg",
-    position:"fixed",
-    x: "24vw",
-    y: "-10vh",
-    duration: 1
-});
-
-ini.to(".backfloat__wapp", {
-    opacity: 100,
-    duration: 0.5
-});
-
-ini.to(".cont__logo__nav", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".icono-menu", {
-    y: 0,
-    duration: 1
-});
-
-ini.to(".h_uno", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".h_dos", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".titulo", {
-    overflow: "visible",
-    duration: 0
-});
-
-ini.to(".h_tres", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".item_img", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".cont_parrafo_contadores", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".contador_cont", {
-    y: 0,
-    duration: 0.5
-});
-
-ini.to(".grilla", {
-    opacity: 100,
-    duration: 2
-});
-
+    ini.to("html", {
+        overflowY:"hidden",
+        overflowX:"hidden",
+        duration: 0
+    });
+    
+    ini.to(".rectangulo", {
+        top:"70%",
+        duration: 4
+    });
+    
+    ini.to(".rectangulo", {
+        top:"0%",
+        duration: 3
+    });
+    
+    ini.to("html", {
+        overflowY:"auto",
+        overflowX:"hidden",
+        duration: 0
+    });
+    
+    ini.to(".float__wapp", {
+        rotate: "20deg",
+        position:"fixed",
+        x: "28vw",
+        y: "-28vh",
+        duration: 1
+    });
+    
+    ini.to(".backfloat__wapp", {
+        opacity: 100,
+        duration: 0.5
+    });
+    
+    ini.to(".cont__logo__nav", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".icono-menu", {
+        y: 0,
+        duration: 1
+    });
+    
+    ini.to(".h_uno", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".h_dos", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".titulo", {
+        overflow: "visible",
+        duration: 0
+    });
+    
+    ini.to(".h_tres", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".item_img", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".cont_parrafo_contadores", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".contador_cont", {
+        y: 0,
+        duration: 0.5
+    });
+    
+    ini.to(".grilla", {
+        opacity: 100,
+        duration: 2
+    });
+})
 
 
 
@@ -107,6 +200,10 @@ var tl = gsap.timeline({
     },
 })
 
+let mm = gsap.matchMedia();
+
+mm.add("(min-width:721px)", () => {
+    
 tl.to(".float__wapp", {
     rotate: "20deg",
     position:"fixed",
@@ -120,22 +217,22 @@ tl.to(
         scale: 0.8,
         rotate: "0deg",
         x: "43vw",
-        y: "35vh",
+        y: "30vh",
         duration: 1,
         scale:0.5
     },
 )
 
-let mm = gsap.matchMedia();
+})
 
 mm.add("(max-width:720px)", () => {
 
     tl.to(
         boton, {
-            scale: 0.8,
+            scale: 0.5,
             rotate: "0deg",
-            x: "5vw",
-            y: "80vh",
+            x: "33vw",
+            y: "40vh",
             duration: 1,
         },
     )
@@ -319,7 +416,7 @@ mtll.add("(max-width:800px)", () => {
 
     tll.to(".fondo_negro_dos", {
         scale: 2000,
-        duration: 20,
+        duration: 30,
     });
 
     tll.to(".cont_animacion_tres", {

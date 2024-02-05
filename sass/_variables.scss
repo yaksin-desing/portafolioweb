@@ -30,7 +30,6 @@ $line-height: $clip-height - 5px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
-
   //border: 1px solid red;
 }
 
@@ -40,13 +39,16 @@ a {
 }
 
 body {
+  overflow-y: hidden;
   background: #ffffff;
 }
 
+
 body::-webkit-scrollbar {
-  position: relative;
+  position:absolute;
   width: 5px;
   background: rgba(0, 0, 0, 0.945);
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1184,19 +1186,23 @@ p {
 
   .float__wapp {
     display: flex;
-    position: fixed;
-    width: 0px;
-    height: 0px;
-    top: 8vh;
-    left: 70vw;
-    z-index: 1;
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
     transform: scale(1);
-    rotate: 20deg;
+    rotate: 0deg;
 
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .botonfloat__wapp {
-        margin-top: 23px;
-        margin-left: 23px;
+        margin-top: 0px;
+        margin-left: 0px;
         position: absolute;
         z-index: 1;
       }
