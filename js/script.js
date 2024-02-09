@@ -1,245 +1,3 @@
-let mini = gsap.matchMedia();
-
-var ini = gsap.timeline({
-    repeat: 0,
-    repeatDelay: 0
-})
-
-mini.add("(min-width:721px)", () => {
-    ini.to("html", {
-        overflowY:"hidden",
-        overflowX:"hidden",
-        duration: 0
-    });
-    
-    ini.to(".rectangulo", {
-        top:"50%",
-        duration: 8
-    });
-    
-    ini.to(".rectangulo", {
-        top:"0%",
-        duration: 5
-    });
-    
-    ini.to("html", {
-        overflowY:"auto",
-        overflowX:"hidden",
-        duration: 0
-    });
-    
-    ini.to(".float__wapp", {
-        rotate: "20deg",
-        position:"fixed",
-        x: "24vw",
-        y: "-10vh",
-        duration: 1
-    });
-    
-    ini.to(".backfloat__wapp", {
-        opacity: 100,
-        duration: 0.5
-    });
-    
-    ini.to(".cont__logo__nav", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".icono-menu", {
-        y: 0,
-        duration: 1
-    });
-    
-    ini.to(".h_uno", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".h_dos", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".titulo", {
-        overflow: "visible",
-        duration: 0
-    });
-    
-    ini.to(".h_tres", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".item_img", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".cont_parrafo_contadores", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".contador_cont", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".grilla", {
-        opacity: 100,
-        duration: 2
-    });
-
-
-})
-
-mini.add("(max-width:720px)", () => {
-
-    ini.to("html", {
-        overflowY:"hidden",
-        overflowX:"hidden",
-        duration: 0
-    });
-    
-    ini.to(".rectangulo", {
-        top:"70%",
-        duration: 4
-    });
-    
-    ini.to(".rectangulo", {
-        top:"0%",
-        duration: 3
-    });
-    
-    ini.to("html", {
-        overflowY:"auto",
-        overflowX:"hidden",
-        duration: 0
-    });
-    
-    ini.to(".float__wapp", {
-        rotate: "20deg",
-        position:"fixed",
-        x: "28vw",
-        y: "-28vh",
-        duration: 1
-    });
-    
-    ini.to(".backfloat__wapp", {
-        opacity: 100,
-        duration: 0.5
-    });
-    
-    ini.to(".cont__logo__nav", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".icono-menu", {
-        y: 0,
-        duration: 1
-    });
-    
-    ini.to(".h_uno", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".h_dos", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".titulo", {
-        overflow: "visible",
-        duration: 0
-    });
-    
-    ini.to(".h_tres", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".item_img", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".cont_parrafo_contadores", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".contador_cont", {
-        y: 0,
-        duration: 0.5
-    });
-    
-    ini.to(".grilla", {
-        opacity: 100,
-        duration: 2
-    });
-})
-
-
-
-
-
-
-gsap.registerPlugin(ScrollTrigger)
-const boton = document.querySelector(".float__wapp")
-
-var tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".conta_scroll_boton",
-        pin: true,
-        star: "top top",
-        end: "100% 100%",
-        scrub: 2,
-    },
-})
-
-let mm = gsap.matchMedia();
-
-mm.add("(min-width:721px)", () => {
-    
-tl.to(".float__wapp", {
-    rotate: "20deg",
-    position:"fixed",
-    x: "24vw",
-    y: "-10vh",
-    duration: 1
-});
-
-tl.to(
-    boton, {
-        scale: 0.8,
-        rotate: "0deg",
-        x: "43vw",
-        y: "30vh",
-        duration: 1,
-        scale:0.5
-    },
-)
-
-})
-
-mm.add("(max-width:720px)", () => {
-
-    tl.to(
-        boton, {
-            scale: 0.5,
-            rotate: "0deg",
-            x: "33vw",
-            y: "40vh",
-            duration: 1,
-        },
-    )
-})
-
-
-
 
 
 const contenedoranimate = document.querySelector(".contenedor_de_animaciones");
@@ -266,33 +24,33 @@ const timeskill = gsap.timeline({
 });
 
 timeskill.to(".titulouno", {
-    y:"0",
+    y: "0",
     duration: 10,
 });
 
 timeskill.to(".subtitulo_aboutme", {
-    y:"0",
+    y: "0",
     duration: 10,
 });
 
 
 timeskill.to(".cont_horizontal_dos", {
-    y:"-100vh",
+    y: "-100vh",
     duration: 10,
 });
 
 timeskill.to(".cont_horizontal_tres", {
-    y:"-100vh",
+    y: "-100vh",
     duration: 10,
 });
 
 timeskill.to(".cont_horizontal_cuatro", {
-    y:"-100vh",
+    y: "-100vh",
     duration: 10,
 });
 
 timeskill.to(".cont_horizontal_cinco", {
-    y:"-100vh",
+    y: "-100vh",
     duration: 10,
 });
 
@@ -301,8 +59,8 @@ timeskill.to(".cont_horizontal_cinco", {
 let timedia = gsap.matchMedia();
 
 timedia.add("(max-width:800px)", () => {
-    
-    
+
+
 
 })
 
@@ -442,111 +200,111 @@ mtll.add("(max-width:800px)", () => {
 })
 
 
-mtll.add("(min-width:800px)", () =>{
-    tll.to(".fondo_negro",{
-        scale:2000,
+mtll.add("(min-width:800px)", () => {
+    tll.to(".fondo_negro", {
+        scale: 2000,
         duration: 5,
     });
-    
-    
-    tll.to(".cont_animacion_uno",{
+
+
+    tll.to(".cont_animacion_uno", {
         opacity: "100%",
         duration: 5,
     });
-    
-    tll.to("#contador_uno",{
-        y:0,
-        duration: 5,
-    });
-    
-    tll.to("#titulo_uno",{
+
+    tll.to("#contador_uno", {
         y: 0,
         duration: 5,
     });
-    
-    tll.to("#contenido_uno",{
+
+    tll.to("#titulo_uno", {
         y: 0,
         duration: 5,
     });
-    
-    
-    tll.to("#contador_uno",{
-        y:150,
+
+    tll.to("#contenido_uno", {
+        y: 0,
         duration: 5,
     });
-    
-    tll.to("#titulo_uno",{
+
+
+    tll.to("#contador_uno", {
         y: 150,
         duration: 5,
     });
-    
-    tll.to("#contenido_uno",{
+
+    tll.to("#titulo_uno", {
         y: 150,
         duration: 5,
     });
-    
-    tll.to(".fondo_blanco",{
-        scale:2000,
+
+    tll.to("#contenido_uno", {
+        y: 150,
         duration: 5,
     });
-    
-    tll.to(".cont_animacion_dos",{
+
+    tll.to(".fondo_blanco", {
+        scale: 2000,
+        duration: 5,
+    });
+
+    tll.to(".cont_animacion_dos", {
         opacity: "100%",
         duration: 5,
     });
-    
-    tll.to("#contador_dos",{
-        y:0,
-        duration: 5,
-    });
-    
-    tll.to("#titulo_dos",{
+
+    tll.to("#contador_dos", {
         y: 0,
         duration: 5,
     });
-    
-    tll.to("#contenido_dos",{
+
+    tll.to("#titulo_dos", {
         y: 0,
         duration: 5,
     });
-    
-    tll.to("#contador_dos",{
-        y:150,
+
+    tll.to("#contenido_dos", {
+        y: 0,
         duration: 5,
     });
-    
-    tll.to("#titulo_dos",{
+
+    tll.to("#contador_dos", {
         y: 150,
         duration: 5,
     });
-    
-    tll.to("#contenido_dos",{
+
+    tll.to("#titulo_dos", {
         y: 150,
         duration: 5,
     });
-    
-    tll.to(".fondo_negro_dos",{
-        scale:2000,
+
+    tll.to("#contenido_dos", {
+        y: 150,
         duration: 5,
     });
-    
-    tll.to(".cont_animacion_tres",{
+
+    tll.to(".fondo_negro_dos", {
+        scale: 2000,
+        duration: 5,
+    });
+
+    tll.to(".cont_animacion_tres", {
         delay: 2,
         opacity: "100%",
         duration: 5,
     });
-    
-    tll.to("#contador_tres",{
-        y:0,
-        duration: 5,
-    });
-    
-    tll.to("#titulo_tres",{
+
+    tll.to("#contador_tres", {
         y: 0,
         duration: 5,
     });
-    
-    tll.to("#contenido_tres",{
+
+    tll.to("#titulo_tres", {
+        y: 0,
+        duration: 5,
+    });
+
+    tll.to("#contenido_tres", {
         y: 0,
         duration: 5,
     });

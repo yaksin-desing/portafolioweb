@@ -47,74 +47,6 @@ window.addEventListener("resize", function () {
 
 
 
-//###########################figura dos ###########################
-const contdos = document.querySelector("div.cont_figure_geometric_uno")
-const scenedos = new THREE.Scene();
-const camerados = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-const rendererdos = new THREE.WebGLRenderer({
-    alpha: true,
-    antialias: true
-});
-rendererdos.setSize(window.innerWidth, window.innerHeight);
-rendererdos.shadowMap = true
-contdos.appendChild(rendererdos.domElement);
-
-const geometrydos = new THREE.DodecahedronGeometry(0.5, 0);
-const materialdos = new THREE.MeshPhysicalMaterial({
-    roughness: 0.2,
-    transmission: 1,
-    thickness: 1,
-});
-
-const light = new THREE.DirectionalLight(0xfff0dd, 1);
-light.position.set(0, 5, 5);
-sceneuno.add(light);
-
-const figurados = new THREE.Mesh(geometrydos, materialdos);
-figurados.receiveShadow = true;
-sceneuno.add(figurados);
-
-figurados.position.x = 3;
-figurados.position.y = 0;
-figurados.position.set = (0, 0, 5);
-camerados.position.z = 5;
-
-
-
-
-//###########################figura tres ###########################
-const contdtres = document.querySelector("div.cont_figure_geometric_uno")
-const scenetres = new THREE.Scene();
-const cameratres = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-const renderertres = new THREE.WebGLRenderer({
-    alpha: true,
-    antialias: true
-});
-renderertres.setSize(window.innerWidth, window.innerHeight);
-renderertres.shadowMap = true
-contdos.appendChild(renderertres.domElement);
-
-const geometrytres = new THREE.OctahedronGeometry(0.7, 0);
-const materialtres = new THREE.MeshPhysicalMaterial({
-    roughness: 0.1,
-    transmission: 1,
-    thickness: 1,
-});
-
-const lighttres = new THREE.DirectionalLight(0xfff0dd, 1);
-lighttres.position.set(0, 5, 10);
-scenetres.add(lighttres);
-
-const figuratres = new THREE.Mesh(geometrytres, materialtres);
-figurados.receiveShadow = true;
-sceneuno.add(figuratres);
-
-figuratres.position.x = -3;
-figuratres.position.y = 1;
-figuratres.position.set = (0, 0, 0);
-cameratres.position.z = 1;
 
 
 
@@ -145,15 +77,10 @@ function animate() {
     }
     pos.needsUpdate = true;
 
-    figurados.rotation.x += 0.01;
-    figurados.rotation.y += 0.01;
-    figuratres.rotation.x += 0.01;
-    figuratres.rotation.y += 0.01;
+    
 
     requestAnimationFrame(animate);
     rendereruno.render(sceneuno, camerauno);
-    rendererdos.render(scenedos, camerados);
-    renderertres.render(scenetres, cameratres);
 }
 animate();
 
