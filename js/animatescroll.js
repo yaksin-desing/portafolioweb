@@ -38,8 +38,8 @@ mini.add("(min-width:721px)", () => {
     ini.to(".float__wapp", {
         rotate: "20deg",
         position: "fixed",
-        x: "24vw",
-        y: "-10vh",
+        top: "45%",
+        left: "75%",
         duration: 1
     });
 
@@ -140,8 +140,8 @@ mini.add("(max-width:720px)", () => {
     ini.to(".float__wapp", {
         rotate: "20deg",
         position: "fixed",
-        x: "28vw",
-        y: "-28vh",
+        top: "20%",
+        left: "80%",
         duration: 1
     });
 
@@ -223,20 +223,12 @@ let mm = gsap.matchMedia();
 
 mm.add("(min-width:721px)", () => {
 
-    tl.to(".float__wapp", {
-        rotate: "20deg",
-        position: "fixed",
-        x: "24vw",
-        y: "-10vh",
-        duration: 1
-    });
 
     tl.to(
         boton, {
-            scale: 0.8,
             rotate: "0deg",
-            x: "43vw",
-            y: "30vh",
+            top: "85%",
+            left: "93%",
             duration: 1,
             scale: 0.5
         },
@@ -250,8 +242,8 @@ mm.add("(max-width:720px)", () => {
         boton, {
             scale: 0.5,
             rotate: "0deg",
-            x: "33vw",
-            y: "40vh",
+            top: "90%",
+            left: "85%",
             duration: 1,
         },
     )

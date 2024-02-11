@@ -64,6 +64,7 @@ body::-webkit-scrollbar-thumb {
   height: 50px;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
   z-index: 5;
   transform: scale(1);
@@ -1080,65 +1081,64 @@ p {
 @media (max-width: 1000px) {
   .float__wapp {
     display: flex;
-    position: fixed;
-    width: 0px;
-    height: 0px;
-    top: 5vh;
-    left: 70vw;
-    z-index: 1;
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
     transform: scale(1);
-    rotate: 20deg;
-
+    rotate: 0deg;
+  
+  
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .botonfloat__wapp {
-        margin-top: 23px;
-        margin-left: 23px;
         position: absolute;
         z-index: 1;
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .rectangulo{
+          position: absolute;
+          z-index: -1;
+          top: 100%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          background: #fbff00;
+        }
       }
-
+  
       .botonfloat__wapp:hover {
         transform: scale(1.1);
       }
-
-      .backfloat__wapp {
+  
+      
+      .cargando__wapp {
+        opacity: 100;
         position: absolute;
-        z-index: 0;
+        z-index: 9;
         animation-name: backfloat;
         animation-duration: 10s;
+        width: calc(1px + 16vw);
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
-    }
-  }
-  .float__wapp_dos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    right: 110px;
-    z-index: 1;
-    a {
-      width: 200%;
-      height: 100px;
-  
-      .botonfloat__wapp {
-        margin-top: 23px;
-        margin-left: 25px;
-        position: absolute;
-        z-index: 1;
-      }
-  
-      .botonfloat__wapp:hover {
-        transform: scale(1.1);
-      }
   
       .backfloat__wapp {
+        opacity: 0;
         position: absolute;
         z-index: 0;
         animation-name: backfloat;
         animation-duration: 10s;
+        width: calc(1px + 16vw);
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
@@ -1955,7 +1955,7 @@ p {
 
   .float__wapp {
     display: flex;
-    position:absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     top: 50%;
