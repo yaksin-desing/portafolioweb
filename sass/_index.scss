@@ -72,74 +72,73 @@
   .conten_setion_uno {
     position: relative;
     margin: 0px 5em 0px 5em;
+    height: 90vh;
+    display: flex;
+    align-items: center;
 
     .titulo_setion_uno {
       display: flex;
       width: 100%;
-      align-items: start;
+      align-items: center;
       flex-direction: column;
-
-
       h1 {
         width: 100%;
         margin-top: 0.1em;
         margin-bottom: 0.1em;
         color: #000;
-        text-align: start;
+        text-align: center;
         display: flex;
         flex-direction: column;
-
         .titulo {
           overflow: hidden;
           color: #000000;
           font-family: MargoBeuys;
-          font-size: calc(1px + 10vw);
+          font-size: calc(1px + 5vw);
           font-style: normal;
           font-weight: 400;
           line-height: 100%;
           text-transform: uppercase;
           p{
             transform: translateY(130%);
+              strong {
+                font-family: Gambetta;
+                font-style: italic;
+                font-weight: 500;
+              }
           }
         }
-
       }
 
       .cont_barra_contadores {
         margin-top: 2em;
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: center;
         align-items: start;
         gap: 2em;
         width: 100%;
         overflow: hidden;
 
-        .item_img{
-          transform: translateY(130%);
-          width: 8%;
-        }
 
         .cont_parrafo_contadores {
           transform: translateY(130%);
           display: flex;
           flex-direction: column;
-          align-items: start;
-          padding: 20px;
+          align-items: center;
+          padding: 2em 5em;
           flex-direction: column;
           justify-content: center;
-          flex-shrink: 0;
           align-self: stretch;
           border-radius: 10px;
-          background: #f6f6f6;
+          gap: 3em;
 
           .parrafo {
             color: #252525;
-            text-align: start;
+            text-align: center;
             font-family: poppins;
-            font-size: calc(1px + 1vw);
+            font-size: calc(1px + 1.2vw);
             font-style: normal;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 110%;
             padding-bottom: 10px;
           }
@@ -149,7 +148,7 @@
             display: flex;
             flex-direction: row;
             gap: 1em;
-            justify-content: start;
+            justify-content: center;
 
             .boton_setion_uno_see {
               display: flex;
@@ -195,122 +194,7 @@
             }
           }
         }
-
-        .contador_cont {
-          transform: translateY(130%);
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          flex-direction: column;
-          width: 130px;
-          padding: 20px;
-          flex-direction: column;
-          justify-content: center;
-          flex-shrink: 0;
-          align-self: stretch;
-          border-radius: 10px;
-          background: #f6f6f6;
-
-          h4 {
-            color: #252525;
-            font-family: MargoBeuys;
-            font-size: calc(1px + 2.5vw);
-            font-style: normal;
-            font-weight: 500;
-            line-height: 74%;
-          }
-
-          p {
-            display: flex;
-            padding: 0px;
-            color: #252525;
-            font-family: MargoBeuys;
-            font-size: calc(1px + 1vw);
-            font-style: normal;
-            font-weight: 400;
-          }
-        }
-
-
       }
-    }
-  }
-
-  .grilla {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    margin-top: 5em;
-    margin-left: 5em;
-    opacity: 0;
-  }
-
-  .fondo_inicio {
-    display: none;
-    position: absolute;
-    z-index: -10;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 120vh;
-    overflow: hidden;
-    background: #ffffff;
-
-    .bold_uno {
-      position: absolute;
-      top: -400px;
-      left: -300px;
-      animation: 60s infinite linear gradienanimate;
-    }
-
-    .bold_dos {
-      position: absolute;
-      top: 10px;
-      left: -200px;
-      animation: 60s infinite linear gradienanimate;
-    }
-
-    .bold_tres {
-      position: absolute;
-      bottom: -400px;
-      right: -400px;
-      animation: 60s infinite linear reverse gradienanimate;
-    }
-
-    .fondo_blur {
-      z-index: 5;
-      width: 100vw;
-      height: 100%;
-      background: repeating-radial-gradient(
-            rgba(255, 255, 255, 0.192) 0 0.0001%,
-            #f1f1f146 0 0.0002%
-          )
-          60% 60%/3000px 3000px,
-        repeating-conic-gradient(
-            rgba(255, 255, 255, 0.2) 0 0.0001%,
-            #f1f1f146 0 0.0002%
-          )
-          40% 40%/3000px 3000px;
-      background-blend-mode: difference;
-      backdrop-filter: blur(30px);
-    }
-
-    .fondo_blur_movil {
-      display: none;
-      z-index: 5;
-      width: 100vw;
-      height: 100%;
-    }
-
-    #canvasindex {
-      background: #ffffff;
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
     }
   }
 
@@ -2039,29 +1923,44 @@
     .conten_setion_uno {
       position: relative;
       margin: 0px 1em 0px 1em;
+      z-index: 99;
+      height: 70vh;
 
       .titulo_setion_uno {
         display: flex;
         width: 100%;
-        align-items: center;
-        gap: calc(1px + 0vw);
-        justify-content: none;
+        align-items: start;
+        justify-content: start;
         gap: 1em;
         flex-direction: column;
-        height: 80vh;
+        margin-top: 0.8em;
 
-        .titulo {
-          overflow: hidden;
-          color: #000000;
-          font-family: MargoBeuys;
-          font-size: calc(1px + 15vw);
-          font-style: normal;
-          font-weight: 400;
-          line-height: 100%;
-          text-transform: uppercase;
-          p{
-            transform: translateY(130%);
-          }
+          h1 {
+            width: 100%;
+            margin-top: 0.1em;
+            margin-bottom: 0.1em;
+            color: #000;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            .titulo {
+              overflow: hidden;
+              color: #000000;
+              font-family: MargoBeuys;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+              text-transform: uppercase;
+              p{
+                font-size: calc(1px + 9vw);
+                transform: translateY(170%);
+                  strong {
+                    font-family: Gambetta;
+                    font-style: italic;
+                    font-weight: 500;
+                  }
+              }
+            }
         }
 
 
@@ -2069,59 +1968,28 @@
         .cont_barra_contadores {
           width: 100%;
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(3,1fr);
           padding: 0px 0px;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 10px;
+          gap: 0px;
           border-radius: 20px;
           border: 1px solid #fff;
-          background: rgba(255, 255, 255, 0.05);
-          backdrop-filter: blur(50px);
-
-          .item:nth-child(1){
-
-            order: 1;
-          }
-
-          .item:nth-child(2){
-
-            order: 4;
-          }
-
-          .item:nth-child(3){
-
-            order: 2;
-          }
-
-          .item:nth-child(4){
-
-            order: 3;
-          }
-
-          .item_img{
-            transform: translateY(200%);
-            grid-area: 1 / 1 / 3 / 2; 
-            width: 100%;
-
-          }
 
           .cont_parrafo_contadores{
             transform: translateY(130%);
-            grid-area: 3 / 1 / 4 / 3; 
             display: flex;
             align-items: center;
+            padding: 1em 1em;
             .parrafo {
               color: #1d1d1d;
               text-align: center;
               font-family: poppins;
-              font-size: calc(1px + 2.5vw);
+              font-size: calc(1px + 3vw);
               font-style: normal;
               font-weight: 400;
               line-height: normal;
-              padding-bottom: 10px;
+              padding-bottom: 0px;
               text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
             }
     
@@ -2134,7 +2002,7 @@
               .boton_setion_uno_see {
                 display: flex;
                 width: 10em;
-                padding: 10px;
+                padding: 5px;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
@@ -2143,7 +2011,7 @@
                 background: #ffffff;
                 color: #000;
                 font-family: Gotham;
-                font-size: 15px;
+                font-size: 13px;
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
@@ -2158,7 +2026,7 @@
                 gap: 10px;
                 color: #fff;
                 font-family: poppins;
-                font-size: 15px;
+                font-size: 13px;
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
@@ -2166,129 +2034,16 @@
                 background: #141414;
               }
             }
-
-          }
-
-          .contador_cont {
-            transform: translateY(450%);
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            width: 100%;
-
-            h4 {
-              color: #1d1d1d;
-              font-family: MargoBeuys;
-              font-size: calc(1px + 6vw);
-              font-style: normal;
-              font-weight: 500;
-              line-height: 74%;
-              /* 25.9px */
-              letter-spacing: 0.35px;
-            }
-
-            p {
-              color: #1d1d1d;
-              font-family: poppins;
-              font-size: calc(1px + 3vw);
-              font-style: normal;
-              font-weight: 400;
-              line-height: 100%;
-              /* 15px */
-              letter-spacing: 0.15px;
-            }
           }
         }
       }
     }
 
-    .grilla {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      margin-top: 2em;
-      margin-left: 2em;
-    }
-
-    .fondo_inicio {
-      position: absolute;
-      z-index: -10;
-      top: 0px;
-      left: 0px;
-      background: #f4f4f4;
-      width: 100vw;
-      height: 120vh;
-      overflow: hidden;
-
-      .bold_uno {
-        display: flex;
-        z-index: -1;
-        position: absolute;
-        top: -300px;
-        left: -500px;
-        animation: 60s infinite linear gradienanimate;
-      }
-
-      .bold_dos {
-        display: flex;
-        z-index: -1;
-        position: absolute;
-        top: 100px;
-        left: -200px;
-        animation: 60s infinite linear reverse gradienanimate;
-      }
-
-      .bold_tres {
-        display: flex;
-        z-index: -1;
-        position: absolute;
-        bottom: -500px;
-        right: -400px;
-        animation: 60s infinite linear gradienanimate;
-      }
-
-      .fondo_blur {
-        display: none;
-        z-index: 0;
-        width: 100vw;
-        height: 100%;
-        background: repeating-radial-gradient(
-              rgba(255, 255, 255, 0) 0 0.0001%,
-              #ffffff00 0 0.0002%
-            )
-            60% 60%/3000px 3000px,
-          repeating-conic-gradient(
-              rgba(255, 255, 255, 0) 0 0.0001%,
-              #ffffff00 0 0.0002%
-            )
-            40% 40%/3000px 3000px;
-        background-blend-mode: difference;
-        backdrop-filter: blur(30px);
-      }
-
-      .fondo_blur_movil {
-        display: flex;
-        z-index: 0;
-        width: 100vw;
-        height: 100%;
-        background-blend-mode: difference;
-        backdrop-filter: blur(30px);
-      }
-
-      #canvasindex {
-        z-index: -500;
-        display: none;
-      }
-    }
-
     .cont_cinta_inicio {
-      margin-top: 3em;
+      margin-top: 0em;
       position: relative;
       width: 100%;
+      opacity: 0;
 
       .slider_inicio {
         position: absolute;
@@ -2324,7 +2079,7 @@
             p {
               padding-top: 10px;
               padding-bottom: 10px;
-              color: #ffffff;
+              color: #0c0c0c;
               text-align: center;
               font-family: MargoBeuys;
               font-size: calc(1px + 15vw);

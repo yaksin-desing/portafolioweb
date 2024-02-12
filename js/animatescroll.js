@@ -38,7 +38,7 @@ mini.add("(min-width:721px)", () => {
     ini.to(".float__wapp", {
         rotate: "20deg",
         position: "fixed",
-        top: "45%",
+        top: "27%",
         left: "75%",
         duration: 1
     });
@@ -83,24 +83,9 @@ mini.add("(min-width:721px)", () => {
         duration: 0.5
     });
 
-    ini.to(".item_img", {
-        y: 0,
-        duration: 0.5
-    });
-
     ini.to(".cont_parrafo_contadores", {
         y: 0,
         duration: 0.5
-    });
-
-    ini.to(".contador_cont", {
-        y: 0,
-        duration: 0.5
-    });
-
-    ini.to(".grilla", {
-        opacity: 100,
-        duration: 2
     });
 
 
@@ -138,7 +123,7 @@ mini.add("(max-width:720px)", () => {
     });
 
     ini.to(".float__wapp", {
-        rotate: "20deg",
+        rotate: "15deg",
         position: "fixed",
         top: "20%",
         left: "80%",
@@ -180,25 +165,17 @@ mini.add("(max-width:720px)", () => {
         duration: 0.5
     });
 
-    ini.to(".item_img", {
-        y: 0,
-        duration: 0.5
-    });
-
     ini.to(".cont_parrafo_contadores", {
         y: 0,
         duration: 0.5
     });
 
-    ini.to(".contador_cont", {
-        y: 0,
+    
+    ini.to(".cont_cinta_inicio", {
+        opacity: 100,
         duration: 0.5
     });
 
-    ini.to(".grilla", {
-        opacity: 100,
-        duration: 2
-    });
 })
 
 
@@ -230,7 +207,7 @@ mm.add("(min-width:721px)", () => {
             top: "85%",
             left: "93%",
             duration: 1,
-            scale: 0.5
+            scale: 0.7
         },
     )
 
@@ -240,7 +217,7 @@ mm.add("(max-width:720px)", () => {
 
     tl.to(
         boton, {
-            scale: 0.5,
+            scale: 0.8,
             rotate: "0deg",
             top: "90%",
             left: "85%",

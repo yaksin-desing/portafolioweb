@@ -117,7 +117,7 @@ body::-webkit-scrollbar-thumb {
       z-index: 0;
       animation-name: backfloat;
       animation-duration: 10s;
-      width: calc(1px + 16vw);
+      width: calc(1px + 12vw);
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
@@ -1974,6 +1974,9 @@ p {
         margin-left: 0px;
         position: absolute;
         z-index: 1;
+        img{
+          width: calc(1px + 15vw);
+        }
       }
 
       .botonfloat__wapp:hover {
@@ -1998,7 +2001,7 @@ p {
         z-index: 0;
         animation-name: backfloat;
         animation-duration: 10s;
-        width: calc(1px + 35vw);
+        width: calc(1px + 25vw);
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
