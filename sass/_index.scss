@@ -72,9 +72,10 @@
   .conten_setion_uno {
     position: relative;
     margin: 0px 5em 0px 5em;
-    height: 90vh;
+    height: 88vh;
     display: flex;
     align-items: center;
+    z-index: 99;
 
     .titulo_setion_uno {
       display: flex;
@@ -101,7 +102,7 @@
           p{
             transform: translateY(130%);
               strong {
-                font-family: Gambetta;
+                font-family: "Playfair Display", serif;
                 font-style: italic;
                 font-weight: 500;
               }
@@ -135,7 +136,7 @@
           .parrafo {
             color: #252525;
             text-align: center;
-            font-family: poppins;
+            font-family: Gotham;
             font-size: calc(1px + 1.2vw);
             font-style: normal;
             font-weight: 300;
@@ -162,7 +163,7 @@
               background: #ffffff;
               color: #000;
               font-family: Gotham;
-              font-size: 15px;
+              font-size: 13px;
               font-style: normal;
               font-weight: 300;
               line-height: normal;
@@ -181,7 +182,7 @@
               gap: 10px;
               color: #fff;
               font-family: poppins;
-              font-size: 15px;
+              font-size: 13px;
               font-style: normal;
               font-weight: 300;
               line-height: normal;
@@ -1955,9 +1956,9 @@
                 font-size: calc(1px + 9vw);
                 transform: translateY(170%);
                   strong {
-                    font-family: Gambetta;
+                    font-family: "Playfair Display", serif;
                     font-style: italic;
-                    font-weight: 500;
+                    font-weight: 700;
                   }
               }
             }
@@ -2255,13 +2256,14 @@
     .mis_servicios {
       display: flex;
       flex-direction: column;
+      height: 100vh;
 
       .cont_titulo_mis_servicios {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
-        margin: 3em 1em 1em 1em;
+        margin: 3em 1em 3em 1em;
 
         .titulo {
           color: #000;
@@ -2683,38 +2685,6 @@
     .conten_anima_3d {
       position: relative;
 
-      .cont_figure_geometric_uno {
-        display: flex;
-        position: absolute;
-        z-index: 100;
-        width: 250px;
-        height: 250px;
-        left: 5em;
-        top: 5em;
-      }
-
-      .bandera {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-
-        .titulo_bandera {
-          margin-left: 0.5em;
-          margin-right: 0.5em;
-          position: absolute;
-          color: #000000;
-          text-align: center;
-          font-family: Sora;
-          font-size: calc(1px + 9vw);
-          font-style: normal;
-          font-weight: 900;
-          line-height: 115.5%;
-          text-transform: uppercase;
-        }
-      }
-
       .mis_servicios {
         display: flex;
         flex-direction: column;
@@ -2725,6 +2695,7 @@
           flex-direction: column;
           align-items: flex-start;
           gap: 5px;
+          margin: 3em 1em 3em 1em;
 
           .titulo {
             color: #000;
