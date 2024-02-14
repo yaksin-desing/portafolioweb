@@ -1164,14 +1164,14 @@ p {
       overflow: hidden;
 
       .cont__logo__nav {
-        transform: scale(0.8) translateY(-70px);
+        transform: scale(0.8) ;
         z-index: 1000;
         filter: invert(100%);
         align-items: center;
       }
 
       .icono-menu {
-        transform: scale(0.8) translateY(-70px);
+        transform: scale(0.8);
         z-index: 1000;
         margin-right: -5px;
         width: 50px;
