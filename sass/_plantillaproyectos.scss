@@ -218,6 +218,15 @@
             }
         }
     }
+    .cont_ilustracion_error{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 
 }
 
@@ -383,6 +392,18 @@
 
         .cont_grilla_proyectos {
             margin: 1em 1em 5em 1em;
+        }
+        .cont_ilustracion_error{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            margin-left: 1em;
+            margin-right: 1em;
+            img{
+                width: 80vw;
+            }
         }
     }
 

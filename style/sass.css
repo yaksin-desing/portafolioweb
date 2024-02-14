@@ -2467,6 +2467,15 @@ p {
   text-transform: capitalize;
   white-space: nowrap;
 }
+.body_plantilla .cont_ilustracion_error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 @media (max-width: 800px) {
   .body_plantilla {
@@ -2607,6 +2616,18 @@ p {
   }
   .body_plantilla .cont_grilla_proyectos {
     margin: 1em 1em 5em 1em;
+  }
+  .body_plantilla .cont_ilustracion_error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .body_plantilla .cont_ilustracion_error img {
+    width: 80vw;
   }
 }
 @keyframes scroll101 {
