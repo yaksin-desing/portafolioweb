@@ -86,4 +86,66 @@
         }
     }
 
+    .cont_acercadelproyecto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+        margin-right: 5em;
+        height: 100vh;
+        padding-top: 5em;
+        h3{
+            flex-grow: 0;
+            font-family: Margo+Beuys;
+            font-size: 50px;
+            font-weight: 900;
+            text-align: left;
+            color: #000;
+            margin-bottom: 1em;
+        }
+        .cont_data_proyecto{
+            display: flex;
+            flex-direction: row;
+            gap: 7em;
+            .data{
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content:space-between;
+                .cont_dato{
+                    .titulo{
+
+                        font-family: Gotham;
+                        font-size: 15px;
+                        line-height: 1.36;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #606060;
+                    }
+                    .dato{
+                        font-family: Gotham;
+                        font-size: 20px;
+                        font-weight: 500;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #000;
+                    }
+                    
+                    
+                }
+            }
+            .data_proyecto{
+                width: 50%;
+                font-family: Gotham;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000;
+
+            }
+        }
+
+    }
+
 }
