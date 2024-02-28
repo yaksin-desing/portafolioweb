@@ -339,11 +339,14 @@
     .cont_fuentes{
         display: flex;
         flex-direction: column;
+        justify-content: start;
+        align-items: start;
         margin-left: 5em;
         margin-right: 5em;
-        height: 100vh;
+        height: 100%;
         padding-top: 5em;
-
+        padding-bottom: 5em;
+        gap: 7em;
         h3 {
             flex-grow: 0;
             font-family: Margo+Beuys;
@@ -351,11 +354,14 @@
             font-weight: 900;
             text-align: left;
             color: #000;
-            margin-bottom: 1em;
+            margin-bottom: 0em;
         }
         .fuente{
             display: flex;
             flex-direction: column;
+            align-items: start;
+            width: 100%;
+
             p{
                 margin: 0 132px 12px 0;
                 font-family: Gotham;
@@ -368,16 +374,24 @@
                 text-align: start;
                 color: #000;
             }
-            h4{
-                font-family: MonaSans-Wide;
-                font-size: 50px;
-                font-weight: 200;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1;
-                letter-spacing: 1.5px;
-                text-align: start;
-                color: #000;
+            .img_font{
+                width: 50vh;
+            }
+            .cont_fuentess{
+                width: 100%;
+                margin-top: 2em;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(min(70px, 100%), 1fr));
+                gap: 1em;
+                .cont_font{
+                    img{
+                        
+                    }
+                    p{
+                        width: 100%;
+                    }
+                }
+
             }
         }
     }
