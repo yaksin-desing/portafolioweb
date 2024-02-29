@@ -345,8 +345,8 @@
         margin-right: 5em;
         height: 100%;
         padding-top: 5em;
-        padding-bottom: 5em;
-        gap: 7em;
+        padding-bottom: 2em;
+        gap: 5em;
         h3 {
             flex-grow: 0;
             font-family: Margo+Beuys;
@@ -375,7 +375,7 @@
                 color: #000;
             }
             .img_font{
-                width: 50vh;
+                width: 30%;
             }
             .cont_fuentess{
                 width: 100%;
@@ -383,16 +383,53 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(min(70px, 100%), 1fr));
                 gap: 1em;
+
+
                 .cont_font{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 0.5em;
                     img{
-                        
+                        width: 30%;                        
                     }
-                    p{
+                    .nombre_fuente{
+                        display: inline;
                         width: 100%;
+                        font-family: Gotham;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 1;
+                        color: #000;
                     }
                 }
 
             }
+        }
+    }
+    .cont_img{
+        margin-top: 10em;
+        margin-bottom: 10em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0.5em;
+        grid-row-gap: 0.5em;
+
+        .cont_img_uno{
+            height: 100vh;
+            grid-area: 1 / 1 / 2 / 2;            
+            background-color: #d9d9d9;
+        }
+        .cont_img_dos{
+            height: 100vh;
+            grid-area: 1 / 2 / 2 / 3;
+            background-color: #d9d9d9;
+        }
+        .cont_img_tres{
+            grid-area: 2 / 1 / 3 / 3;
+            background-color: #d9d9d9;
         }
     }
 
