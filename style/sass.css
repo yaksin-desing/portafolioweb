@@ -3422,7 +3422,7 @@ p {
     flex-direction: column;
     margin-top: 10em;
     margin-bottom: 10em;
-    gap: 0.5em;
+    gap: 1em;
   }
   .body_proyecto .cont_img .cont_img_grup {
     display: flex;
