@@ -2708,7 +2708,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.body_proyecto .cont_banner img {
+.body_proyecto .cont_banner .video_pro_jannier {
   width: 70vw;
 }
 .body_proyecto .cont_acercadelproyecto {
@@ -3116,7 +3116,7 @@ p {
     align-items: center;
     justify-content: center;
   }
-  .body_proyecto .cont_banner img {
+  .body_proyecto .cont_banner .video_pro_jannier {
     width: 70vw;
   }
   .body_proyecto .cont_acercadelproyecto {
