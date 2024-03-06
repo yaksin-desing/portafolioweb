@@ -77,9 +77,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         .video_pro_jannier {
-            width: 70vw;
+            width: 100vw;
         }
     }
 
@@ -530,7 +531,7 @@
         }
 
         .cont_banner {
-            height: 95vh;
+            height: 50vh;
             background: #111111;
             display: flex;
             align-items: center;
@@ -538,7 +539,7 @@
 
 
             .video_pro_jannier {
-                width: 70vw;
+                width: 100vw;
             }
         }
 

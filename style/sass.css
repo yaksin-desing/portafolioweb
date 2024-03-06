@@ -2707,9 +2707,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .body_proyecto .cont_banner .video_pro_jannier {
-  width: 70vw;
+  width: 100vw;
 }
 .body_proyecto .cont_acercadelproyecto {
   display: flex;
@@ -3110,14 +3111,14 @@ p {
     color: #000;
   }
   .body_proyecto .cont_banner {
-    height: 95vh;
+    height: 50vh;
     background: #111111;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .body_proyecto .cont_banner .video_pro_jannier {
-    width: 70vw;
+    width: 100vw;
   }
   .body_proyecto .cont_acercadelproyecto {
     display: flex;
