@@ -478,16 +478,22 @@
       display: flex;
       flex-direction: column;
       margin: 0em 5em 5em 5em;
+      gap: 3em;
+
 
       .cont_item_mis_servicios {
         display: flex;
-        padding: 15px 0px;
+        padding: 0px 0px;
         justify-content: space-between;
         align-items: flex-start;
         align-self: stretch;
         border-bottom: 0.5px solid #b1b1b1;
         overflow-x: hidden;
         width: 100%;
+
+        overflow-y: hidden;
+
+
 
         h4 {
           color: #000000;
@@ -541,6 +547,7 @@
         }
 
         .cont_slider_banderas {
+          pointer-events: none;
           display: flex;
           position: absolute;
           align-items: center;
@@ -573,6 +580,7 @@
       }
 
       .cont_item_mis_servicios:hover {
+        overflow-y: hidden;
         border-bottom: 2px solid #000000;
 
         h4 {
@@ -617,13 +625,15 @@
         }
 
         .cont_slider_banderas {
+          pointer-events:visible;
           visibility: visible;
 
           .sslider_uno {
+            display: flex;
             overflow-x: hidden;
             opacity: 1;
             bottom: 0vh;
-            height: 100%;
+            height: 0%;
             width: 100%;
             background: #fff503;
           }
