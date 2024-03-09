@@ -3031,7 +3031,7 @@ p {
 .body_proyecto .cont_img .cont_img_grup .cont_img_dos {
   width: 50%;
 }
-.body_proyecto .cont_img .cont_img_grup .cont_img_dos img {
+.body_proyecto .cont_img .cont_img_grup .cont_img_dos video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3443,7 +3443,7 @@ p {
   .body_proyecto .cont_img .cont_img_grup .cont_img_dos {
     width: 100%;
   }
-  .body_proyecto .cont_img .cont_img_grup .cont_img_dos img {
+  .body_proyecto .cont_img .cont_img_grup .cont_img_dos video {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
