@@ -138,7 +138,7 @@
             .data_proyecto {
                 width: 50%;
                 font-family: Gotham;
-                font-size: 20px;
+                font-size: clamp(10px, 4vw, 20px);
                 font-weight: 400;
                 letter-spacing: normal;
                 text-align: left;
@@ -570,11 +570,11 @@
                     width: 100%;
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    gap: 1em;
-
+                    align-items: start;
+                    justify-content:start;
+                    gap: none;
                     .cont_dato {
+                        width: 100%;
                         .titulo {
                             width: 100%;
                             font-family: Gotham;
@@ -599,7 +599,7 @@
                 .data_proyecto {
                     width: 100%;
                     font-family: Gotham;
-                    font-size: 20px;
+                    font-size: clamp(10px, 4vw, 32px);
                     font-weight: 400;
                     letter-spacing: normal;
                     text-align: left;
