@@ -2,6 +2,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,700&display=swap");
 @font-face {
+  font-family: "monalight";
+  src: url("/assets/font/Monasans/WOFF2/Mona-Sans-LightWide.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monaregular";
+  src: url("/assets/font/Monasans/WOFF2/Mona-Sans-RegularWide.woff2") format("woff2");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monamedium";
+  src: url("/assets/font/Monasans/WOFF2/Mona-Sans-MediumWide.woff2") format("woff2");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monasemibold";
+  src: url("/assets/font/Monasans/WOFF2/Mona-Sans-SemiBoldWide.woff2") format("woff2");
+  font-weight: semibold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monabold";
+  src: url("/assets/font/Monasans/WOFF2/Mona-Sans-BoldWide.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monaextrabold";
+  src: url("/assets/font/Monasans/WOFF2/Mona-Sans-ExtraBoldWide.woff2") format("woff2");
+  font-weight: Extrabold;
+  font-style: normal;
+}
+@font-face {
   font-family: "MargoBeuys";
   src: url(../assets/font/MargoBeuys.otf);
 }
@@ -6905,8 +6941,479 @@ p {
     background-position: 50% 0, 60% 50%;
   }
 }
-#canvasindex {
-  overflow-x: hidden;
-  width: 100vw;
+.menu_i {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.menu_i .cont_logo {
+  padding-left: 2em;
+  filter: invert(100%);
+  scale: 0.8;
+}
+.menu_i .cont_list_menu {
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+.menu_i .cont_list_menu .boton_list_menu {
+  width: 10vw;
+  flex-grow: 0;
+  font-family: monalight;
+  font-size: 15px;
+  font-weight: lightw;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+}
+.menu_i .cont_list_menu .boton_contactame {
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  background: #f32400;
+  flex-grow: 0;
+  font-family: monabold;
+  font-size: 15px;
+  font-weight: semibold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.seccion_inicio {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+.seccion_inicio .cont_primera_columna_inicio {
+  width: 80vw;
+  border-right: #000 solid 1px;
+}
+.seccion_inicio .cont_primera_columna_inicio .columna_titulo {
+  border-bottom: #000 solid 1px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 2em;
+  gap: 20px;
+}
+.seccion_inicio .cont_primera_columna_inicio .columna_titulo h1 {
+  font-family: monaextrabold;
+  font-size: 80px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.seccion_inicio .cont_primera_columna_inicio .columna_titulo p {
+  font-family: monaregular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.seccion_inicio .cont_primera_columna_inicio .columna_titulo .boton_hablemos {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px 40px;
+  background-color: #f32400;
+  font-family: monabold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo .contadores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: #000000 solid 1px;
+}
+.seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo .contadores .cont_uno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo .contadores .cont_uno .valor_cont_uno {
+  width: 100%;
+  width: -moz-min-content;
+  width: min-content;
+  font-family: monabold;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: start;
+  color: #000;
+}
+.seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo .contadores .cont_uno .titulo_valor {
+  font-family: monalight;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.seccion_inicio .columna_video {
+  overflow: hidden;
+  width: 40vw;
+}
+.seccion_inicio .columna_video img {
+  position: relative;
+  top: -5em;
+  width: 100%;
+}
+
+.cont_cinta_inicio {
+  width: 100%;
+}
+.cont_cinta_inicio .slider_inicio {
+  height: 150px;
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  transform: rotate(0deg);
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #f32400;
+  align-items: center;
+}
+.cont_cinta_inicio .slider_inicio .slide-track {
+  animation: 60s linear infinite;
+  animation-name: scroll10;
+  display: flex;
+  width: 8000px;
+  gap: 75px;
+  align-items: center;
+}
+.cont_cinta_inicio .slider_inicio .slide-track .slide {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cont_cinta_inicio .slider_inicio .slide-track .slide p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-family: monabold;
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106%;
+  white-space: nowrap;
+}
+.cont_cinta_inicio .slider_inicio .slide-track .img_uno {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  border-radius: 172px;
+}
+
+.cont_about_me_inicio {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.cont_about_me_inicio .colum_uno {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  border-right: #000 1px solid;
+  justify-content: space-between;
+}
+.cont_about_me_inicio .colum_uno .cinta_colum_uno {
+  width: 100%;
+  height: 10%;
+  background: #ffffff;
+  border-bottom: #000 solid 1px;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.cont_about_me_inicio .colum_uno .cinta_colum_uno .slider_inicio {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #ffffff;
+  align-items: center;
+}
+.cont_about_me_inicio .colum_uno .cinta_colum_uno .slider_inicio .slide-track {
+  width: 100%;
+  animation: 15s linear infinite;
+  animation-name: scroll101;
+  display: flex;
+  width: 2400px;
+  align-items: start;
+  gap: 1px;
+}
+.cont_about_me_inicio .colum_uno .cinta_colum_uno .slider_inicio .slide-track .slide {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont_about_me_inicio .colum_uno .cinta_colum_uno .slider_inicio .slide-track .slide p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+  text-align: center;
+  font-family: monaextrabold;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 106%;
+  white-space: nowrap;
+}
+.cont_about_me_inicio .colum_uno .img_fondo_foto {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+}
+.cont_about_me_inicio .colum_uno .img_fondo_foto img {
+  top: -3em;
+  width: 100%;
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cont_about_me_inicio .colum_uno .img_fondo_foto_dos {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  z-index: 0;
+  width: 60%;
+  top: 22%;
+  left: 20%;
+}
+.cont_about_me_inicio .colum_uno .img_fondo_foto_dos img {
+  top: -3em;
+  width: 100%;
+  animation: rotates 20s linear infinite;
+}
+@keyframes rotates {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.cont_about_me_inicio .colum_uno .foto_jaksin {
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+}
+.cont_about_me_inicio .colum_uno .cinta_colum_dos {
+  width: 100%;
+  height: 10%;
+  background: #ffffff;
+  border-top: #000 solid 1px;
+}
+.cont_about_me_inicio .colum_dos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cont_about_me_inicio .colum_dos .titulo_about_me {
+  height: 15%;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+.cont_about_me_inicio .colum_dos .titulo_about_me h4 {
+  font-family: monabold;
+  font-size: 50px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.cont_about_me_inicio .colum_dos .titulo_about_me p {
+  font-family: monaregular;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.cont_about_me_inicio .colum_dos .lista_about_me {
+  display: flex;
+  flex-direction: column;
+  border-top: #000 solid 1px;
+}
+.cont_about_me_inicio .colum_dos .lista_about_me .item_lista {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #000 solid 1px;
+}
+.cont_about_me_inicio .colum_dos .lista_about_me .item_lista .num_item {
+  border-right: #000 solid 1px;
+  width: 20%;
+  font-family: monasemibold;
+  font-size: 55px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.cont_about_me_inicio .colum_dos .lista_about_me .item_lista .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 1em;
+}
+.cont_about_me_inicio .colum_dos .lista_about_me .item_lista .item .titulo_item {
+  font-family: monasemibold;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.cont_about_me_inicio .colum_dos .lista_about_me .item_lista .item .cont_item {
+  font-family: monalight;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.cont_about_me_inicio .colum_dos .cinta_colum_dos {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background: #ffffff;
+  border-top: #000 solid 1px;
+  position: relative;
+  overflow-x: hidden;
+  align-items: center;
+}
+.cont_about_me_inicio .colum_dos .cinta_colum_dos .slider_inicio {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: start;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+.cont_about_me_inicio .colum_dos .cinta_colum_dos .slider_inicio .slide-track {
+  width: 100%;
+  animation: 15s linear infinite reverse;
+  animation-name: scroll1011;
+  display: flex;
+  width: 2400px;
+  align-items: center;
+  gap: 1px;
+}
+.cont_about_me_inicio .colum_dos .cinta_colum_dos .slider_inicio .slide-track .slide {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont_about_me_inicio .colum_dos .cinta_colum_dos .slider_inicio .slide-track .slide p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+  text-align: center;
+  font-family: monaextrabold;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 106%;
+  white-space: nowrap;
+}
+@keyframes scroll1011 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
 }

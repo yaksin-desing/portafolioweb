@@ -1,40 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio web de Jaksin sain , pagina en donde encontraras todos los proyectos de jaksin sain"
+    />
+    <meta
+      name="keywords"
+      content="home,inicio,portafolio,ux,ui,diseñador,diseñador Ux-Ui,diseñador ux,Research,Wrinting,desarrollador movil,fronten,freelancer,programador,portafolio,desarrillador web"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/iconweb.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/sass.css" />
+    <title>Dsains</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portafolio web de Jaksin sain , pagina en donde encontraras todos los proyectos de jaksin sain">
-    <meta name="keywords"
-        content="home,inicio,portafolio,ux,ui,diseñador,diseñador Ux-Ui,diseñador ux,Research,Wrinting,desarrollador movil,fronten,freelancer,programador,portafolio,desarrillador web">
-    <link rel="shortcut icon" href="../assets/img/iconweb.svg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/sass.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
+  <body>
+    <div class="cursor"></div>
 
-    <title>Aserca de mi</title>
-</head>
+    <header class="menu_i">
+      <div class="cont_logo">
+        <a href="./index.html">
+          <lottie-player
+            id="logo"
+            src="../assets/img/logoanimado.json"
+            speed="1"
+            style="width: 100px"
+            autoplay
+          >
+          </lottie-player>
+        </a>
+      </div>
+      <div class="cont_list_menu">
+        <a class="boton_list_menu" href=""> Home </a>
 
-<body>
+        <a class="boton_list_menu" href=""> Acerca de mi </a>
 
-    <canvas id="canvasindex"></canvas>
-    
-        
-  <!-- javascripts -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="../js/three.js"></script>
-  <script src="../js/admthree.js"></script>
-  <script type="module" src="../js/appgradient.js"></script>
-  <script src="../js/script.js"></script>
-</body>
+        <a class="boton_list_menu" href=""> Portafolios </a>
+
+        <a class="boton_contactame" href=""> Contactame </a>
+      </div>
+    </header>
+
+    <section
+    class="seccion_inicio">
+    <div class="cont_primera_columna_inicio">
+
+    <div class="columna_titulo">
+      <h1>Hola, soy el diseñador ux - ui que buscas.</h1>
+      <p>Bienvenido a mi portafolio, aqui podras encontrar mis ultimos trabajos y referencias laborales.</p>
+      <a class="boton_hablemos" href="">Hablemos</a>
+    </div>
+
+    <div class="cont_pie_titulo">
+      <div class="contadores">
+        <div class="cont_uno">
+          <h4 class="valor_cont_uno">+15</h4>
+          <p class="titulo_valor">Proyectos completados</p>
+        </div>
+      </div>
+
+      <div class="contadores">
+        <div class="cont_uno">
+          <h4 class="valor_cont_uno">+4</h4>
+          <p class="titulo_valor">Años de experiencia</p>
+        </div>
+      </div>
+
+      <div class="contadores">
+        <div class="cont_uno">
+          <h4 class="valor_cont_uno">+4</h4>
+          <p class="titulo_valor">Años de experiencia</p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+    <div class="columna_video">
+      <img src="/assets/img/videopolis.gif" alt="">
+    </div>
+
+    </section>
+
+    <section class="cont_cinta_inicio">
+      <div class="slider_inicio">
+        <div class="slide-track">
+          <div class="slide">
+            <p>HAGAMOS REALIDAD TUS IDEAS.</p>
+          </div>
+
+          <img class="img_uno" src="/assets/img/starinicio.svg" alt="">
+
+          <div class="slide">
+            <p>DISEÑADOR Y DESARROLLADOR.</p>
+          </div>
+
+          <img class="img_uno" src="/assets/img/sstarinicio.svg" alt="">
+
+          <div class="slide">
+            <p>BIENVENIDO A MI PORTAFOLIO.</p>
+          </div>
+
+          <img class="img_uno" src="/assets/img/starinicio.svg" alt="">
+
+          <div class="slide">
+            <p>DESARROLLO CREATIVO.</p>
+          </div>
+
+          <img class="img_uno" src="/assets/img/sstarinicio.svg" alt="">
+
+          <div class="slide">
+            <p>HAGAMOS REALIDAD TUS IDEAS.</p>
+          </div>
+
+          <img class="img_uno" src="/assets/img/starinicio.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="cont_about_me_inicio">
+      <div class="colum_uno">
+
+        <div class="cinta_colum_uno">
+          <div class="slider_inicio">
+            <div translate="no" class="slide-track">
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img_fondo_foto">
+          <img src="/assets/img/fondofoto.svg" alt="">
+        </div>
+
+        <div class="img_fondo_foto_dos">
+          <img src="/assets/img/fondofoto.svg" alt="">
+        </div>
 
 
+        <img class="foto_jaksin" src="/assets/img/fotojaksin.png" alt="">
+
+      
+
+      </div>
+
+      <div class="colum_dos">
+
+        <div class="titulo_about_me" >
+          <h4>Acerca de mi</h4>
+          <p>Soy Jaksin Sains, Diseñador De Experiencias Positivas, Tengo 28 Años De Edad Y 4 Años De Experiencia, Diseñador Ux - Ui, Especialista En Ux Research , Ux Writing, Dev Jr Web - Móvil Y Motion Designer.</p>
+        </div>
+
+        <div class="lista_about_me">
+
+          <div class="item_lista">
+            <div class="num_item"><img src="/assets/img/estrellaitem.svg" alt=""></div>
+            <div class="item">
+              <h5 class="titulo_item">Diseñador Ux - Ui</h5>
+              <p class="cont_item"> Diseñador Ux - Ui, Desde Hace 4 Años con Certificado.</p>
+            </div>
+
+          </div>
+
+          <div class="item_lista">
+            <div class="num_item"><img src="/assets/img/estrellaitem.svg" alt=""></div>
+            <div class="item">
+              <h5 class="titulo_item">Ux - Research / Ux - Writer</h5>
+              <p class="cont_item"> Soy Ux - Research y Ux - Writer Certificado En Coderhause.</p>
+            </div>
+
+          </div>
+
+          <div class="item_lista">
+            <div class="num_item"><img src="/assets/img/estrellaitem.svg" alt=""></div>
+            <div class="item">
+              <h5 class="titulo_item">Desarrollador Fronted</h5>
+              <p class="cont_item">Desarrollador Frontend Certificado En Coderhouse.</p>
+            </div>
+
+          </div>
+
+          <div class="item_lista">
+            <div class="num_item"><img src="/assets/img/estrellaitem.svg" alt=""></div>
+            <div class="item">
+              <h5 class="titulo_item">Desarrollador Móvil</h5>
+              <p class="cont_item">Desarrollador Jr FLUTTER Certificado Por La Universidad Del Norte De Barranquilla.</p>
+            </div>
+
+          </div>
+
+          <div class="item_lista">
+            <div class="num_item"><img src="/assets/img/estrellaitem.svg" alt=""></div>
+            <div class="item">
+              <h5 class="titulo_item">Animador</h5>
+              <p class="cont_item">Animador empírico en proceso de certificación, enfocado por la animación de assets e interacciones para el UI.</p>
+            </div>
+
+          </div>
+
+          <div class="item_lista">
+            <div class="num_item"><img src="/assets/img/estrellaitem.svg" alt=""></div>
+            <div class="item">
+              <h5 class="titulo_item">Ilustrador</h5>
+              <p class="cont_item">Ilustrador amateur, enamorado por la expresión grafica</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="cinta_colum_dos">
+          <div class="slider_inicio">
+            <div translate="no" class="slide-track">
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+                <div class="slide">
+                    <p>DISEÑADOR</p>
+                </div>
+                <div class="slide">
+                    <p>UX  -  UI</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- javascripts -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../js/three.js"></script>
+    <script src="../js/admthree.js"></script>
+    <script type="module" src="../js/appgradient.js"></script>
+    <script src="../js/animatescroll.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
