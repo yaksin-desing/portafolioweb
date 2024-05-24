@@ -1,5 +1,6 @@
-body{
+body {
     background: #fcfcfc;
+    overflow-x: hidden;
 }
 
 .menu_i {
@@ -182,6 +183,40 @@ body{
                         letter-spacing: normal;
                         text-align: left;
                         color: #000;
+                    }
+                }
+
+            }
+
+            .contador_disponible {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: #000000 solid 1px;
+
+                .cont_uno {
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {}
+
+                    .valor_cont_uno {
+                        height: 100%;
+                        width: min-content;
+                        font-family: monabold;
+                        font-size: 20px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1;
+                        text-align: center;
+                        color: #000;
+                        margin-bottom: 0;
                     }
                 }
 
@@ -567,20 +602,24 @@ body{
 }
 
 .portafolios {
-    border-top: #000 1px solid;
-    border-bottom: #000 1px solid;
+    border-top: #ffffff 1px solid;
+    border-bottom: #000000 1px solid;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 110vh;
     justify-content: space-evenly;
+    overflow-x: hidden;
 
     .cont_titulo_portafolios {
         display: flex;
         flex-direction: row;
         padding-left: 2em;
         align-items: center;
+        background: #0e0e0e;
+
         .cont_uno {
             padding-right: 1em;
+
             h4 {
                 font-family: monabold;
                 font-size: 80px;
@@ -590,7 +629,7 @@ body{
                 line-height: 1;
                 letter-spacing: normal;
                 text-align: left;
-                color: #000;
+                color: #ffffff;
             }
 
             p {
@@ -603,20 +642,22 @@ body{
                 line-height: 1;
                 letter-spacing: normal;
                 text-align: left;
-                color: #000;
+                color: #ffffff;
             }
         }
 
         .cont_dos_img {
-            position:relative;
+            position: relative;
             display: flex;
-            border-left: #000 solid 1px;
-            .img_uno{
-                position:absolute;
+            border-left: #ffffff solid 1px;
+
+            .img_uno {
+                position: absolute;
                 z-index: 1;
                 width: 100%;
             }
-            .img_dos{
+
+            .img_dos {
                 width: 100%;
                 animation: rotate 30s linear infinite;
             }
@@ -641,24 +682,26 @@ body{
         justify-content: space-between;
 
 
+
         .cont_item_mis_servicios {
             display: flex;
             justify-content: space-between;
             align-items: center;
             overflow-x: hidden;
             overflow-y: hidden;
-            border-top: #000 1px solid;
-            
+            border-top: #ffffff 1px solid;
+            background: #0e0e0e;
+
 
             h4 {
                 margin-top: 0.5em;
                 margin-left: 0.5em;
-                color: #000000;
+                color: #ffffff;
                 font-family: monaextrabold;
                 font-size: 50px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: 136%;
+                line-height: 200%;
                 text-transform: uppercase;
                 visibility: visible;
                 text-align: center;
@@ -667,7 +710,7 @@ body{
 
             p {
                 margin-right: 2em;
-                color: #000;
+                color: #ffffff;
                 font-family: monalight;
                 font-size: 14px;
                 font-style: normal;
@@ -675,9 +718,10 @@ body{
             }
 
             .cont_slider_banderas {
+                overflow-x: hidden;
 
                 pointer-events: none;
-                display:flex;
+                display: flex;
                 position: absolute;
                 align-items: center;
                 justify-content: center;
@@ -701,6 +745,7 @@ body{
                     transition-timing-function: cubic-bezier(0.51, 1.02, 1, 1);
 
                     img {
+                        overflow-x: hidden;
                         cursor: url("../assets/img/ir.svg") 15 14, auto;
                         width: 30vw;
                     }
@@ -722,7 +767,8 @@ body{
                     height: 0%;
                     width: 100%;
                     background: #f32400;
-                    img{
+
+                    img {
                         filter: invert(100%);
                     }
                 }
@@ -731,9 +777,238 @@ body{
     }
 }
 
+.referencias_laborales {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    .colum_uno {
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+
+        .cont_titulo_portafolios {
+            display: flex;
+            flex-direction: column;
+            padding-left: 2em;
+            padding-top: 3em;
+            padding-bottom: 3em;
+            border-bottom: #000 1px solid;
+
+            h4 {
+                font-family: monabold;
+                font-size: 80px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000;
+
+            }
+
+            p {
+                margin: 18px 23.3px 0 0;
+                font-family: monaregular;
+                font-size: 15px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000;
+
+            }
+        }
+
+
+        .cont_lista_referencias {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            .item_lista_referencias {
+                height: 100%;
+                border-bottom: #000 1px solid;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 2em;
+                padding-right: 2em;
+
+                img {
+                    transform: scale(0.6);
+                }
+
+                h4 {
+                    width: 40%;
+                    font-family: monabold;
+                    font-size: 30px;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: start;
+                    color: #000;
+                }
+
+                p {
+                    width: 20%;
+                    font-family: monaregular;
+                    font-size: 18px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: start;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .colum_dos {
+        overflow: hidden;
+        position: relative;
+        border-left: #000 1px solid;
+        border-bottom: #000 1px solid;
+        width: 25vw;
+
+        img {
+            position: absolute;
+            top: 0%;
+            left: -150%;
+        }
+
+    }
+
+}
+
+.cont_animacionmiskills_vertical {
+    .primer_section_inicio {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background: #f32400;
+
+        .fila_uno {
+            border-bottom: #000 solid 1px;
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+
+            .titulo_section_inicio {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin-left: 2em;
+                margin-right: 2em;
+
+                p {
+                    width: min-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 30px;
+                    border-radius: 248px;
+                    background-color: rgba(0, 0, 0, 0.21);
+                    font-family: monamedium;
+                    font-size: 25px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    color: #fff;
+                    white-space: nowrap;
+
+                }
+            }
+
+            .subtitulo_section_inicio {
+                padding-left: 2em;
+                border-left: 1px solid black;
+                width: 40%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2em;
+
+                img {}
+
+                p {
+                    font-family: monaregular;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: justify;
+                    color: #fff;
+                }
+
+            }
+        }
+
+        .fila_dos {
+            overflow: hidden;
+            margin-left: 2em;
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+
+            .MY-SKILLS {
+                margin-top:auto;
+                height: 80vh;
+                font-family: monabold;
+                font-size: 240px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: start;
+                color: #fff;
+                
+
+                .text-style-1 {
+                    color: #6d0101;
+                }
+
+                .text-style-2 {
+                    color: #930000;
+                }
+            }
+
+            .img-my-skills{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                
+                img{
+                    transform: rotate(90deg);
+
+                }
+            }
+
+        }
+    }
+}
+
+
 
 .pie_de_pagina {
-    position:relative;
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -758,7 +1033,8 @@ body{
             width: 100%;
             height: 100%;
             border-right: #000000 solid 1px;
-            h6{
+
+            h6 {
                 font-family: monalight;
                 font-size: 15px;
                 font-weight: 200;
@@ -769,7 +1045,8 @@ body{
                 text-align: left;
                 color: #000;
             }
-            p{
+
+            p {
                 font-family: monamedium;
                 font-size: 18px;
                 font-weight: normal;
@@ -806,7 +1083,7 @@ body{
             border-right: #000000 solid 1px;
             border-left: #000000 solid 1px;
 
-            p{
+            p {
                 font-family: monamedium;
                 font-size: 40px;
                 font-weight: normal;
@@ -822,10 +1099,10 @@ body{
         }
     }
 
-    img{
+    img {
         width: 100%;
-        position:absolute;
+        position: absolute;
         bottom: -10%;
     }
-    
+
 }
