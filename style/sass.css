@@ -7697,11 +7697,19 @@ body {
   left: -150%;
 }
 
+.cont_animacionmiskills_vertical {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 .cont_animacionmiskills_vertical .primer_section_inicio {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background: #f32400;
+  border-bottom: #000 solid 1px;
 }
 .cont_animacionmiskills_vertical .primer_section_inicio .fila_uno {
   border-bottom: #000 solid 1px;
@@ -7768,7 +7776,7 @@ body {
   margin-top: auto;
   height: 80vh;
   font-family: monabold;
-  font-size: 240px;
+  font-size: 236px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -7784,6 +7792,7 @@ body {
   color: #930000;
 }
 .cont_animacionmiskills_vertical .primer_section_inicio .fila_dos .img-my-skills {
+  border-left: #000 solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7791,6 +7800,102 @@ body {
 }
 .cont_animacionmiskills_vertical .primer_section_inicio .fila_dos .img-my-skills img {
   transform: rotate(90deg);
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio {
+  background: #fff;
+  transform: translateY(150vh);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .cont_titulo {
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .cont_titulo h4 {
+  width: 80%;
+  font-family: monaextrabold;
+  font-size: 80px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000;
+  margin-left: 0.5em;
+  margin-bottom: 0px;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .cont_titulo .num_titulo_skils {
+  width: 20%;
+  display: flex;
+  margin-right: 0.5em;
+  margin-left: 1em;
+  border-left: 1px solid rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .cont_titulo .num_titulo_skils p {
+  font-family: monaextrabold;
+  font-size: 128px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills .item_list_skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills .item_list_skills .img_titulo_item {
+  margin-left: 3em;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  gap: 5em;
+  align-items: center;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills .item_list_skills .img_titulo_item img {
+  width: 5%;
+  filter: grayscale(100%);
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills .item_list_skills .img_titulo_item h4 {
+  font-family: monabold;
+  font-size: 30px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 0px;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills .item_list_skills .subtitulo {
+  width: 20%;
+  text-align: start;
+}
+.cont_animacionmiskills_vertical .segundo_section_inicio .list_skills .item_list_skills .contador {
+  margin-right: 3em;
 }
 
 .pie_de_pagina {
