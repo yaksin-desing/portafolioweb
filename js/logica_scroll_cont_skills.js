@@ -3,7 +3,7 @@ const skillss = gsap.timeline({
         trigger: ".cont_animacionmiskills_vertical",
         start: 'top top',
         end: '700% top',
-        markers: true,
+        markers: false,
         pin: true,
         scrub: 1,
     }
