@@ -707,6 +707,10 @@
                     text-align: center;
                 }
 
+                .ir_boton {
+                    display: none;
+                }
+
 
                 p {
                     margin-right: 2em;
@@ -1211,6 +1215,13 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #000;
+                    a{                    
+                        strong{
+                        color: #000;
+                        text-decoration: underline;
+                    }}
+
+                    
                 }
 
 
@@ -1783,7 +1794,7 @@
                     width: 100%;
                     height: 10%;
                     background: #ffffff;
-                    border-top: #000 solid 1px;
+                    border-top: #000 solid 0px;
                     position: relative;
                     overflow-x: hidden;
                     align-items: center;
@@ -1848,11 +1859,11 @@
         }
 
         .portafolios {
-            border-top: #000000 0px solid;
+            border-top: #ffffff 0px solid;
             border-bottom: #000000 1px solid;
             display: flex;
             flex-direction: column;
-            height: auto;
+            height: 100vh;
             justify-content: start;
             overflow-x: hidden;
 
@@ -1861,7 +1872,7 @@
                 flex-direction: row;
                 padding-left: 1em;
                 align-items: center;
-                background: #0e0e0e;
+                background: #ffffff;
 
                 .cont_uno {
                     padding-right: 1em;
@@ -1875,7 +1886,7 @@
                         line-height: 1;
                         letter-spacing: normal;
                         text-align: left;
-                        color: #ffffff;
+                        color: #000000;
                     }
 
                     p {
@@ -1894,9 +1905,10 @@
                 }
 
                 .cont_dos_img {
+                    width: 36vw;
                     position: relative;
                     display: flex;
-                    border-left: #ffffff solid 1px;
+                    border-left: #000000 solid 1px;
 
                     .img_uno {
                         position: absolute;
@@ -1927,37 +1939,59 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                height: 100%;
 
 
 
                 .cont_item_mis_servicios {
+                    height: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     overflow-x: hidden;
                     overflow-y: hidden;
-                    border-top: #ffffff 1px solid;
-                    background: #0e0e0e;
-                    padding-top: 1.5em;
-                    padding-bottom: 1.5em;
+                    border-top: #000000 1px solid;
+                    background: #ffffff;
+                    padding-top: 0em;
+                    padding-bottom: 0em;
+                    padding-left: 1em;
 
 
                     h4 {
-                        margin-top: 0.5em;
-                        margin-left: 0.5em;
-                        color: #ffffff;
-                        font-family: monaextrabold;
+                        width: auto;
+                        margin: 0;
+                        color: #000000;
+                        font-family: monabold;
                         font-size: 25px;
                         font-style: normal;
-                        font-weight: 600;
-                        line-height: 200%;
+                        font-weight: 300;
+                        line-height: 0%;
                         text-transform: uppercase;
                         visibility: visible;
-                        text-align: center;
+                        text-align: start;
                     }
 
 
+                    .ir_boton {
+                        justify-content: center;
+                        width: 29vw;
+                        height: auto;
+                        display: flex;
+                        border-left: 1px solid rgb(0, 0, 0);
+                        align-items: center;
+                        height: 100%;
+                        background: #f32400;
+                        img{
+                            transform: rotate(35deg);
+                            width: 20%;
+                            height: 20%;
+                        }
+                    }
+
+
+
                     p {
+                        display: none;
                         margin-right: 2em;
                         color: #ffffff;
                         font-family: monalight;
@@ -2404,6 +2438,7 @@
                 justify-content: space-around;
                 padding-left: 1em;
                 padding-right: 1em;
+
                 .item_pie {
                     border-bottom: #000000 solid 1px;
                     border-left: #000000 solid 1px;

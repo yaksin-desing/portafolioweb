@@ -7540,6 +7540,9 @@ p {
   visibility: visible;
   text-align: center;
 }
+.body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios .ir_boton {
+  display: none;
+}
 .body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios p {
   margin-right: 2em;
   color: #ffffff;
@@ -7969,6 +7972,10 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+}
+.body_inicio .pie_de_pagina .cont_barra_dos_links_pie .item_pie p a strong {
+  color: #000;
+  text-decoration: underline;
 }
 .body_inicio .pie_de_pagina img {
   width: 100%;
@@ -8451,7 +8458,7 @@ p {
     width: 100%;
     height: 10%;
     background: #ffffff;
-    border-top: #000 solid 1px;
+    border-top: #000 solid 0px;
     position: relative;
     overflow-x: hidden;
     align-items: center;
@@ -8500,11 +8507,11 @@ p {
     }
   }
   .body_inicio .portafolios {
-    border-top: #000000 0px solid;
+    border-top: #ffffff 0px solid;
     border-bottom: #000000 1px solid;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     justify-content: start;
     overflow-x: hidden;
   }
@@ -8513,7 +8520,7 @@ p {
     flex-direction: row;
     padding-left: 1em;
     align-items: center;
-    background: #0e0e0e;
+    background: #ffffff;
   }
   .body_inicio .portafolios .cont_titulo_portafolios .cont_uno {
     padding-right: 1em;
@@ -8527,7 +8534,7 @@ p {
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
-    color: #ffffff;
+    color: #000000;
   }
   .body_inicio .portafolios .cont_titulo_portafolios .cont_uno p {
     display: none;
@@ -8543,9 +8550,10 @@ p {
     color: #ffffff;
   }
   .body_inicio .portafolios .cont_titulo_portafolios .cont_dos_img {
+    width: 36vw;
     position: relative;
     display: flex;
-    border-left: #ffffff solid 1px;
+    border-left: #000000 solid 1px;
   }
   .body_inicio .portafolios .cont_titulo_portafolios .cont_dos_img .img_uno {
     position: absolute;
@@ -8569,32 +8577,51 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
   }
   .body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
     overflow-y: hidden;
-    border-top: #ffffff 1px solid;
-    background: #0e0e0e;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    border-top: #000000 1px solid;
+    background: #ffffff;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 1em;
   }
   .body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios h4 {
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-    color: #ffffff;
-    font-family: monaextrabold;
+    width: auto;
+    margin: 0;
+    color: #000000;
+    font-family: monabold;
     font-size: 25px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 200%;
+    font-weight: 300;
+    line-height: 0%;
     text-transform: uppercase;
     visibility: visible;
-    text-align: center;
+    text-align: start;
+  }
+  .body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios .ir_boton {
+    justify-content: center;
+    width: 29vw;
+    height: auto;
+    display: flex;
+    border-left: 1px solid rgb(0, 0, 0);
+    align-items: center;
+    height: 100%;
+    background: #f32400;
+  }
+  .body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios .ir_boton img {
+    transform: rotate(35deg);
+    width: 20%;
+    height: 20%;
   }
   .body_inicio .portafolios .cont_mis_servicios .cont_item_mis_servicios p {
+    display: none;
     margin-right: 2em;
     color: #ffffff;
     font-family: monalight;
