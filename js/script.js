@@ -1,3 +1,40 @@
+let condicion = true;
+
+document.querySelector(".bars__menu").addEventListener('click', () => {
+    animateBars();
+    console.log(condicion+"hola");
+
+    if (condicion) {
+
+        document.getElementsByTagName("html")[0].style.overflowY = "auto";
+        document.getElementsByTagName("html")[0].style.overflowX = "hidden";
+    } else {
+
+        document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+        document.getElementsByTagName("html")[0].style.overflowX = "hidden";
+    }
+
+
+
+});
+
+var conter_menu = document.querySelector(".contendor_activo_de_menu");
+var line1__bars = document.querySelector(".line1__bars-menu");
+var line2__bars = document.querySelector(".line2__bars-menu");
+var line3__bars = document.querySelector(".line3__bars-menu");
+
+
+function animateBars() {
+    line1__bars.classList.toggle("activeline1__bars-menu");
+    line2__bars.classList.toggle("activeline2__bars-menu");
+    line3__bars.classList.toggle("activeline3__bars-menu");
+    conter_menu.classList.toggle("contendor_activo_de_menu_op");
+    condicion = !condicion;
+}
+
+
+
+
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
@@ -427,38 +464,6 @@ function menuactivo(entries) {
 };
 
 
-let condicion = true;
 
-document.querySelector(".bars__menu").addEventListener('click', () => {
-    animateBars();
-    console.log(condicion);
-
-    if (condicion) {
-
-        document.getElementsByTagName("html")[0].style.overflowY = "auto";
-        document.getElementsByTagName("html")[0].style.overflowX = "hidden";
-    } else {
-
-        document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-        document.getElementsByTagName("html")[0].style.overflowX = "hidden";
-    }
-
-
-
-});
-
-var conter_menu = document.querySelector(".contendor_activo_de_menu");
-var line1__bars = document.querySelector(".line1__bars-menu");
-var line2__bars = document.querySelector(".line2__bars-menu");
-var line3__bars = document.querySelector(".line3__bars-menu");
-
-
-function animateBars() {
-    line1__bars.classList.toggle("activeline1__bars-menu");
-    line2__bars.classList.toggle("activeline2__bars-menu");
-    line3__bars.classList.toggle("activeline3__bars-menu");
-    conter_menu.classList.toggle("contendor_activo_de_menu_op");
-    condicion = !condicion;
-}
 
 

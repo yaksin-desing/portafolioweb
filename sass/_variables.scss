@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'monalight';
   src: url('/assets/font/Monasans/WOFF2/Mona-Sans-LightWide.woff2') format('woff2');
@@ -604,7 +603,8 @@ p {
 }
 
 .conte__menuindex {
-  margin: 2em 5em 2em 5em;
+  margin: 1em 2em 1em 2em;
+  background: #000000;
 
 
   .header__index {
@@ -615,7 +615,7 @@ p {
     overflow: hidden;
 
     .cont__logo__nav {
-      transform: scale(0.9) translateY(-50px);
+      transform: scale(0.9) translateY(0px);
       z-index: 1000;
       filter: invert(100%);
     }
@@ -624,7 +624,7 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: scale(0.8) translateY(-50px);
+      transform: scale(0.8) translateY(0px);
       z-index: 1000;
       margin-right: 9px;
 

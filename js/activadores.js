@@ -37,7 +37,7 @@ function menuactivo(entries) {
         console.log("es visible")
         barramenu.classList.remove("ctive")
         barramenua.classList.remove("ctive")
-        verbar = true;
+        verbar = "verdaderoo";
 
     }
 
@@ -45,7 +45,7 @@ function menuactivo(entries) {
         console.log("no visible")
         barramenu.classList.add("ctive")
         barramenua.classList.add("ctive")
-        verbar = false;
+        verbar = "falsoo";
 
     }
 };

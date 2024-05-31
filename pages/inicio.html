@@ -32,6 +32,90 @@
   <body class="body_inicio">
     <div class="cursor"></div>
 
+
+    <section class="conte__menui_movil">
+      <header class="header__index">
+        <div class="cont__logo__nav">
+          <a href="./index.html">
+            <lottie-player
+              id="logo"
+              src="../assets/img/logoanimado.json"
+              speed="1"
+              style="width: 100px"
+              autoplay
+            >
+            </lottie-player>
+          </a>
+        </div>
+        <div class="icono-menu">
+          <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+        </div>
+      </header>
+      <div class="contendor_activo_de_menu">
+        <div class="list_menu">
+          <ul class="lista_uno">
+            <div class="cont_opcion_lista">
+              <a style="color: #b8b8b8"
+                >Home
+                <p>(01)</p>
+              </a>
+            </div>
+
+            <div class="cont_opcion_lista">
+              <a translate="no" href="/pages/p_ux_ui.html"
+                >UX - UI
+                <p>(02)</p>
+              </a>
+            </div>
+
+            <div class="cont_opcion_lista">
+              <a href="/pages/p_ux_developer.html"
+                >Frontend
+                <p>(03)</p>
+              </a>
+            </div>
+
+
+            <div class="cont_opcion_lista">
+              <a translate="no" href="/pages/p_ux_writing.html"
+                >UX - Writing
+                <p>(04)</p>
+              </a>
+            </div>
+
+            <div class="cont_opcion_lista">
+              <a translate="no" href="/pages/p_ux_research.html"
+                >UX - Research
+                <p>(05)</p>
+              </a>
+            </div>
+
+          </ul>
+
+          <a class="boton_contactar" href="https://wa.me/573215841003?text=Hola%20%F0%9F%91%8B%20jaksin,%20estuve%20viendo%20%F0%9F%91%80%20tu%20portafolio%20%F0%9F%92%BC%20,%20me%20gustaria%20platicar%20contigo"
+          target="_blank"> HABLEMOS</a>
+
+
+          <div class="list_social">
+                <a href="https://www.linkedin.com/in/jaksin-sains-vasquez/"
+                  >LinkedIn</a
+                >
+                <a href="https://www.facebook.com/yaksin.vasques.5/"
+                  >Facebook</a
+                >
+                <a href="https://www.instagram.com/yakhsin/">Instagram</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <header class="menu_i">
       <div class="cont_logo">
         <a href="./index.html">
@@ -62,7 +146,8 @@
             Bienvenido a mi portafolio, aqui podras encontrar mis ultimos
             trabajos y referencias laborales.
           </p>
-          <a class="boton_hablemos" href="">Hablemos</a>
+          <a class="boton_hablemos" class="boton_contactar" href="https://wa.me/573215841003?text=Hola%20%F0%9F%91%8B%20jaksin,%20estuve%20viendo%20%F0%9F%91%80%20tu%20portafolio%20%F0%9F%92%BC%20,%20me%20gustaria%20platicar%20contigo"
+          target="_blank">Hablemos</a>
         </div>
 
         <div class="cont_pie_titulo">
@@ -77,13 +162,6 @@
             <div class="cont_uno">
               <h4 class="valor_cont_uno">+4</h4>
               <p class="titulo_valor">Años de experiencia</p>
-            </div>
-          </div>
-
-          <div class="contador_disponible">
-            <div class="cont_uno">
-              <img src="/assets/img/disponible.svg" alt="">
-              <h4 class="valor_cont_uno">Disponible</h4>
             </div>
           </div>
         </div>
@@ -321,14 +399,22 @@
         <div class="cont_uno">
           <h4>Mis Servicios</h4>
           <p>
-            Todo lo que se y hago, lo enfoco a generar bonitas interfaces y experiencias
-            con empatía hacia el usuario , trabajo desde la ideación hasta
-            producción.
+            Todo lo que se y hago, lo enfoco a generar bonitas interfaces y
+            experiencias con empatía hacia el usuario , trabajo desde la
+            ideación hasta producción.
           </p>
         </div>
         <div class="cont_dos_img">
-          <img class="img_uno" src="/assets/img/lineas.svg" alt="malla lineas">
-          <img class="img_dos" src="/assets/img/estrelineas.svg" alt="estrellamaya">
+          <img
+            class="img_uno"
+            src="/assets/img/lineas.svg"
+            alt="malla lineas"
+          />
+          <img
+            class="img_dos"
+            src="/assets/img/estrelineas.svg"
+            alt="estrellamaya"
+          />
         </div>
       </div>
 
@@ -339,7 +425,7 @@
           href="/pages/p_ux_ui.html"
         >
           <h4>UX-UI</h4>
-          <div class="ir_boton"> <img src="/assets/img/ir.svg" alt=""></div>
+          <div class="ir_boton"><img src="/assets/img/ir.svg" alt="" /></div>
           <p>( 01 )</p>
           <section class="cont_slider_banderas">
             <div class="sslider_uno">
@@ -351,13 +437,32 @@
             </div>
           </section>
         </a>
+
+        <a
+          class="cont_item_mis_servicios cursor-scale small"
+          href="/pages/p_ux_developer.html"
+        >
+          <h4>FRONTEND</h4>
+          <div class="ir_boton"><img src="/assets/img/ir.svg" alt="" /></div>
+          <p>( 02 )</p>
+          <section class="cont_slider_banderas">
+            <div class="sslider_uno">
+              <img src="../assets/img/devbandera.svg" alt="img_uno" />
+              <img src="../assets/img/devbandera.svg" alt="img_uno" />
+              <img src="../assets/img/devbandera.svg" alt="img_uno" />
+              <img src="../assets/img/devbandera.svg" alt="img_uno" />
+              <img src="../assets/img/devbandera.svg" alt="img_uno" />
+            </div>
+          </section>
+        </a>
+
         <a
           class="cont_item_mis_servicios cursor-scale small"
           href="/pages/p_ux_writing.html"
         >
           <h4>UX - WRITING</h4>
-          <div class="ir_boton"> <img src="/assets/img/ir.svg" alt=""></div>
-          <p>( 02 )</p>
+          <div class="ir_boton"><img src="/assets/img/ir.svg" alt="" /></div>
+          <p>( 03 )</p>
           <section class="cont_slider_banderas">
             <div class="sslider_uno">
               <img src="../assets/img/writingbandera.svg" alt="img_uno" />
@@ -373,32 +478,15 @@
           href="/pages/p_ux_research.html"
         >
           <h4>UX - RESEARSH</h4>
-          <div class="ir_boton"> <img src="/assets/img/ir.svg" alt=""></div>
-          <p>( 03 )</p>
-          <section class="cont_slider_banderas">
-            <div class="sslider_uno">
-              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
-              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
-              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
-              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
-              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
-            </div>
-          </section>
-        </a>
-        <a
-          class="cont_item_mis_servicios cursor-scale small"
-          href="/pages/p_ux_developer.html"
-        >
-          <h4>FRONTEND</h4>
-          <div class="ir_boton"> <img src="/assets/img/ir.svg" alt=""></div>
+          <div class="ir_boton"><img src="/assets/img/ir.svg" alt="" /></div>
           <p>( 04 )</p>
           <section class="cont_slider_banderas">
             <div class="sslider_uno">
-              <img src="../assets/img/devbandera.svg" alt="img_uno" />
-              <img src="../assets/img/devbandera.svg" alt="img_uno" />
-              <img src="../assets/img/devbandera.svg" alt="img_uno" />
-              <img src="../assets/img/devbandera.svg" alt="img_uno" />
-              <img src="../assets/img/devbandera.svg" alt="img_uno" />
+              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
+              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
+              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
+              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
+              <img src="../assets/img/researchbandera.svg" alt="img_uno" />
             </div>
           </section>
         </a>
@@ -407,83 +495,69 @@
 
     <section class="referencias_laborales">
       <div class="colum_uno">
-      <div class="cont_titulo_portafolios">
-        <div class="cont_uno">
-          <h4>Referencias laborales</h4>
-          <p>
-            Mis ultimas referencias laborales.
-          </p>
+        <div class="cont_titulo_portafolios">
+          <div class="cont_uno">
+            <h4>Referencias laborales</h4>
+            <p>Mis ultimas referencias laborales.</p>
+          </div>
+        </div>
+
+        <div class="cont_lista_referencias">
+          <div class="item_lista_referencias">
+            <img src="/assets/img/logoincubapp.svg" alt="incuba" />
+            <h4>Incubapp venture</h4>
+
+            <p>Diseñador ux - ui</p>
+
+            <p>2022 - Actualmente</p>
+          </div>
+
+          <div class="item_lista_referencias">
+            <img src="/assets/img/logofintra.svg" alt="incuba" />
+            <h4>Fintra s.a</h4>
+
+            <p>Diseñador ux - ui</p>
+
+            <p>2022 - 2022</p>
+          </div>
+
+          <div class="item_lista_referencias">
+            <img src="/assets/img/logogeotech.svg" alt="incuba" />
+            <h4>Geotech s.a</h4>
+
+            <p>Diseñador ux - ui</p>
+
+            <p>2022 - 2022</p>
+          </div>
+
+          <div class="item_lista_referencias">
+            <img src="/assets/img/logodigihab.svg" alt="incuba" />
+            <h4>Digihab</h4>
+
+            <p>Diseñador ux - ui</p>
+
+            <p>2020 - 2022</p>
+          </div>
         </div>
       </div>
 
-      <div class="cont_lista_referencias">
-
-        
-      <div class="item_lista_referencias">
-
-        <img src="/assets/img/logoincubapp.svg" alt="incuba">
-        <h4>Incubapp venture</h4>
-
-        <p>Diseñador ux - ui</p>
-
-        <p>2022 - Actualmente</p>
-
-      </div>
-
-      <div class="item_lista_referencias">
-
-        <img src="/assets/img/logofintra.svg" alt="incuba">
-        <h4>Fintra s.a</h4>
-
-        <p>Diseñador ux - ui</p>
-
-        <p>2022 - 2022</p>
-
-      </div>
-
-      <div class="item_lista_referencias">
-
-        <img src="/assets/img/logogeotech.svg" alt="incuba">
-        <h4>Geotech s.a</h4>
-
-        <p>Diseñador ux - ui</p>
-
-        <p>2022 - 2022</p>
-
-      </div>
-
-      <div class="item_lista_referencias">
-
-        <img src="/assets/img/logodigihab.svg" alt="incuba">
-        <h4>Digihab</h4>
-
-        <p>Diseñador ux - ui</p>
-
-        <p>2020 - 2022</p>
-
-      </div>
-
-      </div>
-
-      </div>
-
       <div class="colum_dos">
-        <img src="/assets/img/imgreferencias.gif" alt="">
+        <img src="/assets/img/imgreferencias.gif" alt="" />
       </div>
-      
     </section>
 
     <section class="cont_animacionmiskills_vertical">
-
       <div class="primer_section_inicio">
         <div class="fila_uno">
-
           <div class="titulo_section_inicio">
             <p>SE TRABAJAR CON</p>
           </div>
           <div class="subtitulo_section_inicio">
-            <img src="/assets/img/imgparrafoiniciomyskills.svg" alt="">
-            <p>TODO LO QUE SE, ESTA ENFOCADO AL MEJORAMIENTO DE LO VISUAL, DE LA EXPERIENCIA CON EL PRODUCTO Y DE LA USABILIDAD.</p>
+            <img src="/assets/img/imgparrafoiniciomyskills.svg" alt="" />
+            <p>
+              TODO LO QUE SE, ESTA ENFOCADO AL MEJORAMIENTO DE LO VISUAL, DE LA
+              EXPERIENCIA CON EL PRODUCTO Y DE LA USABILIDAD.
+            </p>
           </div>
         </div>
 
@@ -494,9 +568,7 @@
             SKILLS.
           </span>
           <div class="img-my-skills">
-
-            <img src="/assets/img/animacioncontador.gif" alt="">
-
+            <img src="/assets/img/animacioncontador.gif" alt="" />
           </div>
         </div>
       </div>
@@ -507,200 +579,160 @@
           <div class="num_titulo_skils">
             <p>01</p>
           </div>
-
         </div>
 
         <div class="list_skills">
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/figma.svg" alt="">
+              <img src="/assets/img/iconosskills/figma.svg" alt="" />
               <h4>Figma</h4>
             </div>
 
             <p class="subtitulo">Pro</p>
             <p class="contador">(01)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/zeplin.svg" alt="">
+              <img src="/assets/img/iconosskills/zeplin.svg" alt="" />
               <h4>zeplin</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(02)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/adobe_illustrator.svg" alt="">
+              <img
+                src="/assets/img/iconosskills/adobe_illustrator.svg"
+                alt=""
+              />
               <h4>Ilustrator</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(03)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/adobe_xd.svg" alt="">
+              <img src="/assets/img/iconosskills/adobe_xd.svg" alt="" />
               <h4>Adobe xd</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(04)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/adobe_photoshop.svg" alt="">
+              <img src="/assets/img/iconosskills/adobe_photoshop.svg" alt="" />
               <h4>Photoshop</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(05)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/adobe_after_effects.svg" alt="">
+              <img
+                src="/assets/img/iconosskills/adobe_after_effects.svg"
+                alt=""
+              />
               <h4>After effect</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(06)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/adobe.svg" alt="">
+              <img src="/assets/img/iconosskills/adobe.svg" alt="" />
               <h4>Adobe express</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(07)</p>
-
-
           </div>
-
-
-
-
-
         </div>
-
       </div>
 
-      <div id="dos" style="filter: invert(100%); background: #ffffff;" class="segundo_section_inicio">
+      <div
+        id="dos"
+        style="filter: invert(100%); background: #ffffff"
+        class="segundo_section_inicio"
+      >
         <div class="cont_titulo">
           <h4>UX - DEGNER</h4>
           <div class="num_titulo_skils">
             <p>02</p>
           </div>
-
         </div>
 
         <div class="list_skills">
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/useberry.svg" alt="">
+              <img src="/assets/img/iconosskills/useberry.svg" alt="" />
               <h4>Useberry</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(01)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/miro.svg" alt="">
+              <img src="/assets/img/iconosskills/miro.svg" alt="" />
               <h4>Miro</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(02)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/jotjar.svg" alt="">
+              <img src="/assets/img/iconosskills/jotjar.svg" alt="" />
               <h4>Jotjar</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(03)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/tiperforms.svg" alt="">
+              <img src="/assets/img/iconosskills/tiperforms.svg" alt="" />
               <h4>Tiperforms</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(04)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/googleforms.svg" alt="">
+              <img src="/assets/img/iconosskills/googleforms.svg" alt="" />
               <h4>Google forms</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(05)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/optimalworkshop.svg" alt="">
+              <img src="/assets/img/iconosskills/optimalworkshop.svg" alt="" />
               <h4>Optimal Workshop</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(06)</p>
-
-
           </div>
-
-
         </div>
-
       </div>
 
       <div id="tres" class="segundo_section_inicio">
@@ -709,230 +741,176 @@
           <div class="num_titulo_skils">
             <p>03</p>
           </div>
-
         </div>
 
         <div class="list_skills">
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/git.svg" alt="">
+              <img src="/assets/img/iconosskills/git.svg" alt="" />
               <h4>Git</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(01)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/vs_code.svg" alt="">
+              <img src="/assets/img/iconosskills/vs_code.svg" alt="" />
               <h4>Visual code</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(02)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/flutter.svg" alt="">
+              <img src="/assets/img/iconosskills/flutter.svg" alt="" />
               <h4>Flutter</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(03)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/python.svg" alt="">
+              <img src="/assets/img/iconosskills/python.svg" alt="" />
               <h4>Python</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(04)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/js.svg" alt="">
+              <img src="/assets/img/iconosskills/js.svg" alt="" />
               <h4>Javascript</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(05)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/sass.svg" alt="">
+              <img src="/assets/img/iconosskills/sass.svg" alt="" />
               <h4>Sass</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(06)</p>
-
-
           </div>
-
         </div>
-
       </div>
 
-      <div id="cuatro" style="filter: invert(100%); background: #ffffff;" class="segundo_section_inicio">
+      <div
+        id="cuatro"
+        style="filter: invert(100%); background: #ffffff"
+        class="segundo_section_inicio"
+      >
         <div class="cont_titulo">
           <h4>INTERACCIONES</h4>
           <div class="num_titulo_skils">
             <p>04</p>
           </div>
-
         </div>
 
         <div class="list_skills">
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/lottie.svg" alt="">
+              <img src="/assets/img/iconosskills/lottie.svg" alt="" />
               <h4>Lottie</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(01)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/gsap.svg" alt="">
+              <img src="/assets/img/iconosskills/gsap.svg" alt="" />
               <h4>Gsap.js</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(02)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/three.svg" alt="">
+              <img src="/assets/img/iconosskills/three.svg" alt="" />
               <h4>Three.js</h4>
             </div>
 
             <p class="subtitulo">Medio</p>
             <p class="contador">(03)</p>
-
-
           </div>
 
-
-
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/barva.svg" alt="">
+              <img src="/assets/img/iconosskills/barva.svg" alt="" />
               <h4>Barva.js</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(04)</p>
-
-
           </div>
 
           <div class="item_list_skills">
-
             <div class="img_titulo_item">
-              <img src="/assets/img/iconosskills/adobe_premiere.svg" alt="">
+              <img src="/assets/img/iconosskills/adobe_premiere.svg" alt="" />
               <h4>Premiere pro</h4>
             </div>
 
             <p class="subtitulo">Alto</p>
             <p class="contador">(05)</p>
-
-
           </div>
-
-
-
         </div>
-
       </div>
-
     </section>
 
     <section class="pie_de_pagina">
-
       <div class="cont_barra_links_pie">
-
-        <div style="border-left: #000000 solid 1px;padding-left: 2em;" class="item_pie">
-          
+        <div
+          style="border-left: #000000 solid 1px; padding-left: 2em"
+          class="item_pie"
+        >
           <h6>Vivo en</h6>
           <p>Barranquilla - colombia</p>
-
         </div>
 
         <div class="item_pie">
-          
           <h6>LinkedIn</h6>
           <p>@Jaksin_sains</p>
-
         </div>
 
         <div class="item_pie">
-          
           <h6>Facebook</h6>
           <p>@Jaksin.sains</p>
-
         </div>
 
         <div class="item_pie">
-          
           <h6>Correo electronico</h6>
           <p>Yaksinvasquez@gmail.com</p>
-
         </div>
-
       </div>
 
       <div class="cont_barra_dos_links_pie">
-
         <div class="item_pie">
-
-          <p>Trabajemos juntos, <a href=""><strong>Contactame</strong></a></p>
-
+          <p>
+            Trabajemos juntos, <a href=""><strong>Contactame</strong></a>
+          </p>
         </div>
-
-
       </div>
 
-      <img src="/assets/img/imgpiedepagina.png" alt="">
-
-
-
+      <img src="/assets/img/imgpiedepagina.png" alt="" />
     </section>
 
     <!-- javascripts -->
-  
+
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
