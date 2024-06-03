@@ -1,3 +1,4 @@
+
 let condicion = true;
 
 document.querySelector(".bars__menu").addEventListener('click', () => {
@@ -52,6 +53,9 @@ gsap.to({}, 0.050, {
         })
     }
 });
+
+
+
 
 
 
