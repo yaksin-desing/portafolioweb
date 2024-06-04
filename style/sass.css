@@ -1699,12 +1699,13 @@ p {
   }
 }
 .body_proyecto .cont_inicios {
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: start;
+  border-bottom: solid 1px black;
 }
 .body_proyecto .cont_inicios .colum_unos {
   display: flex;
@@ -1761,12 +1762,13 @@ p {
   color: #000;
 }
 .body_proyecto .cont_banner {
-  height: 95vh;
+  height: 100vh;
   background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_banner .video_pro_jannier {
   width: 100vw;
@@ -1774,14 +1776,14 @@ p {
 .body_proyecto .cont_acercadelproyecto {
   display: flex;
   flex-direction: column;
-  margin-left: 5em;
-  margin-right: 5em;
-  height: 100vh;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 50vh;
   padding-top: 5em;
 }
 .body_proyecto .cont_acercadelproyecto h3 {
   flex-grow: 0;
-  font-family: MargoBeuys;
+  font-family: monabold;
   font-size: 50px;
   font-weight: 900;
   text-align: left;
@@ -1828,14 +1830,14 @@ p {
 .body_proyecto .cont_paletadecolores {
   display: flex;
   flex-direction: column;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
   height: 100vh;
   padding-top: 5em;
 }
 .body_proyecto .cont_paletadecolores h3 {
   flex-grow: 0;
-  font-family: MargoBeuys;
+  font-family: monabold;
   font-size: 50px;
   font-weight: 900;
   text-align: left;
@@ -2003,8 +2005,8 @@ p {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
   height: 100%;
   padding-top: 5em;
   padding-bottom: 2em;
@@ -2012,7 +2014,7 @@ p {
 }
 .body_proyecto .cont_fuentes h3 {
   flex-grow: 0;
-  font-family: MargoBeuys;
+  font-family: monabold;
   font-size: 50px;
   font-weight: 900;
   text-align: left;
