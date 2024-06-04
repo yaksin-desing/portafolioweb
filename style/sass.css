@@ -1477,12 +1477,15 @@ p {
   white-space: nowrap;
 }
 .body_plantilla .cont_grilla_proyectos {
+  padding: 1em 1em 1em 1em;
+  border-bottom: solid 1px black;
   border-top: #000 1px solid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 1em;
 }
 .body_plantilla .cont_grilla_proyectos .cont_proyectos {
+  border: solid 1px black;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1496,11 +1499,11 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 10px;
+  margin: 1em 1em 1em 1em;
 }
 .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto p {
   color: #000;
-  font-family: MargoBeuys;
+  font-family: monasemibold;
   font-size: 15px;
   font-style: normal;
   font-weight: 900;
@@ -1516,7 +1519,7 @@ p {
 }
 .body_plantilla .cont_grilla_proyectos .cont_proyectos .cont_pie_proyecto .cont_fecha p {
   color: #000;
-  font-family: MargoBeuys;
+  font-family: monasemibold;
   font-size: 10px;
   font-style: normal;
   font-weight: 900;
@@ -1527,13 +1530,11 @@ p {
 }
 .body_plantilla .cont_ilustracion_error {
   border-top: #000 solid 1px;
+  border-bottom: #000 solid 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10vh;
-  margin-bottom: 10vh;
-  margin-left: 1em;
-  margin-right: 1em;
+  padding: 1em 1em 10vh 10vh;
 }
 
 @media (max-width: 800px) {
