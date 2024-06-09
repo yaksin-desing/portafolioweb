@@ -444,7 +444,6 @@ p {
 .pie_de_pagina .cont_barra_links_pie {
   display: flex;
   flex-direction: row;
-  border-bottom: #000000 solid 1px;
   height: 25vh;
   align-items: center;
   justify-content: space-around;
@@ -483,6 +482,7 @@ p {
   color: #000;
 }
 .pie_de_pagina .cont_barra_dos_links_pie {
+  border-top: #000000 solid 1px;
   display: flex;
   flex-direction: row;
   border-bottom: #000000 solid 1px;
@@ -949,6 +949,7 @@ p {
     color: #000;
   }
   .pie_de_pagina .cont_barra_dos_links_pie {
+    border-top: #000000 solid 0px;
     display: flex;
     flex-direction: row;
     border-bottom: #000000 solid 1px;
@@ -1676,19 +1677,21 @@ p {
   }
 }
 .body_proyecto .cont_inicios {
-  padding-left: 1em;
-  padding-right: 1em;
   height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   border-bottom: solid 1px black;
+  overflow: hidden;
 }
 .body_proyecto .cont_inicios .colum_unos {
+  padding-left: 1.5em;
   display: flex;
+  align-items: start;
   flex-direction: column;
-  width: 40vw;
-  gap: 0.5em;
+  justify-content: center;
+  width: 60vw;
+  gap: 2em;
 }
 .body_proyecto .cont_inicios .colum_unos .tipo {
   width: -moz-fit-content;
@@ -1698,25 +1701,29 @@ p {
   background-color: #000;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 .body_proyecto .cont_inicios .colum_unos .tipo p {
-  font-family: Gotham;
+  font-family: monaregular;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.36;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #fff;
 }
+.body_proyecto .cont_inicios .colum_unos .titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
 .body_proyecto .cont_inicios .colum_unos .titulo h1 {
-  width: 680px;
-  height: 315px;
   flex-grow: 0;
-  font-family: MargoBeuys;
-  font-size: 100px;
+  font-family: monaextrabold;
+  font-size: 6vw;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -1728,63 +1735,75 @@ p {
 .body_proyecto .cont_inicios .colum_unos .parrafo p {
   height: 20px;
   flex-grow: 0;
-  font-family: Gotham;
+  font-family: monaregular;
   font-size: 15px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.36;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #000;
 }
-.body_proyecto .cont_banner {
+.body_proyecto .cont_inicios .cont_banner {
+  width: 40vw;
   height: 100vh;
   background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: #000 solid 1px;
+  border-left: #000 solid 1px;
 }
-.body_proyecto .cont_banner .video_pro_jannier {
-  width: 100vw;
+.body_proyecto .cont_inicios .cont_banner .video_pro_jannier {
+  height: 100%;
 }
 .body_proyecto .cont_acercadelproyecto {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-  margin-right: 1em;
-  height: 50vh;
-  padding-top: 5em;
+  height: 60vh;
 }
 .body_proyecto .cont_acercadelproyecto h3 {
+  padding: 1em 0.5em 1em 0.5em;
   flex-grow: 0;
   font-family: monabold;
   font-size: 50px;
   font-weight: 900;
   text-align: left;
   color: #000;
-  margin-bottom: 1em;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto {
   display: flex;
   flex-direction: row;
   gap: 7em;
+  border-bottom: #000 solid 1px;
+  align-items: center;
+  height: 100%;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data {
-  width: 50%;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
+}
+.body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid black;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .titulo {
   font-family: Gotham;
   font-size: 15px;
   line-height: 1.36;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #606060;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .dato {
@@ -1792,12 +1811,15 @@ p {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #000;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data_proyecto {
-  width: 50%;
-  font-family: Gotham;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  width: 100%;
+  font-family: monaregular;
   font-size: clamp(10px, 4vw, 20px);
   font-weight: 400;
   letter-spacing: normal;
@@ -1807,46 +1829,41 @@ p {
 .body_proyecto .cont_paletadecolores {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-  margin-right: 1em;
-  height: 100vh;
-  padding-top: 5em;
+  height: 80vh;
 }
 .body_proyecto .cont_paletadecolores h3 {
+  padding: 1em 0.5em 1em 0.5em;
   flex-grow: 0;
   font-family: monabold;
   font-size: 50px;
   font-weight: 900;
   text-align: left;
   color: #000;
-  margin-bottom: 1em;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores {
   display: flex;
   flex-direction: row;
-  gap: 1em;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  padding: 2em 2em;
-  border-radius: 10px;
-  background-color: #efefef;
+  height: 100%;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_uno {
   width: 50%;
-  height: 285px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
   padding: 10px 15px;
-  border-radius: 10px;
   box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
   background-color: #fff;
+  border-right: #000 solid 1px;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_uno .titulo {
-  font-family: Gotham;
+  font-family: monasemibold;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -1854,11 +1871,11 @@ p {
   line-height: 1.36;
   letter-spacing: normal;
   text-align: left;
-  color: #303030;
+  color: #000000;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_uno p {
   width: 100%;
-  font-family: MargoBeuys;
+  font-family: monamedium;
   font-size: 15px;
   font-weight: 900;
   font-stretch: normal;
@@ -1866,14 +1883,14 @@ p {
   line-height: 1.36;
   letter-spacing: normal;
   text-align: end;
-  color: #303030;
+  color: #000000;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario {
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 100%;
-  gap: 1em;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_dos {
   height: 33.3%;
@@ -1882,12 +1899,12 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px 15px;
-  border-radius: 10px;
   box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
   background-color: #ff4d00;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_dos .titulo {
-  font-family: Gotham;
+  font-family: monasemibold;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -1899,7 +1916,7 @@ p {
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_dos p {
   width: 100%;
-  font-family: MargoBeuys;
+  font-family: monamedium;
   font-size: 15px;
   font-weight: 900;
   font-stretch: normal;
@@ -1916,12 +1933,12 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px 15px;
-  border-radius: 10px;
   box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
   background-color: #303030;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_tres .titulo {
-  font-family: Gotham;
+  font-family: monasemibold;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -1933,7 +1950,7 @@ p {
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_tres p {
   width: 100%;
-  font-family: MargoBeuys;
+  font-family: monamedium;
   font-size: 15px;
   font-weight: 900;
   font-stretch: normal;
@@ -1944,18 +1961,17 @@ p {
   color: #ffffff;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_cuatro {
-  height: 33.3%;
+  height: 33.4%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px 15px;
-  border-radius: 10px;
   box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
   background-color: #000;
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_cuatro .titulo {
-  font-family: Gotham;
+  font-family: monasemibold;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -1967,7 +1983,7 @@ p {
 }
 .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_cuatro p {
   width: 100%;
-  font-family: MargoBeuys;
+  font-family: monamedium;
   font-size: 15px;
   font-weight: 900;
   font-stretch: normal;
@@ -1982,23 +1998,25 @@ p {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  margin-left: 1em;
-  margin-right: 1em;
   height: 100%;
-  padding-top: 5em;
-  padding-bottom: 2em;
-  gap: 5em;
+  width: 100%;
 }
 .body_proyecto .cont_fuentes h3 {
+  width: 100%;
+  padding: 1em 0.5em 1em 0.5em;
   flex-grow: 0;
   font-family: monabold;
   font-size: 50px;
   font-weight: 900;
   text-align: left;
   color: #000;
-  margin-bottom: 0em;
+  border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_fuentes .fuente {
+  border-bottom: #000 solid 1px;
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-bottom: 3em;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -2006,7 +2024,7 @@ p {
 }
 .body_proyecto .cont_fuentes .fuente p {
   margin: 0 132px 12px 0;
-  font-family: Gotham;
+  font-family: monalight;
   font-size: 20px;
   font-weight: 300;
   font-stretch: normal;
@@ -2017,9 +2035,10 @@ p {
   color: #000;
 }
 .body_proyecto .cont_fuentes .fuente .img_font {
-  width: 30%;
+  width: 20%;
 }
 .body_proyecto .cont_fuentes .fuente .cont_fuentess {
+  height: 100%;
   width: 100%;
   margin-top: 2em;
   display: grid;
@@ -2047,9 +2066,6 @@ p {
 .body_proyecto .cont_img {
   display: flex;
   flex-direction: column;
-  margin-top: 10em;
-  padding-bottom: 10em;
-  gap: 0.7em;
   border-bottom: #000 solid 1px;
 }
 .body_proyecto .cont_img .cont_img_grup {
@@ -2083,23 +2099,24 @@ p {
 }
 
 @media (max-width: 800px) {
-  .body_proyecto {
-    width: 100vw;
-    overflow-x: hidden;
-  }
   .body_proyecto .cont_inicios {
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  .body_proyecto .cont_inicios .colum_unos {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px black;
+    overflow: hidden;
+  }
+  .body_proyecto .cont_inicios .colum_unos {
+    padding-left: 0;
+    margin: 5em 0em 5em 0em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    gap: 0.5em;
+    gap: 2em;
   }
   .body_proyecto .cont_inicios .colum_unos .tipo {
     width: -moz-fit-content;
@@ -2112,157 +2129,170 @@ p {
     align-items: center;
   }
   .body_proyecto .cont_inicios .colum_unos .tipo p {
-    font-family: Gotham;
+    font-family: monaregular;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.36;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #fff;
   }
+  .body_proyecto .cont_inicios .colum_unos .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .body_proyecto .cont_inicios .colum_unos .titulo h1 {
-    width: auto;
-    height: auto;
     flex-grow: 0;
-    font-family: MargoBeuys;
-    font-size: 6vh;
+    font-family: monaextrabold;
+    font-size: 8vw;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #000;
   }
   .body_proyecto .cont_inicios .colum_unos .parrafo p {
     height: 20px;
     flex-grow: 0;
-    font-family: Gotham;
-    font-size: 2.5vh;
+    font-family: monaregular;
+    font-size: 15px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.36;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #000;
   }
-  .body_proyecto .cont_banner {
-    height: 50vh;
+  .body_proyecto .cont_inicios .cont_banner {
+    width: 100vw;
     background: #111111;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border-top: #000 solid 1px;
   }
-  .body_proyecto .cont_banner .video_pro_jannier {
-    width: 100vw;
+  .body_proyecto .cont_inicios .cont_banner .video_pro_jannier {
+    height: 100%;
   }
   .body_proyecto .cont_acercadelproyecto {
     display: flex;
     flex-direction: column;
-    margin-left: 1em;
-    margin-right: 1em;
-    height: auto;
-    padding-top: 5em;
+    height: 100vh;
   }
   .body_proyecto .cont_acercadelproyecto h3 {
+    padding: 1em 0.5em 1em 0.5em;
     flex-grow: 0;
-    font-family: MargoBeuys;
-    font-size: 6vh;
+    font-family: monabold;
+    font-size: 10vw;
     font-weight: 900;
     text-align: left;
     color: #000;
-    margin-bottom: 1em;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_acercadelproyecto .cont_data_proyecto {
     display: flex;
-    flex-direction: column;
-    gap: 4em;
+    flex-direction: column-reverse;
+    gap: 0em;
+    border-bottom: #000 solid 1px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
   .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data {
+    height: 60%;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    gap: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
   .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato {
+    border-top: #000 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
   }
   .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .titulo {
-    width: 100%;
     font-family: Gotham;
     font-size: 15px;
     line-height: 1.36;
     letter-spacing: normal;
-    text-align: start;
+    text-align: center;
     color: #606060;
   }
   .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .dato {
     font-family: Gotham;
-    font-size: 2.5vh;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: normal;
-    text-align: start;
+    text-align: center;
     color: #000;
   }
   .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data_proyecto {
-    width: 100%;
-    font-family: Gotham;
-    font-size: clamp(10px, 4vw, 32px);
+    height: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: auto;
+    font-family: monaregular;
+    font-size: clamp(10px, 4vw, 20px);
     font-weight: 400;
     letter-spacing: normal;
-    text-align: left;
+    text-align: start;
     color: #000;
   }
   .body_proyecto .cont_paletadecolores {
     display: flex;
     flex-direction: column;
-    margin-left: 1em;
-    margin-right: 1em;
     height: 100vh;
-    padding-top: 2em;
   }
   .body_proyecto .cont_paletadecolores h3 {
+    padding: 1em 0.5em 1em 0.5em;
     flex-grow: 0;
-    font-family: MargoBeuys;
-    font-size: 6vh;
+    font-family: monabold;
+    font-size: 10vw;
     font-weight: 900;
     text-align: left;
     color: #000;
-    margin-bottom: 1em;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores {
-    height: 100%;
-    margin-bottom: 1em;
     display: flex;
-    flex-direction: column;
-    gap: 1em;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    padding: 1em 1em;
-    border-radius: 10px;
-    background-color: #efefef;
+    height: 100%;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_uno {
-    width: 100%;
-    height: 285px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
     padding: 10px 15px;
-    border-radius: 10px;
     box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
     background-color: #fff;
+    border-right: #000 solid 1px;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_uno .titulo {
-    font-family: Gotham;
+    font-family: monasemibold;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -2270,11 +2300,11 @@ p {
     line-height: 1.36;
     letter-spacing: normal;
     text-align: left;
-    color: #303030;
+    color: #000000;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_uno p {
     width: 100%;
-    font-family: MargoBeuys;
+    font-family: monamedium;
     font-size: 15px;
     font-weight: 900;
     font-stretch: normal;
@@ -2282,14 +2312,14 @@ p {
     line-height: 1.36;
     letter-spacing: normal;
     text-align: end;
-    color: #303030;
+    color: #000000;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 1em;
+    width: 50%;
+    height: 100%;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_dos {
     height: 33.3%;
@@ -2298,12 +2328,12 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 15px;
-    border-radius: 10px;
     box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
     background-color: #ff4d00;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_dos .titulo {
-    font-family: Gotham;
+    font-family: monasemibold;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -2315,7 +2345,7 @@ p {
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_dos p {
     width: 100%;
-    font-family: MargoBeuys;
+    font-family: monamedium;
     font-size: 15px;
     font-weight: 900;
     font-stretch: normal;
@@ -2332,12 +2362,12 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 15px;
-    border-radius: 10px;
     box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
     background-color: #303030;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_tres .titulo {
-    font-family: Gotham;
+    font-family: monasemibold;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -2349,7 +2379,7 @@ p {
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_tres p {
     width: 100%;
-    font-family: MargoBeuys;
+    font-family: monamedium;
     font-size: 15px;
     font-weight: 900;
     font-stretch: normal;
@@ -2360,18 +2390,17 @@ p {
     color: #ffffff;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_cuatro {
-    height: 33.3%;
+    height: 33.4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 15px;
-    border-radius: 10px;
     box-shadow: inset 0 0 12.7px 0 rgba(0, 0, 0, 0.25);
     background-color: #000;
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_cuatro .titulo {
-    font-family: Gotham;
+    font-family: monasemibold;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -2383,7 +2412,7 @@ p {
   }
   .body_proyecto .cont_paletadecolores .cont_cont_colores .color_segundario .color_cuatro p {
     width: 100%;
-    font-family: MargoBeuys;
+    font-family: monamedium;
     font-size: 15px;
     font-weight: 900;
     font-stretch: normal;
@@ -2398,23 +2427,25 @@ p {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-left: 1em;
-    margin-right: 1em;
     height: 100%;
-    padding-top: 5em;
-    padding-bottom: 2em;
-    gap: 5em;
+    width: 100%;
   }
   .body_proyecto .cont_fuentes h3 {
+    width: 100%;
+    padding: 1em 0.5em 1em 0.5em;
     flex-grow: 0;
-    font-family: MargoBeuys;
-    font-size: 6vh;
+    font-family: monabold;
+    font-size: 10vw;
     font-weight: 900;
     text-align: left;
     color: #000;
-    margin-bottom: 0em;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_fuentes .fuente {
+    border-bottom: #000 solid 1px;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-bottom: 3em;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -2422,7 +2453,7 @@ p {
   }
   .body_proyecto .cont_fuentes .fuente p {
     margin: 0 132px 12px 0;
-    font-family: Gotham;
+    font-family: monalight;
     font-size: 20px;
     font-weight: 300;
     font-stretch: normal;
@@ -2433,9 +2464,10 @@ p {
     color: #000;
   }
   .body_proyecto .cont_fuentes .fuente .img_font {
-    width: 50%;
+    width: 70%;
   }
   .body_proyecto .cont_fuentes .fuente .cont_fuentess {
+    height: 100%;
     width: 100%;
     margin-top: 2em;
     display: grid;
@@ -2449,7 +2481,7 @@ p {
     gap: 0.5em;
   }
   .body_proyecto .cont_fuentes .fuente .cont_fuentess .cont_font img {
-    width: 60%;
+    width: 30%;
   }
   .body_proyecto .cont_fuentes .fuente .cont_fuentess .cont_font .nombre_fuente {
     display: inline;
@@ -2463,9 +2495,7 @@ p {
   .body_proyecto .cont_img {
     display: flex;
     flex-direction: column;
-    margin-top: 10em;
-    padding-bottom: 10em;
-    gap: 1em;
+    border-bottom: #000 solid 1px;
   }
   .body_proyecto .cont_img .cont_img_grup {
     display: flex;

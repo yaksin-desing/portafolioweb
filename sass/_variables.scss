@@ -519,7 +519,6 @@ p {
   .cont_barra_links_pie {
       display: flex;
       flex-direction: row;
-      border-bottom: #000000 solid 1px;
       height: 25vh;
       align-items: center;
       justify-content: space-around;
@@ -565,6 +564,7 @@ p {
   }
 
   .cont_barra_dos_links_pie {
+    border-top: #000000 solid 1px;
       display: flex;
       flex-direction: row;
       border-bottom: #000000 solid 1px;
@@ -1103,6 +1103,7 @@ p {
     }
 
     .cont_barra_dos_links_pie {
+      border-top: #000000 solid 0px;
         display: flex;
         flex-direction: row;
         border-bottom: #000000 solid 1px;
