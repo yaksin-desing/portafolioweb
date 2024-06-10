@@ -100,13 +100,13 @@
     .cont_acercadelproyecto {
         display: flex;
         flex-direction: column;
-        height: 60vh;
+        height: 100vh;
 
         h3 {
             padding: 1em 0.5em 1em 0.5em;
             flex-grow: 0;
             font-family: monabold;
-            font-size: 50px;
+            font-size: 10vh;
             font-weight: 900;
             text-align: left;
             color: #000;
@@ -115,8 +115,7 @@
 
         .cont_data_proyecto {
             display: flex;
-            flex-direction: row;
-            gap: 7em;
+            flex-direction: column-reverse;
             border-bottom: #000 solid 1px;
             align-items: center;
             height: 100%;
@@ -130,44 +129,45 @@
                 justify-content:space-between;
 
                 .cont_dato {
+                    padding-left: 1em;
                     display: flex;
-                    align-items: center;
+                    align-items: start;
                     justify-content: center;
-                    flex-direction: column;
+                    flex-direction: column-reverse;
                     width: 100%;
                     height: 100%;
                     border-right: 1px solid black;
+                    gap: 0.5em;
                     .titulo {
-                        font-family: Gotham;
-                        font-size: 15px;
+                        font-family: monaregular;
+                        font-size: 1.2vw;
                         line-height: 1.36;
                         letter-spacing: normal;
-                        text-align: center;
-                        color: #606060;
+                        text-align: left;
+                        color: #000000;
                     }
 
                     .dato {
-                        font-family: Gotham;
-                        font-size: 20px;
+                        font-family: monabold;
+                        font-size: 2vw;
                         font-weight: 500;
                         letter-spacing: normal;
-                        text-align: center;
+                        text-align: left;
                         color: #000;
                     }
                 }
             }
 
             .data_proyecto {
-                margin-top: 2em;
-                margin-bottom: 2em;
-                margin-right: 2em;
+                padding: 3em 1em 3em 1em;
                 width: 100%;
                 font-family: monaregular;
-                font-size: clamp(10px, 4vw, 20px);
+                font-size: 1.2vw;
                 font-weight: 400;
                 letter-spacing: normal;
                 text-align: left;
                 color: #000;
+                border-bottom: #000 1px solid;
             }
         }
     }
