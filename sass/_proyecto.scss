@@ -129,7 +129,7 @@
                 justify-content:space-between;
 
                 .cont_dato {
-                    padding-left: 1em;
+                    padding-left: 1.5em;
                     display: flex;
                     align-items: start;
                     justify-content: center;
@@ -138,6 +138,7 @@
                     height: 100%;
                     border-right: 1px solid black;
                     gap: 0.5em;
+                    position: relative;
                     .titulo {
                         font-family: monaregular;
                         font-size: 1.2vw;
@@ -155,11 +156,25 @@
                         text-align: left;
                         color: #000;
                     }
+                    .cont_icon{ 
+                        background: #ff4d00;
+                        top: 0;
+                        position: absolute;
+                        right: 0;
+                        border-bottom: 1px solid black;
+                        border-left: 1px solid black;
+                        img{
+                            filter: invert(100%);
+                            margin: 2em;
+                            width: 4vw;
+                        }
+
+                    }
                 }
             }
 
             .data_proyecto {
-                padding: 3em 1em 3em 1em;
+                padding: 3em 1.5em 3em 1.5em;
                 width: 100%;
                 font-family: monaregular;
                 font-size: 1.2vw;

@@ -1789,7 +1789,7 @@ p {
   justify-content: space-between;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato {
-  padding-left: 1em;
+  padding-left: 1.5em;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -1798,6 +1798,7 @@ p {
   height: 100%;
   border-right: 1px solid black;
   gap: 0.5em;
+  position: relative;
 }
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .titulo {
   font-family: monaregular;
@@ -1815,8 +1816,21 @@ p {
   text-align: left;
   color: #000;
 }
+.body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .cont_icon {
+  background: #ff4d00;
+  top: 0;
+  position: absolute;
+  right: 0;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+.body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .cont_icon img {
+  filter: invert(100%);
+  margin: 2em;
+  width: 4vw;
+}
 .body_proyecto .cont_acercadelproyecto .cont_data_proyecto .data_proyecto {
-  padding: 3em 1em 3em 1em;
+  padding: 3em 1.5em 3em 1.5em;
   width: 100%;
   font-family: monaregular;
   font-size: 1.2vw;
