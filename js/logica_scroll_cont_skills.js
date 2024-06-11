@@ -36,8 +36,8 @@ const proyectosuno = gsap.timeline({
     scrollTrigger: {
         trigger: "#cont_proyectos_scrolls",
         start: 'top top',
-        end: '400% top',
-        markers: true,
+        end: '600% top',
+        markers: false,
         pin: true,
         scrub: 1,
     }
