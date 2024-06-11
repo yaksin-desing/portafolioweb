@@ -212,10 +212,12 @@ p {
 
 /* ################# NUEVO MENU ############## */
 .conte__menui {
+  z-index: 1;
   display: flex;
   width: 100%;
   margin: 0;
   border-bottom: 1px solid black;
+  background: #fff;
 
   .header__index {
       height: 10vh;

@@ -29,3 +29,34 @@ skillss.to("#cuatro", {
     y: "00vh",
     duration: 100,
 });
+
+
+
+const proyectosuno = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#cont_proyectos_scrolls",
+        start: 'top top',
+        end: '400% top',
+        markers: true,
+        pin: true,
+        scrub: 1,
+    }
+});
+
+
+proyectosuno.to("#unop", {
+    y: "0vh",
+    duration: 100,
+});
+
+proyectosuno.to("#dosp", {
+    y: "0vh",
+    duration: 100,
+});
+
+proyectosuno.to("#tresp", {
+    y: "0vh",
+    duration: 100,
+});
+
+
