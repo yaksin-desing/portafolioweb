@@ -584,11 +584,18 @@ load.to(".n100", {
 });
 
 load.to(".animacion_loading", {
-    background: "#ffffff00",
-    duration: 0.01,
+    duration: 0.5,
+    width:"0%",
 });
 
 load.to("html", {
     overflowY:"visible",
     overflowX:"hidden",
+});
+
+
+load.to(".cuadrodecargado", {
+    width:"0%",
+    delay:1,
+    duration: 0.5,
 });

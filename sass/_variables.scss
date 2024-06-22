@@ -210,9 +210,18 @@ p {
   margin-bottom: 0px;
 }
 
+.cuadrodecargado{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
 /* ################# NUEVO MENU ############## */
 .conte__menui {
-  z-index: 0;
+  position: relative;
+  z-index: 999;
   display: flex;
   width: 100%;
   margin: 0;
@@ -231,7 +240,7 @@ p {
 
       .cont__logo__nav {
           transform: scale(0.9) translateY(0px);
-          z-index: 1000;
+          z-index: 999;
           filter: invert(100%);
       }
 
@@ -240,7 +249,7 @@ p {
           justify-content: center;
           align-items: center;
           transform: scale(0.8) translateY(0px);
-          z-index: 1000;
+          z-index: 999;
           margin-right: 9px;
 
           .bars__menu {
@@ -602,6 +611,11 @@ p {
                   strong {
                       color: #000;
                       text-decoration: underline;
+                  }
+                  strong:hover{
+                    pointer-events: visible;
+                    color: #000000;
+                    cursor: url("../assets/img/ir.svg") 15 14, auto;
                   }
               }
 
@@ -1136,7 +1150,15 @@ p {
                 letter-spacing: normal;
                 text-align: center;
                 color: #000;
+                a {
+                .ccontactame{
+                  .ccontactame:hover{
+                    pointer-events: visible;
+                    color: #ff2828;
+                  }
+                }}
             }
+
 
 
         }

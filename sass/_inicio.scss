@@ -22,6 +22,7 @@
             height: 100%; /* Adjust height as needed */
             padding: 0;
             margin: 0;
+            overflow-y: visible;
             li{
                 width: 0.82%;
                 height: 100%;
@@ -50,18 +51,19 @@
         border-bottom: 1px solid black;
 
         .cont_primera_columna_inicio {
+
             width: 80vw;
             border-right: #000 solid 1px;
 
 
             .columna_titulo {
+                position: relative;
                 border-bottom: #000 solid 1px;
                 height: 75vh;
                 display: flex;
                 flex-direction: column;
                 align-items: start;
                 justify-content: center;
-                padding-left: 2em;
                 gap: 20px;
 
                 h1 {
@@ -74,6 +76,8 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #000;
+                    padding-left: 0.3em;
+                    padding-right: 0.3em;
 
                 }
 
@@ -88,6 +92,8 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #000;
+                    padding-left: 2em;
+                    padding-right: 0.3em;
 
                 }
 
@@ -100,7 +106,6 @@
                     gap: 10px;
                     padding: 20px 40px;
                     background-color: #f32400;
-
                     font-family: monabold;
                     font-size: 15px;
                     font-weight: 600;
@@ -110,6 +115,12 @@
                     letter-spacing: normal;
                     text-align: left;
                     color: #fff;
+                    margin-left: 2em;
+                }
+                .boton_hablemos:hover{
+                    cursor: url("../assets/img/ir.svg") 15 14, auto;
+                    background:#c90101;
+
                 }
             }
 
@@ -119,15 +130,20 @@
                 flex-direction: row;
                 width: 100%;
                 justify-content: space-between;
+                position: relative;
 
                 .contadores {
+
                     width: 100%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: start;
                     align-items: center;
                     border-left: #000000 solid 1px;
 
+
                     .cont_uno {
+
+                        margin-left: 1.5em;
 
                         display: flex;
                         flex-direction: column;
@@ -170,6 +186,7 @@
         }
 
         .columna_video {
+            position: relative;
             overflow: hidden;
             width: 40vw;
 
@@ -384,7 +401,9 @@
             .titulo_about_me {
                 height: 15%;
                 margin-left: 2em;
-                margin-top: 2em;
+                margin-right: 2em;
+                margin-top: 1em;
+                margin-bottom: 1em;
 
                 h4 {
                     font-family: monabold;
@@ -623,9 +642,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
-
-
             .cont_item_mis_servicios {
                 display: flex;
                 justify-content: space-between;
@@ -634,8 +650,6 @@
                 overflow-y: hidden;
                 border-top: #ffffff 1px solid;
                 background: #0e0e0e;
-
-
                 h4 {
                     margin-top: 0.5em;
                     margin-left: 0.5em;
@@ -704,9 +718,7 @@
                 .cont_slider_banderas {
                     pointer-events: visible;
                     visibility: visible;
-
                     .sslider_uno {
-
                         display: flex;
                         overflow-x: hidden;
                         opacity: 1;

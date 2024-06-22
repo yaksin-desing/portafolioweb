@@ -170,9 +170,18 @@ p {
   margin-bottom: 0px;
 }
 
+.cuadrodecargado {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
 /* ################# NUEVO MENU ############## */
 .conte__menui {
-  z-index: 0;
+  position: relative;
+  z-index: 999;
   display: flex;
   width: 100%;
   margin: 0;
@@ -191,7 +200,7 @@ p {
 }
 .conte__menui .header__index .cont__logo__nav {
   transform: scale(0.9) translateY(0px);
-  z-index: 1000;
+  z-index: 999;
   filter: invert(100%);
 }
 .conte__menui .header__index .icono-menu {
@@ -199,7 +208,7 @@ p {
   justify-content: center;
   align-items: center;
   transform: scale(0.8) translateY(0px);
-  z-index: 1000;
+  z-index: 999;
   margin-right: 9px;
 }
 .conte__menui .header__index .icono-menu .bars__menu {
@@ -519,6 +528,11 @@ p {
 .pie_de_pagina .cont_barra_dos_links_pie .item_pie p a strong {
   color: #000;
   text-decoration: underline;
+}
+.pie_de_pagina .cont_barra_dos_links_pie .item_pie p a strong:hover {
+  pointer-events: visible;
+  color: #000000;
+  cursor: url("../assets/img/ir.svg") 15 14, auto;
 }
 .pie_de_pagina img {
   width: 100%;
@@ -982,6 +996,10 @@ p {
     letter-spacing: normal;
     text-align: center;
     color: #000;
+  }
+  .pie_de_pagina .cont_barra_dos_links_pie .item_pie p a .ccontactame .ccontactame:hover {
+    pointer-events: visible;
+    color: #ff2828;
   }
   .pie_de_pagina img {
     width: 100%;
@@ -5847,6 +5865,7 @@ p {
   height: 100%; /* Adjust height as needed */
   padding: 0;
   margin: 0;
+  overflow-y: visible;
 }
 .body_inicio .animacion_loading ul li {
   width: 0.82%;
@@ -5878,13 +5897,13 @@ p {
   border-right: #000 solid 1px;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .columna_titulo {
+  position: relative;
   border-bottom: #000 solid 1px;
   height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding-left: 2em;
   gap: 20px;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .columna_titulo h1 {
@@ -5897,6 +5916,8 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .columna_titulo p {
   font-family: monaregular;
@@ -5908,6 +5929,8 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+  padding-left: 2em;
+  padding-right: 0.3em;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .columna_titulo .boton_hablemos {
   width: 150px;
@@ -5927,6 +5950,11 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #fff;
+  margin-left: 2em;
+}
+.body_inicio .seccion_inicio .cont_primera_columna_inicio .columna_titulo .boton_hablemos:hover {
+  cursor: url("../assets/img/ir.svg") 15 14, auto;
+  background: #c90101;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo {
   height: 15vh;
@@ -5934,15 +5962,17 @@ p {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  position: relative;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo .contadores {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   border-left: #000000 solid 1px;
 }
 .body_inicio .seccion_inicio .cont_primera_columna_inicio .cont_pie_titulo .contadores .cont_uno {
+  margin-left: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5974,6 +6004,7 @@ p {
   color: #000;
 }
 .body_inicio .seccion_inicio .columna_video {
+  position: relative;
   overflow: hidden;
   width: 40vw;
 }
@@ -6155,7 +6186,9 @@ p {
 .body_inicio .cont_about_me_inicio .colum_dos .titulo_about_me {
   height: 15%;
   margin-left: 2em;
-  margin-top: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .body_inicio .cont_about_me_inicio .colum_dos .titulo_about_me h4 {
   font-family: monabold;
