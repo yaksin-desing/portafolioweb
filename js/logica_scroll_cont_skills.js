@@ -64,6 +64,11 @@ const load = gsap.timeline({
     repeatDelay: 0,
 });
 
+load.to("html", {
+    overflowY:"hidden",
+    overflowX:"hidden",
+});
+
 load.to(".n01", {
     color:"black",
     duration: 0.5,
@@ -581,4 +586,9 @@ load.to(".n100", {
 load.to(".animacion_loading", {
     background: "#ffffff00",
     duration: 0.01,
+});
+
+load.to("html", {
+    overflowY:"visible",
+    overflowX:"hidden",
 });
