@@ -81,15 +81,6 @@ cursorScale.forEach(link => {
 });
 
 
-LottieInteractivity.create({
-    player: '#mydesign1',
-    mode: "scroll",
-    actions: [{
-        visibility: [0.2, 1.0],
-        type: "play"
-    }]
-});
-
 const contenedoranimate = document.querySelector(".contenedor_de_animaciones");
 const altodecontenedor = window.innerWidth;
 let string = altodecontenedor.toString();
