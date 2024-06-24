@@ -1797,7 +1797,7 @@ p {
   height: 100vh;
 }
 .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto h3 {
-  padding: 1em 0.5em 1em 0.5em;
+  padding: 15vh 0.5em 1em 0.5em;
   flex-grow: 0;
   font-family: monabold;
   font-size: 10vh;
@@ -1885,7 +1885,7 @@ p {
   height: 100vh;
 }
 .body_proyecto .cont_proyectos_scrolls .cont_paletadecolores h3 {
-  padding: 1em 0.5em 1em 0.5em;
+  padding: 15vh 0.5em 1em 0.5em;
   flex-grow: 0;
   font-family: monabold;
   font-size: 10vh;
@@ -1946,7 +1946,7 @@ p {
   height: 100vh;
 }
 .body_proyecto .cont_proyectos_scrolls .cont_fuentes h3 {
-  padding: 1em 0.5em 1em 0.5em;
+  padding: 15vh 0.5em 1em 0.5em;
   flex-grow: 0;
   font-family: monabold;
   font-size: 10vh;
