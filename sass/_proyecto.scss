@@ -402,19 +402,19 @@
                 height: 90vh;
                 display: flex;
                 flex-direction: column-reverse;
-                align-items: center;
-                justify-content: center;
+                align-items: start;
+                justify-content: start;
                 border-bottom: solid 1px black;
                 overflow: hidden;
 
                 .colum_unos {
-                    padding: 1.5em 1em 1em 1em;
+                    padding: 1.5em 1em 4em 1em;
                     display: flex;
                     align-items: start;
                     flex-direction: column;
                     justify-content: center;
                     width: 100vw;
-                    gap: 2em;
+                    gap: 1em;
 
                     .tipo {
                         width: fit-content;
@@ -427,7 +427,7 @@
 
                         p {
                             font-family: monaregular;
-                            font-size: 15px;
+                            font-size: 3vw;
                             font-weight: normal;
                             font-stretch: normal;
                             font-style: normal;
@@ -483,7 +483,7 @@
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
-                    border-left: #000 solid 1px;
+                    border-left: #000 solid 0px;
 
                     .video_pro_jannier {
                         height: 100%;
@@ -503,7 +503,7 @@
                 height: 100vh;
 
                 h3 {
-                    padding: 1em 0.5em 1em 0.5em;
+                    padding: 12vh 0.5em 1em 0.5em;
                     flex-grow: 0;
                     font-family: monabold;
                     font-size: 6vh;
@@ -603,7 +603,7 @@
                 height: 100vh;
 
                 h3 {
-                    padding: 1em 0.5em 1em 0.5em;
+                    padding: 12vh 0.5em 1em 0.5em;
                     flex-grow: 0;
                     font-family: monabold;
                     font-size: 6vh;
@@ -670,7 +670,7 @@
                 height: 100vh;
 
                 h3 {
-                    padding: 1em 0.5em 1em 0.5em;
+                    padding: 12vh 0.5em 1em 0.5em;
                     flex-grow: 0;
                     font-family: monabold;
                     font-size: 6vh;
