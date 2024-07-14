@@ -1084,6 +1084,83 @@
         }
     }
 
+    .cont_mis_ultimos_proyectos{
+        background: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .titulo_ultimos_proyectos{
+            height: 25vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            h4 {
+                width: 100%;
+                font-family: monaextrabold;
+                font-size: 80px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: justify;
+                color: #000;
+                margin-left: 0.5em;
+                margin-bottom: 0px;
+            }
+
+
+        }
+
+        .cont_de_proyectos{
+            display: flex;
+            flex-direction: row;
+            height: 75vh;
+            border-bottom: 1px solid black;
+
+            .proyecto{
+                position:relative;
+                display: flex;
+                width: calc(100vw / 4);
+                overflow: hidden;
+                border-right: 1px solid black;
+                align-items: center;
+                justify-content: center;
+
+                p{
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    padding: 10px;
+                    background: #000;
+                    color: #fff;
+                    font-family: monasemibold ;
+                    font-size: 1vw;
+                    z-index: 10;
+                    text-align: center;
+
+                }
+                img{
+                filter:brightness(50%) grayscale(90%);
+                height: 100%;
+                }
+            }
+            .proyecto:hover{
+                img{
+                    filter:brightness(100%) grayscale(0%);
+                    height: 120%;
+                    cursor: url("../assets/img/ir.svg") 15 14, auto;
+                    }
+            }
+        }
+    }
+
 }
 
 
@@ -1091,8 +1168,6 @@
     .body_inicio {
         background: #ffffff;
         overflow-x: hidden;
-
-
 
         .seccion_inicio {
             height: auto;
@@ -2176,6 +2251,85 @@
                     }
                 }
             }
+        }
+
+        
+        .cont_mis_ultimos_proyectos{
+        background: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 410vh;
+        .titulo_ultimos_proyectos{
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 0px solid black;
+            h4 {
+                width: 100%;
+                font-family: monaextrabold;
+                font-size: 25px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: justify;
+                color: #000;
+                margin-left: 0.5em;
+                margin-bottom: 0px;
+            }
+
+
+        }
+
+        .cont_de_proyectos{
+            display: flex;
+            flex-direction: column;
+            height: 400vh;
+            border-bottom: 0px solid black;
+            gap: 1em;
+
+            .proyecto{
+                position:relative;
+                display: flex;
+                width: 100vw;
+                overflow: hidden;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                align-items: center;
+                justify-content: center;
+
+                p{
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    padding: 10px;
+                    background: #000;
+                    color: #fff;
+                    font-family: monasemibold ;
+                    font-size: 4vw;
+                    z-index: 10;
+                    text-align: center;
+
+                }
+                img{
+                filter:brightness(100%) grayscale(0%);
+                height: 100%;
+                }
+            }
+            .proyecto:hover{
+                img{
+                    filter:brightness(100%) grayscale(0%);
+                    height: 120%;
+                    }
+            }
+        }
         }
 
 
