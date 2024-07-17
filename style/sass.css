@@ -2224,7 +2224,7 @@ p {
     color: #000000;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_inicios .colum_unos .pie_titulo .cont_titulo_pie .titulo_valor .simbolo {
-    font-size: 0.8vw;
+    font-size: 2vw;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_inicios .cont_banner {
     width: 100%;
@@ -7988,11 +7988,11 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 410vh;
+    height: 420vh;
     margin-bottom: 1em;
   }
   .body_inicio .cont_mis_ultimos_proyectos .titulo_ultimos_proyectos {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8002,7 +8002,7 @@ p {
   .body_inicio .cont_mis_ultimos_proyectos .titulo_ultimos_proyectos h4 {
     width: 100%;
     font-family: monaextrabold;
-    font-size: 25px;
+    font-size: 10vw;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;

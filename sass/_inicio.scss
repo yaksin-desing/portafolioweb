@@ -2415,11 +2415,11 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            height: 410vh;
+            height: 420vh;
             margin-bottom: 1em;
 
             .titulo_ultimos_proyectos {
-                height: 10vh;
+                height: 15vh;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -2429,7 +2429,7 @@
                 h4 {
                     width: 100%;
                     font-family: monaextrabold;
-                    font-size: 25px;
+                    font-size: 10vw;
                     font-weight: 900;
                     font-stretch: normal;
                     font-style: normal;
