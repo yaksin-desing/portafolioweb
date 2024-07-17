@@ -1,5 +1,4 @@
 
-
 const skillss = gsap.timeline({
     scrollTrigger: {
         trigger: ".cont_animacionmiskills_vertical",

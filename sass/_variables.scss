@@ -179,18 +179,7 @@ body::-webkit-scrollbar-thumb {
 
 
 /* ################# CURSOR ############## */
-.grow,
-.grow-small {
-  transform: scale(4);
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(3px);
-  border: 0.2px solid rgb(0, 0, 0);
-}
 
-.grow-small {
-  transform: scale(1.5);
-  border: 0.2px solid rgb(0, 0, 0);
-}
 
 .cursor {
   position: fixed;
@@ -199,11 +188,19 @@ body::-webkit-scrollbar-thumb {
   margin-left: -37px;
   margin-top: -37px;
   border-radius: 50%;
-  border: 0.1px solid rgba(206, 206, 206, 0.459);
+  border: 1px solid rgba(0, 0, 0, 0.404);
   transition: transform 0.1s ease;
   transform-origin: center center;
   pointer-events: none;
   z-index: 9999;
+}
+
+.grow,
+.grow-small {
+  transform: scale(1.5);
+  background: rgba(31, 31, 31, 0.226);
+  backdrop-filter: blur(3px);
+  border: 0px solid rgba(0, 0, 0, 0.404);
 }
 
 p {
@@ -367,6 +364,11 @@ p {
                           text-align: center;
                       }
                   }
+
+              }
+
+              .cont_opcion_lista:hover{
+                cursor: url("../assets/img/ir.svg") 15 14, auto;
               }
 
           }

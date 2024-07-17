@@ -1,4 +1,130 @@
 
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('target');
+
+    const options = {
+        root: null, // null significa que se observa en relación con el viewport
+        rootMargin: '0px',
+        threshold: 0.5 // 50% del div debe ser visible
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gsap.to(".boton_ver_proyecto", {
+                    y: "0",
+                    duration: 1,
+                });
+                console.log("se ve")
+            } else {
+                gsap.to(".boton_ver_proyecto", {
+                    y: "5em",
+                    duration: 1,
+                });
+                console.log("no se ve")
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(target);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('targetdos');
+
+    const options = {
+        root: null, // null significa que se observa en relación con el viewport
+        rootMargin: '0px',
+        threshold: 0.5 // 50% del div debe ser visible
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gsap.to("#botondos", {
+                    y: "0",
+                    duration: 1,
+                });
+                console.log("se ve")
+            } else {
+                gsap.to("#botondos", {
+                    y: "5em",
+                    duration: 1,
+                });
+                console.log("no se ve")
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(target);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('targettres');
+
+    const options = {
+        root: null, // null significa que se observa en relación con el viewport
+        rootMargin: '0px',
+        threshold: 0.5 // 50% del div debe ser visible
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gsap.to("#botontres", {
+                    y: "0",
+                    duration: 1,
+                });
+                console.log("se ve")
+            } else {
+                gsap.to("#botontres", {
+                    y: "5em",
+                    duration: 1,
+                });
+                console.log("no se ve")
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(target);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('targetcuatro');
+
+    const options = {
+        root: null, // null significa que se observa en relación con el viewport
+        rootMargin: '0px',
+        threshold: 0.5 // 50% del div debe ser visible
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gsap.to("#botoncuatro", {
+                    y: "0",
+                    duration: 1,
+                });
+                console.log("se ve")
+            } else {
+                gsap.to("#botoncuatro", {
+                    y: "5em",
+                    duration: 1,
+                });
+                console.log("no se ve")
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(target);
+});
+
+
+
 let condicion = true;
 
 document.querySelector(".bars__menu").addEventListener('click', () => {

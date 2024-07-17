@@ -138,20 +138,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ################# CURSOR ############## */
-.grow,
-.grow-small {
-  transform: scale(4);
-  background: rgba(255, 255, 255, 0.02);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  border: 0.2px solid rgb(0, 0, 0);
-}
-
-.grow-small {
-  transform: scale(1.5);
-  border: 0.2px solid rgb(0, 0, 0);
-}
-
 .cursor {
   position: fixed;
   width: 70px;
@@ -159,11 +145,20 @@ body::-webkit-scrollbar-thumb {
   margin-left: -37px;
   margin-top: -37px;
   border-radius: 50%;
-  border: 0.1px solid rgba(206, 206, 206, 0.459);
+  border: 1px solid rgba(0, 0, 0, 0.404);
   transition: transform 0.1s ease;
   transform-origin: center center;
   pointer-events: none;
   z-index: 9999;
+}
+
+.grow,
+.grow-small {
+  transform: scale(1.5);
+  background: rgba(31, 31, 31, 0.226);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border: 0px solid rgba(0, 0, 0, 0.404);
 }
 
 p {
@@ -314,6 +309,9 @@ p {
   line-height: 107.5%;
   align-items: center;
   text-align: center;
+}
+.conte__menui .contendor_activo_de_menu .list_menu .lista_uno .cont_opcion_lista:hover {
+  cursor: url("../assets/img/ir.svg") 15 14, auto;
 }
 .conte__menui .contendor_activo_de_menu .list_menu .boton_contactar {
   width: 100%;
@@ -5969,7 +5967,8 @@ p {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%; /* Adjust height as needed */
+  height: 100%;
+  /* Adjust height as needed */
   padding: 0;
   margin: 0;
   overflow-y: visible;
@@ -6318,6 +6317,9 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+}
+.body_inicio .cont_about_me_inicio .colum_dos .colum_unos {
+  display: none;
 }
 .body_inicio .cont_about_me_inicio .colum_dos .lista_about_me {
   display: flex;
@@ -6934,6 +6936,9 @@ p {
   filter: brightness(50%) grayscale(90%);
   height: 100%;
 }
+.body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto .cont_boton_ver_proyecto {
+  display: none;
+}
 .body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto:hover img {
   filter: brightness(100%) grayscale(0%);
   height: 120%;
@@ -7070,6 +7075,7 @@ p {
     width: 100%;
   }
   .body_inicio .cont_cinta_inicio {
+    display: none;
     width: 100%;
   }
   .body_inicio .cont_cinta_inicio .slider_inicio {
@@ -7120,7 +7126,7 @@ p {
     border-radius: 172px;
   }
   .body_inicio .cont_about_me_inicio {
-    border-top: #000 solid 1px;
+    border-top: #000 solid 0px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -7129,7 +7135,7 @@ p {
   .body_inicio .cont_about_me_inicio .colum_uno {
     height: 40vh;
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -7238,7 +7244,7 @@ p {
   }
   .body_inicio .cont_about_me_inicio .colum_dos {
     height: auto;
-    border-top: #000 solid 1px;
+    border-top: #000 solid 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7273,6 +7279,118 @@ p {
     letter-spacing: normal;
     text-align: left;
     color: #000;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos {
+    height: 47vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-right: #000 0px solid;
+    border-top: #000 solid 1px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .cinta_colum_uno {
+    display: none;
+    width: 100%;
+    height: 10%;
+    background: #ffffff;
+    border-bottom: #000 solid 1px;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .cinta_colum_uno .slider_inicio {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #ffffff;
+    align-items: center;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .cinta_colum_uno .slider_inicio .slide-track {
+    width: 100%;
+    animation: 15s linear infinite;
+    animation-name: scroll101;
+    display: flex;
+    width: 2400px;
+    align-items: start;
+    gap: 1px;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .cinta_colum_uno .slider_inicio .slide-track .slide {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .cinta_colum_uno .slider_inicio .slide-track .slide p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    text-align: center;
+    font-family: monaextrabold;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 106%;
+    white-space: nowrap;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .img_fondo_fotos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .img_fondo_fotos img {
+    top: -2em;
+    width: 100%;
+    animation: rotate 30s linear infinite;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .img_fondo_foto_dos {
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    z-index: 0;
+    width: 60%;
+    top: 23%;
+    left: 20%;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .img_fondo_foto_dos img {
+    top: -3em;
+    width: 100%;
+    animation: rotates 20s linear infinite;
+  }
+  @keyframes rotates {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .foto_jaksin {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+  }
+  .body_inicio .cont_about_me_inicio .colum_dos .colum_unos .cinta_colum_dos {
+    width: 100%;
+    height: 10%;
+    background: #ffffff;
+    border-top: #000 solid 1px;
   }
   .body_inicio .cont_about_me_inicio .colum_dos .lista_about_me {
     display: flex;
@@ -7871,6 +7989,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 410vh;
+    margin-bottom: 1em;
   }
   .body_inicio .cont_mis_ultimos_proyectos .titulo_ultimos_proyectos {
     height: 10vh;
@@ -7900,14 +8019,15 @@ p {
     height: 400vh;
     border-bottom: 0px solid black;
     gap: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
   .body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto {
     position: relative;
     display: flex;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
     align-items: center;
     justify-content: center;
   }
@@ -7929,6 +8049,33 @@ p {
   .body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto img {
     filter: brightness(100%) grayscale(0%);
     height: 100%;
+  }
+  .body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto .cont_boton_ver_proyecto {
+    display: inline;
+    height: 70px;
+    position: absolute;
+    bottom: 0em;
+    left: 0;
+    right: 0;
+  }
+  .body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto .cont_boton_ver_proyecto .boton_ver_proyecto {
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    transform: translateY(0em);
+    bottom: 0em;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 20px;
+    background: #ff0000;
+    color: #ffffff;
+    font-family: monasemibold;
+    font-size: 4vw;
+    z-index: 10;
+    text-align: center;
   }
   .body_inicio .cont_mis_ultimos_proyectos .cont_de_proyectos .proyecto:hover img {
     filter: brightness(100%) grayscale(0%);
