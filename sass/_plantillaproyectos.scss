@@ -143,14 +143,21 @@
         gap: 1em;
 
         .cont_proyectos {
-            border: solid 1px black;
+            border: solid 1.8px rgb(131, 131, 131);
             width: 100%;
             display: flex;
             flex-direction: column;
 
+
+            
+
+
             img {
                 width: 100%;
                 object-fit: cover;
+                &:hover{
+                    cursor:url("../assets/img/ir.svg") 15 14, auto;
+                }
 
             }
 
@@ -192,7 +199,15 @@
                     }
                 }
             }
+
+            &:hover{
+                background: #fcfcfc;
+                border: solid 1px rgb(0, 0, 0);
+            }
+
+
         }
+
     }
     .cont_ilustracion_error{
         border-top: #000 solid 1px;

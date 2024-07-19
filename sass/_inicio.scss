@@ -265,6 +265,7 @@
 
     .cont_about_me_inicio {
         border-top: #000 solid 1px;
+        border-bottom: #000 solid 1px;
         height: 103vh;
         display: flex;
         flex-direction: row;
@@ -573,7 +574,6 @@
     }
 
     .portafolios {
-        border-top: #ffffff 1px solid;
         border-bottom: #000000 1px solid;
         display: flex;
         flex-direction: column;
@@ -1396,6 +1396,7 @@
 
 
         .cont_about_me_inicio {
+            border-bottom: #000 solid 0px;
             border-top: #000 solid 0px;
             height: auto;
             display: flex;

@@ -198,23 +198,6 @@ load.to(".n24", {
 });
 
 
-load.to(".n35", {
-    color: "black",
-    duration: 0.1,
-});
-load.to(".n35", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
-
-load.to(".n36", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n36", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
 
 load.to(".n37", {
     color: "black",
@@ -270,23 +253,6 @@ load.to(".n42", {
     duration: 0.01,
 });
 
-load.to(".n43", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n43", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
-
-load.to(".n44", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n44", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
 
 load.to(".n45", {
     color: "black",
@@ -297,14 +263,6 @@ load.to(".n45", {
     duration: 0.01,
 });
 
-load.to(".n46", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n46", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
 
 load.to(".n47", {
     color: "black",
@@ -378,23 +336,6 @@ load.to(".n54", {
     duration: 0.1,
 });
 
-load.to(".n55", {
-    color: "black",
-    duration: 0.1,
-});
-load.to(".n55", {
-    color: "#ffffff00",
-    duration: 0.1,
-});
-
-load.to(".n56", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n56", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
 
 load.to(".n57", {
     color: "black",
@@ -414,23 +355,6 @@ load.to(".n58", {
     duration: 0.01,
 });
 
-load.to(".n67", {
-    color: "black",
-    duration: 0.8,
-});
-load.to(".n67", {
-    color: "#ffffff00",
-    duration: 0.1,
-});
-
-load.to(".n68", {
-    color: "black",
-    duration: 0.1,
-});
-load.to(".n68", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
 
 load.to(".n69", {
     color: "black",
@@ -477,32 +401,6 @@ load.to(".n82", {
     duration: 0.01,
 });
 
-load.to(".n83", {
-    color: "black",
-    duration: 0.5,
-});
-load.to(".n83", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
-
-load.to(".n84", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n84", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
-
-load.to(".n85", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n85", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
 
 load.to(".n86", {
     color: "black",
