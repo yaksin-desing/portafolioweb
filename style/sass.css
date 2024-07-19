@@ -6114,7 +6114,7 @@ p {
   overflow: hidden;
   width: 40vw;
 }
-.body_inicio .seccion_inicio .columna_video img {
+.body_inicio .seccion_inicio .columna_video video {
   position: relative;
   top: -5em;
   width: 100%;
@@ -7069,7 +7069,7 @@ p {
     width: 100%;
     border-top: #000 1px solid;
   }
-  .body_inicio .seccion_inicio .columna_video img {
+  .body_inicio .seccion_inicio .columna_video video {
     position: relative;
     top: 0 em;
     width: 100%;
@@ -7256,7 +7256,7 @@ p {
     margin-left: 1em;
     margin-right: 1em;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
   }
   .body_inicio .cont_about_me_inicio .colum_dos .titulo_about_me h4 {
     font-family: monabold;

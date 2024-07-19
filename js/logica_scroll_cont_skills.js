@@ -143,24 +143,6 @@ load.to(".n16", {
     duration: 0.01,
 });
 
-load.to(".n17", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n17", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
-
-load.to(".n18", {
-    color: "black",
-    duration: 0.01,
-});
-load.to(".n18", {
-    color: "#ffffff00",
-    duration: 0.01,
-});
-
 load.to(".n19", {
     color: "black",
     duration: 0.01,
@@ -218,7 +200,7 @@ load.to(".n24", {
 
 load.to(".n35", {
     color: "black",
-    duration: 0.5,
+    duration: 0.1,
 });
 load.to(".n35", {
     color: "#ffffff00",
@@ -353,11 +335,11 @@ load.to(".n49", {
 
 load.to(".n50", {
     color: "black",
-    duration: 0.5,
+    duration: 0.2,
 });
 load.to(".n50", {
     color: "#ffffff00",
-    duration: 0.5,
+    duration: 0.2,
 });
 
 load.to(".n51", {
@@ -570,6 +552,6 @@ load.to("html", {
 
 load.to(".cuadrodecargado", {
     width:"0%",
-    delay:1,
+    delay:0.1,
     duration: 0.5,
 });
