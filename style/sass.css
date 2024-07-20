@@ -6788,6 +6788,7 @@ p {
   position: absolute;
   top: 0%;
   left: -150%;
+  height: 110%;
 }
 .body_inicio .cont_animacionmiskills_vertical {
   height: 100vh;
