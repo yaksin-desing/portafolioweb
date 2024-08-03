@@ -1965,15 +1965,37 @@ p {
   flex-direction: column;
   height: 100vh;
 }
-.body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto h3 {
-  padding: 10vh 0.5em 1em 0.5em;
-  flex-grow: 0;
-  font-family: monabold;
-  font-size: 10vh;
-  font-weight: 900;
-  text-align: left;
-  color: #000;
+.body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .titulo_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 0.5em 10vh 0.5em;
   border-bottom: #000 solid 1px;
+}
+.body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .titulo_cont h5 {
+  padding-bottom: 0.5em;
+  width: 100%;
+  font-family: monaregular;
+  font-size: 1.5vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .titulo_cont h3 {
+  font-family: monabold;
+  font-size: 4vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
 }
 .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .cont_data_proyecto {
   display: flex;
@@ -2036,7 +2058,7 @@ p {
   font-size: 1.2vw;
   font-weight: 400;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #000;
   border-bottom: #000 1px solid;
 }
@@ -2053,11 +2075,11 @@ p {
 }
 .body_proyecto .cont_proyectos_scrolls .cont_paletadecolores h3 {
   padding: 10vh 0.5em 1em 0.5em;
-  flex-grow: 0;
+  width: 100%;
   font-family: monabold;
-  font-size: 10vh;
-  font-weight: 900;
-  text-align: left;
+  font-size: 4vw;
+  font-weight: 600;
+  text-align: center;
   color: #000;
   border-bottom: #000 solid 1px;
 }
@@ -2114,11 +2136,11 @@ p {
 }
 .body_proyecto .cont_proyectos_scrolls .cont_fuentes h3 {
   padding: 10vh 0.5em 1em 0.5em;
-  flex-grow: 0;
+  width: 100%;
   font-family: monabold;
-  font-size: 10vh;
-  font-weight: 900;
-  text-align: left;
+  font-size: 4vw;
+  font-weight: 600;
+  text-align: center;
   color: #000;
   border-bottom: #000 solid 1px;
 }
@@ -2366,15 +2388,37 @@ p {
     flex-direction: column;
     height: 100vh;
   }
-  .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto h3 {
-    padding: 5vh 0.5em 1em 0.5em;
-    flex-grow: 0;
-    font-family: monabold;
-    font-size: 6vh;
-    font-weight: 900;
-    text-align: left;
-    color: #000;
+  .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .titulo_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0.5em 5vh 0.5em;
     border-bottom: #000 solid 1px;
+  }
+  .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .titulo_cont h5 {
+    padding-bottom: 0.5em;
+    width: 100%;
+    font-family: monaregular;
+    font-size: 3vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .titulo_cont h3 {
+    font-family: monabold;
+    font-size: 5vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .cont_data_proyecto {
     display: flex;
@@ -2421,7 +2465,7 @@ p {
     color: #000;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .cont_icon {
-    background: #ff4d00;
+    background: #ffffff;
     top: 0;
     position: absolute;
     right: 0;
@@ -2429,7 +2473,7 @@ p {
     border-left: 1px solid black;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .cont_data_proyecto .data .cont_dato .cont_icon img {
-    filter: invert(100%);
+    filter: invert(0%);
     margin: 1.5em;
     width: 5vw;
   }
@@ -2440,7 +2484,7 @@ p {
     font-size: 3vw;
     font-weight: 400;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #000;
     border-bottom: #000 1px solid;
   }
@@ -2456,12 +2500,13 @@ p {
     height: 100vh;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_paletadecolores h3 {
-    padding: 5vh 0.5em 1em 0.5em;
+    width: 100%;
+    padding: 5vw 0.5em 5vw 0.5em;
     flex-grow: 0;
     font-family: monabold;
-    font-size: 6vh;
-    font-weight: 900;
-    text-align: left;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
     color: #000;
     border-bottom: #000 solid 1px;
   }
@@ -2517,12 +2562,13 @@ p {
     height: 100vh;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_fuentes h3 {
-    padding: 5vh 0.5em 1em 0.5em;
+    width: 100%;
+    padding: 5vw 0.5em 5vw 0.5em;
     flex-grow: 0;
     font-family: monabold;
-    font-size: 6vh;
-    font-weight: 900;
-    text-align: left;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
     color: #000;
     border-bottom: #000 solid 1px;
   }
