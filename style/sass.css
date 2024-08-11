@@ -2056,11 +2056,14 @@ p {
   width: 100%;
   font-family: monaregular;
   font-size: 1.2vw;
-  font-weight: 400;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
   letter-spacing: normal;
   text-align: center;
   color: #000;
-  border-bottom: #000 1px solid;
+  border-bottom: 1px solid black;
 }
 .body_proyecto .cont_proyectos_scrolls .cont_paletadecolores {
   z-index: 2;
@@ -2164,6 +2167,9 @@ p {
 }
 .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente .img_pie_fuente {
   width: 40%;
+}
+.body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente .img_dos_pie_fuente {
+  display: none;
 }
 .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente .parrafo_pie_fuente {
   width: 50%;
@@ -2456,13 +2462,15 @@ p {
   .body_proyecto .cont_proyectos_scrolls .cont_acercadelproyecto .cont_data_proyecto .data_proyecto {
     padding: 3em 1.5em 3em 1.5em;
     width: 100%;
-    font-family: monaregular;
-    font-size: 3vw;
-    font-weight: 400;
+    font-family: monalight;
+    font-size: 4vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
     letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    border-bottom: #000 1px solid;
+    text-align: justify;
+    color: #030303;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_paletadecolores {
     z-index: 2;
@@ -2558,19 +2566,24 @@ p {
     justify-content: space-around;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .img_fuente {
+    padding-top: 2em;
     width: 100%;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 90%;
-    background: rgb(245, 245, 245);
-    padding: 1em;
+    background: rgb(255, 255, 255);
+    padding: 0em;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente .img_pie_fuente {
+    width: 100%;
+  }
+  .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente .img_dos_pie_fuente {
+    display: block;
     width: 100%;
   }
   .body_proyecto .cont_proyectos_scrolls .cont_fuentes .contenido_fuente .cont_pie_fuente .parrafo_pie_fuente {
